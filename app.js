@@ -274,13 +274,70 @@ document.addEventListener('DOMContentLoaded', () => {
   let lbSortField = 'rosc';
   let lbSortAsc = false;
 
-  const rawLb = data.master_37_leaderboard || [];
+  function getActiveLbList() {
+    return (currentLbGroup === 'post_gm') ? (data.ranked_post_gm || []) : (data.master_37_leaderboard || []);
+  }
+
+  function updateLbKpiCards() {
+    const kpiContainer = document.querySelector('#tab-leaderboard .kpi-cards-grid');
+    if (!kpiContainer) return;
+
+    if (currentLbGroup === 'post_gm') {
+      kpiContainer.innerHTML = `
+        <div class="kpi-card highlight-emerald">
+          <div class="kpi-title">同起跑線總冠位 (全縣 #1)</div>
+          <div class="kpi-number">45 人</div>
+          <div class="kpi-sub">蔣為理 (光明高救隊)・119 件 (37.82%)</div>
+        </div>
+        <div class="kpi-card highlight-amber">
+          <div class="kpi-title">資深專責期冠位 (全縣 #2)</div>
+          <div class="kpi-number">39 人</div>
+          <div class="kpi-sub">許嘉雄 (光明高救隊)・96 件 (40.62%)</div>
+        </div>
+        <div class="kpi-card highlight-blue">
+          <div class="kpi-title">專責期救活第 3 位 (全縣 #3)</div>
+          <div class="kpi-number">39 人</div>
+          <div class="kpi-sub">許育誠 (光明高救隊)・126 件 (30.95%)</div>
+        </div>
+        <div class="kpi-card highlight-clay">
+          <div class="kpi-title">同起跑線勝率天花板</div>
+          <div class="kpi-number">45.07%</div>
+          <div class="kpi-sub">呂育陞 (光明高救隊)・71 件 / 32 ROSC</div>
+        </div>
+      `;
+    } else {
+      kpiContainer.innerHTML = `
+        <div class="kpi-card highlight-emerald">
+          <div class="kpi-title">全縣救活總冠位 (全縣 #1)</div>
+          <div class="kpi-number">45 人</div>
+          <div class="kpi-sub">蔣為理 (同學組 / 光明)・119 件 (37.82%)</div>
+        </div>
+        <div class="kpi-card highlight-amber">
+          <div class="kpi-title">資深救活冠位 (全縣 #2)</div>
+          <div class="kpi-number">44 人</div>
+          <div class="kpi-sub">許嘉雄 (110.01 / 光明)・117 件 (37.61%)</div>
+        </div>
+        <div class="kpi-card highlight-blue">
+          <div class="kpi-title">救護總量攻堅王 (全縣 #4)</div>
+          <div class="kpi-number">41 人</div>
+          <div class="kpi-sub">劉名洲 (資深 / 竹東)・182 件 (22.53%)</div>
+        </div>
+        <div class="kpi-card highlight-clay">
+          <div class="kpi-title">全縣勝率天花板</div>
+          <div class="kpi-number">45.07%</div>
+          <div class="kpi-sub">呂育陞 (同學組 / 光明)・71 件 / 32 ROSC</div>
+        </div>
+      `;
+    }
+  }
 
   function renderLeaderboard() {
     lbTableBody.innerHTML = '';
+    const activeLb = getActiveLbList();
+    updateLbKpiCards();
 
-    let list = rawLb.filter(r => {
-      // Group filter
+    let list = activeLb.filter(r => {
+      // Group filter (如果選 post_gm 則全體 37 人皆納入同一起跑線檢視)
       if (currentLbGroup === 'classmates' && !r.group.includes('同學組')) return false;
       if (currentLbGroup === 'senior' && !r.group.includes('資深')) return false;
       if (currentLbGroup === 'later' && !r.group.includes('新進')) return false;
@@ -302,8 +359,9 @@ document.addEventListener('DOMContentLoaded', () => {
       let valB = b[lbSortField];
 
       if (lbSortField === 'rank') {
-        valA = rawLb.indexOf(a) + 1;
-        valB = rawLb.indexOf(b) + 1;
+        const activeLb = getActiveLbList();
+        valA = activeLb.indexOf(a) + 1;
+        valB = activeLb.indexOf(b) + 1;
       } else if (lbSortField === 'total') {
         valA = a.total_cases_all; valB = b.total_cases_all;
       } else if (lbSortField === 'deducted') {
@@ -325,7 +383,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     list.forEach((r) => {
-      const globalRank = rawLb.findIndex(item => item.name === r.name) + 1;
+      const activeLb = getActiveLbList();
+      const globalRank = activeLb.findIndex(item => item.name === r.name) + 1;
       const tr = document.createElement('tr');
 
       let rankClass = 'rank-other';

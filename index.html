@@ -64,6 +64,11 @@
           <span class="tab-icon">🤝</span>
           <span class="tab-text">雙人 / 三人組協同勝率</span>
         </button>
+        <button class="nav-tab" data-tab="tab-evolution">
+          <span class="tab-icon">📈</span>
+          <span class="tab-text">全局演進與分隊排行</span>
+          <span class="tab-badge">成軍前後變革</span>
+        </button>
       </div>
     </nav>
   </header>
@@ -116,7 +121,8 @@
             <input type="text" id="leaderboard-search" placeholder="搜尋 TP 姓名、主要分隊、期別..." />
           </div>
           <select class="custom-select" id="leaderboard-group-filter">
-            <option value="all">全體期別 (37位)</option>
+            <option value="all">全體期別 (全生涯校正)</option>
+            <option value="post_gm" style="color:#0D9488; font-weight:700;">🎯 同一起跑線 (光明高救成立 111.03起算)</option>
             <option value="classmates">同學組 (111.03起算 - 蔣為理/許育誠/呂育陞等)</option>
             <option value="senior">資深 EMT-P (許嘉雄/劉名洲/鄭睿旭/李均祈等)</option>
             <option value="later">後期新進組 (113~115年 - 黃玉喬/蔡煥龍/蕭惠元等)</option>
@@ -319,6 +325,590 @@
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== TAB 5: 全局演進與各分隊戰情 (專題二 + 專題三) ==================== -->
+    <section id="tab-evolution" class="tab-pane">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">新竹縣急救體系全局演進暨各大分隊成效排行榜</h2>
+          <p class="section-desc">
+            全息透視 108.10 ～ 115.10（85 個月、4,037 筆 OHCA）大數據歷史演進。<strong>111 年 3 月光明專責高級救護示範隊成軍</strong>為全縣急救體系的劃時代分水嶺：全縣到院前心跳恢復率 (R1) 由 7.7% 翻倍躍升至 <strong>14.47%</strong>，急救給藥率由每案 0.2 次暴增至 <strong>1.14 次</strong>；各大分隊在成軍前後之戰力消長與歷年勝率走勢一覽無遺。
+          </p>
+        </div>
+      </div>
+
+      <!-- Macro Evolution KPI Cards -->
+      <div class="kpi-cards-grid">
+        <div class="kpi-card highlight-emerald">
+          <div class="kpi-title">到院前 ROSC 翻倍躍升</div>
+          <div class="kpi-number">7.7% ➔ 14.5%</div>
+          <div class="kpi-sub">光明成軍後全縣到院前心跳恢復率創歷史新高</div>
+        </div>
+        <div class="kpi-card highlight-blue">
+          <div class="kpi-title">急救給藥處置大革命</div>
+          <div class="kpi-number">0.22 ➔ 1.17 次</div>
+          <div class="kpi-sub">年均給藥由 100餘次暴增至 600~700 次普及全縣</div>
+        </div>
+        <div class="kpi-card highlight-amber">
+          <div class="kpi-title">全縣分隊成效之冠</div>
+          <div class="kpi-number">30.39%</div>
+          <div class="kpi-sub">光明分隊成軍後勝率高達 33.97% (增幅 ▲+15.57%)</div>
+        </div>
+        <div class="kpi-card highlight-clay">
+          <div class="kpi-title">全縣救護總量雙主力</div>
+          <div class="kpi-number">1,092 件</div>
+          <div class="kpi-sub">竹東 549件 / 光明 543件 合計承擔全縣 27% OHCA</div>
+        </div>
+      </div>
+
+      <!-- Part 1: 全局歷年演進 (專題二) -->
+      <div class="content-card" style="margin-bottom: 26px;">
+        <div class="card-header-badge text-emerald">專題二・全局縱向大數據</div>
+        <h3 class="card-title">全縣急救成功率與侵入處置歷年演進趨勢 (108 ～ 115 年全景)</h3>
+        <p class="card-sub">
+          見證 111 年 3 月光明專責高救隊成軍對全縣救護體系的引領效應：到院前自主循環恢復率 (R1) 實現翻倍跳躍，給藥與進階氣道處置全面常態化。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>統計年度</th>
+                <th>全縣總 OHCA</th>
+                <th>廣義救活 (ROSC)</th>
+                <th>廣義成功率</th>
+                <th>到院前 ROSC (R1)</th>
+                <th>到院前成功率</th>
+                <th>給藥總次數</th>
+                <th>平均每案給藥</th>
+                <th>體系重大里程碑</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">108 年</td>
+        <td>113 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">10 人</td>
+        <td style="font-weight:700;">8.85%</td>
+        <td style="font-weight:700; color:var(--color-blue);">8 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">7.08%</td>
+        <td>3 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">0.03 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">109 年</td>
+        <td>552 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">95 人</td>
+        <td style="font-weight:700;">17.21%</td>
+        <td style="font-weight:700; color:var(--color-blue);">46 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">8.33%</td>
+        <td>120 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">0.22 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">110 年</td>
+        <td>545 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">86 人</td>
+        <td style="font-weight:700;">15.78%</td>
+        <td style="font-weight:700; color:var(--color-blue);">42 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">7.71%</td>
+        <td>177 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">0.32 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="highlight-row">
+        <td style="font-weight:700; color:var(--text-heading);">111 年</td>
+        <td>643 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">87 人</td>
+        <td style="font-weight:700;">13.53%</td>
+        <td style="font-weight:700; color:var(--color-blue);">54 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">8.40%</td>
+        <td>531 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">0.83 次</td>
+        <td><span class="table-badge badge-gm-milestone">🔥 光明高救隊成立 (111.03)</span></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">112 年</td>
+        <td>594 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">103 人</td>
+        <td style="font-weight:700;">17.34%</td>
+        <td style="font-weight:700; color:var(--color-blue);">73 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">12.29%</td>
+        <td>619 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">1.04 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">113 年</td>
+        <td>595 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">95 人</td>
+        <td style="font-weight:700;">15.97%</td>
+        <td style="font-weight:700; color:var(--color-blue);">65 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">10.92%</td>
+        <td>698 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">1.17 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">114 年</td>
+        <td>608 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">101 人</td>
+        <td style="font-weight:700;">16.61%</td>
+        <td style="font-weight:700; color:var(--color-blue);">70 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">11.51%</td>
+        <td>606 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">1.00 次</td>
+        <td></td>
+      </tr>
+    
+      <tr class="">
+        <td style="font-weight:700; color:var(--text-heading);">115 年</td>
+        <td>387 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">75 人</td>
+        <td style="font-weight:700;">19.38%</td>
+        <td style="font-weight:700; color:var(--color-blue);">56 人</td>
+        <td style="font-weight:700; color:var(--color-blue);">14.47%</td>
+        <td>443 次</td>
+        <td style="font-weight:600; color:var(--color-clay);">1.14 次</td>
+        <td></td>
+      </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Part 2: 各分隊排名與增幅 (專題三) -->
+      <div class="content-card" style="margin-bottom: 26px;">
+        <div class="card-header-badge text-blue">專題三・分隊橫向排行榜</div>
+        <h3 class="card-title">全縣各大消防分隊急救成效總排名（成軍前 vs 成軍後消長對比）</h3>
+        <p class="card-sub">
+          光明分隊以 30.39% 總勝率榮登全縣榜首，成軍後專責期高達 33.97%（成效淨增幅 ▲+15.57% 冠絕全縣）；新工分隊以 22.22% 穩居第二。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>全縣排名</th>
+                <th>分隊名稱</th>
+                <th>總 OHCA 母數</th>
+                <th>救回人數 (ROSC)</th>
+                <th>總急救成功率</th>
+                <th>到院前 R1 成功率</th>
+                <th>成軍前 (108-110)</th>
+                <th>成軍後 (111-115)</th>
+                <th>專責期成效增幅</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+      <tr>
+        <td style="font-weight:700;">#1</td>
+        <td style="font-weight:800; color:var(--color-sage);">光明分隊</td>
+        <td>543 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">165 人</td>
+        <td style="font-weight:700;">30.39%</td>
+        <td style="color:var(--color-blue);">23.57%</td>
+        <td style="color:var(--text-muted);">18.40%</td>
+        <td style="font-weight:700; color:var(--text-heading);">33.97%</td>
+        <td><span class="badge-growth-up">▲ +15.57%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#2</td>
+        <td >新工分隊</td>
+        <td>270 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">60 人</td>
+        <td style="font-weight:700;">22.22%</td>
+        <td style="color:var(--color-blue);">11.48%</td>
+        <td style="color:var(--text-muted);">16.05%</td>
+        <td style="font-weight:700; color:var(--text-heading);">24.87%</td>
+        <td><span class="badge-growth-up">▲ +8.82%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#3</td>
+        <td >新埔分隊</td>
+        <td>269 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">54 人</td>
+        <td style="font-weight:700;">20.07%</td>
+        <td style="color:var(--color-blue);">6.69%</td>
+        <td style="color:var(--text-muted);">22.08%</td>
+        <td style="font-weight:700; color:var(--text-heading);">19.27%</td>
+        <td><span class="badge-growth-down">▼ -2.81%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#4</td>
+        <td >竹東分隊</td>
+        <td>549 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">98 人</td>
+        <td style="font-weight:700;">17.85%</td>
+        <td style="color:var(--color-blue);">12.20%</td>
+        <td style="color:var(--text-muted);">23.29%</td>
+        <td style="font-weight:700; color:var(--text-heading);">15.88%</td>
+        <td><span class="badge-growth-down">▼ -7.41%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#5</td>
+        <td >竹北分隊</td>
+        <td>169 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">30 人</td>
+        <td style="font-weight:700;">17.75%</td>
+        <td style="color:var(--color-blue);">7.69%</td>
+        <td style="color:var(--text-muted);">17.28%</td>
+        <td style="font-weight:700; color:var(--text-heading);">18.18%</td>
+        <td><span class="badge-growth-up">▲ +0.90%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#6</td>
+        <td >山崎分隊</td>
+        <td>248 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">43 人</td>
+        <td style="font-weight:700;">17.34%</td>
+        <td style="color:var(--color-blue);">7.66%</td>
+        <td style="color:var(--text-muted);">14.71%</td>
+        <td style="font-weight:700; color:var(--text-heading);">18.33%</td>
+        <td><span class="badge-growth-up">▲ +3.63%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#7</td>
+        <td >北埔分隊</td>
+        <td>91 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">14 人</td>
+        <td style="font-weight:700;">15.38%</td>
+        <td style="color:var(--color-blue);">8.79%</td>
+        <td style="color:var(--text-muted);">23.33%</td>
+        <td style="font-weight:700; color:var(--text-heading);">11.48%</td>
+        <td><span class="badge-growth-down">▼ -11.86%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#8</td>
+        <td >芎林分隊</td>
+        <td>244 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">30 人</td>
+        <td style="font-weight:700;">12.30%</td>
+        <td style="color:var(--color-blue);">9.43%</td>
+        <td style="color:var(--text-muted);">14.63%</td>
+        <td style="font-weight:700; color:var(--text-heading);">11.11%</td>
+        <td><span class="badge-growth-down">▼ -3.52%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#9</td>
+        <td >關西分隊</td>
+        <td>237 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">29 人</td>
+        <td style="font-weight:700;">12.24%</td>
+        <td style="color:var(--color-blue);">8.44%</td>
+        <td style="color:var(--text-muted);">14.63%</td>
+        <td style="font-weight:700; color:var(--text-heading);">10.97%</td>
+        <td><span class="badge-growth-down">▼ -3.67%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#10</td>
+        <td >橫山分隊</td>
+        <td>119 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">14 人</td>
+        <td style="font-weight:700;">11.76%</td>
+        <td style="color:var(--color-blue);">6.72%</td>
+        <td style="color:var(--text-muted);">13.51%</td>
+        <td style="font-weight:700; color:var(--text-heading);">10.98%</td>
+        <td><span class="badge-growth-down">▼ -2.54%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#11</td>
+        <td >豐田分隊</td>
+        <td>164 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">19 人</td>
+        <td style="font-weight:700;">11.59%</td>
+        <td style="color:var(--color-blue);">1.22%</td>
+        <td style="color:var(--text-muted);">19.05%</td>
+        <td style="font-weight:700; color:var(--text-heading);">9.02%</td>
+        <td><span class="badge-growth-down">▼ -10.03%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#12</td>
+        <td >其他/跨區</td>
+        <td>36 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">4 人</td>
+        <td style="font-weight:700;">11.11%</td>
+        <td style="color:var(--color-blue);">8.33%</td>
+        <td style="color:var(--text-muted);">66.67%</td>
+        <td style="font-weight:700; color:var(--text-heading);">6.06%</td>
+        <td><span class="badge-growth-down">▼ -60.61%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#13</td>
+        <td >峨眉分隊</td>
+        <td>64 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">7 人</td>
+        <td style="font-weight:700;">10.94%</td>
+        <td style="color:var(--color-blue);">4.69%</td>
+        <td style="color:var(--text-muted);">16.67%</td>
+        <td style="font-weight:700; color:var(--text-heading);">8.70%</td>
+        <td><span class="badge-growth-down">▼ -7.97%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#14</td>
+        <td >尖石分隊</td>
+        <td>84 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">9 人</td>
+        <td style="font-weight:700;">10.71%</td>
+        <td style="color:var(--color-blue);">9.52%</td>
+        <td style="color:var(--text-muted);">7.14%</td>
+        <td style="font-weight:700; color:var(--text-heading);">12.50%</td>
+        <td><span class="badge-growth-up">▲ +5.36%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#15</td>
+        <td >二重分隊</td>
+        <td>155 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">16 人</td>
+        <td style="font-weight:700;">10.32%</td>
+        <td style="color:var(--color-blue);">9.03%</td>
+        <td style="color:var(--text-muted);">12.50%</td>
+        <td style="font-weight:700; color:var(--text-heading);">9.35%</td>
+        <td><span class="badge-growth-down">▼ -3.15%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#16</td>
+        <td >湖口分隊</td>
+        <td>389 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">38 人</td>
+        <td style="font-weight:700;">9.77%</td>
+        <td style="color:var(--color-blue);">7.97%</td>
+        <td style="color:var(--text-muted);">16.39%</td>
+        <td style="font-weight:700; color:var(--text-heading);">6.74%</td>
+        <td><span class="badge-growth-down">▼ -9.65%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#17</td>
+        <td >田埔小隊</td>
+        <td>26 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">2 人</td>
+        <td style="font-weight:700;">7.69%</td>
+        <td style="color:var(--color-blue);">7.69%</td>
+        <td style="color:var(--text-muted);">9.09%</td>
+        <td style="font-weight:700; color:var(--text-heading);">6.67%</td>
+        <td><span class="badge-growth-down">▼ -2.42%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#18</td>
+        <td >寶山分隊</td>
+        <td>133 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">8 人</td>
+        <td style="font-weight:700;">6.02%</td>
+        <td style="color:var(--color-blue);">5.26%</td>
+        <td style="color:var(--text-muted);">0.00%</td>
+        <td style="font-weight:700; color:var(--text-heading);">8.89%</td>
+        <td><span class="badge-growth-up">▲ +8.89%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#19</td>
+        <td >新豐分隊</td>
+        <td>204 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">12 人</td>
+        <td style="font-weight:700;">5.88%</td>
+        <td style="color:var(--color-blue);">4.41%</td>
+        <td style="color:var(--text-muted);">2.86%</td>
+        <td style="font-weight:700; color:var(--text-heading);">7.46%</td>
+        <td><span class="badge-growth-up">▲ +4.61%</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#20</td>
+        <td >五峰分隊</td>
+        <td>28 件</td>
+        <td style="font-weight:700; color:var(--color-sage);">0 人</td>
+        <td style="font-weight:700;">0.00%</td>
+        <td style="color:var(--color-blue);">0.00%</td>
+        <td style="color:var(--text-muted);">0.00%</td>
+        <td style="font-weight:700; color:var(--text-heading);">0.00%</td>
+        <td><span class="badge-growth-flat">─ 0.00%</span></td>
+      </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Part 3: 各分隊歷年矩陣走勢 (專題三補充) -->
+      <div class="content-card">
+        <div class="card-header-badge text-clay">各分隊歷年走勢全息矩陣</div>
+        <h3 class="card-title">全縣各大分隊 108 ～ 115 年逐年急救成功率矩陣走勢</h3>
+        <p class="card-sub">
+          透視 85 個月以來各大分隊每年的實質急救救回率與出勤能量演進（數值為成功率 %，括號內為 ROSC救回數 / 該年出勤數）。
+        </p>
+
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>排名</th>
+                <th>分隊名稱</th>
+                <th>108 年</th>
+                <th>109 年</th>
+                <th>110 年</th>
+                <th>111 年 (高救成軍)</th>
+                <th>112 年</th>
+                <th>113 年</th>
+                <th>114 年</th>
+                <th>115 年</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+      <tr>
+        <td style="font-weight:700;">#1</td>
+        <td style="font-weight:700;">光明分隊</td>
+        <td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(2/8)</span></td><td style="font-weight:600; color:var(--color-blue);">19.3% <span style="font-size:11px; color:var(--text-dim);">(11/57)</span></td><td style="font-weight:600; color:var(--color-blue);">16.7% <span style="font-size:11px; color:var(--text-dim);">(10/60)</span></td><td style="font-weight:600; color:var(--color-sage);">38.3% <span style="font-size:11px; color:var(--text-dim);">(36/94)</span></td><td style="font-weight:600; color:var(--color-sage);">32.3% <span style="font-size:11px; color:var(--text-dim);">(32/99)</span></td><td style="font-weight:600; color:var(--color-sage);">28.1% <span style="font-size:11px; color:var(--text-dim);">(25/89)</span></td><td style="font-weight:600; color:var(--color-sage);">35.0% <span style="font-size:11px; color:var(--text-dim);">(28/80)</span></td><td style="font-weight:600; color:var(--color-sage);">37.5% <span style="font-size:11px; color:var(--text-dim);">(21/56)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#2</td>
+        <td style="font-weight:700;">新工分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/10)</span></td><td style="font-weight:600; color:var(--color-blue);">22.5% <span style="font-size:11px; color:var(--text-dim);">(9/40)</span></td><td style="font-weight:600; color:var(--text-body);">12.9% <span style="font-size:11px; color:var(--text-dim);">(4/31)</span></td><td style="font-weight:600; color:var(--color-blue);">24.1% <span style="font-size:11px; color:var(--text-dim);">(7/29)</span></td><td style="font-weight:600; color:var(--color-sage);">29.3% <span style="font-size:11px; color:var(--text-dim);">(12/41)</span></td><td style="font-weight:600; color:var(--color-sage);">26.2% <span style="font-size:11px; color:var(--text-dim);">(11/42)</span></td><td style="font-weight:600; color:var(--color-blue);">20.8% <span style="font-size:11px; color:var(--text-dim);">(10/48)</span></td><td style="font-weight:600; color:var(--color-blue);">24.1% <span style="font-size:11px; color:var(--text-dim);">(7/29)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#3</td>
+        <td style="font-weight:700;">新埔分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/8)</span></td><td style="font-weight:600; color:var(--color-blue);">17.9% <span style="font-size:11px; color:var(--text-dim);">(5/28)</span></td><td style="font-weight:600; color:var(--color-sage);">29.3% <span style="font-size:11px; color:var(--text-dim);">(12/41)</span></td><td style="font-weight:600; color:var(--text-body);">4.3% <span style="font-size:11px; color:var(--text-dim);">(2/46)</span></td><td style="font-weight:600; color:var(--color-blue);">22.9% <span style="font-size:11px; color:var(--text-dim);">(8/35)</span></td><td style="font-weight:600; color:var(--color-blue);">22.4% <span style="font-size:11px; color:var(--text-dim);">(11/49)</span></td><td style="font-weight:600; color:var(--color-sage);">25.6% <span style="font-size:11px; color:var(--text-dim);">(10/39)</span></td><td style="font-weight:600; color:var(--color-sage);">26.1% <span style="font-size:11px; color:var(--text-dim);">(6/23)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#4</td>
+        <td style="font-weight:700;">竹東分隊</td>
+        <td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(2/8)</span></td><td style="font-weight:600; color:var(--color-blue);">23.9% <span style="font-size:11px; color:var(--text-dim);">(17/71)</span></td><td style="font-weight:600; color:var(--color-blue);">22.4% <span style="font-size:11px; color:var(--text-dim);">(15/67)</span></td><td style="font-weight:600; color:var(--text-body);">10.6% <span style="font-size:11px; color:var(--text-dim);">(11/104)</span></td><td style="font-weight:600; color:var(--color-blue);">18.2% <span style="font-size:11px; color:var(--text-dim);">(14/77)</span></td><td style="font-weight:600; color:var(--text-body);">13.9% <span style="font-size:11px; color:var(--text-dim);">(11/79)</span></td><td style="font-weight:600; color:var(--color-blue);">18.4% <span style="font-size:11px; color:var(--text-dim);">(14/76)</span></td><td style="font-weight:600; color:var(--color-blue);">20.9% <span style="font-size:11px; color:var(--text-dim);">(14/67)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#5</td>
+        <td style="font-weight:700;">竹北分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/5)</span></td><td style="font-weight:600; color:var(--text-body);">8.3% <span style="font-size:11px; color:var(--text-dim);">(3/36)</span></td><td style="font-weight:600; color:var(--color-sage);">27.5% <span style="font-size:11px; color:var(--text-dim);">(11/40)</span></td><td style="font-weight:600; color:var(--text-body);">7.4% <span style="font-size:11px; color:var(--text-dim);">(2/27)</span></td><td style="font-weight:600; color:var(--color-blue);">19.0% <span style="font-size:11px; color:var(--text-dim);">(4/21)</span></td><td style="font-weight:600; color:var(--color-sage);">34.8% <span style="font-size:11px; color:var(--text-dim);">(8/23)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/11)</span></td><td style="font-weight:600; color:var(--color-sage);">33.3% <span style="font-size:11px; color:var(--text-dim);">(2/6)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#6</td>
+        <td style="font-weight:700;">山崎分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td><td style="font-weight:600; color:var(--color-blue);">20.0% <span style="font-size:11px; color:var(--text-dim);">(4/20)</span></td><td style="font-weight:600; color:var(--text-body);">14.6% <span style="font-size:11px; color:var(--text-dim);">(6/41)</span></td><td style="font-weight:600; color:var(--text-body);">8.6% <span style="font-size:11px; color:var(--text-dim);">(3/35)</span></td><td style="font-weight:600; color:var(--color-blue);">19.0% <span style="font-size:11px; color:var(--text-dim);">(8/42)</span></td><td style="font-weight:600; color:var(--color-blue);">20.0% <span style="font-size:11px; color:var(--text-dim);">(7/35)</span></td><td style="font-weight:600; color:var(--color-blue);">22.0% <span style="font-size:11px; color:var(--text-dim);">(9/41)</span></td><td style="font-weight:600; color:var(--color-blue);">22.2% <span style="font-size:11px; color:var(--text-dim);">(6/27)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#7</td>
+        <td style="font-weight:700;">北埔分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/2)</span></td><td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(3/12)</span></td><td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(4/16)</span></td><td style="font-weight:600; color:var(--color-blue);">18.2% <span style="font-size:11px; color:var(--text-dim);">(2/11)</span></td><td style="font-weight:600; color:var(--text-body);">13.3% <span style="font-size:11px; color:var(--text-dim);">(2/15)</span></td><td style="font-weight:600; color:var(--text-body);">12.5% <span style="font-size:11px; color:var(--text-dim);">(1/8)</span></td><td style="font-weight:600; color:var(--text-body);">12.5% <span style="font-size:11px; color:var(--text-dim);">(2/16)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/11)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#8</td>
+        <td style="font-weight:700;">芎林分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/12)</span></td><td style="font-weight:600; color:var(--color-blue);">18.4% <span style="font-size:11px; color:var(--text-dim);">(7/38)</span></td><td style="font-weight:600; color:var(--color-blue);">15.6% <span style="font-size:11px; color:var(--text-dim);">(5/32)</span></td><td style="font-weight:600; color:var(--color-blue);">23.3% <span style="font-size:11px; color:var(--text-dim);">(7/30)</span></td><td style="font-weight:600; color:var(--text-body);">5.9% <span style="font-size:11px; color:var(--text-dim);">(2/34)</span></td><td style="font-weight:600; color:var(--text-body);">7.0% <span style="font-size:11px; color:var(--text-dim);">(3/43)</span></td><td style="font-weight:600; color:var(--text-body);">6.2% <span style="font-size:11px; color:var(--text-dim);">(2/32)</span></td><td style="font-weight:600; color:var(--color-blue);">17.4% <span style="font-size:11px; color:var(--text-dim);">(4/23)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#9</td>
+        <td style="font-weight:700;">關西分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">9.1% <span style="font-size:11px; color:var(--text-dim);">(1/11)</span></td><td style="font-weight:600; color:var(--text-body);">14.3% <span style="font-size:11px; color:var(--text-dim);">(6/42)</span></td><td style="font-weight:600; color:var(--color-blue);">17.2% <span style="font-size:11px; color:var(--text-dim);">(5/29)</span></td><td style="font-weight:600; color:var(--text-body);">2.9% <span style="font-size:11px; color:var(--text-dim);">(1/34)</span></td><td style="font-weight:600; color:var(--text-body);">8.1% <span style="font-size:11px; color:var(--text-dim);">(3/37)</span></td><td style="font-weight:600; color:var(--text-body);">14.8% <span style="font-size:11px; color:var(--text-dim);">(4/27)</span></td><td style="font-weight:600; color:var(--color-blue);">16.2% <span style="font-size:11px; color:var(--text-dim);">(6/37)</span></td><td style="font-weight:600; color:var(--color-blue);">15.0% <span style="font-size:11px; color:var(--text-dim);">(3/20)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#10</td>
+        <td style="font-weight:700;">橫山分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">14.3% <span style="font-size:11px; color:var(--text-dim);">(1/7)</span></td><td style="font-weight:600; color:var(--color-blue);">20.0% <span style="font-size:11px; color:var(--text-dim);">(4/20)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/10)</span></td><td style="font-weight:600; color:var(--color-blue);">15.8% <span style="font-size:11px; color:var(--text-dim);">(3/19)</span></td><td style="font-weight:600; color:var(--text-body);">4.2% <span style="font-size:11px; color:var(--text-dim);">(1/24)</span></td><td style="font-weight:600; color:var(--text-body);">11.1% <span style="font-size:11px; color:var(--text-dim);">(2/18)</span></td><td style="font-weight:600; color:var(--color-blue);">21.4% <span style="font-size:11px; color:var(--text-dim);">(3/14)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#11</td>
+        <td style="font-weight:700;">豐田分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/2)</span></td><td style="font-weight:600; color:var(--text-body);">12.5% <span style="font-size:11px; color:var(--text-dim);">(2/16)</span></td><td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(6/24)</span></td><td style="font-weight:600; color:var(--text-body);">7.7% <span style="font-size:11px; color:var(--text-dim);">(2/26)</span></td><td style="font-weight:600; color:var(--text-body);">10.5% <span style="font-size:11px; color:var(--text-dim);">(2/19)</span></td><td style="font-weight:600; color:var(--text-body);">4.0% <span style="font-size:11px; color:var(--text-dim);">(1/25)</span></td><td style="font-weight:600; color:var(--text-body);">13.2% <span style="font-size:11px; color:var(--text-dim);">(5/38)</span></td><td style="font-weight:600; color:var(--text-body);">7.1% <span style="font-size:11px; color:var(--text-dim);">(1/14)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#12</td>
+        <td style="font-weight:700;">其他/跨區</td>
+        <td style="font-weight:600; color:var(--color-sage);">100.0% <span style="font-size:11px; color:var(--text-dim);">(1/1)</span></td><td style="font-weight:600; color:var(--color-sage);">50.0% <span style="font-size:11px; color:var(--text-dim);">(1/2)</span></td><td style="color:var(--text-dim); text-align:center;">─</td><td style="color:var(--text-dim); text-align:center;">─</td><td style="color:var(--text-dim); text-align:center;">─</td><td style="font-weight:600; color:var(--text-body);">8.3% <span style="font-size:11px; color:var(--text-dim);">(1/12)</span></td><td style="font-weight:600; color:var(--text-body);">8.3% <span style="font-size:11px; color:var(--text-dim);">(1/12)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/9)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#13</td>
+        <td style="font-weight:700;">峨眉分隊</td>
+        <td style="color:var(--text-dim); text-align:center;">─</td><td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(3/12)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/6)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/13)</span></td><td style="font-weight:600; color:var(--color-sage);">25.0% <span style="font-size:11px; color:var(--text-dim);">(2/8)</span></td><td style="font-weight:600; color:var(--text-body);">11.1% <span style="font-size:11px; color:var(--text-dim);">(1/9)</span></td><td style="font-weight:600; color:var(--text-body);">11.1% <span style="font-size:11px; color:var(--text-dim);">(1/9)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#14</td>
+        <td style="font-weight:700;">尖石分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/1)</span></td><td style="font-weight:600; color:var(--text-body);">10.0% <span style="font-size:11px; color:var(--text-dim);">(1/10)</span></td><td style="font-weight:600; color:var(--text-body);">5.9% <span style="font-size:11px; color:var(--text-dim);">(1/17)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/17)</span></td><td style="font-weight:600; color:var(--color-sage);">28.6% <span style="font-size:11px; color:var(--text-dim);">(2/7)</span></td><td style="font-weight:600; color:var(--color-blue);">18.2% <span style="font-size:11px; color:var(--text-dim);">(2/11)</span></td><td style="font-weight:600; color:var(--text-body);">12.5% <span style="font-size:11px; color:var(--text-dim);">(2/16)</span></td><td style="font-weight:600; color:var(--color-blue);">20.0% <span style="font-size:11px; color:var(--text-dim);">(1/5)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#15</td>
+        <td style="font-weight:700;">二重分隊</td>
+        <td style="font-weight:600; color:var(--color-blue);">16.7% <span style="font-size:11px; color:var(--text-dim);">(1/6)</span></td><td style="font-weight:600; color:var(--text-body);">12.0% <span style="font-size:11px; color:var(--text-dim);">(3/25)</span></td><td style="font-weight:600; color:var(--text-body);">11.8% <span style="font-size:11px; color:var(--text-dim);">(2/17)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/27)</span></td><td style="font-weight:600; color:var(--text-body);">8.7% <span style="font-size:11px; color:var(--text-dim);">(2/23)</span></td><td style="font-weight:600; color:var(--text-body);">14.3% <span style="font-size:11px; color:var(--text-dim);">(3/21)</span></td><td style="font-weight:600; color:var(--text-body);">8.7% <span style="font-size:11px; color:var(--text-dim);">(2/23)</span></td><td style="font-weight:600; color:var(--color-blue);">23.1% <span style="font-size:11px; color:var(--text-dim);">(3/13)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#16</td>
+        <td style="font-weight:700;">湖口分隊</td>
+        <td style="font-weight:600; color:var(--color-blue);">15.4% <span style="font-size:11px; color:var(--text-dim);">(2/13)</span></td><td style="font-weight:600; color:var(--color-blue);">20.6% <span style="font-size:11px; color:var(--text-dim);">(13/63)</span></td><td style="font-weight:600; color:var(--text-body);">10.9% <span style="font-size:11px; color:var(--text-dim);">(5/46)</span></td><td style="font-weight:600; color:var(--text-body);">11.1% <span style="font-size:11px; color:var(--text-dim);">(7/63)</span></td><td style="font-weight:600; color:var(--text-body);">6.5% <span style="font-size:11px; color:var(--text-dim);">(3/46)</span></td><td style="font-weight:600; color:var(--text-body);">7.3% <span style="font-size:11px; color:var(--text-dim);">(4/55)</span></td><td style="font-weight:600; color:var(--text-body);">2.8% <span style="font-size:11px; color:var(--text-dim);">(2/71)</span></td><td style="font-weight:600; color:var(--text-body);">6.2% <span style="font-size:11px; color:var(--text-dim);">(2/32)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#17</td>
+        <td style="font-weight:700;">田埔小隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/1)</span></td><td style="font-weight:600; color:var(--color-sage);">33.3% <span style="font-size:11px; color:var(--text-dim);">(1/3)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/4)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/5)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/3)</span></td><td style="font-weight:600; color:var(--color-sage);">33.3% <span style="font-size:11px; color:var(--text-dim);">(1/3)</span></td><td style="color:var(--text-dim); text-align:center;">─</td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#18</td>
+        <td style="font-weight:700;">寶山分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/3)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/18)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/22)</span></td><td style="font-weight:600; color:var(--text-body);">3.7% <span style="font-size:11px; color:var(--text-dim);">(1/27)</span></td><td style="font-weight:600; color:var(--color-blue);">15.0% <span style="font-size:11px; color:var(--text-dim);">(3/20)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/18)</span></td><td style="font-weight:600; color:var(--text-body);">7.1% <span style="font-size:11px; color:var(--text-dim);">(1/14)</span></td><td style="font-weight:600; color:var(--color-sage);">27.3% <span style="font-size:11px; color:var(--text-dim);">(3/11)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#19</td>
+        <td style="font-weight:700;">新豐分隊</td>
+        <td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/8)</span></td><td style="font-weight:600; color:var(--text-body);">6.5% <span style="font-size:11px; color:var(--text-dim);">(2/31)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/31)</span></td><td style="font-weight:600; color:var(--text-body);">9.4% <span style="font-size:11px; color:var(--text-dim);">(3/32)</span></td><td style="font-weight:600; color:var(--text-body);">9.4% <span style="font-size:11px; color:var(--text-dim);">(3/32)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/23)</span></td><td style="font-weight:600; color:var(--text-body);">8.0% <span style="font-size:11px; color:var(--text-dim);">(2/25)</span></td><td style="font-weight:600; color:var(--text-body);">9.1% <span style="font-size:11px; color:var(--text-dim);">(2/22)</span></td>
+      </tr>
+    
+      <tr>
+        <td style="font-weight:700;">#20</td>
+        <td style="font-weight:700;">五峰分隊</td>
+        <td style="color:var(--text-dim); text-align:center;">─</td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/4)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/2)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/7)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/2)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/2)</span></td><td style="font-weight:600; color:var(--text-body);">0.0% <span style="font-size:11px; color:var(--text-dim);">(0/4)</span></td>
+      </tr>
+    
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
