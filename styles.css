@@ -1251,25 +1251,385 @@ body {
 .text-cyan { color: var(--color-blue) !important; }
 .text-coral { color: var(--color-clay) !important; }
 
-/* Responsive adjustments */
+/* =========================================================
+   極致全設備響應式設計 (Responsive Web Design for Mobile, Tablet, Desktop)
+   ========================================================= */
+
+/* 1. 防破版通用安全屬性 */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2. 平板端適配 (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 18px 20px 14px;
+    gap: 16px;
+  }
+  .brand-section {
+    min-width: 260px;
+  }
+  .brand-title {
+    font-size: 1.45rem;
+  }
+  .header-stat-tickers {
+    gap: 8px;
+  }
+  .ticker-item {
+    padding: 8px 12px;
+  }
+  .nav-tabs-wrapper {
+    padding: 0 20px;
+  }
+  .main-content {
+    padding: 24px 20px;
+  }
+  .grid-2col {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .firefighter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+}
+
+/* 3. 手機與窄平板端適配 (max-width: 768px) */
 @media (max-width: 768px) {
-  .header-container { padding: 18px; }
-  .brand-title { font-size: 1.35rem; }
-  .grid-2col { grid-template-columns: 1fr; }
-  .firefighter-grid { grid-template-columns: 1fr; }
-  .modal-dialog { width: 95%; max-height: 95vh; }
+  /* Header 佈局重組 */
+  .app-header {
+    position: sticky;
+    top: 0;
+  }
+  .header-container {
+    padding: 12px 14px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .brand-section {
+    min-width: 0;
+    width: 100%;
+  }
+  .brand-badge {
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    margin-bottom: 5px;
+  }
+  .brand-title {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+  .brand-subtitle {
+    font-size: 0.78rem;
+    line-height: 1.45;
+    margin-top: 3px;
+  }
+
+  /* Tickers 2x2 雙欄整齊佈局 */
+  .header-stat-tickers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    width: 100%;
+  }
+  .ticker-item {
+    padding: 7px 10px;
+    border-radius: 8px;
+  }
+  .ticker-label {
+    font-size: 0.7rem;
+  }
+  .ticker-val {
+    font-size: 0.92rem;
+    margin-top: 2px;
+  }
+
+  /* 導覽 Tabs 平滑橫向滑動 */
+  .nav-tabs-wrapper {
+    padding: 0 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding-bottom: 4px;
+    width: max-content;
+  }
+  .nav-tab {
+    padding: 8px 12px;
+    font-size: 0.84rem;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .tab-badge {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+  }
+
+  /* 主內容容器 */
+  .main-content {
+    padding: 14px 10px 32px;
+  }
+  .section-header {
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .section-desc {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  /* 搜尋列與篩選膠囊 */
+  .controls-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .search-box input {
+    padding: 8px 12px 8px 34px;
+    font-size: 0.85rem;
+  }
+  .filter-pills {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding-bottom: 4px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+  .filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-pill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* 警消個人卡片網格 */
+  .firefighter-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .firefighter-card {
+    padding: 14px 12px;
+    border-radius: 12px;
+  }
+  .card-header-top {
+    gap: 10px;
+  }
+  .ff-avatar {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  .ff-name {
+    font-size: 1.12rem;
+  }
+  .ff-kpi-summary {
+    padding: 8px 6px;
+    gap: 4px;
+    margin: 10px 0;
+  }
+  .ff-kpi-val {
+    font-size: 0.9rem;
+  }
+  .ff-kpi-label {
+    font-size: 0.68rem;
+  }
+
+  /* 表格橫向滑動與可視性增強 */
+  .table-container {
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+  }
+  .table-container::after {
+    content: '👈 左右滑動可查看更多欄位數據 👉';
+    display: block;
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    padding: 7px 0;
+    background: rgba(0, 0, 0, 0.02);
+    border-top: 1px dashed var(--border-subtle);
+  }
+  table {
+    font-size: 0.78rem;
+  }
+  th, td {
+    padding: 7px 8px;
+  }
+
+  /* KPI 指標卡片 (總榜/常客) */
+  .kpi-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .kpi-card {
+    padding: 10px 8px;
+  }
+  .kpi-card-value {
+    font-size: 1.2rem;
+  }
+  .kpi-card-label {
+    font-size: 0.72rem;
+  }
+
+  /* 雙欄內容卡片 (常客/搭檔) */
+  .grid-2col {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .content-card {
+    padding: 14px 12px;
+    border-radius: 12px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+
+  /* 水墨名將專頁 Modal 彈窗 (最核心視覺) */
+  .modal-dialog {
+    width: 95%;
+    max-width: 95%;
+    max-height: 92vh;
+    border-radius: 16px;
+    margin: 4vh auto;
+  }
+  .modal-header {
+    padding: 12px 14px;
+  }
+  .profile-avatar {
+    width: 42px;
+    height: 42px;
+    font-size: 1.15rem;
+  }
+  .profile-modal-name {
+    font-size: 1.3rem;
+  }
+  .modal-close-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .modal-body {
+    padding: 12px 12px 20px;
+  }
+  
+  /* 水墨名將展示區 */
   .modal-hero-showcase {
     flex-direction: column;
     align-items: center;
-    gap: 18px;
-    padding: 18px;
+    gap: 14px;
+    padding: 16px 12px;
+    text-align: center;
   }
   .hero-image-frame {
-    width: 175px;
-    height: 195px;
+    width: 145px;
+    height: 165px;
+    border-radius: 14px;
   }
   .hero-intro-text {
     width: 100%;
-    padding: 16px 18px;
+    padding: 12px 10px;
+    text-align: left;
+  }
+  .hero-history-name {
+    font-size: 1.25rem;
+  }
+  .hero-epithet {
+    font-size: 0.8rem;
+  }
+  .hero-eval-summary {
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+  .hero-bg-ink-img {
+    object-position: center center;
+    opacity: 0.14;
+  }
+
+  /* Modal 數值與技能網格 */
+  .modal-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  .modal-kpi-card {
+    padding: 8px;
+  }
+  .modal-kpi-val {
+    font-size: 1.05rem;
+  }
+  .modal-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .modal-review-box {
+    padding: 12px 10px;
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+}
+
+/* 4. 極致窄螢幕手機微調 (max-width: 420px，如 iPhone SE, 小型 Android) */
+@media (max-width: 420px) {
+  .brand-title {
+    font-size: 1.15rem;
+  }
+  .header-stat-tickers {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .ticker-item {
+    padding: 6px 8px;
+  }
+  .ticker-label {
+    font-size: 0.66rem;
+  }
+  .ticker-val {
+    font-size: 0.85rem;
+  }
+  .kpi-cards-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .kpi-card {
+    padding: 8px 6px;
+  }
+  .kpi-card-value {
+    font-size: 1.08rem;
+  }
+  .hero-image-frame {
+    width: 130px;
+    height: 150px;
+  }
+  .profile-modal-name {
+    font-size: 1.18rem;
   }
 }
