@@ -73,41 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentFfFilter = 'all';
   let currentFfSearch = '';
 
-  function renderGmKpiCards() {
-    const activeData = getActiveDataset();
-    const s = activeData.summary || {};
-    const macro = activeData.macro_kpis || {};
-
-    const el1Val = document.getElementById('gm-kpi-1-val');
-    const el1Sub = document.getElementById('gm-kpi-1-sub');
-    const el2Val = document.getElementById('gm-kpi-2-val');
-    const el2Sub = document.getElementById('gm-kpi-2-sub');
-    const el3Val = document.getElementById('gm-kpi-3-val');
-    const el3Sub = document.getElementById('gm-kpi-3-sub');
-    const el4Val = document.getElementById('gm-kpi-4-val');
-    const el4Sub = document.getElementById('gm-kpi-4-sub');
-
-    if (el1Val) el1Val.textContent = `${(s.gm_total_ohca || 543).toLocaleString()} 件`;
-    if (el1Sub) {
-      const pct = (s.total_ohca && s.gm_total_ohca) ? ((s.gm_total_ohca / s.total_ohca) * 100).toFixed(1) : '13.5';
-      el1Sub.textContent = `佔全縣總量 ${pct}%（一般救護 26,843件主力）`;
-    }
-
-    if (el2Val) el2Val.textContent = `${(s.gm_total_rosc || 165).toLocaleString()} 人`;
-    if (el2Sub) el2Sub.textContent = `光明急救成功率 ${s.gm_rosc_rate || 30.39}%（全縣分隊之冠）`;
-
-    if (el3Val) el3Val.textContent = `${(s.gm_total_r1 || 128).toLocaleString()} 人`;
-    if (el3Sub) el3Sub.textContent = `到院前 R1 率 ${s.gm_r1_rosc_rate || 23.57}%（全縣第 1）`;
-
-    if (el4Val) el4Val.textContent = `${s.gm_post_rate || 33.91}%`;
-    if (el4Sub) {
-      const sign = (macro.gm_growth >= 0) ? '+' : '';
-      el4Sub.textContent = `專責期勝率（淨增幅 ▲ ${sign}${macro.gm_growth || 13.77}%）`;
-    }
-  }
-
   function renderFirefighters() {
-    renderGmKpiCards();
     if (!ffGrid) return;
     ffGrid.innerHTML = '';
     const activeData = getActiveDataset();
@@ -141,12 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const roleTagClass = ff.is_tp ? 'tag-tp' : 'tag-emt2';
       const hasImage = !!ff.hero_image;
       const thumbHtml = hasImage 
-        ? `<div class="ff-thumb-seal-wrap"><img src="${ff.hero_image}" alt="${ff.hero_name}" class="ff-thumb-img" /><span class="ff-thumb-seal">${ff.hero_name}</span></div>`
-        : `<div class="ff-thumb-seal-wrap seal-only"><span class="ff-thumb-seal">${ff.hero_name}</span></div>`;
+        ? `<img src="${ff.hero_image}" alt="${ff.hero_name}" class="ff-thumb-img" />`
+        : '';
 
       card.innerHTML = `
-        <div class="ff-card-header">
-          <div>
+        <div class="card-top-row">
+          <div class="ff-name-title">
             <div class="ff-name">${ff.name}</div>
             <span class="ff-role-tag ${roleTagClass}">${ff.role}</span>
           </div>
