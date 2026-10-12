@@ -1,5 +1,6 @@
 /**
  * 新竹縣緊急救護暨高級救護技術員 (EMT-P) 深度成效戰情儀表板 - Application Logic
+ * 支援三種 OHCA 案件類型全域切換：全部 OHCA、非創傷 OHCA (內科/心因)、創傷 OHCA (外傷致死性)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,13 +10,39 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
+  // ================= 0. Global State Management =================
+  let currentOhcaMode = 'all'; // 'all', 'non_trauma', 'trauma'
+
+  function getActiveDataset() {
+    if (data.modes && data.modes[currentOhcaMode]) {
+      return data.modes[currentOhcaMode];
+    }
+    return data;
+  }
+
   // ================= 1. Header Tickers =================
-  const summary = data.summary || {};
-  document.getElementById('ticker-total-ohca').textContent = `${(summary.total_ohca || 4037).toLocaleString()} 件`;
-  document.getElementById('ticker-total-rosc').textContent = `${(summary.total_rosc || 857).toLocaleString()} 人 (${((summary.total_rosc || 857)/(summary.total_ohca || 4037)*100).toFixed(1)}%)`;
-  document.getElementById('ticker-gm-ems').textContent = `${(summary.gm_total_ems || 26843).toLocaleString()} 件`;
-  document.getElementById('ticker-gm-rate').textContent = `${summary.gm_rosc_rate || 30.39}% (R1 ${summary.gm_r1_rosc_rate || 23.57}%)`;
-  document.getElementById('count-firefighters').textContent = `${(data.career_firefighters || []).length}位`;
+  function renderHeaderTickers() {
+    const activeData = getActiveDataset();
+    const summary = activeData.summary || {};
+    const totalOhca = summary.total_ohca || 4037;
+    const totalRosc = summary.total_rosc || 652;
+    const roscRate = summary.rosc_rate || (totalRosc / totalOhca * 100).toFixed(1);
+    const gmEms = summary.gm_total_ems || 26843;
+    const gmRate = summary.gm_rosc_rate || 30.39;
+    const gmR1 = summary.gm_r1_rosc_rate || 23.57;
+
+    const elTotalOhca = document.getElementById('ticker-total-ohca');
+    const elTotalRosc = document.getElementById('ticker-total-rosc');
+    const elGmEms = document.getElementById('ticker-gm-ems');
+    const elGmRate = document.getElementById('ticker-gm-rate');
+    const elFfCount = document.getElementById('count-firefighters');
+
+    if (elTotalOhca) elTotalOhca.textContent = `${totalOhca.toLocaleString()} 件`;
+    if (elTotalRosc) elTotalRosc.textContent = `${totalRosc.toLocaleString()} 人 (${roscRate}%)`;
+    if (elGmEms) elGmEms.textContent = `${gmEms.toLocaleString()} 件`;
+    if (elGmRate) elGmRate.textContent = `${gmRate}% (R1 ${gmR1}%)`;
+    if (elFfCount) elFfCount.textContent = `${(activeData.career_firefighters || []).length}位專職`;
+  }
 
   // ================= 2. Nav Tabs Switching =================
   const tabs = document.querySelectorAll('.nav-tab');
@@ -46,9 +73,45 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentFfFilter = 'all';
   let currentFfSearch = '';
 
+  function renderGmKpiCards() {
+    const activeData = getActiveDataset();
+    const s = activeData.summary || {};
+    const macro = activeData.macro_kpis || {};
+
+    const el1Val = document.getElementById('gm-kpi-1-val');
+    const el1Sub = document.getElementById('gm-kpi-1-sub');
+    const el2Val = document.getElementById('gm-kpi-2-val');
+    const el2Sub = document.getElementById('gm-kpi-2-sub');
+    const el3Val = document.getElementById('gm-kpi-3-val');
+    const el3Sub = document.getElementById('gm-kpi-3-sub');
+    const el4Val = document.getElementById('gm-kpi-4-val');
+    const el4Sub = document.getElementById('gm-kpi-4-sub');
+
+    if (el1Val) el1Val.textContent = `${(s.gm_total_ohca || 543).toLocaleString()} 件`;
+    if (el1Sub) {
+      const pct = (s.total_ohca && s.gm_total_ohca) ? ((s.gm_total_ohca / s.total_ohca) * 100).toFixed(1) : '13.5';
+      el1Sub.textContent = `佔全縣總量 ${pct}%（一般救護 26,843件主力）`;
+    }
+
+    if (el2Val) el2Val.textContent = `${(s.gm_total_rosc || 165).toLocaleString()} 人`;
+    if (el2Sub) el2Sub.textContent = `光明急救成功率 ${s.gm_rosc_rate || 30.39}%（全縣分隊之冠）`;
+
+    if (el3Val) el3Val.textContent = `${(s.gm_total_r1 || 128).toLocaleString()} 人`;
+    if (el3Sub) el3Sub.textContent = `到院前 R1 率 ${s.gm_r1_rosc_rate || 23.57}%（全縣第 1）`;
+
+    if (el4Val) el4Val.textContent = `${s.gm_post_rate || 33.91}%`;
+    if (el4Sub) {
+      const sign = (macro.gm_growth >= 0) ? '+' : '';
+      el4Sub.textContent = `專責期勝率（淨增幅 ▲ ${sign}${macro.gm_growth || 13.77}%）`;
+    }
+  }
+
   function renderFirefighters() {
+    renderGmKpiCards();
+    if (!ffGrid) return;
     ffGrid.innerHTML = '';
-    const list = data.career_firefighters || [];
+    const activeData = getActiveDataset();
+    const list = activeData.career_firefighters || [];
 
     const filtered = list.filter(ff => {
       // Pill filter
@@ -78,12 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const roleTagClass = ff.is_tp ? 'tag-tp' : 'tag-emt2';
       const hasImage = !!ff.hero_image;
       const thumbHtml = hasImage 
-        ? `<img src="${ff.hero_image}" alt="${ff.hero_name}" class="ff-thumb-img" />`
-        : '';
+        ? `<div class="ff-thumb-seal-wrap"><img src="${ff.hero_image}" alt="${ff.hero_name}" class="ff-thumb-img" /><span class="ff-thumb-seal">${ff.hero_name}</span></div>`
+        : `<div class="ff-thumb-seal-wrap seal-only"><span class="ff-thumb-seal">${ff.hero_name}</span></div>`;
 
       card.innerHTML = `
-        <div class="card-top-row">
-          <div class="ff-name-title">
+        <div class="ff-card-header">
+          <div>
             <div class="ff-name">${ff.name}</div>
             <span class="ff-role-tag ${roleTagClass}">${ff.role}</span>
           </div>
@@ -142,13 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Search Input event
-  ffSearch.addEventListener('input', (e) => {
-    currentFfSearch = e.target.value.trim();
-    renderFirefighters();
-  });
+  if (ffSearch) {
+    ffSearch.addEventListener('input', (e) => {
+      currentFfSearch = e.target.value.trim();
+      renderFirefighters();
+    });
+  }
 
   // Modal open function
   function openFirefighterModal(ff) {
+    const activeData = getActiveDataset();
     const femaleNames = new Set(['黃玉喬', '張馨予', '紀琍瑀', '紀俐瑀', '黃美樺', '蔡億鼎']);
     const avatarEl = document.getElementById('modal-avatar');
     if (avatarEl) {
@@ -159,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modal-role-pill').textContent = ff.role;
     document.getElementById('modal-role-pill').className = `profile-badge-pill ${ff.is_tp ? 'tag-tp' : 'tag-emt2'}`;
     document.getElementById('modal-title-badge').textContent = ff.badge || '光明主力';
-    document.getElementById('modal-group-sub').textContent = `光明分隊專職警消・一般救護出勤 ${ff.general_ems_calls.toLocaleString()} 件（分隊佔比 ${ff.general_ems_pct}%）`;
+    document.getElementById('modal-group-sub').textContent = `光明分隊專職警消・【${activeData.label}】・一般救護 ${ff.general_ems_calls.toLocaleString()} 件（佔比 ${ff.general_ems_pct}%）`;
 
     // Hero Showcase Banner
     document.getElementById('modal-hero-name').textContent = ff.hero_name;
@@ -249,19 +315,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeModal() {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
-  modalClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  }
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
   });
-
-  renderFirefighters();
 
   // ================= 4. TAB 2: 全縣 37 位 EMT-P 總榜 =================
   const lbTableBody = document.getElementById('leaderboard-tbody');
@@ -275,63 +343,62 @@ document.addEventListener('DOMContentLoaded', () => {
   let lbSortAsc = false;
 
   function getActiveLbList() {
-    return (currentLbGroup === 'post_gm') ? (data.ranked_post_gm || []) : (data.master_37_leaderboard || []);
+    const activeData = getActiveDataset();
+    return (currentLbGroup === 'post_gm') 
+      ? (activeData.ranked_post_gm || []) 
+      : (activeData.master_37_leaderboard || []);
   }
 
   function updateLbKpiCards() {
     const kpiContainer = document.querySelector('#tab-leaderboard .kpi-cards-grid');
     if (!kpiContainer) return;
 
-    if (currentLbGroup === 'post_gm') {
-      kpiContainer.innerHTML = `
-        <div class="kpi-card highlight-emerald">
-          <div class="kpi-title">同起跑線總冠位 (全縣 #1)</div>
-          <div class="kpi-number">45 人</div>
-          <div class="kpi-sub">蔣為理 (光明高救隊)・119 件 (37.82%)</div>
-        </div>
-        <div class="kpi-card highlight-amber">
-          <div class="kpi-title">資深專責期冠位 (全縣 #2)</div>
-          <div class="kpi-number">39 人</div>
-          <div class="kpi-sub">許嘉雄 (光明高救隊)・96 件 (40.62%)</div>
-        </div>
-        <div class="kpi-card highlight-blue">
-          <div class="kpi-title">專責期救活第 3 位 (全縣 #3)</div>
-          <div class="kpi-number">39 人</div>
-          <div class="kpi-sub">許育誠 (光明高救隊)・126 件 (30.95%)</div>
-        </div>
-        <div class="kpi-card highlight-clay">
-          <div class="kpi-title">同起跑線勝率天花板</div>
-          <div class="kpi-number">45.07%</div>
-          <div class="kpi-sub">呂育陞 (光明高救隊)・71 件 / 32 ROSC</div>
-        </div>
-      `;
-    } else {
-      kpiContainer.innerHTML = `
-        <div class="kpi-card highlight-emerald">
-          <div class="kpi-title">全縣救活總冠位 (全縣 #1)</div>
-          <div class="kpi-number">45 人</div>
-          <div class="kpi-sub">蔣為理 (同學組 / 光明)・119 件 (37.82%)</div>
-        </div>
-        <div class="kpi-card highlight-amber">
-          <div class="kpi-title">資深救活冠位 (全縣 #2)</div>
-          <div class="kpi-number">44 人</div>
-          <div class="kpi-sub">許嘉雄 (110.01 / 光明)・117 件 (37.61%)</div>
-        </div>
-        <div class="kpi-card highlight-blue">
-          <div class="kpi-title">救護總量攻堅王 (全縣 #4)</div>
-          <div class="kpi-number">41 人</div>
-          <div class="kpi-sub">劉名洲 (資深 / 竹東)・182 件 (22.53%)</div>
-        </div>
-        <div class="kpi-card highlight-clay">
-          <div class="kpi-title">全縣勝率天花板</div>
-          <div class="kpi-number">45.07%</div>
-          <div class="kpi-sub">呂育陞 (同學組 / 光明)・71 件 / 32 ROSC</div>
-        </div>
-      `;
-    }
+    const list = getActiveLbList();
+    if (!list || list.length === 0) return;
+
+    // Top 1 rosc
+    const top1 = list[0] || { name: '蔣為理', rosc_tp: 45, ohca_tp: 119, rate_tp: 37.82, station: '光明' };
+    const top2 = list[1] || { name: '許嘉雄', rosc_tp: 44, ohca_tp: 117, rate_tp: 37.61, station: '光明' };
+
+    // Most cases
+    const mostCases = [...list].sort((a, b) => b.ohca_tp - a.ohca_tp)[0] || top1;
+
+    // Highest rate with at least 15 cases (or 5 cases in trauma)
+    const minCases = (currentOhcaMode === 'trauma') ? 5 : 15;
+    const qualified = list.filter(r => r.ohca_tp >= minCases);
+    const topRate = (qualified.length > 0)
+      ? qualified.sort((a, b) => b.rate_tp - a.rate_tp)[0]
+      : [...list].sort((a, b) => b.rate_tp - a.rate_tp)[0];
+
+    const isPost = (currentLbGroup === 'post_gm');
+    const titlePrefix = isPost ? '同起跑線' : '全縣';
+
+    kpiContainer.innerHTML = `
+      <div class="kpi-card highlight-emerald">
+        <div class="kpi-title">${titlePrefix}救活總冠位 (#1)</div>
+        <div class="kpi-number">${top1.rosc_tp} 人</div>
+        <div class="kpi-sub">${top1.name} (${top1.station})・${top1.ohca_tp} 件 (${top1.rate_tp.toFixed(1)}%)</div>
+      </div>
+      <div class="kpi-card highlight-amber">
+        <div class="kpi-title">${titlePrefix}救活第 2 位 (#2)</div>
+        <div class="kpi-number">${top2.rosc_tp} 人</div>
+        <div class="kpi-sub">${top2.name} (${top2.station})・${top2.ohca_tp} 件 (${top2.rate_tp.toFixed(1)}%)</div>
+      </div>
+      <div class="kpi-card highlight-blue">
+        <div class="kpi-title">出勤總量攻堅王</div>
+        <div class="kpi-number">${mostCases.ohca_tp} 件</div>
+        <div class="kpi-sub">${mostCases.name} (${mostCases.station})・救活 ${mostCases.rosc_tp} 人 (${mostCases.rate_tp.toFixed(1)}%)</div>
+      </div>
+      <div class="kpi-card highlight-clay">
+        <div class="kpi-title">${titlePrefix}勝率天花板</div>
+        <div class="kpi-number">${topRate.rate_tp.toFixed(2)}%</div>
+        <div class="kpi-sub">${topRate.name} (${topRate.station})・${topRate.ohca_tp} 件 / ${topRate.rosc_tp} ROSC</div>
+      </div>
+    `;
   }
 
   function renderLeaderboard() {
+    if (!lbTableBody) return;
     lbTableBody.innerHTML = '';
     const activeLb = getActiveLbList();
     updateLbKpiCards();
@@ -359,7 +426,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let valB = b[lbSortField];
 
       if (lbSortField === 'rank') {
-        const activeLb = getActiveLbList();
         valA = activeLb.indexOf(a) + 1;
         valB = activeLb.indexOf(b) + 1;
       } else if (lbSortField === 'total') {
@@ -383,7 +449,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     list.forEach((r) => {
-      const activeLb = getActiveLbList();
       const globalRank = activeLb.findIndex(item => item.name === r.name) + 1;
       const tr = document.createElement('tr');
 
@@ -408,15 +473,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  lbSearch.addEventListener('input', (e) => {
-    currentLbSearch = e.target.value.trim();
-    renderLeaderboard();
-  });
+  if (lbSearch) {
+    lbSearch.addEventListener('input', (e) => {
+      currentLbSearch = e.target.value.trim();
+      renderLeaderboard();
+    });
+  }
 
-  lbFilter.addEventListener('change', (e) => {
-    currentLbGroup = e.target.value;
-    renderLeaderboard();
-  });
+  if (lbFilter) {
+    lbFilter.addEventListener('change', (e) => {
+      currentLbGroup = e.target.value;
+      renderLeaderboard();
+    });
+  }
 
   lbHeaders.forEach(th => {
     th.addEventListener('click', () => {
@@ -431,88 +500,294 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  renderLeaderboard();
-
   // ================= 5. TAB 3: 救護常客大數據 =================
-  const pyramidContainer = document.getElementById('pyramid-list');
-  const fc7y = data.frequent_callers || {};
-  const dist = fc7y.distribution || {};
+  function renderFrequentCallers() {
+    const pyramidContainer = document.getElementById('pyramid-list');
+    if (!pyramidContainer) return;
+    const fc7y = data.frequent_callers || {};
+    const dist = fc7y.distribution || {};
 
-  pyramidContainer.innerHTML = '';
-  for (const [tier, cnt] of Object.entries(dist)) {
-    const row = document.createElement('div');
-    row.className = 'pyramid-row';
-    row.innerHTML = `
-      <span class="pyramid-label">${tier}</span>
-      <span class="pyramid-val">${cnt.toLocaleString()} 人</span>
-    `;
-    pyramidContainer.appendChild(row);
+    pyramidContainer.innerHTML = '';
+    for (const [tier, cnt] of Object.entries(dist)) {
+      const row = document.createElement('div');
+      row.className = 'pyramid-row';
+      row.innerHTML = `
+        <span class="pyramid-label">${tier}</span>
+        <span class="pyramid-val">${cnt.toLocaleString()} 人</span>
+      `;
+      pyramidContainer.appendChild(row);
+    }
+
+    // 11501 Month Slice
+    const fcm1 = data.frequent_callers_m1 || {};
+    const m1List = fcm1['115年01月份_高頻率救護個案_Top15'] || [];
+    const m1Tbody = document.getElementById('frequent-m1-tbody');
+    if (m1Tbody) {
+      m1Tbody.innerHTML = '';
+      m1List.slice(0, 10).forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${item.name}</strong></td>
+          <td><code>${item.id_masked || '-'}</code></td>
+          <td class="text-clay"><strong>${item.count} 次</strong></td>
+          <td><span style="font-size: 0.75rem; color: var(--text-dim);">${(item.forms || [])[0] || '-'}</span></td>
+        `;
+        m1Tbody.appendChild(tr);
+      });
+    }
+
+    // Top 30 Frequent Callers
+    const top30 = fc7y.top30 || [];
+    const top30Tbody = document.getElementById('top30-tbody');
+    if (top30Tbody) {
+      top30Tbody.innerHTML = '';
+      top30.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="rank-badge ${p.rank <= 3 ? 'rank-' + p.rank : 'rank-other'}">#${p.rank}</span></td>
+          <td><strong>${p.name}</strong></td>
+          <td>${p.gender || '-'}</td>
+          <td>${p.age ? p.age + ' 歲' : '-'}</td>
+          <td class="text-clay"><strong>${p.count} 次</strong></td>
+          <td>${p.main_town || '-'}</td>
+          <td>${p.years_span || '-'}</td>
+          <td style="font-size: 0.8rem; color: var(--text-dim);">${p.first_call || ''} ~ ${p.last_call || ''}</td>
+        `;
+        top30Tbody.appendChild(tr);
+      });
+    }
   }
 
-  // 11501 Month Slice
-  const fcm1 = data.frequent_callers_m1 || {};
-  const m1List = fcm1['115年01月份_高頻率救護個案_Top15'] || [];
-  const m1Tbody = document.getElementById('frequent-m1-tbody');
-  m1Tbody.innerHTML = '';
-  m1List.slice(0, 10).forEach(item => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${item.name}</strong></td>
-      <td><code>${item.id_masked || '-'}</code></td>
-      <td class="text-clay"><strong>${item.count} 次</strong></td>
-      <td><span style="font-size: 0.75rem; color: var(--text-dim);">${(item.forms || [])[0] || '-'}</span></td>
-    `;
-    m1Tbody.appendChild(tr);
-  });
-
-  // Top 30 Frequent Callers
-  const top30 = fc7y.top30 || [];
-  const top30Tbody = document.getElementById('top30-tbody');
-  top30Tbody.innerHTML = '';
-  top30.forEach(p => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><span class="rank-badge ${p.rank <= 3 ? 'rank-' + p.rank : 'rank-other'}">#${p.rank}</span></td>
-      <td><strong>${p.name}</strong></td>
-      <td>${p.gender || '-'}</td>
-      <td>${p.age ? p.age + ' 歲' : '-'}</td>
-      <td class="text-clay"><strong>${p.count} 次</strong></td>
-      <td>${p.main_town || '-'}</td>
-      <td>${p.years_span || '-'}</td>
-      <td style="font-size: 0.8rem; color: var(--text-dim);">${p.first_call || ''} ~ ${p.last_call || ''}</td>
-    `;
-    top30Tbody.appendChild(tr);
-  });
-
   // ================= 6. TAB 4: 雙人 / 三人組協同勝率 =================
-  const combData = data.combinations || {};
-  const pairsTop = combData.pairs_top || [];
-  const triosTop = combData.trios_top || [];
+  function renderSynergy() {
+    const activeData = getActiveDataset();
+    const combData = activeData.combinations || {};
+    const pairsTop = combData.pairs_top || [];
+    const triosTop = combData.trios_top || [];
 
-  const pairsTbody = document.getElementById('pairs-top-tbody');
-  pairsTbody.innerHTML = '';
-  pairsTop.slice(0, 12).forEach(p => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${p.names}</strong></td>
-      <td>${p.total} 件</td>
-      <td class="text-emerald"><strong>${p.rosc} 件</strong></td>
-      <td class="text-blue"><strong>${p.rate.toFixed(1)}%</strong></td>
-      <td>${p.drugs} 次</td>
-    `;
-    pairsTbody.appendChild(tr);
+    const pairsTbody = document.getElementById('pairs-top-tbody');
+    if (pairsTbody) {
+      pairsTbody.innerHTML = '';
+      if (pairsTop.length === 0) {
+        pairsTbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--text-dim);">此模式下尚無符合件數門檻之雙人搭檔</td></tr>';
+      } else {
+        pairsTop.slice(0, 12).forEach(p => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><strong>${p.names}</strong></td>
+            <td>${p.total} 件</td>
+            <td class="text-emerald"><strong>${p.rosc} 件</strong></td>
+            <td class="text-blue"><strong>${p.rate.toFixed(1)}%</strong></td>
+            <td>${p.drugs} 次</td>
+          `;
+          pairsTbody.appendChild(tr);
+        });
+      }
+    }
+
+    const triosTbody = document.getElementById('trios-top-tbody');
+    if (triosTbody) {
+      triosTbody.innerHTML = '';
+      if (triosTop.length === 0) {
+        triosTbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-dim);">此模式下尚無符合件數門檻之三人搭檔</td></tr>';
+      } else {
+        triosTop.slice(0, 6).forEach(t => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><strong>${t.names}</strong></td>
+            <td>${t.total} 件</td>
+            <td class="text-emerald">${t.rosc} 件</td>
+            <td class="text-blue"><strong>${t.rate.toFixed(1)}%</strong></td>
+          `;
+          triosTbody.appendChild(tr);
+        });
+      }
+    }
+  }
+
+  // ================= 7. TAB 5: 全局演進與各分隊戰情 =================
+  function renderEvolution() {
+    const activeData = getActiveDataset();
+    const macro = activeData.macro_kpis || {};
+    const yearlyList = activeData.yearly_stats || [];
+    const stationRows = activeData.ranked_stations || [];
+
+    // 1. Update Macro KPI Cards
+    const elKpi1 = document.getElementById('evo-kpi-1-val');
+    const elKpi2 = document.getElementById('evo-kpi-2-val');
+    const elKpi3 = document.getElementById('evo-kpi-3-val');
+    const elKpi3Sub = document.getElementById('evo-kpi-3-sub');
+    const elKpi4 = document.getElementById('evo-kpi-4-val');
+    const elKpi4Sub = document.getElementById('evo-kpi-4-sub');
+
+    if (elKpi1) elKpi1.textContent = `${macro.pre_r1_rate}% ➔ ${macro.post_r1_rate}%`;
+    if (elKpi2) elKpi2.textContent = `${macro.pre_drugs_avg} ➔ ${macro.post_drugs_avg} 次`;
+    if (elKpi3) elKpi3.textContent = `${macro.top_station_rate}%`;
+    if (elKpi3Sub) {
+      const sign = (macro.gm_growth >= 0) ? '+' : '';
+      elKpi3Sub.textContent = `${macro.top_station || '光明分隊'}成軍後勝率 ${macro.gm_post_rate || 33.91}% (增幅 ▲${sign}${macro.gm_growth}%)`;
+    }
+    if (elKpi4) elKpi4.textContent = `${(macro.top2_tot || 1092).toLocaleString()} 件`;
+    if (elKpi4Sub) {
+      elKpi4Sub.textContent = `竹東 ${macro.zd_tot || 549}件 / 光明 ${macro.gm_tot || 543}件 合計承擔全縣 ${macro.top2_pct || 27}% OHCA`;
+    }
+
+    // Subtitle under Part 2
+    const growthSub = document.getElementById('stations-growth-sub');
+    if (growthSub && stationRows.length >= 2) {
+      const top1 = stationRows[0];
+      const top2 = stationRows[1];
+      growthSub.innerHTML = `
+        <strong>${top1.station}</strong>以 <strong>${top1.overall_rate}%</strong> 總勝率榮登全縣榜首，成軍後專責期高達 <strong>${top1.post_gm_rate}%</strong>（成效淨增幅 ▲+${top1.growth}%）；<strong>${top2.station}</strong>以 <strong>${top2.overall_rate}%</strong> 穩居第二。
+      `;
+    }
+
+    // 2. Part 1 Table: 108 ~ 115 歷年演進走勢
+    const yearlyTbody = document.getElementById('yearly-stats-tbody');
+    if (yearlyTbody) {
+      yearlyTbody.innerHTML = '';
+      yearlyList.forEach(y => {
+        const tr = document.createElement('tr');
+        const is111 = (y.year === '111');
+        if (is111) tr.className = 'highlight-row';
+
+        const milestoneHtml = is111 
+          ? '<span class="badge-gm-milestone">🔥 光明高救隊成立 (111.03)</span>' 
+          : '';
+
+        tr.innerHTML = `
+          <td style="font-weight:700; color:var(--text-heading);">${y.year} 年</td>
+          <td>${y.total_ohca.toLocaleString()} 件</td>
+          <td style="font-weight:700; color:var(--color-sage);">${y.rosc} 人</td>
+          <td style="font-weight:700;">${y.rosc_rate.toFixed(2)}%</td>
+          <td style="font-weight:700; color:var(--color-blue);">${y.r1_rosc} 人</td>
+          <td style="font-weight:700; color:var(--color-blue);">${y.r1_rate.toFixed(2)}%</td>
+          <td>${y.drugs_count.toLocaleString()} 次</td>
+          <td style="font-weight:600; color:var(--color-clay);">${y.drugs_per_case.toFixed(2)} 次</td>
+          <td>${milestoneHtml}</td>
+        `;
+        yearlyTbody.appendChild(tr);
+      });
+    }
+
+    // 3. Part 2 Table: 光明成軍前後 19 分隊消長排行表
+    const growthTbody = document.getElementById('stations-growth-tbody');
+    if (growthTbody) {
+      growthTbody.innerHTML = '';
+      stationRows.forEach((st, idx) => {
+        const tr = document.createElement('tr');
+        const rank = idx + 1;
+        const isGm = st.station.includes('光明');
+
+        let growthBadge = '';
+        if (st.growth > 0) {
+          growthBadge = `<span class="badge-growth-up">▲ +${st.growth.toFixed(2)}%</span>`;
+        } else if (st.growth < 0) {
+          growthBadge = `<span class="badge-growth-down">▼ ${st.growth.toFixed(2)}%</span>`;
+        } else {
+          growthBadge = `<span class="badge-growth-flat">─ 0.00%</span>`;
+        }
+
+        tr.innerHTML = `
+          <td style="font-weight:700;">#${rank}</td>
+          <td style="${isGm ? 'font-weight:800; color:var(--color-sage);' : 'font-weight:600;'}">${st.station}</td>
+          <td>${st.total_ohca.toLocaleString()} 件</td>
+          <td style="font-weight:700; color:var(--color-sage);">${st.total_rosc} 人</td>
+          <td style="font-weight:700;">${st.overall_rate.toFixed(2)}%</td>
+          <td style="color:var(--color-blue);">${st.r1_rate.toFixed(2)}%</td>
+          <td style="color:var(--text-muted);">${st.pre_gm_rate.toFixed(2)}%</td>
+          <td style="font-weight:700; color:var(--text-heading);">${st.post_gm_rate.toFixed(2)}%</td>
+          <td>${growthBadge}</td>
+        `;
+        growthTbody.appendChild(tr);
+      });
+    }
+
+    // 4. Part 3 Table: 108 ~ 115 各分隊全年度矩陣走勢
+    const matrixTbody = document.getElementById('stations-matrix-tbody');
+    if (matrixTbody) {
+      matrixTbody.innerHTML = '';
+      stationRows.forEach((st, idx) => {
+        const tr = document.createElement('tr');
+        const rank = idx + 1;
+        const matrix = st.matrix || {};
+
+        let cellsHtml = '';
+        for (let yr = 108; yr <= 115; yr++) {
+          const yrKey = String(yr);
+          const cell = matrix[yrKey];
+          if (!cell || cell.total === 0) {
+            cellsHtml += `<td style="color:var(--text-dim);">-</td>`;
+          } else {
+            let colorVar = 'var(--text-body)';
+            if (cell.rate >= 25.0) colorVar = 'var(--color-sage)';
+            else if (cell.rate >= 15.0) colorVar = 'var(--color-blue)';
+
+            cellsHtml += `
+              <td style="font-weight:600; color:${colorVar};">
+                ${cell.rate.toFixed(1)}% 
+                <span style="font-size:11px; color:var(--text-dim);">(${cell.rosc}/${cell.total})</span>
+              </td>
+            `;
+          }
+        }
+
+        tr.innerHTML = `
+          <td style="font-weight:700;">#${rank}</td>
+          <td style="font-weight:700;">${st.station}</td>
+          ${cellsHtml}
+        `;
+        matrixTbody.appendChild(tr);
+      });
+    }
+  }
+
+  // ================= 8. Global OHCA Mode Switcher =================
+  const modeButtons = document.querySelectorAll('.ohca-mode-btn');
+  const bannerBadge = document.getElementById('notice-badge');
+  const bannerDesc = document.getElementById('notice-text');
+
+  function switchOhcaMode(newMode) {
+    if (!data.modes || !data.modes[newMode]) {
+      console.warn('Mode not found in data:', newMode);
+      return;
+    }
+    currentOhcaMode = newMode;
+
+    // 1. Update button UI
+    modeButtons.forEach(btn => {
+      if (btn.getAttribute('data-mode') === newMode) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // 2. Update notice banner
+    const modeConfig = data.modes[newMode];
+    if (bannerBadge) bannerBadge.textContent = `${modeConfig.label} 模式`;
+    if (bannerDesc) bannerDesc.textContent = modeConfig.desc;
+
+    // 3. Re-render all views
+    renderHeaderTickers();
+    renderFirefighters();
+    renderLeaderboard();
+    renderSynergy();
+    renderEvolution();
+  }
+
+  modeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode = btn.getAttribute('data-mode');
+      switchOhcaMode(mode);
+    });
   });
 
-  const triosTbody = document.getElementById('trios-top-tbody');
-  triosTbody.innerHTML = '';
-  triosTop.slice(0, 6).forEach(t => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${t.names}</strong></td>
-      <td>${t.total} 件</td>
-      <td class="text-emerald">${t.rosc} 件</td>
-      <td class="text-blue"><strong>${t.rate.toFixed(1)}%</strong></td>
-    `;
-    triosTbody.appendChild(tr);
-  });
+  // ================= 9. Initial Load =================
+  renderHeaderTickers();
+  renderFirefighters();
+  renderLeaderboard();
+  renderFrequentCallers();
+  renderSynergy();
+  renderEvolution();
 });

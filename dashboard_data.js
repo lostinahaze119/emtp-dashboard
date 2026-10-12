@@ -1,15 +1,4 @@
 window.DASHBOARD_DATA = {
-  "summary": {
-    "total_ohca": 4037,
-    "total_rosc": 652,
-    "total_months": 85,
-    "date_range": "108年10月 ～ 115年10月",
-    "gm_total_ems": 26843,
-    "gm_total_ohca": 543,
-    "gm_total_rosc": 165,
-    "gm_rosc_rate": 30.39,
-    "gm_r1_rosc_rate": 23.57
-  },
   "frequent_callers": {
     "total_calls_scanned": 176409,
     "unique_patients_count": 117385,
@@ -1075,6731 +1064,12841 @@ window.DASHBOARD_DATA = {
       }
     ]
   },
-  "master_37_leaderboard": [
-    {
-      "name": "蔣為理",
-      "group": "同學組 (111.03起算)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 131,
-      "deducted_emt2": 12,
-      "ohca_tp": 119,
-      "rosc_tp": 45,
-      "rate_tp": 37.81512605042017,
-      "drugs_tp": 283,
-      "start_date": "2022-03-01"
+  "modes": {
+    "all": {
+      "label": "全部 OHCA",
+      "desc": "全縣 85 個月完整全量 4,037 筆 OHCA 紀錄（含內科心因性及外傷創傷性）",
+      "badge_count": "4,037 案",
+      "summary": {
+        "total_ohca": 4037,
+        "total_rosc": 652,
+        "total_r1": 414,
+        "rosc_rate": 16.15,
+        "r1_rate": 10.26,
+        "total_months": 85,
+        "date_range": "108年10月 ～ 115年10月",
+        "gm_total_ems": 26843,
+        "gm_total_ohca": 543,
+        "gm_total_rosc": 165,
+        "gm_rosc_rate": 30.39,
+        "gm_r1_rosc_rate": 23.57,
+        "gm_post_ohca": 404,
+        "gm_post_rosc": 137,
+        "gm_post_rate": 33.91,
+        "total_drugs": 3197,
+        "gm_total_drugs": 1093
+      },
+      "career_firefighters": [
+        {
+          "name": "許嘉雄",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "110年資深頂尖TP",
+          "hero_name": "趙雲",
+          "hero_title": "常山龍膽・單騎截江",
+          "hero_image": "images/zhao_yun_ink.jpg",
+          "hero_quote": "披堅執銳一身是膽，銀槍所向處皆化死生！",
+          "desc": "【常山龍膽・一身是膽】如趙子龍之孤勇絕倫、臨陣不亂。許嘉雄早在 110 年初即奉命獨當一面，早於諸同袍先行受命取得 TP 資格。救護總量近 4,000 件，TP 執業期救回 36 人，急救成功率高達 34.62%（穩居全縣第 4 強）。其給藥 225 次、氣管插管 35 件，槍出如龍、處置乾淨俐落，是光明防線上最堅韌從容的常勝名將。",
+          "general_ems_calls": 3958,
+          "general_ems_pct": 14.74,
+          "ohca_calls": 103,
+          "ohca_rosc": 35,
+          "rosc_rate": 34.0,
+          "r1_rosc": 27,
+          "r1_rate": 26.2,
+          "diff_broad": 9.3,
+          "odds_ratio": 1.52,
+          "drug_rate": 72.8,
+          "drug_avg": 2.13,
+          "endo_rate": 34.0,
+          "sga_rate": 30.1,
+          "iv_rate": 49.5,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 3,
+              "rosc": 3,
+              "rate": 100.0
+            },
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "李均祈",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "李正群",
+              "total": 12,
+              "rosc": 6,
+              "rate": 50.0
+            },
+            {
+              "name": "蔡億鼎",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "許育誠",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "百戰高壓先鋒",
+          "hero_name": "陳友諒",
+          "hero_title": "江漢巨擘・鄱陽橫槊",
+          "hero_image": "images/chen_youliang_ink.jpg",
+          "hero_quote": "江漢滔滔水師連環，專向怒濤深處立中軍！",
+          "desc": "【江漢巨擘・鄱陽橫槊】陳友諒生平督率千艘巨艦，橫鎖江漢，所領之軍天下至強，專打天下最險、最難之逆浪硬仗。許育誠於光明分隊出勤 OHCA 高達 142 件（救護總量 3,936 件），母數冠絕全分隊！他所承接者，多為 80 歲以上超高齡、清晨非目擊、生機最形微弱之極度逆境。他不避凶險、不挑平川順境以圖亮眼數據，而是在滔天死線前親率巨艦強行搶灘，處置強度全開（給藥率 76.1%、插管率 44.4%），親手挽回 32 條生靈！雖大浪淘沙稀釋帳面成效，然深諳前線戰事者皆知：敢於在無人生機之死局中直面狂濤者，方為真正的硬派巨擘！",
+          "general_ems_calls": 3936,
+          "general_ems_pct": 14.66,
+          "ohca_calls": 123,
+          "ohca_rosc": 36,
+          "rosc_rate": 29.3,
+          "r1_rosc": 26,
+          "r1_rate": 21.1,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 76.4,
+          "drug_avg": 2.21,
+          "endo_rate": 43.9,
+          "sga_rate": 30.1,
+          "iv_rate": 35.0,
+          "best_partners": [
+            {
+              "name": "石俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "劉和訓",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "呂育陞",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 23,
+              "rosc": 11,
+              "rate": 47.8
+            }
+          ]
+        },
+        {
+          "name": "黃皓賓",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "穩健攻堅主力",
+          "hero_name": "蒙恬",
+          "hero_title": "塞上長城・磐石之陣",
+          "hero_image": "images/meng_tian_ink.jpg",
+          "hero_quote": "築城禦難萬仞不移，巍巍砥柱守衛桑梓！",
+          "desc": "【塞上長城・穩健如山】蒙恬卻匈奴七百里、沉毅雄渾。黃皓賓救護量達 3,789 件、OHCA 出勤 125 件，TP 執業期勝率自舊制 17% 翻倍躍升至 36.05%！給藥與插管穩健紮實，長年守護竹北要衝，宛如不可踰越的鋼鐵防線。",
+          "general_ems_calls": 3789,
+          "general_ems_pct": 14.12,
+          "ohca_calls": 119,
+          "ohca_rosc": 37,
+          "rosc_rate": 31.1,
+          "r1_rosc": 27,
+          "r1_rate": 22.7,
+          "diff_broad": 1.1,
+          "odds_ratio": 1.05,
+          "drug_rate": 68.9,
+          "drug_avg": 1.97,
+          "endo_rate": 40.3,
+          "sga_rate": 38.7,
+          "iv_rate": 58.8,
+          "best_partners": [
+            {
+              "name": "洪國胤",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "蔣為理",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "黃志樺",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "卓業?",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "石俊傑",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "鄭睿旭",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "重症插管大師",
+          "hero_name": "太史慈",
+          "hero_title": "神箭破敵・百步穿楊",
+          "hero_image": "images/taishi_ci_ink.jpg",
+          "hero_quote": "長弓在手弦無虛發，直取險隘百步穿楊！",
+          "desc": "【神箭太史・精準破障】太史慈猿臂善射、弦無虛發。鄭睿旭全縣累計救回 38 人（全縣第 3），在光明出勤 119 件 OHCA，氣管內插管率高達 67.2% 為全隊之最，給藥率 82.4%。無論患者呼吸道何等畸嶇狹窄，總能精確建立高階氣道，以卓越之雙手護衛生命。",
+          "general_ems_calls": 3466,
+          "general_ems_pct": 12.91,
+          "ohca_calls": 111,
+          "ohca_rosc": 37,
+          "rosc_rate": 33.3,
+          "r1_rosc": 31,
+          "r1_rate": 27.9,
+          "diff_broad": 5.2,
+          "odds_ratio": 1.27,
+          "drug_rate": 81.1,
+          "drug_avg": 2.28,
+          "endo_rate": 68.5,
+          "sga_rate": 12.6,
+          "iv_rate": 52.3,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "曾翊瑋",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "洪國胤",
+              "total": 16,
+              "rosc": 8,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 10,
+              "rosc": 5,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "黃玉喬",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "新銳巾幗TP強將",
+          "hero_name": "穆桂英",
+          "hero_title": "巾幗破陣・氣貫長虹",
+          "hero_image": "images/mu_guiying_ink.jpg",
+          "hero_quote": "紅纓獵獵敢當先鋒，誰言巾幗遜於天下鬚眉！",
+          "desc": "【破陣先鋒・巾幗天驕】穆桂英掛帥出征、氣魄吞河。黃玉喬於 113 年受訓晉升 TP 後展現驚人戰力，現場給藥率高達 93.9%、氣管插管率 54.5%，TP 執業期成功率突破 30.30%（救回 10 人），全縣總排名挺進第 14 名！刀馬純熟、膽識過人，是新進 TP 陣容中最奪目的巾幗強將。",
+          "general_ems_calls": 3039,
+          "general_ems_pct": 11.32,
+          "ohca_calls": 68,
+          "ohca_rosc": 15,
+          "rosc_rate": 22.1,
+          "r1_rosc": 13,
+          "r1_rate": 19.1,
+          "diff_broad": -8.9,
+          "odds_ratio": 0.64,
+          "drug_rate": 73.5,
+          "drug_avg": 2.07,
+          "endo_rate": 36.8,
+          "sga_rate": 36.8,
+          "iv_rate": 39.7,
+          "best_partners": [
+            {
+              "name": "連國延",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "許育誠",
+              "total": 9,
+              "rosc": 3,
+              "rate": 33.3
+            },
+            {
+              "name": "黃志樺",
+              "total": 6,
+              "rosc": 2,
+              "rate": 33.3
+            },
+            {
+              "name": "洪國胤",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "楊梓嫻",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            }
+          ]
+        },
+        {
+          "name": "呂育陞",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "急救勝率天花板",
+          "hero_name": "霍去病",
+          "hero_title": "冠軍天驕・封狼居胥",
+          "hero_image": "images/huo_qubing_ink.jpg",
+          "hero_quote": "長驅萬里疾如奔雷，快馬輕騎斬將奪旗！",
+          "desc": "【冠軍天驕・快刀封喉】霍去病千里奔襲、攻無不克。呂育陞以 45.59% 的驚人急救成功率傲視全縣，在光明專責期亦維持 37.1% 的頂尖水準。其處置節奏極度迅捷精確，插管率突破 50%，與李正群、許育誠搭檔時屢破救治天花板，宛如冠軍侯長驅直入。",
+          "general_ems_calls": 2958,
+          "general_ems_pct": 11.02,
+          "ohca_calls": 86,
+          "ohca_rosc": 32,
+          "rosc_rate": 37.2,
+          "r1_rosc": 24,
+          "r1_rate": 27.9,
+          "diff_broad": 8.0,
+          "odds_ratio": 1.44,
+          "drug_rate": 74.4,
+          "drug_avg": 2.07,
+          "endo_rate": 48.8,
+          "sga_rate": 26.7,
+          "iv_rate": 48.8,
+          "best_partners": [
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "李正群",
+              "total": 11,
+              "rosc": 7,
+              "rate": 63.6
+            },
+            {
+              "name": "許育誠",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "李均祈",
+              "total": 14,
+              "rosc": 7,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 14,
+              "rosc": 7,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "蔣為理",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "全能戰術指揮",
+          "hero_name": "周瑜",
+          "hero_title": "江左周郎・儒將雄才",
+          "hero_image": "images/zhou_yu_ink.jpg",
+          "hero_quote": "羽扇綸巾談笑定策，風起赤壁賦能三軍！",
+          "desc": "【江左周郎・雅量雄圖】周公瑾雄姿英發、統御大局。蔣為理以 45 件救回數榮登全縣 EMT-P 總榜榜首，在光明專責期勝率達 38.8%（勝算比 OR 1.63）。其處置兼具侵入性極限（給藥 84.5%、插管 56.9%）與卓越的團隊協同領導力，搭檔勝率普遍飆破 50%~60%，談笑間平定危局，乃光明分隊首屈一指的戰術指揮中樞。",
+          "general_ems_calls": 2788,
+          "general_ems_pct": 10.39,
+          "ohca_calls": 103,
+          "ohca_rosc": 39,
+          "rosc_rate": 37.9,
+          "r1_rosc": 30,
+          "r1_rate": 29.1,
+          "diff_broad": 10.7,
+          "odds_ratio": 1.62,
+          "drug_rate": 83.5,
+          "drug_avg": 2.34,
+          "endo_rate": 54.4,
+          "sga_rate": 21.4,
+          "iv_rate": 35.9,
+          "best_partners": [
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "李均祈",
+              "total": 15,
+              "rosc": 9,
+              "rate": 60.0
+            },
+            {
+              "name": "洪國胤",
+              "total": 8,
+              "rosc": 4,
+              "rate": 50.0
+            },
+            {
+              "name": "姜建成",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "賴俊傑",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高階氣道專家",
+          "hero_name": "宗澤",
+          "hero_title": "宗公持節・砥柱治軍",
+          "hero_image": "images/zong_ze_ink.jpg",
+          "hero_quote": "大節凜然治軍有度，雙重險隘穩如泰山！",
+          "desc": "【宗公持節・嚴整嚴謹】宗澤坐鎮汴梁、號令嚴謹。賴俊傑全縣救回 31 人，光明插管率達 63.7%、給藥率達 87.3%，急救成功率 35.3%。高級處置規範一絲不苟，技術沉穩無瑕，是同仁極度安心的後盾。",
+          "general_ems_calls": 2687,
+          "general_ems_pct": 10.01,
+          "ohca_calls": 86,
+          "ohca_rosc": 31,
+          "rosc_rate": 36.0,
+          "r1_rosc": 25,
+          "r1_rate": 29.1,
+          "diff_broad": 6.0,
+          "odds_ratio": 1.32,
+          "drug_rate": 87.2,
+          "drug_avg": 2.51,
+          "endo_rate": 64.0,
+          "sga_rate": 20.9,
+          "iv_rate": 40.7,
+          "best_partners": [
+            {
+              "name": "洪國胤",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "紀翔升",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "施純泰",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "呂育陞",
+              "total": 14,
+              "rosc": 7,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "李正群",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "現場復甦之星",
+          "hero_name": "扁鵲",
+          "hero_title": "望色知微・起死回生",
+          "hero_image": "images/bian_que_ink.jpg",
+          "hero_quote": "洞垣幽微洞悉死生，車行未抵春風已至！",
+          "desc": "【神醫扁鵲・妙手回陽】扁鵲過虢國起死回生。李正群在光明出勤到院前 ROSC 率高達 31.9%，高居全隊 TP 第一！全縣累計救回 28 人。其對心律辨識與灌流狀態極度敏銳，常在現場急救車上即成功逆轉心跳，神乎其技。",
+          "general_ems_calls": 2509,
+          "general_ems_pct": 9.35,
+          "ohca_calls": 81,
+          "ohca_rosc": 27,
+          "rosc_rate": 33.3,
+          "r1_rosc": 25,
+          "r1_rate": 30.9,
+          "diff_broad": 4.4,
+          "odds_ratio": 1.23,
+          "drug_rate": 81.5,
+          "drug_avg": 2.27,
+          "endo_rate": 46.9,
+          "sga_rate": 23.5,
+          "iv_rate": 11.1,
+          "best_partners": [
+            {
+              "name": "黃美樺",
+              "total": 5,
+              "rosc": 4,
+              "rate": 80.0
+            },
+            {
+              "name": "呂育陞",
+              "total": 11,
+              "rosc": 7,
+              "rate": 63.6
+            },
+            {
+              "name": "紀翔升",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "李均祈",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "賴俊傑",
+              "total": 14,
+              "rosc": 7,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "李均祈",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高給藥急救強者",
+          "hero_name": "辛棄疾",
+          "hero_title": "稼軒雄風・氣吞萬里",
+          "hero_image": "images/xin_qiji_ink.jpg",
+          "hero_quote": "金戈鐵馬豪情破陣，筆落風雷手掌乾坤！",
+          "desc": "【稼軒雄風・豪邁凌厲】辛稼軒五十騎闖營、氣吞萬里如虎。李均祈累計救回 32 人（全縣第 5），光明在隊給藥率高達 88.5% 冠絕全隊，勝率達 35.4%。現場處置果決剛烈、大開大闔，手中有雷霆手段，心中有菩薩心腸。",
+          "general_ems_calls": 2343,
+          "general_ems_pct": 8.73,
+          "ohca_calls": 89,
+          "ohca_rosc": 31,
+          "rosc_rate": 34.8,
+          "r1_rosc": 20,
+          "r1_rate": 22.5,
+          "diff_broad": 6.1,
+          "odds_ratio": 1.32,
+          "drug_rate": 87.6,
+          "drug_avg": 2.45,
+          "endo_rate": 41.6,
+          "sga_rate": 38.2,
+          "iv_rate": 40.4,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 15,
+              "rosc": 9,
+              "rate": 60.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "李正群",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "呂育陞",
+              "total": 14,
+              "rosc": 7,
+              "rate": 50.0
+            },
+            {
+              "name": "姜建成",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "施純泰",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "光明出勤基石",
+          "hero_name": "郭子儀",
+          "hero_title": "汾陽砥柱・再造乾坤",
+          "hero_image": "images/guo_ziyi_ink.jpg",
+          "hero_quote": "單騎撫定四方危難，萬民身家皆繫老將一身！",
+          "desc": "【汾陽砥柱・再造社稷】唐代名將郭子儀單騎撫危、功蓋寰宇。施純泰出勤 4,185 件一般救護、分隊出勤佔比高達 15.6%，長年居全隊之首！OHCA 出勤 133 件、救回 41 人，歷經光明無數寒暑交替。他如老將坐鎮中軍，不論與何代 TP 搭檔皆能安定全場，是全體同仁最敬重、最不可或缺的救護基石。",
+          "general_ems_calls": 4185,
+          "general_ems_pct": 15.59,
+          "ohca_calls": 119,
+          "ohca_rosc": 37,
+          "rosc_rate": 31.1,
+          "r1_rosc": 29,
+          "r1_rate": 24.4,
+          "diff_broad": 0.6,
+          "odds_ratio": 1.03,
+          "drug_rate": 71.4,
+          "drug_avg": 2.06,
+          "endo_rate": 41.2,
+          "sga_rate": 31.1,
+          "iv_rate": 46.2,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 15,
+              "rosc": 8,
+              "rate": 53.3
+            },
+            {
+              "name": "劉俞伶",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "高偉誠",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "張馨予",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "全能救護中堅",
+          "hero_name": "平陽公主",
+          "hero_title": "娘子統御・威儀肅然",
+          "hero_image": "images/pingyang_princess_ink.jpg",
+          "hero_quote": "巾幗提攜千軍肅整，中軍調度莫敢不從！",
+          "desc": "【娘子帥印・中軍樞紐】唐平陽昭公主統御娘子軍、威加關中。張馨予出勤救護達 3,881 件（全隊第 4），OHCA 救回 23 人！身為中級警消主力，長年與各級 TP 默契無間，靜脈通路與團隊調度從容不迫，乃全隊運轉的中樞。",
+          "general_ems_calls": 3881,
+          "general_ems_pct": 14.46,
+          "ohca_calls": 75,
+          "ohca_rosc": 21,
+          "rosc_rate": 28.0,
+          "r1_rosc": 16,
+          "r1_rate": 21.3,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 68.0,
+          "drug_avg": 2.01,
+          "endo_rate": 42.7,
+          "sga_rate": 29.3,
+          "iv_rate": 46.7,
+          "best_partners": [
+            {
+              "name": "呂育陞",
+              "total": 15,
+              "rosc": 7,
+              "rate": 46.7
+            },
+            {
+              "name": "李均祈",
+              "total": 14,
+              "rosc": 6,
+              "rate": 42.9
+            },
+            {
+              "name": "蔣為理",
+              "total": 14,
+              "rosc": 6,
+              "rate": 42.9
+            },
+            {
+              "name": "賴俊傑",
+              "total": 12,
+              "rosc": 4,
+              "rate": 33.3
+            },
+            {
+              "name": "林昆穎",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            }
+          ]
+        },
+        {
+          "name": "連國延",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "靜脈通路神手",
+          "hero_name": "張良",
+          "hero_title": "留侯神謀・糧道通脈",
+          "hero_image": "images/zhang_liang_ink.jpg",
+          "hero_quote": "運籌指尖脈絡貫通，千軍所需一針即至！",
+          "desc": "【留侯運籌・兵馬未動】張子房籌謀帷幄、通達天下。連國延出勤 2,428 件救護，在隊靜脈輸液（IV）建立率高達 90.5%！為第一線 TP 提供穩定無比的給藥通路，有其在側，急救血脈暢通無阻。",
+          "general_ems_calls": 2428,
+          "general_ems_pct": 9.05,
+          "ohca_calls": 61,
+          "ohca_rosc": 17,
+          "rosc_rate": 27.9,
+          "r1_rosc": 13,
+          "r1_rate": 21.3,
+          "diff_broad": -2.1,
+          "odds_ratio": 0.91,
+          "drug_rate": 67.2,
+          "drug_avg": 1.87,
+          "endo_rate": 34.4,
+          "sga_rate": 47.5,
+          "iv_rate": 90.2,
+          "best_partners": [
+            {
+              "name": "洪國胤",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "李均祈",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 9,
+              "rosc": 4,
+              "rate": 44.4
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 14,
+              "rosc": 6,
+              "rate": 42.9
+            }
+          ]
+        },
+        {
+          "name": "洪國胤",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率攻堅隊員",
+          "hero_name": "尉遲敬德",
+          "hero_title": "門神奪槊・勇烈忠純",
+          "hero_image": "images/yuchi_jingde_ink.jpg",
+          "hero_quote": "橫槊陷陣百死不回，危局之中立斬死關！",
+          "desc": "【勇烈奪槊・破局門神】尉遲敬德白刃陷陣、勇冠三軍。洪國胤出勤 2,129 件救護，OHCA 勝率達 34.0%（高出全隊 4%），到院前 ROSC 達 25.5%。每臨險局總能勇往直前，多次在極限關頭力挽狂瀾。",
+          "general_ems_calls": 2129,
+          "general_ems_pct": 7.93,
+          "ohca_calls": 43,
+          "ohca_rosc": 14,
+          "rosc_rate": 32.6,
+          "r1_rosc": 10,
+          "r1_rate": 23.3,
+          "diff_broad": 4.0,
+          "odds_ratio": 1.2,
+          "drug_rate": 58.1,
+          "drug_avg": 1.58,
+          "endo_rate": 39.5,
+          "sga_rate": 39.5,
+          "iv_rate": 81.4,
+          "best_partners": [
+            {
+              "name": "賴俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃皓賓",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "連國延",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 16,
+              "rosc": 8,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 8,
+              "rosc": 4,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "黃俊儒",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "忠誠勤勉前鋒",
+          "hero_name": "許褚",
+          "hero_title": "虎痴披甲・忠純不移",
+          "hero_image": "images/xu_chu_ink.jpg",
+          "hero_quote": "力敵萬夫忠勇不二，默默守護寸土不退！",
+          "desc": "【虎痴忠烈・堅毅守禦】許褚勇力絕人、恪忠職守。黃俊儒救護量 1,839 件、OHCA 47 件，常年堅守在各繁重時段，任勞任怨，為救護現場最厚實的執勤護衛。",
+          "general_ems_calls": 1839,
+          "general_ems_pct": 6.85,
+          "ohca_calls": 46,
+          "ohca_rosc": 7,
+          "rosc_rate": 15.2,
+          "r1_rosc": 3,
+          "r1_rate": 6.5,
+          "diff_broad": -17.0,
+          "odds_ratio": 0.37,
+          "drug_rate": 63.0,
+          "drug_avg": 1.83,
+          "endo_rate": 39.1,
+          "sga_rate": 37.0,
+          "iv_rate": 67.4,
+          "best_partners": [
+            {
+              "name": "連國延",
+              "total": 6,
+              "rosc": 2,
+              "rate": 33.3
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 8,
+              "rosc": 2,
+              "rate": 25.0
+            },
+            {
+              "name": "呂育陞",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "許育誠",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "李正群",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "姜建成",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高給藥輔助專家",
+          "hero_name": "魯肅",
+          "hero_title": "長者弘道・調協周詳",
+          "hero_image": "images/lu_su_ink.jpg",
+          "hero_quote": "敦厚仁心兼濟同袍，深謀遠慮協和三軍！",
+          "desc": "【子敬弘道・協和群賢】魯子敬寬厚仁德、總攬協調。姜建成救護量 1,686 件，搭配出勤給藥率達 87.0%、插管率 55.6%。在現場迅速鋪陳裝備、精準輔佐，團隊協調功莫大焉。",
+          "general_ems_calls": 1686,
+          "general_ems_pct": 6.28,
+          "ohca_calls": 45,
+          "ohca_rosc": 12,
+          "rosc_rate": 26.7,
+          "r1_rosc": 10,
+          "r1_rate": 22.2,
+          "diff_broad": -0.8,
+          "odds_ratio": 0.96,
+          "drug_rate": 84.4,
+          "drug_avg": 2.42,
+          "endo_rate": 55.6,
+          "sga_rate": 15.6,
+          "iv_rate": 6.7,
+          "best_partners": [
+            {
+              "name": "李均祈",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 13,
+              "rosc": 4,
+              "rate": 30.8
+            },
+            {
+              "name": "李正群",
+              "total": 7,
+              "rosc": 2,
+              "rate": 28.6
+            }
+          ]
+        },
+        {
+          "name": "林昆穎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "基層堅實基石",
+          "hero_name": "徐晃",
+          "hero_title": "亞夫長驅・規行矩步",
+          "hero_image": "images/xu_huang_ink.jpg",
+          "hero_quote": "治軍嚴密有周亞夫之風，厚植基石寸功不失！",
+          "desc": "【長驅良將・沉穩扎實】徐晃治軍整飭、有周亞夫遺風。林昆穎出勤 1,481 件救護，嚴謹執行高品質胸外按壓與基礎復甦，為分隊築造牢不可破的執勤底座。",
+          "general_ems_calls": 1481,
+          "general_ems_pct": 5.52,
+          "ohca_calls": 35,
+          "ohca_rosc": 5,
+          "rosc_rate": 14.3,
+          "r1_rosc": 1,
+          "r1_rate": 2.9,
+          "diff_broad": -17.2,
+          "odds_ratio": 0.36,
+          "drug_rate": 40.0,
+          "drug_avg": 1.06,
+          "endo_rate": 0.0,
+          "sga_rate": 65.7,
+          "iv_rate": 71.4,
+          "best_partners": [
+            {
+              "name": "許嘉雄",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "張馨予",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "黃志樺",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "黃俊儒",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            },
+            {
+              "name": "連國延",
+              "total": 11,
+              "rosc": 2,
+              "rate": 18.2
+            }
+          ]
+        },
+        {
+          "name": "黃志樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "資深防線守護",
+          "hero_name": "黃忠",
+          "hero_title": "定軍老將・挽弓射石",
+          "hero_image": "images/huang_zhong_ink.jpg",
+          "hero_quote": "寶刀未老勇冠定軍，沉著應變長者之儀！",
+          "desc": "【定軍神威・老驥伏櫪】黃漢升挽弓開石、勇冠三軍。黃志樺救護量 1,358 件，沉著守候各項重大急救，輔助後輩有條不紊，長者風範深得敬重。",
+          "general_ems_calls": 1358,
+          "general_ems_pct": 5.06,
+          "ohca_calls": 38,
+          "ohca_rosc": 9,
+          "rosc_rate": 23.7,
+          "r1_rosc": 7,
+          "r1_rate": 18.4,
+          "diff_broad": -7.9,
+          "odds_ratio": 0.67,
+          "drug_rate": 34.2,
+          "drug_avg": 0.92,
+          "endo_rate": 10.5,
+          "sga_rate": 63.2,
+          "iv_rate": 84.2,
+          "best_partners": [
+            {
+              "name": "黃皓賓",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 8,
+              "rosc": 3,
+              "rate": 37.5
+            },
+            {
+              "name": "黃玉喬",
+              "total": 6,
+              "rosc": 2,
+              "rate": 33.3
+            },
+            {
+              "name": "林昆穎",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "張馨予",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "李長安",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "氣道輔助精兵",
+          "hero_name": "馬岱",
+          "hero_title": "伏波精騎・靈動應機",
+          "hero_image": "images/ma_dai_ink.jpg",
+          "hero_quote": "隨行先鋒伺機破敵，策應得宜功不唐捐！",
+          "desc": "【伏波輕騎・隨陣策應】馬岱沉毅忠謹、斬將制勝。李長安出勤 1,093 件救護，給藥率 77.8%、插管率 52.8%，在各型氣道器械輔助上靈活敏捷。",
+          "general_ems_calls": 1093,
+          "general_ems_pct": 4.07,
+          "ohca_calls": 29,
+          "ohca_rosc": 5,
+          "rosc_rate": 17.2,
+          "r1_rosc": 4,
+          "r1_rate": 13.8,
+          "diff_broad": -8.7,
+          "odds_ratio": 0.64,
+          "drug_rate": 79.3,
+          "drug_avg": 2.34,
+          "endo_rate": 51.7,
+          "sga_rate": 20.7,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "李正群",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            }
+          ]
+        },
+        {
+          "name": "紀俐瑀",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高處置侵入主力",
+          "hero_name": "樊梨花",
+          "hero_title": "移山倒海・烈火明珠",
+          "hero_image": "images/fan_lihua_ink.jpg",
+          "hero_quote": "奇鋒突現移山倒海，巾幗剛烈勇抗疾厄！",
+          "desc": "【移山倒海・英姿天成】樊梨花智勇雙全、破陣如破竹。紀俐瑀出勤 862 件救護，OHCA 給藥率達 81.5%、插管率達 55.6%，高難度侵入技術極為熟稔，為女力警消之先鋒強棒。",
+          "general_ems_calls": 862,
+          "general_ems_pct": 3.21,
+          "ohca_calls": 21,
+          "ohca_rosc": 4,
+          "rosc_rate": 19.0,
+          "r1_rosc": 3,
+          "r1_rate": 14.3,
+          "diff_broad": -12.5,
+          "odds_ratio": 0.51,
+          "drug_rate": 76.2,
+          "drug_avg": 2.14,
+          "endo_rate": 47.6,
+          "sga_rate": 19.0,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "鄭睿旭",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 7,
+              "rosc": 2,
+              "rate": 28.6
+            },
+            {
+              "name": "呂育陞",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            },
+            {
+              "name": "李正群",
+              "total": 6,
+              "rosc": 1,
+              "rate": 16.7
+            }
+          ]
+        },
+        {
+          "name": "黃美樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率王牌女力",
+          "hero_name": "梁紅玉",
+          "hero_title": "擂鼓金山・氣蓋山河",
+          "hero_image": "images/liang_hongyu_ink.jpg",
+          "hero_quote": "金山戰鼓震天動地，纖手力挽狂瀾死生！",
+          "desc": "【擂鼓金山・戰神女力】梁紅玉金山擂鼓抗頑敵。黃美樺出勤 564 件救護，OHCA 成功率高達 43.5%（救回 10 人），給藥率達 91.3%！每次登場成效卓著，巾幗英風令人驚嘆。",
+          "general_ems_calls": 564,
+          "general_ems_pct": 2.1,
+          "ohca_calls": 14,
+          "ohca_rosc": 8,
+          "rosc_rate": 57.1,
+          "r1_rosc": 7,
+          "r1_rate": 50.0,
+          "diff_broad": 13.7,
+          "odds_ratio": 1.81,
+          "drug_rate": 92.9,
+          "drug_avg": 2.21,
+          "endo_rate": 42.9,
+          "sga_rate": 35.7,
+          "iv_rate": 7.1,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 4,
+              "rosc": 4,
+              "rate": 100.0
+            },
+            {
+              "name": "李正群",
+              "total": 5,
+              "rosc": 4,
+              "rate": 80.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "賴俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "李長安",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "紀翔升",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "奇蹟逆轉戰神",
+          "hero_name": "甘寧",
+          "hero_title": "錦帆神勇・百騎破陣",
+          "hero_image": "images/gan_ning_ink.jpg",
+          "hero_quote": "銜枚突襲百騎劫營，出奇制勝逆轉乾坤！",
+          "desc": "【錦帆奇襲・逆轉神蹟】甘興霸百騎劫魏營、勇冠江東。紀翔升出勤 397 件救護、21 件 OHCA，廣義成功率高達 57.1%（救回 12 人），到院前 ROSC 率高達 47.6%！勝率冠絕非 TP，專克必死之局。",
+          "general_ems_calls": 397,
+          "general_ems_pct": 1.48,
+          "ohca_calls": 20,
+          "ohca_rosc": 11,
+          "rosc_rate": 55.0,
+          "r1_rosc": 9,
+          "r1_rate": 45.0,
+          "diff_broad": 27.8,
+          "odds_ratio": 3.22,
+          "drug_rate": 90.0,
+          "drug_avg": 2.6,
+          "endo_rate": 60.0,
+          "sga_rate": 35.0,
+          "iv_rate": 5.0,
+          "best_partners": [
+            {
+              "name": "黃美樺",
+              "total": 4,
+              "rosc": 4,
+              "rate": 100.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 3,
+              "rosc": 3,
+              "rate": 100.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "施純泰",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "李長安",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            }
+          ]
+        },
+        {
+          "name": "蔡億鼎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "巾幗守護先鋒",
+          "hero_name": "花木蘭",
+          "hero_title": "巾幗豪傑・萬里赴戎",
+          "hero_image": "images/hua_mulan_ink.jpg",
+          "hero_quote": "萬里赴戎關山度，將軍百戰護生靈！",
+          "desc": "【萬里赴戎・巾幗豪傑】花木蘭披甲歷關山、豪情貫長虹。蔡億鼎身為光明分隊堅毅女將，出勤 346 件救護，給藥率達 73.7%，與各級 TP 默契搭配、沉著篤定。不畏險阻、與同袍並肩迎戰各項急救任務，在急救第一線展現巾幗不讓鬚眉之守護風範！",
+          "general_ems_calls": 346,
+          "general_ems_pct": 1.29,
+          "ohca_calls": 19,
+          "ohca_rosc": 5,
+          "rosc_rate": 26.3,
+          "r1_rosc": 4,
+          "r1_rate": 21.1,
+          "diff_broad": -4.2,
+          "odds_ratio": 0.81,
+          "drug_rate": 73.7,
+          "drug_avg": 2.05,
+          "endo_rate": 42.1,
+          "sga_rate": 21.1,
+          "iv_rate": 73.7,
+          "best_partners": [
+            {
+              "name": "許嘉雄",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "蔣為理",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            },
+            {
+              "name": "施純泰",
+              "total": 6,
+              "rosc": 1,
+              "rate": 16.7
+            }
+          ]
+        }
+      ],
+      "master_37_leaderboard": [
+        {
+          "name": "蔣為理",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 131,
+          "deducted_emt2": 12,
+          "ohca_tp": 119,
+          "rosc_tp": 45,
+          "rate_tp": 37.82,
+          "r1_tp": 30,
+          "rate_r1": 25.21,
+          "drugs_tp": 283,
+          "endo_tp": 56,
+          "start_date": "2022-03-01",
+          "rank": 1
+        },
+        {
+          "name": "許嘉雄",
+          "group": "110年資深TP (早於同學組)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 118,
+          "deducted_emt2": 1,
+          "ohca_tp": 117,
+          "rosc_tp": 44,
+          "rate_tp": 37.61,
+          "r1_tp": 28,
+          "rate_r1": 23.93,
+          "drugs_tp": 256,
+          "endo_tp": 35,
+          "start_date": "2021-01-01",
+          "rank": 2
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 121,
+          "deducted_emt2": 0,
+          "ohca_tp": 121,
+          "rosc_tp": 42,
+          "rate_tp": 34.71,
+          "r1_tp": 31,
+          "rate_r1": 25.62,
+          "drugs_tp": 282,
+          "endo_tp": 76,
+          "start_date": "2019-10-01",
+          "rank": 3
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 182,
+          "deducted_emt2": 0,
+          "ohca_tp": 182,
+          "rosc_tp": 41,
+          "rate_tp": 22.53,
+          "r1_tp": 33,
+          "rate_r1": 18.13,
+          "drugs_tp": 398,
+          "endo_tp": 107,
+          "start_date": "2019-10-01",
+          "rank": 4
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 147,
+          "deducted_emt2": 21,
+          "ohca_tp": 126,
+          "rosc_tp": 39,
+          "rate_tp": 30.95,
+          "r1_tp": 22,
+          "rate_r1": 17.46,
+          "drugs_tp": 300,
+          "endo_tp": 52,
+          "start_date": "2022-03-01",
+          "rank": 5
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 108,
+          "deducted_emt2": 3,
+          "ohca_tp": 105,
+          "rosc_tp": 36,
+          "rate_tp": 34.29,
+          "r1_tp": 25,
+          "rate_r1": 23.81,
+          "drugs_tp": 265,
+          "endo_tp": 56,
+          "start_date": "2022-03-01",
+          "rank": 6
+        },
+        {
+          "name": "李均祈",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 98,
+          "deducted_emt2": 0,
+          "ohca_tp": 98,
+          "rosc_tp": 35,
+          "rate_tp": 35.71,
+          "r1_tp": 21,
+          "rate_r1": 21.43,
+          "drugs_tp": 245,
+          "endo_tp": 37,
+          "start_date": "2019-10-01",
+          "rank": 7
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊",
+          "total_cases_all": 127,
+          "deducted_emt2": 35,
+          "ohca_tp": 92,
+          "rosc_tp": 33,
+          "rate_tp": 35.87,
+          "r1_tp": 23,
+          "rate_r1": 25.0,
+          "drugs_tp": 211,
+          "endo_tp": 39,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "李正群",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 98,
+          "deducted_emt2": 0,
+          "ohca_tp": 98,
+          "rosc_tp": 33,
+          "rate_tp": 33.67,
+          "r1_tp": 25,
+          "rate_r1": 25.51,
+          "drugs_tp": 227,
+          "endo_tp": 40,
+          "start_date": "2019-10-01",
+          "rank": 9
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 94,
+          "deducted_emt2": 23,
+          "ohca_tp": 71,
+          "rosc_tp": 32,
+          "rate_tp": 45.07,
+          "r1_tp": 24,
+          "rate_r1": 33.8,
+          "drugs_tp": 170,
+          "endo_tp": 37,
+          "start_date": "2022-03-01",
+          "rank": 10
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (111.03起算)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 78,
+          "deducted_emt2": 9,
+          "ohca_tp": 69,
+          "rosc_tp": 26,
+          "rate_tp": 37.68,
+          "r1_tp": 18,
+          "rate_r1": 26.09,
+          "drugs_tp": 127,
+          "endo_tp": 25,
+          "start_date": "2022-03-01",
+          "rank": 11
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 123,
+          "deducted_emt2": 5,
+          "ohca_tp": 118,
+          "rosc_tp": 22,
+          "rate_tp": 18.64,
+          "r1_tp": 19,
+          "rate_r1": 16.1,
+          "drugs_tp": 279,
+          "endo_tp": 67,
+          "start_date": "2022-03-01",
+          "rank": 12
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊",
+          "total_cases_all": 118,
+          "deducted_emt2": 7,
+          "ohca_tp": 111,
+          "rosc_tp": 16,
+          "rate_tp": 14.41,
+          "r1_tp": 14,
+          "rate_r1": 12.61,
+          "drugs_tp": 264,
+          "endo_tp": 67,
+          "start_date": "2022-03-01",
+          "rank": 13
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 84,
+          "deducted_emt2": 41,
+          "ohca_tp": 43,
+          "rosc_tp": 12,
+          "rate_tp": 27.91,
+          "r1_tp": 8,
+          "rate_r1": 18.6,
+          "drugs_tp": 112,
+          "endo_tp": 18,
+          "start_date": "2024-01-01",
+          "rank": 14
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (111.03起算)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 67,
+          "deducted_emt2": 17,
+          "ohca_tp": 50,
+          "rosc_tp": 10,
+          "rate_tp": 20.0,
+          "r1_tp": 10,
+          "rate_r1": 20.0,
+          "drugs_tp": 111,
+          "endo_tp": 19,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (111.03起算)",
+          "station": "關西分隊",
+          "total_cases_all": 74,
+          "deducted_emt2": 24,
+          "ohca_tp": 50,
+          "rosc_tp": 10,
+          "rate_tp": 20.0,
+          "r1_tp": 10,
+          "rate_r1": 20.0,
+          "drugs_tp": 96,
+          "endo_tp": 8,
+          "start_date": "2022-03-01",
+          "rank": 16
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新埔分隊",
+          "total_cases_all": 67,
+          "deducted_emt2": 41,
+          "ohca_tp": 26,
+          "rosc_tp": 9,
+          "rate_tp": 34.62,
+          "r1_tp": 3,
+          "rate_r1": 11.54,
+          "drugs_tp": 59,
+          "endo_tp": 3,
+          "start_date": "2024-01-01",
+          "rank": 17
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 61,
+          "deducted_emt2": 23,
+          "ohca_tp": 38,
+          "rosc_tp": 9,
+          "rate_tp": 23.68,
+          "r1_tp": 4,
+          "rate_r1": 10.53,
+          "drugs_tp": 95,
+          "endo_tp": 22,
+          "start_date": "2024-01-01",
+          "rank": 18
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 57,
+          "deducted_emt2": 0,
+          "ohca_tp": 57,
+          "rosc_tp": 9,
+          "rate_tp": 15.79,
+          "r1_tp": 5,
+          "rate_r1": 8.77,
+          "drugs_tp": 96,
+          "endo_tp": 5,
+          "start_date": "2019-10-01",
+          "rank": 19
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 49,
+          "deducted_emt2": 19,
+          "ohca_tp": 30,
+          "rosc_tp": 6,
+          "rate_tp": 20.0,
+          "r1_tp": 1,
+          "rate_r1": 3.33,
+          "drugs_tp": 65,
+          "endo_tp": 14,
+          "start_date": "2024-01-01",
+          "rank": 20
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深EMT-P",
+          "station": "二重分隊",
+          "total_cases_all": 53,
+          "deducted_emt2": 0,
+          "ohca_tp": 53,
+          "rosc_tp": 6,
+          "rate_tp": 11.32,
+          "r1_tp": 4,
+          "rate_r1": 7.55,
+          "drugs_tp": 74,
+          "endo_tp": 7,
+          "start_date": "2019-10-01",
+          "rank": 21
+        },
+        {
+          "name": "王英任",
+          "group": "資深EMT-P",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 28,
+          "deducted_emt2": 0,
+          "ohca_tp": 28,
+          "rosc_tp": 5,
+          "rate_tp": 17.86,
+          "r1_tp": 4,
+          "rate_r1": 14.29,
+          "drugs_tp": 35,
+          "endo_tp": 6,
+          "start_date": "2019-10-01",
+          "rank": 22
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 41,
+          "deducted_emt2": 0,
+          "ohca_tp": 41,
+          "rosc_tp": 5,
+          "rate_tp": 12.2,
+          "r1_tp": 1,
+          "rate_r1": 2.44,
+          "drugs_tp": 51,
+          "endo_tp": 6,
+          "start_date": "2019-10-01",
+          "rank": 23
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深EMT-P",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 57,
+          "deducted_emt2": 0,
+          "ohca_tp": 57,
+          "rosc_tp": 5,
+          "rate_tp": 8.77,
+          "r1_tp": 4,
+          "rate_r1": 7.02,
+          "drugs_tp": 69,
+          "endo_tp": 3,
+          "start_date": "2019-10-01",
+          "rank": 24
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 55,
+          "deducted_emt2": 42,
+          "ohca_tp": 13,
+          "rosc_tp": 4,
+          "rate_tp": 30.77,
+          "r1_tp": 2,
+          "rate_r1": 15.38,
+          "drugs_tp": 29,
+          "endo_tp": 6,
+          "start_date": "2026-01-01",
+          "rank": 25
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深EMT-P",
+          "station": "關西分隊",
+          "total_cases_all": 23,
+          "deducted_emt2": 0,
+          "ohca_tp": 23,
+          "rosc_tp": 4,
+          "rate_tp": 17.39,
+          "r1_tp": 3,
+          "rate_r1": 13.04,
+          "drugs_tp": 50,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 26
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深EMT-P",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 12,
+          "deducted_emt2": 0,
+          "ohca_tp": 12,
+          "rosc_tp": 3,
+          "rate_tp": 25.0,
+          "r1_tp": 2,
+          "rate_r1": 16.67,
+          "drugs_tp": 13,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 27
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 71,
+          "deducted_emt2": 34,
+          "ohca_tp": 37,
+          "rosc_tp": 3,
+          "rate_tp": 8.11,
+          "r1_tp": 3,
+          "rate_r1": 8.11,
+          "drugs_tp": 65,
+          "endo_tp": 13,
+          "start_date": "2024-01-01",
+          "rank": 28
+        },
+        {
+          "name": "李建暾",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 2,
+          "rate_tp": 50.0,
+          "r1_tp": 1,
+          "rate_r1": 25.0,
+          "drugs_tp": 5,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 29
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深EMT-P",
+          "station": "豐田分隊 / 竹北分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 0,
+          "ohca_tp": 10,
+          "rosc_tp": 2,
+          "rate_tp": 20.0,
+          "r1_tp": 2,
+          "rate_r1": 20.0,
+          "drugs_tp": 9,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 30
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "豐田分隊",
+          "total_cases_all": 38,
+          "deducted_emt2": 18,
+          "ohca_tp": 20,
+          "rosc_tp": 2,
+          "rate_tp": 10.0,
+          "r1_tp": 1,
+          "rate_r1": 5.0,
+          "drugs_tp": 47,
+          "endo_tp": 9,
+          "start_date": "2024-01-01",
+          "rank": 31
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深EMT-P",
+          "station": "新工分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2019-10-01",
+          "rank": 32
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (111.03起算)",
+          "station": "寶山分隊",
+          "total_cases_all": 26,
+          "deducted_emt2": 6,
+          "ohca_tp": 20,
+          "rosc_tp": 1,
+          "rate_tp": 5.0,
+          "r1_tp": 1,
+          "rate_r1": 5.0,
+          "drugs_tp": 30,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 33
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (111.03起算)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 32,
+          "deducted_emt2": 6,
+          "ohca_tp": 26,
+          "rosc_tp": 1,
+          "rate_tp": 3.85,
+          "r1_tp": 1,
+          "rate_r1": 3.85,
+          "drugs_tp": 65,
+          "endo_tp": 11,
+          "start_date": "2022-03-01",
+          "rank": 34
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP (扣除EMT2)",
+          "station": "峨眉分隊",
+          "total_cases_all": 18,
+          "deducted_emt2": 11,
+          "ohca_tp": 7,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 17,
+          "endo_tp": 0,
+          "start_date": "2025-01-01",
+          "rank": 35
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "橫山分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 5,
+          "start_date": "2024-01-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深EMT-P",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 37
+        }
+      ],
+      "ranked_post_gm": [
+        {
+          "name": "蔣為理",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 131,
+          "deducted_emt2": 0,
+          "ohca_tp": 119,
+          "rosc_tp": 45,
+          "rate_tp": 37.82,
+          "r1_tp": 36,
+          "rate_r1": 30.25,
+          "drugs_tp": 283,
+          "endo_tp": 56,
+          "start_date": "2022-03-01",
+          "rank": 1
+        },
+        {
+          "name": "許嘉雄",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 118,
+          "deducted_emt2": 0,
+          "ohca_tp": 96,
+          "rosc_tp": 39,
+          "rate_tp": 40.62,
+          "r1_tp": 32,
+          "rate_r1": 33.33,
+          "drugs_tp": 214,
+          "endo_tp": 29,
+          "start_date": "2022-03-01",
+          "rank": 2
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 147,
+          "deducted_emt2": 0,
+          "ohca_tp": 126,
+          "rosc_tp": 39,
+          "rate_tp": 30.95,
+          "r1_tp": 29,
+          "rate_r1": 23.02,
+          "drugs_tp": 300,
+          "endo_tp": 52,
+          "start_date": "2022-03-01",
+          "rank": 3
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 108,
+          "deducted_emt2": 0,
+          "ohca_tp": 105,
+          "rosc_tp": 36,
+          "rate_tp": 34.29,
+          "r1_tp": 29,
+          "rate_r1": 27.62,
+          "drugs_tp": 265,
+          "endo_tp": 56,
+          "start_date": "2022-03-01",
+          "rank": 4
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 121,
+          "deducted_emt2": 0,
+          "ohca_tp": 90,
+          "rosc_tp": 33,
+          "rate_tp": 36.67,
+          "r1_tp": 29,
+          "rate_r1": 32.22,
+          "drugs_tp": 218,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 5
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊",
+          "total_cases_all": 127,
+          "deducted_emt2": 0,
+          "ohca_tp": 92,
+          "rosc_tp": 33,
+          "rate_tp": 35.87,
+          "r1_tp": 25,
+          "rate_r1": 27.17,
+          "drugs_tp": 211,
+          "endo_tp": 39,
+          "start_date": "2022-03-01",
+          "rank": 6
+        },
+        {
+          "name": "李正群",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 98,
+          "deducted_emt2": 0,
+          "ohca_tp": 98,
+          "rosc_tp": 33,
+          "rate_tp": 33.67,
+          "r1_tp": 30,
+          "rate_r1": 30.61,
+          "drugs_tp": 227,
+          "endo_tp": 40,
+          "start_date": "2022-03-01",
+          "rank": 7
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 94,
+          "deducted_emt2": 0,
+          "ohca_tp": 71,
+          "rosc_tp": 32,
+          "rate_tp": 45.07,
+          "r1_tp": 25,
+          "rate_r1": 35.21,
+          "drugs_tp": 170,
+          "endo_tp": 37,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "李均祈",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 98,
+          "deducted_emt2": 0,
+          "ohca_tp": 84,
+          "rosc_tp": 31,
+          "rate_tp": 36.9,
+          "r1_tp": 19,
+          "rate_r1": 22.62,
+          "drugs_tp": 214,
+          "endo_tp": 36,
+          "start_date": "2022-03-01",
+          "rank": 9
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 182,
+          "deducted_emt2": 0,
+          "ohca_tp": 131,
+          "rosc_tp": 30,
+          "rate_tp": 22.9,
+          "r1_tp": 27,
+          "rate_r1": 20.61,
+          "drugs_tp": 304,
+          "endo_tp": 94,
+          "start_date": "2022-03-01",
+          "rank": 10
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 78,
+          "deducted_emt2": 0,
+          "ohca_tp": 69,
+          "rosc_tp": 26,
+          "rate_tp": 37.68,
+          "r1_tp": 18,
+          "rate_r1": 26.09,
+          "drugs_tp": 127,
+          "endo_tp": 25,
+          "start_date": "2022-03-01",
+          "rank": 11
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 123,
+          "deducted_emt2": 0,
+          "ohca_tp": 118,
+          "rosc_tp": 22,
+          "rate_tp": 18.64,
+          "r1_tp": 19,
+          "rate_r1": 16.1,
+          "drugs_tp": 279,
+          "endo_tp": 67,
+          "start_date": "2022-03-01",
+          "rank": 12
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊",
+          "total_cases_all": 118,
+          "deducted_emt2": 0,
+          "ohca_tp": 111,
+          "rosc_tp": 16,
+          "rate_tp": 14.41,
+          "r1_tp": 14,
+          "rate_r1": 12.61,
+          "drugs_tp": 264,
+          "endo_tp": 67,
+          "start_date": "2022-03-01",
+          "rank": 13
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 84,
+          "deducted_emt2": 0,
+          "ohca_tp": 43,
+          "rosc_tp": 12,
+          "rate_tp": 27.91,
+          "r1_tp": 10,
+          "rate_r1": 23.26,
+          "drugs_tp": 112,
+          "endo_tp": 24,
+          "start_date": "2022-03-01",
+          "rank": 14
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 67,
+          "deducted_emt2": 0,
+          "ohca_tp": 50,
+          "rosc_tp": 10,
+          "rate_tp": 20.0,
+          "r1_tp": 10,
+          "rate_r1": 20.0,
+          "drugs_tp": 111,
+          "endo_tp": 19,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "關西分隊",
+          "total_cases_all": 74,
+          "deducted_emt2": 0,
+          "ohca_tp": 50,
+          "rosc_tp": 10,
+          "rate_tp": 20.0,
+          "r1_tp": 10,
+          "rate_r1": 20.0,
+          "drugs_tp": 96,
+          "endo_tp": 8,
+          "start_date": "2022-03-01",
+          "rank": 16
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP",
+          "station": "新埔分隊",
+          "total_cases_all": 67,
+          "deducted_emt2": 0,
+          "ohca_tp": 26,
+          "rosc_tp": 9,
+          "rate_tp": 34.62,
+          "r1_tp": 3,
+          "rate_r1": 11.54,
+          "drugs_tp": 59,
+          "endo_tp": 4,
+          "start_date": "2022-03-01",
+          "rank": 17
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 61,
+          "deducted_emt2": 0,
+          "ohca_tp": 38,
+          "rosc_tp": 9,
+          "rate_tp": 23.68,
+          "r1_tp": 4,
+          "rate_r1": 10.53,
+          "drugs_tp": 95,
+          "endo_tp": 22,
+          "start_date": "2022-03-01",
+          "rank": 18
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 49,
+          "deducted_emt2": 0,
+          "ohca_tp": 30,
+          "rosc_tp": 6,
+          "rate_tp": 20.0,
+          "r1_tp": 1,
+          "rate_r1": 3.33,
+          "drugs_tp": 65,
+          "endo_tp": 14,
+          "start_date": "2022-03-01",
+          "rank": 19
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 55,
+          "deducted_emt2": 0,
+          "ohca_tp": 13,
+          "rosc_tp": 4,
+          "rate_tp": 30.77,
+          "r1_tp": 2,
+          "rate_r1": 15.38,
+          "drugs_tp": 29,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 20
+        },
+        {
+          "name": "王英任",
+          "group": "資深組 (截取專責期)",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 28,
+          "deducted_emt2": 0,
+          "ohca_tp": 17,
+          "rosc_tp": 4,
+          "rate_tp": 23.53,
+          "r1_tp": 3,
+          "rate_r1": 17.65,
+          "drugs_tp": 29,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 21
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深組 (截取專責期)",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 57,
+          "deducted_emt2": 0,
+          "ohca_tp": 31,
+          "rosc_tp": 4,
+          "rate_tp": 12.9,
+          "r1_tp": 4,
+          "rate_r1": 12.9,
+          "drugs_tp": 54,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 22
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深組 (截取專責期)",
+          "station": "二重分隊",
+          "total_cases_all": 53,
+          "deducted_emt2": 0,
+          "ohca_tp": 37,
+          "rosc_tp": 4,
+          "rate_tp": 10.81,
+          "r1_tp": 4,
+          "rate_r1": 10.81,
+          "drugs_tp": 71,
+          "endo_tp": 7,
+          "start_date": "2022-03-01",
+          "rank": 23
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 71,
+          "deducted_emt2": 0,
+          "ohca_tp": 37,
+          "rosc_tp": 3,
+          "rate_tp": 8.11,
+          "r1_tp": 3,
+          "rate_r1": 8.11,
+          "drugs_tp": 65,
+          "endo_tp": 13,
+          "start_date": "2022-03-01",
+          "rank": 24
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深組 (截取專責期)",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 2,
+          "rate_tp": 33.33,
+          "r1_tp": 2,
+          "rate_r1": 33.33,
+          "drugs_tp": 7,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 25
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP",
+          "station": "豐田分隊",
+          "total_cases_all": 38,
+          "deducted_emt2": 0,
+          "ohca_tp": 20,
+          "rosc_tp": 2,
+          "rate_tp": 10.0,
+          "r1_tp": 1,
+          "rate_r1": 5.0,
+          "drugs_tp": 47,
+          "endo_tp": 9,
+          "start_date": "2022-03-01",
+          "rank": 26
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 41,
+          "deducted_emt2": 0,
+          "ohca_tp": 26,
+          "rosc_tp": 2,
+          "rate_tp": 7.69,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 41,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 27
+        },
+        {
+          "name": "李建暾",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 1,
+          "rate_tp": 33.33,
+          "r1_tp": 1,
+          "rate_r1": 33.33,
+          "drugs_tp": 5,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 28
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新豐分隊",
+          "total_cases_all": 12,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 1,
+          "rate_r1": 25.0,
+          "drugs_tp": 11,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 29
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深組 (截取專責期)",
+          "station": "新工分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 30
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深組 (截取專責期)",
+          "station": "關西分隊",
+          "total_cases_all": 23,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 1,
+          "rate_tp": 14.29,
+          "r1_tp": 1,
+          "rate_r1": 14.29,
+          "drugs_tp": 17,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 31
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "寶山分隊",
+          "total_cases_all": 26,
+          "deducted_emt2": 0,
+          "ohca_tp": 20,
+          "rosc_tp": 1,
+          "rate_tp": 5.0,
+          "r1_tp": 1,
+          "rate_r1": 5.0,
+          "drugs_tp": 30,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 32
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 57,
+          "deducted_emt2": 0,
+          "ohca_tp": 21,
+          "rosc_tp": 1,
+          "rate_tp": 4.76,
+          "r1_tp": 1,
+          "rate_r1": 4.76,
+          "drugs_tp": 53,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 33
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 32,
+          "deducted_emt2": 0,
+          "ohca_tp": 26,
+          "rosc_tp": 1,
+          "rate_tp": 3.85,
+          "r1_tp": 1,
+          "rate_r1": 3.85,
+          "drugs_tp": 65,
+          "endo_tp": 11,
+          "start_date": "2022-03-01",
+          "rank": 34
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP",
+          "station": "峨眉分隊",
+          "total_cases_all": 18,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 17,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 35
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP",
+          "station": "橫山分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深組 (截取專責期)",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 37
+        }
+      ],
+      "combinations": {
+        "pairs_top": [
+          {
+            "names": "紀翔升 + 黃美樺",
+            "total": 4,
+            "rosc": 4,
+            "rate": 100.0,
+            "drugs": 11
+          },
+          {
+            "names": "孫智偉 + 王柏文",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 張承泰",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張惟智 + 陳昆郁",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉奕宏 + 張凡治",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 9
+          },
+          {
+            "names": "紀翔升 + 許嘉雄",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 8
+          },
+          {
+            "names": "吳志霖 + 蔡佑維",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "林佑安 + 謝侑翰",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "李晉緯 + 賴致平",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "周哲君 + 黃素娟",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "呂育陞 + 李林營",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "李林營 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉大維 + 李偉廷",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "李偉廷 + 謝聿蓴",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "楊子俊 + 謝京龍",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "林惠玲 + 許嘉雄",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "楊永正 + 湯育澍",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "池昱霆 + 郭哲維",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 胡鳳格",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "胡鳳格 + 范庭華",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "楊永正 + 莊佳潔",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔡煥龍 + 陳衛東",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔡煥龍 + 黃順安",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉名洲 + 羅能良",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 4
+          },
+          {
+            "names": "王政雄 + 胡鳳格",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "謝侑翰 + 謝啟盛",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "紀翔升 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "謝聿蓴 + 陳文雪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "施純泰 + 紀翔升",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "楊承錞 + 楊翔宇",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 張源祐",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 4
+          },
+          {
+            "names": "張智強 + 李堯軒",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 12
+          },
+          {
+            "names": "李正群 + 黃美樺",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 11
+          },
+          {
+            "names": "彭弘傑 + 邱怡華",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 5
+          },
+          {
+            "names": "方清蔚 + 鍾明秀",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 2
+          },
+          {
+            "names": "施婷雯 + 鍾明哲",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 8
+          },
+          {
+            "names": "吳明星 + 潘賢安",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "彭素珍 + 翁嘉隆",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "何仰哲 + 何恭翕",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "吳菘庭 + 曾士維",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 盧建良",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "石俊傑 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "鄭育承 + 鍾錦明",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 2
+          },
+          {
+            "names": "李昀毅 + 謝侑翰",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "林佑安 + 鄭育承",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "賴姸宇 + 高傳恩",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "洪國胤 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "張源祐 + 彭煜錩",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 1
+          },
+          {
+            "names": "曾翊瑋 + 鄭睿旭",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "劉和訓 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 6
+          }
+        ],
+        "trios_top": [
+          {
+            "names": "施純泰 + 蔣為理 + 賴俊傑",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 9
+          },
+          {
+            "names": "洪國胤 + 鄭睿旭 + 黃皓賓",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "施純泰 + 李均祈 + 許嘉雄",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉名洲 + 彭弘傑 + 黃盈豪",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 7
+          },
+          {
+            "names": "呂育陞 + 李正群 + 蔣為理",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 7
+          },
+          {
+            "names": "周奕君 + 宋億嘉 + 黃厚棠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉名洲 + 謝侑翰 + 鄭育承",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "施純泰 + 李均祈 + 黃玉喬",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 4
+          },
+          {
+            "names": "何仰哲 + 何恭翕 + 王英任",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "施純泰 + 連國延 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "許育誠 + 連國延 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "呂育陞 + 洪國胤 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "洪國胤 + 蔣為理 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔣為理 + 許嘉雄 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "張凡治 + 張源祐 + 彭煜錩",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "廖宇揚 + 楊子毅 + 蔡聖文",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "呂育陞 + 蔣為理 + 許育誠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "呂育陞 + 李林營 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉大維 + 李偉廷 + 謝聿蓴",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "呂育陞 + 李正群 + 許育誠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "劉名洲 + 張智強 + 李堯軒",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "張智強 + 李堯軒 + 黃盈豪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "施純泰 + 賴俊傑 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "呂育陞 + 李正群 + 賴俊傑",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "施婷雯 + 林冠廷 + 鍾明哲",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "吳志霖 + 施翔耀 + 陳明裕",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "劉奕宏 + 張凡治 + 張惟智",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "謝侑翰 + 謝啟盛 + 黃盈豪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "廖韋同 + 温政富 + 王政雄",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "李正群 + 紀翔升 + 黃美樺",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "紀翔升 + 許嘉雄 + 賴俊傑",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "李均祈 + 許育誠 + 黃玉喬",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "紀翔升 + 賴俊傑 + 黃美樺",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "呂育陞 + 李均祈 + 蔣為理",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 13
+          },
+          {
+            "names": "呂育陞 + 鄭睿旭 + 黃皓賓",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 9
+          },
+          {
+            "names": "洪國胤 + 連國延 + 鄭睿旭",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 8
+          },
+          {
+            "names": "李均祈 + 蔣為理 + 許育誠",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 10
+          },
+          {
+            "names": "李均祈 + 李正群 + 蔣為理",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 8
+          },
+          {
+            "names": "張馨予 + 蔣為理 + 許育誠",
+            "total": 6,
+            "rosc": 4,
+            "rate": 66.7,
+            "drugs": 17
+          },
+          {
+            "names": "劉名洲 + 李堯軒 + 鍾錦明",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "吳志文 + 戴世豐 + 莊士緯",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "張馨予 + 許嘉雄 + 黃皓賓",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "洪國胤 + 蔣為理 + 鄭睿旭",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 2
+          },
+          {
+            "names": "施純泰 + 許嘉雄 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 蔣為理",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "許嘉雄 + 賴俊傑 + 鄭睿旭",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "彭弘傑 + 謝侑翰 + 黃盈豪",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "李均祈 + 李正群 + 許嘉雄",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "呂育陞 + 李均祈 + 李正群",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 7
+          }
+        ]
+      },
+      "yearly_stats": [
+        {
+          "year": "108",
+          "total_ohca": 113,
+          "transported": 113,
+          "r1_rosc": 8,
+          "r1_rate": 7.08,
+          "rosc": 10,
+          "rosc_rate": 8.85,
+          "drugs_count": 3,
+          "drugs_per_case": 0.03,
+          "dual_tp_rate": 0.0,
+          "endo_count": 1
+        },
+        {
+          "year": "109",
+          "total_ohca": 552,
+          "transported": 552,
+          "r1_rosc": 46,
+          "r1_rate": 8.33,
+          "rosc": 95,
+          "rosc_rate": 17.21,
+          "drugs_count": 120,
+          "drugs_per_case": 0.22,
+          "dual_tp_rate": 6.16,
+          "endo_count": 13
+        },
+        {
+          "year": "110",
+          "total_ohca": 545,
+          "transported": 545,
+          "r1_rosc": 42,
+          "r1_rate": 7.71,
+          "rosc": 86,
+          "rosc_rate": 15.78,
+          "drugs_count": 177,
+          "drugs_per_case": 0.32,
+          "dual_tp_rate": 7.16,
+          "endo_count": 18
+        },
+        {
+          "year": "111",
+          "total_ohca": 643,
+          "transported": 643,
+          "r1_rosc": 54,
+          "r1_rate": 8.4,
+          "rosc": 87,
+          "rosc_rate": 13.53,
+          "drugs_count": 531,
+          "drugs_per_case": 0.83,
+          "dual_tp_rate": 13.53,
+          "endo_count": 106
+        },
+        {
+          "year": "112",
+          "total_ohca": 594,
+          "transported": 594,
+          "r1_rosc": 73,
+          "r1_rate": 12.29,
+          "rosc": 103,
+          "rosc_rate": 17.34,
+          "drugs_count": 619,
+          "drugs_per_case": 1.04,
+          "dual_tp_rate": 15.99,
+          "endo_count": 141
+        },
+        {
+          "year": "113",
+          "total_ohca": 595,
+          "transported": 595,
+          "r1_rosc": 65,
+          "r1_rate": 10.92,
+          "rosc": 95,
+          "rosc_rate": 15.97,
+          "drugs_count": 698,
+          "drugs_per_case": 1.17,
+          "dual_tp_rate": 18.15,
+          "endo_count": 135
+        },
+        {
+          "year": "114",
+          "total_ohca": 608,
+          "transported": 608,
+          "r1_rosc": 70,
+          "r1_rate": 11.51,
+          "rosc": 101,
+          "rosc_rate": 16.61,
+          "drugs_count": 606,
+          "drugs_per_case": 1.0,
+          "dual_tp_rate": 11.02,
+          "endo_count": 120
+        },
+        {
+          "year": "115",
+          "total_ohca": 387,
+          "transported": 387,
+          "r1_rosc": 56,
+          "r1_rate": 14.47,
+          "rosc": 75,
+          "rosc_rate": 19.38,
+          "drugs_count": 443,
+          "drugs_per_case": 1.14,
+          "dual_tp_rate": 11.63,
+          "endo_count": 80
+        }
+      ],
+      "ranked_stations": [
+        {
+          "station": "光明分隊",
+          "pre_gm_total": 139,
+          "pre_gm_rosc": 28,
+          "pre_gm_rate": 20.14,
+          "post_gm_total": 404,
+          "post_gm_rosc": 137,
+          "post_gm_rate": 33.91,
+          "growth": 13.77,
+          "total_ohca": 543,
+          "total_rosc": 165,
+          "overall_rate": 30.39,
+          "r1_rate": 23.57,
+          "matrix": {
+            "108": {
+              "rate": 25.0,
+              "rosc": 2,
+              "total": 8
+            },
+            "109": {
+              "rate": 19.3,
+              "rosc": 11,
+              "total": 57
+            },
+            "110": {
+              "rate": 16.7,
+              "rosc": 10,
+              "total": 60
+            },
+            "111": {
+              "rate": 38.3,
+              "rosc": 36,
+              "total": 94
+            },
+            "112": {
+              "rate": 32.3,
+              "rosc": 32,
+              "total": 99
+            },
+            "113": {
+              "rate": 28.1,
+              "rosc": 25,
+              "total": 89
+            },
+            "114": {
+              "rate": 35.0,
+              "rosc": 28,
+              "total": 80
+            },
+            "115": {
+              "rate": 37.5,
+              "rosc": 21,
+              "total": 56
+            }
+          },
+          "rank": 1
+        },
+        {
+          "station": "新工分隊",
+          "pre_gm_total": 83,
+          "pre_gm_rosc": 13,
+          "pre_gm_rate": 15.66,
+          "post_gm_total": 187,
+          "post_gm_rosc": 47,
+          "post_gm_rate": 25.13,
+          "growth": 9.47,
+          "total_ohca": 270,
+          "total_rosc": 60,
+          "overall_rate": 22.22,
+          "r1_rate": 11.48,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            },
+            "109": {
+              "rate": 22.5,
+              "rosc": 9,
+              "total": 40
+            },
+            "110": {
+              "rate": 12.9,
+              "rosc": 4,
+              "total": 31
+            },
+            "111": {
+              "rate": 24.1,
+              "rosc": 7,
+              "total": 29
+            },
+            "112": {
+              "rate": 29.3,
+              "rosc": 12,
+              "total": 41
+            },
+            "113": {
+              "rate": 26.2,
+              "rosc": 11,
+              "total": 42
+            },
+            "114": {
+              "rate": 20.8,
+              "rosc": 10,
+              "total": 48
+            },
+            "115": {
+              "rate": 24.1,
+              "rosc": 7,
+              "total": 29
+            }
+          },
+          "rank": 2
+        },
+        {
+          "station": "新埔分隊",
+          "pre_gm_total": 83,
+          "pre_gm_rosc": 17,
+          "pre_gm_rate": 20.48,
+          "post_gm_total": 186,
+          "post_gm_rosc": 37,
+          "post_gm_rate": 19.89,
+          "growth": -0.59,
+          "total_ohca": 269,
+          "total_rosc": 54,
+          "overall_rate": 20.07,
+          "r1_rate": 6.69,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 8
+            },
+            "109": {
+              "rate": 17.9,
+              "rosc": 5,
+              "total": 28
+            },
+            "110": {
+              "rate": 29.3,
+              "rosc": 12,
+              "total": 41
+            },
+            "111": {
+              "rate": 4.3,
+              "rosc": 2,
+              "total": 46
+            },
+            "112": {
+              "rate": 22.9,
+              "rosc": 8,
+              "total": 35
+            },
+            "113": {
+              "rate": 22.4,
+              "rosc": 11,
+              "total": 49
+            },
+            "114": {
+              "rate": 25.6,
+              "rosc": 10,
+              "total": 39
+            },
+            "115": {
+              "rate": 26.1,
+              "rosc": 6,
+              "total": 23
+            }
+          },
+          "rank": 3
+        },
+        {
+          "station": "竹東分隊",
+          "pre_gm_total": 166,
+          "pre_gm_rosc": 38,
+          "pre_gm_rate": 22.89,
+          "post_gm_total": 383,
+          "post_gm_rosc": 60,
+          "post_gm_rate": 15.67,
+          "growth": -7.22,
+          "total_ohca": 549,
+          "total_rosc": 98,
+          "overall_rate": 17.85,
+          "r1_rate": 12.2,
+          "matrix": {
+            "108": {
+              "rate": 25.0,
+              "rosc": 2,
+              "total": 8
+            },
+            "109": {
+              "rate": 23.9,
+              "rosc": 17,
+              "total": 71
+            },
+            "110": {
+              "rate": 22.4,
+              "rosc": 15,
+              "total": 67
+            },
+            "111": {
+              "rate": 10.6,
+              "rosc": 11,
+              "total": 104
+            },
+            "112": {
+              "rate": 18.2,
+              "rosc": 14,
+              "total": 77
+            },
+            "113": {
+              "rate": 13.9,
+              "rosc": 11,
+              "total": 79
+            },
+            "114": {
+              "rate": 18.4,
+              "rosc": 14,
+              "total": 76
+            },
+            "115": {
+              "rate": 20.9,
+              "rosc": 14,
+              "total": 67
+            }
+          },
+          "rank": 4
+        },
+        {
+          "station": "竹北分隊",
+          "pre_gm_total": 87,
+          "pre_gm_rosc": 15,
+          "pre_gm_rate": 17.24,
+          "post_gm_total": 82,
+          "post_gm_rosc": 15,
+          "post_gm_rate": 18.29,
+          "growth": 1.05,
+          "total_ohca": 169,
+          "total_rosc": 30,
+          "overall_rate": 17.75,
+          "r1_rate": 7.69,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "109": {
+              "rate": 8.3,
+              "rosc": 3,
+              "total": 36
+            },
+            "110": {
+              "rate": 27.5,
+              "rosc": 11,
+              "total": 40
+            },
+            "111": {
+              "rate": 7.4,
+              "rosc": 2,
+              "total": 27
+            },
+            "112": {
+              "rate": 19.0,
+              "rosc": 4,
+              "total": 21
+            },
+            "113": {
+              "rate": 34.8,
+              "rosc": 8,
+              "total": 23
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 11
+            },
+            "115": {
+              "rate": 33.3,
+              "rosc": 2,
+              "total": 6
+            }
+          },
+          "rank": 5
+        },
+        {
+          "station": "山崎分隊",
+          "pre_gm_total": 72,
+          "pre_gm_rosc": 10,
+          "pre_gm_rate": 13.89,
+          "post_gm_total": 176,
+          "post_gm_rosc": 33,
+          "post_gm_rate": 18.75,
+          "growth": 4.86,
+          "total_ohca": 248,
+          "total_rosc": 43,
+          "overall_rate": 17.34,
+          "r1_rate": 7.66,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "109": {
+              "rate": 20.0,
+              "rosc": 4,
+              "total": 20
+            },
+            "110": {
+              "rate": 14.6,
+              "rosc": 6,
+              "total": 41
+            },
+            "111": {
+              "rate": 8.6,
+              "rosc": 3,
+              "total": 35
+            },
+            "112": {
+              "rate": 19.0,
+              "rosc": 8,
+              "total": 42
+            },
+            "113": {
+              "rate": 20.0,
+              "rosc": 7,
+              "total": 35
+            },
+            "114": {
+              "rate": 22.0,
+              "rosc": 9,
+              "total": 41
+            },
+            "115": {
+              "rate": 22.2,
+              "rosc": 6,
+              "total": 27
+            }
+          },
+          "rank": 6
+        },
+        {
+          "station": "北埔分隊",
+          "pre_gm_total": 32,
+          "pre_gm_rosc": 7,
+          "pre_gm_rate": 21.88,
+          "post_gm_total": 59,
+          "post_gm_rosc": 7,
+          "post_gm_rate": 11.86,
+          "growth": -10.02,
+          "total_ohca": 91,
+          "total_rosc": 14,
+          "overall_rate": 15.38,
+          "r1_rate": 8.79,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "109": {
+              "rate": 25.0,
+              "rosc": 3,
+              "total": 12
+            },
+            "110": {
+              "rate": 25.0,
+              "rosc": 4,
+              "total": 16
+            },
+            "111": {
+              "rate": 18.2,
+              "rosc": 2,
+              "total": 11
+            },
+            "112": {
+              "rate": 13.3,
+              "rosc": 2,
+              "total": 15
+            },
+            "113": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "114": {
+              "rate": 12.5,
+              "rosc": 2,
+              "total": 16
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 11
+            }
+          },
+          "rank": 7
+        },
+        {
+          "station": "芎林分隊",
+          "pre_gm_total": 87,
+          "pre_gm_rosc": 15,
+          "pre_gm_rate": 17.24,
+          "post_gm_total": 157,
+          "post_gm_rosc": 15,
+          "post_gm_rate": 9.55,
+          "growth": -7.69,
+          "total_ohca": 244,
+          "total_rosc": 30,
+          "overall_rate": 12.3,
+          "r1_rate": 9.43,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 12
+            },
+            "109": {
+              "rate": 18.4,
+              "rosc": 7,
+              "total": 38
+            },
+            "110": {
+              "rate": 15.6,
+              "rosc": 5,
+              "total": 32
+            },
+            "111": {
+              "rate": 23.3,
+              "rosc": 7,
+              "total": 30
+            },
+            "112": {
+              "rate": 5.9,
+              "rosc": 2,
+              "total": 34
+            },
+            "113": {
+              "rate": 7.0,
+              "rosc": 3,
+              "total": 43
+            },
+            "114": {
+              "rate": 6.2,
+              "rosc": 2,
+              "total": 32
+            },
+            "115": {
+              "rate": 17.4,
+              "rosc": 4,
+              "total": 23
+            }
+          },
+          "rank": 8
+        },
+        {
+          "station": "關西分隊",
+          "pre_gm_total": 86,
+          "pre_gm_rosc": 12,
+          "pre_gm_rate": 13.95,
+          "post_gm_total": 151,
+          "post_gm_rosc": 17,
+          "post_gm_rate": 11.26,
+          "growth": -2.69,
+          "total_ohca": 237,
+          "total_rosc": 29,
+          "overall_rate": 12.24,
+          "r1_rate": 8.44,
+          "matrix": {
+            "108": {
+              "rate": 9.1,
+              "rosc": 1,
+              "total": 11
+            },
+            "109": {
+              "rate": 14.3,
+              "rosc": 6,
+              "total": 42
+            },
+            "110": {
+              "rate": 17.2,
+              "rosc": 5,
+              "total": 29
+            },
+            "111": {
+              "rate": 2.9,
+              "rosc": 1,
+              "total": 34
+            },
+            "112": {
+              "rate": 8.1,
+              "rosc": 3,
+              "total": 37
+            },
+            "113": {
+              "rate": 14.8,
+              "rosc": 4,
+              "total": 27
+            },
+            "114": {
+              "rate": 16.2,
+              "rosc": 6,
+              "total": 37
+            },
+            "115": {
+              "rate": 15.0,
+              "rosc": 3,
+              "total": 20
+            }
+          },
+          "rank": 9
+        },
+        {
+          "station": "橫山分隊",
+          "pre_gm_total": 41,
+          "pre_gm_rosc": 7,
+          "pre_gm_rate": 17.07,
+          "post_gm_total": 78,
+          "post_gm_rosc": 7,
+          "post_gm_rate": 8.97,
+          "growth": -8.1,
+          "total_ohca": 119,
+          "total_rosc": 14,
+          "overall_rate": 11.76,
+          "r1_rate": 6.72,
+          "matrix": {
+            "108": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            },
+            "109": {
+              "rate": 20.0,
+              "rosc": 4,
+              "total": 20
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            },
+            "111": {
+              "rate": 15.8,
+              "rosc": 3,
+              "total": 19
+            },
+            "112": {
+              "rate": 4.2,
+              "rosc": 1,
+              "total": 24
+            },
+            "113": {
+              "rate": 11.1,
+              "rosc": 2,
+              "total": 18
+            },
+            "114": {
+              "rate": 21.4,
+              "rosc": 3,
+              "total": 14
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            }
+          },
+          "rank": 10
+        },
+        {
+          "station": "豐田分隊",
+          "pre_gm_total": 45,
+          "pre_gm_rosc": 8,
+          "pre_gm_rate": 17.78,
+          "post_gm_total": 119,
+          "post_gm_rosc": 11,
+          "post_gm_rate": 9.24,
+          "growth": -8.54,
+          "total_ohca": 164,
+          "total_rosc": 19,
+          "overall_rate": 11.59,
+          "r1_rate": 1.22,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "109": {
+              "rate": 12.5,
+              "rosc": 2,
+              "total": 16
+            },
+            "110": {
+              "rate": 25.0,
+              "rosc": 6,
+              "total": 24
+            },
+            "111": {
+              "rate": 7.7,
+              "rosc": 2,
+              "total": 26
+            },
+            "112": {
+              "rate": 10.5,
+              "rosc": 2,
+              "total": 19
+            },
+            "113": {
+              "rate": 4.0,
+              "rosc": 1,
+              "total": 25
+            },
+            "114": {
+              "rate": 13.2,
+              "rosc": 5,
+              "total": 38
+            },
+            "115": {
+              "rate": 7.1,
+              "rosc": 1,
+              "total": 14
+            }
+          },
+          "rank": 11
+        },
+        {
+          "station": "峨眉分隊",
+          "pre_gm_total": 19,
+          "pre_gm_rosc": 3,
+          "pre_gm_rate": 15.79,
+          "post_gm_total": 45,
+          "post_gm_rosc": 4,
+          "post_gm_rate": 8.89,
+          "growth": -6.9,
+          "total_ohca": 64,
+          "total_rosc": 7,
+          "overall_rate": 10.94,
+          "r1_rate": 4.69,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 25.0,
+              "rosc": 3,
+              "total": 12
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 13
+            },
+            "112": {
+              "rate": 25.0,
+              "rosc": 2,
+              "total": 8
+            },
+            "113": {
+              "rate": 11.1,
+              "rosc": 1,
+              "total": 9
+            },
+            "114": {
+              "rate": 11.1,
+              "rosc": 1,
+              "total": 9
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            }
+          },
+          "rank": 12
+        },
+        {
+          "station": "尖石分隊",
+          "pre_gm_total": 30,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 6.67,
+          "post_gm_total": 54,
+          "post_gm_rosc": 7,
+          "post_gm_rate": 12.96,
+          "growth": 6.29,
+          "total_ohca": 84,
+          "total_rosc": 9,
+          "overall_rate": 10.71,
+          "r1_rate": 9.52,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 10.0,
+              "rosc": 1,
+              "total": 10
+            },
+            "110": {
+              "rate": 5.9,
+              "rosc": 1,
+              "total": 17
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 17
+            },
+            "112": {
+              "rate": 28.6,
+              "rosc": 2,
+              "total": 7
+            },
+            "113": {
+              "rate": 18.2,
+              "rosc": 2,
+              "total": 11
+            },
+            "114": {
+              "rate": 12.5,
+              "rosc": 2,
+              "total": 16
+            },
+            "115": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            }
+          },
+          "rank": 13
+        },
+        {
+          "station": "二重分隊",
+          "pre_gm_total": 53,
+          "pre_gm_rosc": 6,
+          "pre_gm_rate": 11.32,
+          "post_gm_total": 102,
+          "post_gm_rosc": 10,
+          "post_gm_rate": 9.8,
+          "growth": -1.52,
+          "total_ohca": 155,
+          "total_rosc": 16,
+          "overall_rate": 10.32,
+          "r1_rate": 9.03,
+          "matrix": {
+            "108": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "109": {
+              "rate": 12.0,
+              "rosc": 3,
+              "total": 25
+            },
+            "110": {
+              "rate": 11.8,
+              "rosc": 2,
+              "total": 17
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 27
+            },
+            "112": {
+              "rate": 8.7,
+              "rosc": 2,
+              "total": 23
+            },
+            "113": {
+              "rate": 14.3,
+              "rosc": 3,
+              "total": 21
+            },
+            "114": {
+              "rate": 8.7,
+              "rosc": 2,
+              "total": 23
+            },
+            "115": {
+              "rate": 23.1,
+              "rosc": 3,
+              "total": 13
+            }
+          },
+          "rank": 14
+        },
+        {
+          "station": "湖口分隊",
+          "pre_gm_total": 133,
+          "pre_gm_rosc": 21,
+          "pre_gm_rate": 15.79,
+          "post_gm_total": 256,
+          "post_gm_rosc": 17,
+          "post_gm_rate": 6.64,
+          "growth": -9.15,
+          "total_ohca": 389,
+          "total_rosc": 38,
+          "overall_rate": 9.77,
+          "r1_rate": 7.97,
+          "matrix": {
+            "108": {
+              "rate": 15.4,
+              "rosc": 2,
+              "total": 13
+            },
+            "109": {
+              "rate": 20.6,
+              "rosc": 13,
+              "total": 63
+            },
+            "110": {
+              "rate": 10.9,
+              "rosc": 5,
+              "total": 46
+            },
+            "111": {
+              "rate": 11.1,
+              "rosc": 7,
+              "total": 63
+            },
+            "112": {
+              "rate": 6.5,
+              "rosc": 3,
+              "total": 46
+            },
+            "113": {
+              "rate": 7.3,
+              "rosc": 4,
+              "total": 55
+            },
+            "114": {
+              "rate": 2.8,
+              "rosc": 2,
+              "total": 71
+            },
+            "115": {
+              "rate": 6.2,
+              "rosc": 2,
+              "total": 32
+            }
+          },
+          "rank": 15
+        },
+        {
+          "station": "寶山分隊",
+          "pre_gm_total": 50,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 83,
+          "post_gm_rosc": 8,
+          "post_gm_rate": 9.64,
+          "growth": 9.64,
+          "total_ohca": 133,
+          "total_rosc": 8,
+          "overall_rate": 6.02,
+          "r1_rate": 5.26,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 18
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 22
+            },
+            "111": {
+              "rate": 3.7,
+              "rosc": 1,
+              "total": 27
+            },
+            "112": {
+              "rate": 15.0,
+              "rosc": 3,
+              "total": 20
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 18
+            },
+            "114": {
+              "rate": 7.1,
+              "rosc": 1,
+              "total": 14
+            },
+            "115": {
+              "rate": 27.3,
+              "rosc": 3,
+              "total": 11
+            }
+          },
+          "rank": 16
+        },
+        {
+          "station": "新豐分隊",
+          "pre_gm_total": 76,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 2.63,
+          "post_gm_total": 128,
+          "post_gm_rosc": 10,
+          "post_gm_rate": 7.81,
+          "growth": 5.18,
+          "total_ohca": 204,
+          "total_rosc": 12,
+          "overall_rate": 5.88,
+          "r1_rate": 4.41,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 8
+            },
+            "109": {
+              "rate": 6.5,
+              "rosc": 2,
+              "total": 31
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 31
+            },
+            "111": {
+              "rate": 9.4,
+              "rosc": 3,
+              "total": 32
+            },
+            "112": {
+              "rate": 9.4,
+              "rosc": 3,
+              "total": 32
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 23
+            },
+            "114": {
+              "rate": 8.0,
+              "rosc": 2,
+              "total": 25
+            },
+            "115": {
+              "rate": 9.1,
+              "rosc": 2,
+              "total": 22
+            }
+          },
+          "rank": 17
+        },
+        {
+          "station": "五峰分隊",
+          "pre_gm_total": 11,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 17,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 28,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            }
+          },
+          "rank": 18
+        },
+        {
+          "station": "田埔分隊",
+          "pre_gm_total": 0,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 0,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 0,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 19
+        }
+      ],
+      "macro_kpis": {
+        "pre_r1_rate": 7.8,
+        "post_r1_rate": 11.4,
+        "pre_drugs_avg": 0.28,
+        "post_drugs_avg": 1.04,
+        "top_station": "光明分隊",
+        "top_station_rate": 30.39,
+        "gm_post_rate": 33.91,
+        "gm_growth": 13.77,
+        "zd_tot": 549,
+        "gm_tot": 543,
+        "top2_tot": 1092,
+        "top2_pct": 27.0
+      }
     },
-    {
-      "name": "許嘉雄",
-      "group": "110年資深TP (早於同學組)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 118,
-      "deducted_emt2": 1,
-      "ohca_tp": 117,
-      "rosc_tp": 44,
-      "rate_tp": 37.60683760683761,
-      "drugs_tp": 256,
-      "start_date": "2021-01-01"
+    "non_trauma": {
+      "label": "非創傷 OHCA (內科/心因)",
+      "desc": "排除外傷大出血高死亡率干擾，最真實反映高級心臟救命術 (ACLS) 與內科急救復甦實力（共 3,477 案）",
+      "badge_count": "3,477 案",
+      "summary": {
+        "total_ohca": 3477,
+        "total_rosc": 582,
+        "total_r1": 381,
+        "rosc_rate": 16.74,
+        "r1_rate": 10.96,
+        "total_months": 85,
+        "date_range": "108年10月 ～ 115年10月",
+        "gm_total_ems": 26843,
+        "gm_total_ohca": 467,
+        "gm_total_rosc": 146,
+        "gm_rosc_rate": 31.26,
+        "gm_r1_rosc_rate": 24.63,
+        "gm_post_ohca": 354,
+        "gm_post_rosc": 121,
+        "gm_post_rate": 34.18,
+        "total_drugs": 2797,
+        "gm_total_drugs": 965
+      },
+      "career_firefighters": [
+        {
+          "name": "許嘉雄",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "110年資深頂尖TP",
+          "hero_name": "趙雲",
+          "hero_title": "常山龍膽・單騎截江",
+          "hero_image": "images/zhao_yun_ink.jpg",
+          "hero_quote": "披堅執銳一身是膽，銀槍所向處皆化死生！",
+          "desc": "【常山龍膽・一身是膽】如趙子龍之孤勇絕倫、臨陣不亂。許嘉雄早在 110 年初即奉命獨當一面，早於諸同袍先行受命取得 TP 資格。救護總量近 4,000 件，TP 執業期救回 36 人，急救成功率高達 34.62%（穩居全縣第 4 強）。其給藥 225 次、氣管插管 35 件，槍出如龍、處置乾淨俐落，是光明防線上最堅韌從容的常勝名將。",
+          "general_ems_calls": 3958,
+          "general_ems_pct": 14.74,
+          "ohca_calls": 92,
+          "ohca_rosc": 32,
+          "rosc_rate": 34.8,
+          "r1_rosc": 27,
+          "r1_rate": 29.3,
+          "diff_broad": 9.3,
+          "odds_ratio": 1.52,
+          "drug_rate": 71.7,
+          "drug_avg": 2.09,
+          "endo_rate": 35.9,
+          "sga_rate": 26.1,
+          "iv_rate": 46.7,
+          "best_partners": [
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "紀翔升",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "蔡億鼎",
+              "total": 5,
+              "rosc": 3,
+              "rate": 60.0
+            },
+            {
+              "name": "李均祈",
+              "total": 14,
+              "rosc": 8,
+              "rate": 57.1
+            },
+            {
+              "name": "李正群",
+              "total": 10,
+              "rosc": 5,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "許育誠",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "百戰高壓先鋒",
+          "hero_name": "陳友諒",
+          "hero_title": "江漢巨擘・鄱陽橫槊",
+          "hero_image": "images/chen_youliang_ink.jpg",
+          "hero_quote": "江漢滔滔水師連環，專向怒濤深處立中軍！",
+          "desc": "【江漢巨擘・鄱陽橫槊】陳友諒生平督率千艘巨艦，橫鎖江漢，所領之軍天下至強，專打天下最險、最難之逆浪硬仗。許育誠於光明分隊出勤 OHCA 高達 142 件（救護總量 3,936 件），母數冠絕全分隊！他所承接者，多為 80 歲以上超高齡、清晨非目擊、生機最形微弱之極度逆境。他不避凶險、不挑平川順境以圖亮眼數據，而是在滔天死線前親率巨艦強行搶灘，處置強度全開（給藥率 76.1%、插管率 44.4%），親手挽回 32 條生靈！雖大浪淘沙稀釋帳面成效，然深諳前線戰事者皆知：敢於在無人生機之死局中直面狂濤者，方為真正的硬派巨擘！",
+          "general_ems_calls": 3936,
+          "general_ems_pct": 14.66,
+          "ohca_calls": 108,
+          "ohca_rosc": 33,
+          "rosc_rate": 30.6,
+          "r1_rosc": 23,
+          "r1_rate": 21.3,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 77.8,
+          "drug_avg": 2.26,
+          "endo_rate": 50.0,
+          "sga_rate": 25.0,
+          "iv_rate": 34.3,
+          "best_partners": [
+            {
+              "name": "劉和訓",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "石俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "呂育陞",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "蔣為理",
+              "total": 20,
+              "rosc": 9,
+              "rate": 45.0
+            },
+            {
+              "name": "洪國胤",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            }
+          ]
+        },
+        {
+          "name": "黃皓賓",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "穩健攻堅主力",
+          "hero_name": "蒙恬",
+          "hero_title": "塞上長城・磐石之陣",
+          "hero_image": "images/meng_tian_ink.jpg",
+          "hero_quote": "築城禦難萬仞不移，巍巍砥柱守衛桑梓！",
+          "desc": "【塞上長城・穩健如山】蒙恬卻匈奴七百里、沉毅雄渾。黃皓賓救護量達 3,789 件、OHCA 出勤 125 件，TP 執業期勝率自舊制 17% 翻倍躍升至 36.05%！給藥與插管穩健紮實，長年守護竹北要衝，宛如不可踰越的鋼鐵防線。",
+          "general_ems_calls": 3789,
+          "general_ems_pct": 14.12,
+          "ohca_calls": 100,
+          "ohca_rosc": 32,
+          "rosc_rate": 32.0,
+          "r1_rosc": 23,
+          "r1_rate": 23.0,
+          "diff_broad": 1.1,
+          "odds_ratio": 1.05,
+          "drug_rate": 74.0,
+          "drug_avg": 2.12,
+          "endo_rate": 47.0,
+          "sga_rate": 31.0,
+          "iv_rate": 59.0,
+          "best_partners": [
+            {
+              "name": "黃志樺",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "蔣為理",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "洪國胤",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "石俊傑",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "楊永正",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "鄭睿旭",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "重症插管大師",
+          "hero_name": "太史慈",
+          "hero_title": "神箭破敵・百步穿楊",
+          "hero_image": "images/taishi_ci_ink.jpg",
+          "hero_quote": "長弓在手弦無虛發，直取險隘百步穿楊！",
+          "desc": "【神箭太史・精準破障】太史慈猿臂善射、弦無虛發。鄭睿旭全縣累計救回 38 人（全縣第 3），在光明出勤 119 件 OHCA，氣管內插管率高達 67.2% 為全隊之最，給藥率 82.4%。無論患者呼吸道何等畸嶇狹窄，總能精確建立高階氣道，以卓越之雙手護衛生命。",
+          "general_ems_calls": 3466,
+          "general_ems_pct": 12.91,
+          "ohca_calls": 102,
+          "ohca_rosc": 35,
+          "rosc_rate": 34.3,
+          "r1_rosc": 30,
+          "r1_rate": 29.4,
+          "diff_broad": 5.2,
+          "odds_ratio": 1.27,
+          "drug_rate": 83.3,
+          "drug_avg": 2.33,
+          "endo_rate": 72.5,
+          "sga_rate": 6.9,
+          "iv_rate": 53.9,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "曾翊瑋",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "賴俊傑",
+              "total": 10,
+              "rosc": 5,
+              "rate": 50.0
+            },
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "黃玉喬",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "新銳巾幗TP強將",
+          "hero_name": "穆桂英",
+          "hero_title": "巾幗破陣・氣貫長虹",
+          "hero_image": "images/mu_guiying_ink.jpg",
+          "hero_quote": "紅纓獵獵敢當先鋒，誰言巾幗遜於天下鬚眉！",
+          "desc": "【破陣先鋒・巾幗天驕】穆桂英掛帥出征、氣魄吞河。黃玉喬於 113 年受訓晉升 TP 後展現驚人戰力，現場給藥率高達 93.9%、氣管插管率 54.5%，TP 執業期成功率突破 30.30%（救回 10 人），全縣總排名挺進第 14 名！刀馬純熟、膽識過人，是新進 TP 陣容中最奪目的巾幗強將。",
+          "general_ems_calls": 3039,
+          "general_ems_pct": 11.32,
+          "ohca_calls": 55,
+          "ohca_rosc": 11,
+          "rosc_rate": 20.0,
+          "r1_rosc": 9,
+          "r1_rate": 16.4,
+          "diff_broad": -8.9,
+          "odds_ratio": 0.64,
+          "drug_rate": 76.4,
+          "drug_avg": 2.24,
+          "endo_rate": 43.6,
+          "sga_rate": 30.9,
+          "iv_rate": 38.2,
+          "best_partners": [
+            {
+              "name": "楊梓嫻",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "連國延",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "許育誠",
+              "total": 8,
+              "rosc": 3,
+              "rate": 37.5
+            },
+            {
+              "name": "蔣為理",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "賴俊傑",
+              "total": 7,
+              "rosc": 2,
+              "rate": 28.6
+            }
+          ]
+        },
+        {
+          "name": "呂育陞",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "急救勝率天花板",
+          "hero_name": "霍去病",
+          "hero_title": "冠軍天驕・封狼居胥",
+          "hero_image": "images/huo_qubing_ink.jpg",
+          "hero_quote": "長驅萬里疾如奔雷，快馬輕騎斬將奪旗！",
+          "desc": "【冠軍天驕・快刀封喉】霍去病千里奔襲、攻無不克。呂育陞以 45.59% 的驚人急救成功率傲視全縣，在光明專責期亦維持 37.1% 的頂尖水準。其處置節奏極度迅捷精確，插管率突破 50%，與李正群、許育誠搭檔時屢破救治天花板，宛如冠軍侯長驅直入。",
+          "general_ems_calls": 2958,
+          "general_ems_pct": 11.02,
+          "ohca_calls": 78,
+          "ohca_rosc": 31,
+          "rosc_rate": 39.7,
+          "r1_rosc": 23,
+          "r1_rate": 29.5,
+          "diff_broad": 8.0,
+          "odds_ratio": 1.44,
+          "drug_rate": 76.9,
+          "drug_avg": 2.15,
+          "endo_rate": 52.6,
+          "sga_rate": 23.1,
+          "iv_rate": 48.7,
+          "best_partners": [
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "李正群",
+              "total": 10,
+              "rosc": 6,
+              "rate": 60.0
+            },
+            {
+              "name": "許育誠",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "賴俊傑",
+              "total": 13,
+              "rosc": 7,
+              "rate": 53.8
+            },
+            {
+              "name": "曾依婷",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "蔣為理",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "全能戰術指揮",
+          "hero_name": "周瑜",
+          "hero_title": "江左周郎・儒將雄才",
+          "hero_image": "images/zhou_yu_ink.jpg",
+          "hero_quote": "羽扇綸巾談笑定策，風起赤壁賦能三軍！",
+          "desc": "【江左周郎・雅量雄圖】周公瑾雄姿英發、統御大局。蔣為理以 45 件救回數榮登全縣 EMT-P 總榜榜首，在光明專責期勝率達 38.8%（勝算比 OR 1.63）。其處置兼具侵入性極限（給藥 84.5%、插管 56.9%）與卓越的團隊協同領導力，搭檔勝率普遍飆破 50%~60%，談笑間平定危局，乃光明分隊首屈一指的戰術指揮中樞。",
+          "general_ems_calls": 2788,
+          "general_ems_pct": 10.39,
+          "ohca_calls": 88,
+          "ohca_rosc": 31,
+          "rosc_rate": 35.2,
+          "r1_rosc": 23,
+          "r1_rate": 26.1,
+          "diff_broad": 10.7,
+          "odds_ratio": 1.62,
+          "drug_rate": 84.1,
+          "drug_avg": 2.38,
+          "endo_rate": 62.5,
+          "sga_rate": 13.6,
+          "iv_rate": 34.1,
+          "best_partners": [
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "李均祈",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "洪國胤",
+              "total": 8,
+              "rosc": 4,
+              "rate": 50.0
+            },
+            {
+              "name": "林辰穎",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "賴俊傑",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高階氣道專家",
+          "hero_name": "宗澤",
+          "hero_title": "宗公持節・砥柱治軍",
+          "hero_image": "images/zong_ze_ink.jpg",
+          "hero_quote": "大節凜然治軍有度，雙重險隘穩如泰山！",
+          "desc": "【宗公持節・嚴整嚴謹】宗澤坐鎮汴梁、號令嚴謹。賴俊傑全縣救回 31 人，光明插管率達 63.7%、給藥率達 87.3%，急救成功率 35.3%。高級處置規範一絲不苟，技術沉穩無瑕，是同仁極度安心的後盾。",
+          "general_ems_calls": 2687,
+          "general_ems_pct": 10.01,
+          "ohca_calls": 77,
+          "ohca_rosc": 30,
+          "rosc_rate": 39.0,
+          "r1_rosc": 24,
+          "r1_rate": 31.2,
+          "diff_broad": 6.0,
+          "odds_ratio": 1.32,
+          "drug_rate": 88.3,
+          "drug_avg": 2.53,
+          "endo_rate": 70.1,
+          "sga_rate": 14.3,
+          "iv_rate": 40.3,
+          "best_partners": [
+            {
+              "name": "洪國胤",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "李正群",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "紀翔升",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            },
+            {
+              "name": "施純泰",
+              "total": 13,
+              "rosc": 7,
+              "rate": 53.8
+            }
+          ]
+        },
+        {
+          "name": "李正群",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "現場復甦之星",
+          "hero_name": "扁鵲",
+          "hero_title": "望色知微・起死回生",
+          "hero_image": "images/bian_que_ink.jpg",
+          "hero_quote": "洞垣幽微洞悉死生，車行未抵春風已至！",
+          "desc": "【神醫扁鵲・妙手回陽】扁鵲過虢國起死回生。李正群在光明出勤到院前 ROSC 率高達 31.9%，高居全隊 TP 第一！全縣累計救回 28 人。其對心律辨識與灌流狀態極度敏銳，常在現場急救車上即成功逆轉心跳，神乎其技。",
+          "general_ems_calls": 2509,
+          "general_ems_pct": 9.35,
+          "ohca_calls": 70,
+          "ohca_rosc": 24,
+          "rosc_rate": 34.3,
+          "r1_rosc": 23,
+          "r1_rate": 32.9,
+          "diff_broad": 4.4,
+          "odds_ratio": 1.23,
+          "drug_rate": 81.4,
+          "drug_avg": 2.27,
+          "endo_rate": 51.4,
+          "sga_rate": 15.7,
+          "iv_rate": 11.4,
+          "best_partners": [
+            {
+              "name": "黃美樺",
+              "total": 5,
+              "rosc": 4,
+              "rate": 80.0
+            },
+            {
+              "name": "李均祈",
+              "total": 11,
+              "rosc": 7,
+              "rate": 63.6
+            },
+            {
+              "name": "呂育陞",
+              "total": 10,
+              "rosc": 6,
+              "rate": 60.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "紀翔升",
+              "total": 7,
+              "rosc": 4,
+              "rate": 57.1
+            }
+          ]
+        },
+        {
+          "name": "李均祈",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高給藥急救強者",
+          "hero_name": "辛棄疾",
+          "hero_title": "稼軒雄風・氣吞萬里",
+          "hero_image": "images/xin_qiji_ink.jpg",
+          "hero_quote": "金戈鐵馬豪情破陣，筆落風雷手掌乾坤！",
+          "desc": "【稼軒雄風・豪邁凌厲】辛稼軒五十騎闖營、氣吞萬里如虎。李均祈累計救回 32 人（全縣第 5），光明在隊給藥率高達 88.5% 冠絕全隊，勝率達 35.4%。現場處置果決剛烈、大開大闔，手中有雷霆手段，心中有菩薩心腸。",
+          "general_ems_calls": 2343,
+          "general_ems_pct": 8.73,
+          "ohca_calls": 78,
+          "ohca_rosc": 27,
+          "rosc_rate": 34.6,
+          "r1_rosc": 17,
+          "r1_rate": 21.8,
+          "diff_broad": 6.1,
+          "odds_ratio": 1.32,
+          "drug_rate": 85.9,
+          "drug_avg": 2.45,
+          "endo_rate": 46.2,
+          "sga_rate": 33.3,
+          "iv_rate": 39.7,
+          "best_partners": [
+            {
+              "name": "李正群",
+              "total": 11,
+              "rosc": 7,
+              "rate": 63.6
+            },
+            {
+              "name": "蔣為理",
+              "total": 12,
+              "rosc": 7,
+              "rate": 58.3
+            },
+            {
+              "name": "許嘉雄",
+              "total": 14,
+              "rosc": 8,
+              "rate": 57.1
+            },
+            {
+              "name": "姜建成",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            },
+            {
+              "name": "洪國胤",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "施純泰",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "光明出勤基石",
+          "hero_name": "郭子儀",
+          "hero_title": "汾陽砥柱・再造乾坤",
+          "hero_image": "images/guo_ziyi_ink.jpg",
+          "hero_quote": "單騎撫定四方危難，萬民身家皆繫老將一身！",
+          "desc": "【汾陽砥柱・再造社稷】唐代名將郭子儀單騎撫危、功蓋寰宇。施純泰出勤 4,185 件一般救護、分隊出勤佔比高達 15.6%，長年居全隊之首！OHCA 出勤 133 件、救回 41 人，歷經光明無數寒暑交替。他如老將坐鎮中軍，不論與何代 TP 搭檔皆能安定全場，是全體同仁最敬重、最不可或缺的救護基石。",
+          "general_ems_calls": 4185,
+          "general_ems_pct": 15.59,
+          "ohca_calls": 111,
+          "ohca_rosc": 34,
+          "rosc_rate": 30.6,
+          "r1_rosc": 26,
+          "r1_rate": 23.4,
+          "diff_broad": 0.6,
+          "odds_ratio": 1.03,
+          "drug_rate": 72.1,
+          "drug_avg": 2.09,
+          "endo_rate": 43.2,
+          "sga_rate": 28.8,
+          "iv_rate": 44.1,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 13,
+              "rosc": 7,
+              "rate": 53.8
+            },
+            {
+              "name": "劉俞伶",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "林惠玲",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "楊梓嫻",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "張馨予",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "全能救護中堅",
+          "hero_name": "平陽公主",
+          "hero_title": "娘子統御・威儀肅然",
+          "hero_image": "images/pingyang_princess_ink.jpg",
+          "hero_quote": "巾幗提攜千軍肅整，中軍調度莫敢不從！",
+          "desc": "【娘子帥印・中軍樞紐】唐平陽昭公主統御娘子軍、威加關中。張馨予出勤救護達 3,881 件（全隊第 4），OHCA 救回 23 人！身為中級警消主力，長年與各級 TP 默契無間，靜脈通路與團隊調度從容不迫，乃全隊運轉的中樞。",
+          "general_ems_calls": 3881,
+          "general_ems_pct": 14.46,
+          "ohca_calls": 66,
+          "ohca_rosc": 21,
+          "rosc_rate": 31.8,
+          "r1_rosc": 16,
+          "r1_rate": 24.2,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 71.2,
+          "drug_avg": 2.11,
+          "endo_rate": 48.5,
+          "sga_rate": 22.7,
+          "iv_rate": 45.5,
+          "best_partners": [
+            {
+              "name": "呂育陞",
+              "total": 15,
+              "rosc": 7,
+              "rate": 46.7
+            },
+            {
+              "name": "李均祈",
+              "total": 13,
+              "rosc": 6,
+              "rate": 46.2
+            },
+            {
+              "name": "蔣為理",
+              "total": 14,
+              "rosc": 6,
+              "rate": 42.9
+            },
+            {
+              "name": "許育誠",
+              "total": 15,
+              "rosc": 5,
+              "rate": 33.3
+            },
+            {
+              "name": "許嘉雄",
+              "total": 15,
+              "rosc": 5,
+              "rate": 33.3
+            }
+          ]
+        },
+        {
+          "name": "連國延",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "靜脈通路神手",
+          "hero_name": "張良",
+          "hero_title": "留侯神謀・糧道通脈",
+          "hero_image": "images/zhang_liang_ink.jpg",
+          "hero_quote": "運籌指尖脈絡貫通，千軍所需一針即至！",
+          "desc": "【留侯運籌・兵馬未動】張子房籌謀帷幄、通達天下。連國延出勤 2,428 件救護，在隊靜脈輸液（IV）建立率高達 90.5%！為第一線 TP 提供穩定無比的給藥通路，有其在側，急救血脈暢通無阻。",
+          "general_ems_calls": 2428,
+          "general_ems_pct": 9.05,
+          "ohca_calls": 51,
+          "ohca_rosc": 14,
+          "rosc_rate": 27.5,
+          "r1_rosc": 11,
+          "r1_rate": 21.6,
+          "diff_broad": -2.1,
+          "odds_ratio": 0.91,
+          "drug_rate": 68.6,
+          "drug_avg": 1.94,
+          "endo_rate": 41.2,
+          "sga_rate": 41.2,
+          "iv_rate": 88.2,
+          "best_partners": [
+            {
+              "name": "洪國胤",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "李林營",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 14,
+              "rosc": 6,
+              "rate": 42.9
+            },
+            {
+              "name": "黃玉喬",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "施純泰",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            }
+          ]
+        },
+        {
+          "name": "洪國胤",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率攻堅隊員",
+          "hero_name": "尉遲敬德",
+          "hero_title": "門神奪槊・勇烈忠純",
+          "hero_image": "images/yuchi_jingde_ink.jpg",
+          "hero_quote": "橫槊陷陣百死不回，危局之中立斬死關！",
+          "desc": "【勇烈奪槊・破局門神】尉遲敬德白刃陷陣、勇冠三軍。洪國胤出勤 2,129 件救護，OHCA 勝率達 34.0%（高出全隊 4%），到院前 ROSC 達 25.5%。每臨險局總能勇往直前，多次在極限關頭力挽狂瀾。",
+          "general_ems_calls": 2129,
+          "general_ems_pct": 7.93,
+          "ohca_calls": 38,
+          "ohca_rosc": 13,
+          "rosc_rate": 34.2,
+          "r1_rosc": 9,
+          "r1_rate": 23.7,
+          "diff_broad": 4.0,
+          "odds_ratio": 1.2,
+          "drug_rate": 60.5,
+          "drug_avg": 1.68,
+          "endo_rate": 42.1,
+          "sga_rate": 42.1,
+          "iv_rate": 84.2,
+          "best_partners": [
+            {
+              "name": "連國延",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "賴俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃皓賓",
+              "total": 8,
+              "rosc": 5,
+              "rate": 62.5
+            },
+            {
+              "name": "蔣為理",
+              "total": 8,
+              "rosc": 4,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "黃俊儒",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "忠誠勤勉前鋒",
+          "hero_name": "許褚",
+          "hero_title": "虎痴披甲・忠純不移",
+          "hero_image": "images/xu_chu_ink.jpg",
+          "hero_quote": "力敵萬夫忠勇不二，默默守護寸土不退！",
+          "desc": "【虎痴忠烈・堅毅守禦】許褚勇力絕人、恪忠職守。黃俊儒救護量 1,839 件、OHCA 47 件，常年堅守在各繁重時段，任勞任怨，為救護現場最厚實的執勤護衛。",
+          "general_ems_calls": 1839,
+          "general_ems_pct": 6.85,
+          "ohca_calls": 39,
+          "ohca_rosc": 5,
+          "rosc_rate": 12.8,
+          "r1_rosc": 3,
+          "r1_rate": 7.7,
+          "diff_broad": -17.0,
+          "odds_ratio": 0.37,
+          "drug_rate": 64.1,
+          "drug_avg": 1.85,
+          "endo_rate": 46.2,
+          "sga_rate": 28.2,
+          "iv_rate": 66.7,
+          "best_partners": [
+            {
+              "name": "呂育陞",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "許育誠",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 8,
+              "rosc": 2,
+              "rate": 25.0
+            },
+            {
+              "name": "林昆穎",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "李正群",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "姜建成",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高給藥輔助專家",
+          "hero_name": "魯肅",
+          "hero_title": "長者弘道・調協周詳",
+          "hero_image": "images/lu_su_ink.jpg",
+          "hero_quote": "敦厚仁心兼濟同袍，深謀遠慮協和三軍！",
+          "desc": "【子敬弘道・協和群賢】魯子敬寬厚仁德、總攬協調。姜建成救護量 1,686 件，搭配出勤給藥率達 87.0%、插管率 55.6%。在現場迅速鋪陳裝備、精準輔佐，團隊協調功莫大焉。",
+          "general_ems_calls": 1686,
+          "general_ems_pct": 6.28,
+          "ohca_calls": 39,
+          "ohca_rosc": 10,
+          "rosc_rate": 25.6,
+          "r1_rosc": 8,
+          "r1_rate": 20.5,
+          "diff_broad": -0.8,
+          "odds_ratio": 0.96,
+          "drug_rate": 84.6,
+          "drug_avg": 2.46,
+          "endo_rate": 64.1,
+          "sga_rate": 7.7,
+          "iv_rate": 5.1,
+          "best_partners": [
+            {
+              "name": "李均祈",
+              "total": 6,
+              "rosc": 3,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 13,
+              "rosc": 4,
+              "rate": 30.8
+            },
+            {
+              "name": "李正群",
+              "total": 7,
+              "rosc": 2,
+              "rate": 28.6
+            },
+            {
+              "name": "黃玉喬",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "林昆穎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "基層堅實基石",
+          "hero_name": "徐晃",
+          "hero_title": "亞夫長驅・規行矩步",
+          "hero_image": "images/xu_huang_ink.jpg",
+          "hero_quote": "治軍嚴密有周亞夫之風，厚植基石寸功不失！",
+          "desc": "【長驅良將・沉穩扎實】徐晃治軍整飭、有周亞夫遺風。林昆穎出勤 1,481 件救護，嚴謹執行高品質胸外按壓與基礎復甦，為分隊築造牢不可破的執勤底座。",
+          "general_ems_calls": 1481,
+          "general_ems_pct": 5.52,
+          "ohca_calls": 27,
+          "ohca_rosc": 4,
+          "rosc_rate": 14.8,
+          "r1_rosc": 1,
+          "r1_rate": 3.7,
+          "diff_broad": -17.2,
+          "odds_ratio": 0.36,
+          "drug_rate": 37.0,
+          "drug_avg": 1.04,
+          "endo_rate": 0.0,
+          "sga_rate": 66.7,
+          "iv_rate": 77.8,
+          "best_partners": [
+            {
+              "name": "許嘉雄",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "張馨予",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "黃俊儒",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "連國延",
+              "total": 9,
+              "rosc": 2,
+              "rate": 22.2
+            },
+            {
+              "name": "洪國胤",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            }
+          ]
+        },
+        {
+          "name": "黃志樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "資深防線守護",
+          "hero_name": "黃忠",
+          "hero_title": "定軍老將・挽弓射石",
+          "hero_image": "images/huang_zhong_ink.jpg",
+          "hero_quote": "寶刀未老勇冠定軍，沉著應變長者之儀！",
+          "desc": "【定軍神威・老驥伏櫪】黃漢升挽弓開石、勇冠三軍。黃志樺救護量 1,358 件，沉著守候各項重大急救，輔助後輩有條不紊，長者風範深得敬重。",
+          "general_ems_calls": 1358,
+          "general_ems_pct": 5.06,
+          "ohca_calls": 30,
+          "ohca_rosc": 7,
+          "rosc_rate": 23.3,
+          "r1_rosc": 6,
+          "r1_rate": 20.0,
+          "diff_broad": -7.9,
+          "odds_ratio": 0.67,
+          "drug_rate": 30.0,
+          "drug_avg": 0.9,
+          "endo_rate": 10.0,
+          "sga_rate": 63.3,
+          "iv_rate": 83.3,
+          "best_partners": [
+            {
+              "name": "黃皓賓",
+              "total": 6,
+              "rosc": 4,
+              "rate": 66.7
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 7,
+              "rosc": 3,
+              "rate": 42.9
+            },
+            {
+              "name": "張馨予",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "黃玉喬",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "李長安",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "氣道輔助精兵",
+          "hero_name": "馬岱",
+          "hero_title": "伏波精騎・靈動應機",
+          "hero_image": "images/ma_dai_ink.jpg",
+          "hero_quote": "隨行先鋒伺機破敵，策應得宜功不唐捐！",
+          "desc": "【伏波輕騎・隨陣策應】馬岱沉毅忠謹、斬將制勝。李長安出勤 1,093 件救護，給藥率 77.8%、插管率 52.8%，在各型氣道器械輔助上靈活敏捷。",
+          "general_ems_calls": 1093,
+          "general_ems_pct": 4.07,
+          "ohca_calls": 29,
+          "ohca_rosc": 5,
+          "rosc_rate": 17.2,
+          "r1_rosc": 4,
+          "r1_rate": 13.8,
+          "diff_broad": -8.7,
+          "odds_ratio": 0.64,
+          "drug_rate": 79.3,
+          "drug_avg": 2.34,
+          "endo_rate": 51.7,
+          "sga_rate": 20.7,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃美樺",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "李正群",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            }
+          ]
+        },
+        {
+          "name": "紀俐瑀",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高處置侵入主力",
+          "hero_name": "樊梨花",
+          "hero_title": "移山倒海・烈火明珠",
+          "hero_image": "images/fan_lihua_ink.jpg",
+          "hero_quote": "奇鋒突現移山倒海，巾幗剛烈勇抗疾厄！",
+          "desc": "【移山倒海・英姿天成】樊梨花智勇雙全、破陣如破竹。紀俐瑀出勤 862 件救護，OHCA 給藥率達 81.5%、插管率達 55.6%，高難度侵入技術極為熟稔，為女力警消之先鋒強棒。",
+          "general_ems_calls": 862,
+          "general_ems_pct": 3.21,
+          "ohca_calls": 16,
+          "ohca_rosc": 3,
+          "rosc_rate": 18.8,
+          "r1_rosc": 3,
+          "r1_rate": 18.8,
+          "diff_broad": -12.5,
+          "odds_ratio": 0.51,
+          "drug_rate": 75.0,
+          "drug_avg": 2.06,
+          "endo_rate": 56.2,
+          "sga_rate": 0.0,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 6,
+              "rosc": 2,
+              "rate": 33.3
+            },
+            {
+              "name": "呂育陞",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "賴俊傑",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "李正群",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "許育誠",
+              "total": 5,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃美樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率王牌女力",
+          "hero_name": "梁紅玉",
+          "hero_title": "擂鼓金山・氣蓋山河",
+          "hero_image": "images/liang_hongyu_ink.jpg",
+          "hero_quote": "金山戰鼓震天動地，纖手力挽狂瀾死生！",
+          "desc": "【擂鼓金山・戰神女力】梁紅玉金山擂鼓抗頑敵。黃美樺出勤 564 件救護，OHCA 成功率高達 43.5%（救回 10 人），給藥率達 91.3%！每次登場成效卓著，巾幗英風令人驚嘆。",
+          "general_ems_calls": 564,
+          "general_ems_pct": 2.1,
+          "ohca_calls": 12,
+          "ohca_rosc": 6,
+          "rosc_rate": 50.0,
+          "r1_rosc": 6,
+          "r1_rate": 50.0,
+          "diff_broad": 13.7,
+          "odds_ratio": 1.81,
+          "drug_rate": 91.7,
+          "drug_avg": 2.25,
+          "endo_rate": 50.0,
+          "sga_rate": 25.0,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "紀翔升",
+              "total": 3,
+              "rosc": 3,
+              "rate": 100.0
+            },
+            {
+              "name": "李正群",
+              "total": 5,
+              "rosc": 4,
+              "rate": 80.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "賴俊傑",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "李長安",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "紀翔升",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "奇蹟逆轉戰神",
+          "hero_name": "甘寧",
+          "hero_title": "錦帆神勇・百騎破陣",
+          "hero_image": "images/gan_ning_ink.jpg",
+          "hero_quote": "銜枚突襲百騎劫營，出奇制勝逆轉乾坤！",
+          "desc": "【錦帆奇襲・逆轉神蹟】甘興霸百騎劫魏營、勇冠江東。紀翔升出勤 397 件救護、21 件 OHCA，廣義成功率高達 57.1%（救回 12 人），到院前 ROSC 率高達 47.6%！勝率冠絕非 TP，專克必死之局。",
+          "general_ems_calls": 397,
+          "general_ems_pct": 1.48,
+          "ohca_calls": 19,
+          "ohca_rosc": 10,
+          "rosc_rate": 52.6,
+          "r1_rosc": 9,
+          "r1_rate": 47.4,
+          "diff_broad": 27.8,
+          "odds_ratio": 3.22,
+          "drug_rate": 89.5,
+          "drug_avg": 2.58,
+          "endo_rate": 63.2,
+          "sga_rate": 31.6,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "黃美樺",
+              "total": 3,
+              "rosc": 3,
+              "rate": 100.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "施純泰",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "李長安",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            }
+          ]
+        },
+        {
+          "name": "蔡億鼎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "巾幗守護先鋒",
+          "hero_name": "花木蘭",
+          "hero_title": "巾幗豪傑・萬里赴戎",
+          "hero_image": "images/hua_mulan_ink.jpg",
+          "hero_quote": "萬里赴戎關山度，將軍百戰護生靈！",
+          "desc": "【萬里赴戎・巾幗豪傑】花木蘭披甲歷關山、豪情貫長虹。蔡億鼎身為光明分隊堅毅女將，出勤 346 件救護，給藥率達 73.7%，與各級 TP 默契搭配、沉著篤定。不畏險阻、與同袍並肩迎戰各項急救任務，在急救第一線展現巾幗不讓鬚眉之守護風範！",
+          "general_ems_calls": 346,
+          "general_ems_pct": 1.29,
+          "ohca_calls": 17,
+          "ohca_rosc": 5,
+          "rosc_rate": 29.4,
+          "r1_rosc": 4,
+          "r1_rate": 23.5,
+          "diff_broad": -4.2,
+          "odds_ratio": 0.81,
+          "drug_rate": 70.6,
+          "drug_avg": 1.94,
+          "endo_rate": 41.2,
+          "sga_rate": 17.6,
+          "iv_rate": 70.6,
+          "best_partners": [
+            {
+              "name": "許嘉雄",
+              "total": 5,
+              "rosc": 3,
+              "rate": 60.0
+            },
+            {
+              "name": "李均祈",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "蔣為理",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            },
+            {
+              "name": "施純泰",
+              "total": 5,
+              "rosc": 1,
+              "rate": 20.0
+            }
+          ]
+        }
+      ],
+      "master_37_leaderboard": [
+        {
+          "name": "許嘉雄",
+          "group": "110年資深TP (早於同學組)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 107,
+          "deducted_emt2": 1,
+          "ohca_tp": 106,
+          "rosc_tp": 41,
+          "rate_tp": 38.68,
+          "r1_tp": 28,
+          "rate_r1": 26.42,
+          "drugs_tp": 229,
+          "endo_tp": 33,
+          "start_date": "2021-01-01",
+          "rank": 1
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 111,
+          "deducted_emt2": 0,
+          "ohca_tp": 111,
+          "rosc_tp": 40,
+          "rate_tp": 36.04,
+          "r1_tp": 30,
+          "rate_r1": 27.03,
+          "drugs_tp": 264,
+          "endo_tp": 74,
+          "start_date": "2019-10-01",
+          "rank": 2
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 161,
+          "deducted_emt2": 0,
+          "ohca_tp": 161,
+          "rosc_tp": 38,
+          "rate_tp": 23.6,
+          "r1_tp": 31,
+          "rate_r1": 19.25,
+          "drugs_tp": 345,
+          "endo_tp": 97,
+          "start_date": "2019-10-01",
+          "rank": 3
+        },
+        {
+          "name": "蔣為理",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 111,
+          "deducted_emt2": 8,
+          "ohca_tp": 103,
+          "rosc_tp": 37,
+          "rate_tp": 35.92,
+          "r1_tp": 23,
+          "rate_r1": 22.33,
+          "drugs_tp": 248,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 4
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 132,
+          "deducted_emt2": 17,
+          "ohca_tp": 115,
+          "rosc_tp": 36,
+          "rate_tp": 31.3,
+          "r1_tp": 19,
+          "rate_r1": 16.52,
+          "drugs_tp": 272,
+          "endo_tp": 52,
+          "start_date": "2022-03-01",
+          "rank": 5
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 99,
+          "deducted_emt2": 3,
+          "ohca_tp": 96,
+          "rosc_tp": 35,
+          "rate_tp": 36.46,
+          "r1_tp": 24,
+          "rate_r1": 25.0,
+          "drugs_tp": 244,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 6
+        },
+        {
+          "name": "李均祈",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 87,
+          "deducted_emt2": 0,
+          "ohca_tp": 87,
+          "rosc_tp": 31,
+          "rate_tp": 35.63,
+          "r1_tp": 18,
+          "rate_r1": 20.69,
+          "drugs_tp": 218,
+          "endo_tp": 36,
+          "start_date": "2019-10-01",
+          "rank": 7
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 84,
+          "deducted_emt2": 18,
+          "ohca_tp": 66,
+          "rosc_tp": 30,
+          "rate_tp": 45.45,
+          "r1_tp": 22,
+          "rate_r1": 33.33,
+          "drugs_tp": 159,
+          "endo_tp": 37,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "李正群",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 87,
+          "deducted_emt2": 0,
+          "ohca_tp": 87,
+          "rosc_tp": 30,
+          "rate_tp": 34.48,
+          "r1_tp": 23,
+          "rate_r1": 26.44,
+          "drugs_tp": 202,
+          "endo_tp": 38,
+          "start_date": "2019-10-01",
+          "rank": 9
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊",
+          "total_cases_all": 107,
+          "deducted_emt2": 27,
+          "ohca_tp": 80,
+          "rosc_tp": 28,
+          "rate_tp": 35.0,
+          "r1_tp": 19,
+          "rate_r1": 23.75,
+          "drugs_tp": 187,
+          "endo_tp": 38,
+          "start_date": "2022-03-01",
+          "rank": 10
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (111.03起算)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 67,
+          "deducted_emt2": 8,
+          "ohca_tp": 59,
+          "rosc_tp": 25,
+          "rate_tp": 42.37,
+          "r1_tp": 17,
+          "rate_r1": 28.81,
+          "drugs_tp": 106,
+          "endo_tp": 22,
+          "start_date": "2022-03-01",
+          "rank": 11
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 113,
+          "deducted_emt2": 4,
+          "ohca_tp": 109,
+          "rosc_tp": 21,
+          "rate_tp": 19.27,
+          "r1_tp": 18,
+          "rate_r1": 16.51,
+          "drugs_tp": 259,
+          "endo_tp": 66,
+          "start_date": "2022-03-01",
+          "rank": 12
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊",
+          "total_cases_all": 110,
+          "deducted_emt2": 7,
+          "ohca_tp": 103,
+          "rosc_tp": 16,
+          "rate_tp": 15.53,
+          "r1_tp": 14,
+          "rate_r1": 13.59,
+          "drugs_tp": 240,
+          "endo_tp": 65,
+          "start_date": "2022-03-01",
+          "rank": 13
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 70,
+          "deducted_emt2": 32,
+          "ohca_tp": 38,
+          "rosc_tp": 10,
+          "rate_tp": 26.32,
+          "r1_tp": 6,
+          "rate_r1": 15.79,
+          "drugs_tp": 104,
+          "endo_tp": 18,
+          "start_date": "2024-01-01",
+          "rank": 14
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (111.03起算)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 58,
+          "deducted_emt2": 15,
+          "ohca_tp": 43,
+          "rosc_tp": 10,
+          "rate_tp": 23.26,
+          "r1_tp": 10,
+          "rate_r1": 23.26,
+          "drugs_tp": 93,
+          "endo_tp": 17,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新埔分隊",
+          "total_cases_all": 58,
+          "deducted_emt2": 37,
+          "ohca_tp": 21,
+          "rosc_tp": 9,
+          "rate_tp": 42.86,
+          "r1_tp": 3,
+          "rate_r1": 14.29,
+          "drugs_tp": 44,
+          "endo_tp": 3,
+          "start_date": "2024-01-01",
+          "rank": 16
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (111.03起算)",
+          "station": "關西分隊",
+          "total_cases_all": 64,
+          "deducted_emt2": 21,
+          "ohca_tp": 43,
+          "rosc_tp": 9,
+          "rate_tp": 20.93,
+          "r1_tp": 9,
+          "rate_r1": 20.93,
+          "drugs_tp": 82,
+          "endo_tp": 7,
+          "start_date": "2022-03-01",
+          "rank": 17
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 54,
+          "deducted_emt2": 0,
+          "ohca_tp": 54,
+          "rosc_tp": 9,
+          "rate_tp": 16.67,
+          "r1_tp": 5,
+          "rate_r1": 9.26,
+          "drugs_tp": 88,
+          "endo_tp": 4,
+          "start_date": "2019-10-01",
+          "rank": 18
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 55,
+          "deducted_emt2": 21,
+          "ohca_tp": 34,
+          "rosc_tp": 8,
+          "rate_tp": 23.53,
+          "r1_tp": 4,
+          "rate_r1": 11.76,
+          "drugs_tp": 90,
+          "endo_tp": 22,
+          "start_date": "2024-01-01",
+          "rank": 19
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 46,
+          "deducted_emt2": 19,
+          "ohca_tp": 27,
+          "rosc_tp": 6,
+          "rate_tp": 22.22,
+          "r1_tp": 1,
+          "rate_r1": 3.7,
+          "drugs_tp": 59,
+          "endo_tp": 12,
+          "start_date": "2024-01-01",
+          "rank": 20
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深EMT-P",
+          "station": "二重分隊",
+          "total_cases_all": 46,
+          "deducted_emt2": 0,
+          "ohca_tp": 46,
+          "rosc_tp": 5,
+          "rate_tp": 10.87,
+          "r1_tp": 3,
+          "rate_r1": 6.52,
+          "drugs_tp": 66,
+          "endo_tp": 7,
+          "start_date": "2019-10-01",
+          "rank": 21
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 50,
+          "deducted_emt2": 37,
+          "ohca_tp": 13,
+          "rosc_tp": 4,
+          "rate_tp": 30.77,
+          "r1_tp": 2,
+          "rate_r1": 15.38,
+          "drugs_tp": 29,
+          "endo_tp": 6,
+          "start_date": "2026-01-01",
+          "rank": 22
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深EMT-P",
+          "station": "關西分隊",
+          "total_cases_all": 19,
+          "deducted_emt2": 0,
+          "ohca_tp": 19,
+          "rosc_tp": 4,
+          "rate_tp": 21.05,
+          "r1_tp": 3,
+          "rate_r1": 15.79,
+          "drugs_tp": 41,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 23
+        },
+        {
+          "name": "王英任",
+          "group": "資深EMT-P",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 24,
+          "deducted_emt2": 0,
+          "ohca_tp": 24,
+          "rosc_tp": 4,
+          "rate_tp": 16.67,
+          "r1_tp": 3,
+          "rate_r1": 12.5,
+          "drugs_tp": 34,
+          "endo_tp": 6,
+          "start_date": "2019-10-01",
+          "rank": 24
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 38,
+          "deducted_emt2": 0,
+          "ohca_tp": 38,
+          "rosc_tp": 4,
+          "rate_tp": 10.53,
+          "r1_tp": 1,
+          "rate_r1": 2.63,
+          "drugs_tp": 51,
+          "endo_tp": 6,
+          "start_date": "2019-10-01",
+          "rank": 25
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深EMT-P",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 47,
+          "deducted_emt2": 0,
+          "ohca_tp": 47,
+          "rosc_tp": 4,
+          "rate_tp": 8.51,
+          "r1_tp": 4,
+          "rate_r1": 8.51,
+          "drugs_tp": 62,
+          "endo_tp": 3,
+          "start_date": "2019-10-01",
+          "rank": 26
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深EMT-P",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 2,
+          "rate_r1": 18.18,
+          "drugs_tp": 11,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 27
+        },
+        {
+          "name": "李建暾",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 2,
+          "rate_tp": 50.0,
+          "r1_tp": 1,
+          "rate_r1": 25.0,
+          "drugs_tp": 5,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 28
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深EMT-P",
+          "station": "豐田分隊 / 竹北分隊",
+          "total_cases_all": 7,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 2,
+          "rate_tp": 28.57,
+          "r1_tp": 2,
+          "rate_r1": 28.57,
+          "drugs_tp": 7,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 29
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "豐田分隊",
+          "total_cases_all": 33,
+          "deducted_emt2": 18,
+          "ohca_tp": 15,
+          "rosc_tp": 2,
+          "rate_tp": 13.33,
+          "r1_tp": 1,
+          "rate_r1": 6.67,
+          "drugs_tp": 35,
+          "endo_tp": 9,
+          "start_date": "2024-01-01",
+          "rank": 30
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 60,
+          "deducted_emt2": 29,
+          "ohca_tp": 31,
+          "rosc_tp": 2,
+          "rate_tp": 6.45,
+          "r1_tp": 2,
+          "rate_r1": 6.45,
+          "drugs_tp": 55,
+          "endo_tp": 12,
+          "start_date": "2024-01-01",
+          "rank": 31
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深EMT-P",
+          "station": "新工分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 1,
+          "rate_tp": 50.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 32
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (111.03起算)",
+          "station": "寶山分隊",
+          "total_cases_all": 17,
+          "deducted_emt2": 3,
+          "ohca_tp": 14,
+          "rosc_tp": 1,
+          "rate_tp": 7.14,
+          "r1_tp": 1,
+          "rate_r1": 7.14,
+          "drugs_tp": 26,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 33
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (111.03起算)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 29,
+          "deducted_emt2": 5,
+          "ohca_tp": 24,
+          "rosc_tp": 1,
+          "rate_tp": 4.17,
+          "r1_tp": 1,
+          "rate_r1": 4.17,
+          "drugs_tp": 59,
+          "endo_tp": 11,
+          "start_date": "2022-03-01",
+          "rank": 34
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "橫山分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 5,
+          "start_date": "2024-01-01",
+          "rank": 35
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP (扣除EMT2)",
+          "station": "峨眉分隊",
+          "total_cases_all": 15,
+          "deducted_emt2": 9,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 0,
+          "start_date": "2025-01-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深EMT-P",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 37
+        }
+      ],
+      "ranked_post_gm": [
+        {
+          "name": "蔣為理",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 103,
+          "deducted_emt2": 0,
+          "ohca_tp": 103,
+          "rosc_tp": 37,
+          "rate_tp": 35.92,
+          "r1_tp": 29,
+          "rate_r1": 28.16,
+          "drugs_tp": 248,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 1
+        },
+        {
+          "name": "許嘉雄",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 87,
+          "deducted_emt2": 0,
+          "ohca_tp": 87,
+          "rosc_tp": 36,
+          "rate_tp": 41.38,
+          "r1_tp": 32,
+          "rate_r1": 36.78,
+          "drugs_tp": 193,
+          "endo_tp": 28,
+          "start_date": "2022-03-01",
+          "rank": 2
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 115,
+          "deducted_emt2": 0,
+          "ohca_tp": 115,
+          "rosc_tp": 36,
+          "rate_tp": 31.3,
+          "r1_tp": 26,
+          "rate_r1": 22.61,
+          "drugs_tp": 272,
+          "endo_tp": 52,
+          "start_date": "2022-03-01",
+          "rank": 3
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 96,
+          "deducted_emt2": 0,
+          "ohca_tp": 96,
+          "rosc_tp": 35,
+          "rate_tp": 36.46,
+          "r1_tp": 28,
+          "rate_r1": 29.17,
+          "drugs_tp": 244,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 4
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 84,
+          "deducted_emt2": 0,
+          "ohca_tp": 84,
+          "rosc_tp": 32,
+          "rate_tp": 38.1,
+          "r1_tp": 29,
+          "rate_r1": 34.52,
+          "drugs_tp": 206,
+          "endo_tp": 55,
+          "start_date": "2022-03-01",
+          "rank": 5
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 66,
+          "deducted_emt2": 0,
+          "ohca_tp": 66,
+          "rosc_tp": 30,
+          "rate_tp": 45.45,
+          "r1_tp": 23,
+          "rate_r1": 34.85,
+          "drugs_tp": 159,
+          "endo_tp": 37,
+          "start_date": "2022-03-01",
+          "rank": 6
+        },
+        {
+          "name": "李正群",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 87,
+          "deducted_emt2": 0,
+          "ohca_tp": 87,
+          "rosc_tp": 30,
+          "rate_tp": 34.48,
+          "r1_tp": 28,
+          "rate_r1": 32.18,
+          "drugs_tp": 202,
+          "endo_tp": 38,
+          "start_date": "2022-03-01",
+          "rank": 7
+        },
+        {
+          "name": "李均祈",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 75,
+          "deducted_emt2": 0,
+          "ohca_tp": 75,
+          "rosc_tp": 28,
+          "rate_tp": 37.33,
+          "r1_tp": 17,
+          "rate_r1": 22.67,
+          "drugs_tp": 191,
+          "endo_tp": 35,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊",
+          "total_cases_all": 80,
+          "deducted_emt2": 0,
+          "ohca_tp": 80,
+          "rosc_tp": 28,
+          "rate_tp": 35.0,
+          "r1_tp": 21,
+          "rate_r1": 26.25,
+          "drugs_tp": 187,
+          "endo_tp": 38,
+          "start_date": "2022-03-01",
+          "rank": 9
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 115,
+          "deducted_emt2": 0,
+          "ohca_tp": 115,
+          "rosc_tp": 28,
+          "rate_tp": 24.35,
+          "r1_tp": 26,
+          "rate_r1": 22.61,
+          "drugs_tp": 266,
+          "endo_tp": 85,
+          "start_date": "2022-03-01",
+          "rank": 10
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 59,
+          "deducted_emt2": 0,
+          "ohca_tp": 59,
+          "rosc_tp": 25,
+          "rate_tp": 42.37,
+          "r1_tp": 17,
+          "rate_r1": 28.81,
+          "drugs_tp": 106,
+          "endo_tp": 22,
+          "start_date": "2022-03-01",
+          "rank": 11
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 109,
+          "deducted_emt2": 0,
+          "ohca_tp": 109,
+          "rosc_tp": 21,
+          "rate_tp": 19.27,
+          "r1_tp": 18,
+          "rate_r1": 16.51,
+          "drugs_tp": 259,
+          "endo_tp": 66,
+          "start_date": "2022-03-01",
+          "rank": 12
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊",
+          "total_cases_all": 103,
+          "deducted_emt2": 0,
+          "ohca_tp": 103,
+          "rosc_tp": 16,
+          "rate_tp": 15.53,
+          "r1_tp": 14,
+          "rate_r1": 13.59,
+          "drugs_tp": 240,
+          "endo_tp": 65,
+          "start_date": "2022-03-01",
+          "rank": 13
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 37,
+          "deducted_emt2": 0,
+          "ohca_tp": 37,
+          "rosc_tp": 10,
+          "rate_tp": 27.03,
+          "r1_tp": 8,
+          "rate_r1": 21.62,
+          "drugs_tp": 101,
+          "endo_tp": 24,
+          "start_date": "2022-03-01",
+          "rank": 14
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 43,
+          "deducted_emt2": 0,
+          "ohca_tp": 43,
+          "rosc_tp": 10,
+          "rate_tp": 23.26,
+          "r1_tp": 10,
+          "rate_r1": 23.26,
+          "drugs_tp": 93,
+          "endo_tp": 17,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP",
+          "station": "新埔分隊",
+          "total_cases_all": 19,
+          "deducted_emt2": 0,
+          "ohca_tp": 19,
+          "rosc_tp": 9,
+          "rate_tp": 47.37,
+          "r1_tp": 3,
+          "rate_r1": 15.79,
+          "drugs_tp": 41,
+          "endo_tp": 3,
+          "start_date": "2022-03-01",
+          "rank": 16
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "關西分隊",
+          "total_cases_all": 43,
+          "deducted_emt2": 0,
+          "ohca_tp": 43,
+          "rosc_tp": 9,
+          "rate_tp": 20.93,
+          "r1_tp": 9,
+          "rate_r1": 20.93,
+          "drugs_tp": 82,
+          "endo_tp": 7,
+          "start_date": "2022-03-01",
+          "rank": 17
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 34,
+          "deducted_emt2": 0,
+          "ohca_tp": 34,
+          "rosc_tp": 8,
+          "rate_tp": 23.53,
+          "r1_tp": 4,
+          "rate_r1": 11.76,
+          "drugs_tp": 90,
+          "endo_tp": 22,
+          "start_date": "2022-03-01",
+          "rank": 18
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 27,
+          "deducted_emt2": 0,
+          "ohca_tp": 27,
+          "rosc_tp": 6,
+          "rate_tp": 22.22,
+          "r1_tp": 1,
+          "rate_r1": 3.7,
+          "drugs_tp": 59,
+          "endo_tp": 12,
+          "start_date": "2022-03-01",
+          "rank": 19
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深組 (截取專責期)",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 28,
+          "deducted_emt2": 0,
+          "ohca_tp": 28,
+          "rosc_tp": 4,
+          "rate_tp": 14.29,
+          "r1_tp": 4,
+          "rate_r1": 14.29,
+          "drugs_tp": 51,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 20
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 2,
+          "rate_r1": 18.18,
+          "drugs_tp": 29,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 21
+        },
+        {
+          "name": "王英任",
+          "group": "資深組 (截取專責期)",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 15,
+          "deducted_emt2": 0,
+          "ohca_tp": 15,
+          "rosc_tp": 3,
+          "rate_tp": 20.0,
+          "r1_tp": 2,
+          "rate_r1": 13.33,
+          "drugs_tp": 28,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 22
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深組 (截取專責期)",
+          "station": "二重分隊",
+          "total_cases_all": 33,
+          "deducted_emt2": 0,
+          "ohca_tp": 33,
+          "rosc_tp": 3,
+          "rate_tp": 9.09,
+          "r1_tp": 3,
+          "rate_r1": 9.09,
+          "drugs_tp": 65,
+          "endo_tp": 7,
+          "start_date": "2022-03-01",
+          "rank": 23
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深組 (截取專責期)",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 5,
+          "deducted_emt2": 0,
+          "ohca_tp": 5,
+          "rosc_tp": 2,
+          "rate_tp": 40.0,
+          "r1_tp": 2,
+          "rate_r1": 40.0,
+          "drugs_tp": 5,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 24
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP",
+          "station": "豐田分隊",
+          "total_cases_all": 15,
+          "deducted_emt2": 0,
+          "ohca_tp": 15,
+          "rosc_tp": 2,
+          "rate_tp": 13.33,
+          "r1_tp": 1,
+          "rate_r1": 6.67,
+          "drugs_tp": 35,
+          "endo_tp": 9,
+          "start_date": "2022-03-01",
+          "rank": 25
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 31,
+          "deducted_emt2": 0,
+          "ohca_tp": 31,
+          "rosc_tp": 2,
+          "rate_tp": 6.45,
+          "r1_tp": 2,
+          "rate_r1": 6.45,
+          "drugs_tp": 55,
+          "endo_tp": 12,
+          "start_date": "2022-03-01",
+          "rank": 26
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深組 (截取專責期)",
+          "station": "新工分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 1,
+          "rate_tp": 50.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 27
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新豐分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 1,
+          "rate_tp": 33.33,
+          "r1_tp": 1,
+          "rate_r1": 33.33,
+          "drugs_tp": 9,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 28
+        },
+        {
+          "name": "李建暾",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 1,
+          "rate_tp": 33.33,
+          "r1_tp": 1,
+          "rate_r1": 33.33,
+          "drugs_tp": 5,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 29
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深組 (截取專責期)",
+          "station": "關西分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 1,
+          "rate_tp": 16.67,
+          "r1_tp": 1,
+          "rate_r1": 16.67,
+          "drugs_tp": 14,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 30
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "寶山分隊",
+          "total_cases_all": 14,
+          "deducted_emt2": 0,
+          "ohca_tp": 14,
+          "rosc_tp": 1,
+          "rate_tp": 7.14,
+          "r1_tp": 1,
+          "rate_r1": 7.14,
+          "drugs_tp": 26,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 31
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 18,
+          "deducted_emt2": 0,
+          "ohca_tp": 18,
+          "rosc_tp": 1,
+          "rate_tp": 5.56,
+          "r1_tp": 1,
+          "rate_r1": 5.56,
+          "drugs_tp": 45,
+          "endo_tp": 4,
+          "start_date": "2022-03-01",
+          "rank": 32
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 24,
+          "deducted_emt2": 0,
+          "ohca_tp": 24,
+          "rosc_tp": 1,
+          "rate_tp": 4.17,
+          "r1_tp": 1,
+          "rate_r1": 4.17,
+          "drugs_tp": 59,
+          "endo_tp": 11,
+          "start_date": "2022-03-01",
+          "rank": 33
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 24,
+          "deducted_emt2": 0,
+          "ohca_tp": 24,
+          "rosc_tp": 1,
+          "rate_tp": 4.17,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 41,
+          "endo_tp": 6,
+          "start_date": "2022-03-01",
+          "rank": 34
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP",
+          "station": "橫山分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 5,
+          "start_date": "2022-03-01",
+          "rank": 35
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP",
+          "station": "峨眉分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 14,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深組 (截取專責期)",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 37
+        }
+      ],
+      "combinations": {
+        "pairs_top": [
+          {
+            "names": "張凡治 + 張源祐",
+            "total": 4,
+            "rosc": 4,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "孫智偉 + 王柏文",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 張承泰",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張惟智 + 陳昆郁",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉奕宏 + 張凡治",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 9
+          },
+          {
+            "names": "紀翔升 + 黃美樺",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 8
+          },
+          {
+            "names": "吳志霖 + 蔡佑維",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "吳菘庭 + 曾士維",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "林佑安 + 謝侑翰",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "李晉緯 + 賴致平",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "周哲君 + 黃素娟",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "呂育陞 + 李林營",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "李林營 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉大維 + 李偉廷",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "李偉廷 + 謝聿蓴",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "楊子俊 + 謝京龍",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉和訓 + 許育誠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "林惠玲 + 許嘉雄",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "楊永正 + 湯育澍",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "郭哲維 + 鍾宜展",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "張凡治 + 胡鳳格",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "楊永正 + 莊佳潔",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔡煥龍 + 陳衛東",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔡煥龍 + 黃順安",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉名洲 + 羅能良",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 4
+          },
+          {
+            "names": "王政雄 + 胡鳳格",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "謝侑翰 + 謝啟盛",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "宋曉芬 + 郭哲維",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "紀翔升 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "謝聿蓴 + 陳文雪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "施純泰 + 紀翔升",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "紀翔升 + 許嘉雄",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "楊承錞 + 楊翔宇",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉名洲 + 黃右瑾",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "張智強 + 李堯軒",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 12
+          },
+          {
+            "names": "李正群 + 黃美樺",
+            "total": 5,
+            "rosc": 4,
+            "rate": 80.0,
+            "drugs": 11
+          },
+          {
+            "names": "彭弘傑 + 邱怡華",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 5
+          },
+          {
+            "names": "方清蔚 + 鍾明秀",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 2
+          },
+          {
+            "names": "施婷雯 + 鍾明哲",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 8
+          },
+          {
+            "names": "黃志樺 + 黃皓賓",
+            "total": 6,
+            "rosc": 4,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "洪國胤 + 連國延",
+            "total": 6,
+            "rosc": 4,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "蔣為理 + 黃皓賓",
+            "total": 6,
+            "rosc": 4,
+            "rate": 66.7,
+            "drugs": 10
+          },
+          {
+            "names": "吳明星 + 潘賢安",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "蔡雅竹 + 黃耿哲",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "彭素珍 + 翁嘉隆",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "何仰哲 + 何恭翕",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "張政豐 + 鍾宜展",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 2
+          },
+          {
+            "names": "張凡治 + 盧建良",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "石俊傑 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "鄭育承 + 鍾錦明",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 2
+          }
+        ],
+        "trios_top": [
+          {
+            "names": "施純泰 + 蔣為理 + 賴俊傑",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 9
+          },
+          {
+            "names": "洪國胤 + 鄭睿旭 + 黃皓賓",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "施純泰 + 李均祈 + 許嘉雄",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉名洲 + 彭弘傑 + 黃盈豪",
+            "total": 3,
+            "rosc": 3,
+            "rate": 100.0,
+            "drugs": 7
+          },
+          {
+            "names": "周奕君 + 宋億嘉 + 黃厚棠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉名洲 + 謝侑翰 + 鄭育承",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "何仰哲 + 何恭翕 + 王英任",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "施純泰 + 連國延 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "呂育陞 + 洪國胤 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "洪國胤 + 蔣為理 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "蔣為理 + 許嘉雄 + 黃皓賓",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "張凡治 + 張源祐 + 彭煜錩",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "呂育陞 + 蔣為理 + 許育誠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "呂育陞 + 李林營 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉大維 + 李偉廷 + 謝聿蓴",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "呂育陞 + 李正群 + 許育誠",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 1
+          },
+          {
+            "names": "劉名洲 + 張智強 + 李堯軒",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "張智強 + 李堯軒 + 黃盈豪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "施純泰 + 賴俊傑 + 鄭睿旭",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "呂育陞 + 李正群 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "李均祈 + 李正群 + 蔣為理",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 4
+          },
+          {
+            "names": "呂育陞 + 李正群 + 賴俊傑",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "施婷雯 + 林冠廷 + 鍾明哲",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "劉奕宏 + 張凡治 + 張惟智",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "謝侑翰 + 謝啟盛 + 黃盈豪",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 2
+          },
+          {
+            "names": "廖韋同 + 温政富 + 王政雄",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 0
+          },
+          {
+            "names": "李正群 + 紀翔升 + 黃美樺",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "紀翔升 + 許嘉雄 + 賴俊傑",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "李均祈 + 許育誠 + 黃玉喬",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "紀翔升 + 賴俊傑 + 黃美樺",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 5
+          },
+          {
+            "names": "呂育陞 + 鄭睿旭 + 黃皓賓",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 9
+          },
+          {
+            "names": "洪國胤 + 連國延 + 鄭睿旭",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 8
+          },
+          {
+            "names": "呂育陞 + 李均祈 + 蔣為理",
+            "total": 4,
+            "rosc": 3,
+            "rate": 75.0,
+            "drugs": 12
+          },
+          {
+            "names": "張馨予 + 蔣為理 + 許育誠",
+            "total": 6,
+            "rosc": 4,
+            "rate": 66.7,
+            "drugs": 17
+          },
+          {
+            "names": "施純泰 + 許育誠 + 黃玉喬",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 6
+          },
+          {
+            "names": "張馨予 + 許嘉雄 + 黃皓賓",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "洪國胤 + 蔣為理 + 鄭睿旭",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 2
+          },
+          {
+            "names": "施純泰 + 許嘉雄 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "李均祈 + 蔣為理 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 蔣為理",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "許嘉雄 + 賴俊傑 + 鄭睿旭",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "彭弘傑 + 謝侑翰 + 黃盈豪",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "李均祈 + 李正群 + 許嘉雄",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "謝侑翰 + 黃盈豪 + 黎斯同",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 7
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 李均祈",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 3
+          },
+          {
+            "names": "呂育陞 + 張馨予 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 6
+          },
+          {
+            "names": "張馨予 + 李正群 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 9
+          },
+          {
+            "names": "李正群 + 紀翔升 + 賴俊傑",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 8
+          },
+          {
+            "names": "劉名洲 + 曹詩敏 + 林冠廷",
+            "total": 5,
+            "rosc": 3,
+            "rate": 60.0,
+            "drugs": 10
+          }
+        ]
+      },
+      "yearly_stats": [
+        {
+          "year": "108",
+          "total_ohca": 107,
+          "transported": 107,
+          "r1_rosc": 7,
+          "r1_rate": 6.54,
+          "rosc": 8,
+          "rosc_rate": 7.48,
+          "drugs_count": 3,
+          "drugs_per_case": 0.03,
+          "dual_tp_rate": 0.0,
+          "endo_count": 1
+        },
+        {
+          "year": "109",
+          "total_ohca": 475,
+          "transported": 475,
+          "r1_rosc": 45,
+          "r1_rate": 9.47,
+          "rosc": 90,
+          "rosc_rate": 18.95,
+          "drugs_count": 111,
+          "drugs_per_case": 0.23,
+          "dual_tp_rate": 5.26,
+          "endo_count": 13
+        },
+        {
+          "year": "110",
+          "total_ohca": 454,
+          "transported": 454,
+          "r1_rosc": 39,
+          "r1_rate": 8.59,
+          "rosc": 75,
+          "rosc_rate": 16.52,
+          "drugs_count": 145,
+          "drugs_per_case": 0.32,
+          "dual_tp_rate": 7.49,
+          "endo_count": 16
+        },
+        {
+          "year": "111",
+          "total_ohca": 554,
+          "transported": 554,
+          "r1_rosc": 50,
+          "r1_rate": 9.03,
+          "rosc": 75,
+          "rosc_rate": 13.54,
+          "drugs_count": 459,
+          "drugs_per_case": 0.83,
+          "dual_tp_rate": 14.44,
+          "endo_count": 97
+        },
+        {
+          "year": "112",
+          "total_ohca": 509,
+          "transported": 509,
+          "r1_rosc": 68,
+          "r1_rate": 13.36,
+          "rosc": 93,
+          "rosc_rate": 18.27,
+          "drugs_count": 557,
+          "drugs_per_case": 1.09,
+          "dual_tp_rate": 17.09,
+          "endo_count": 133
+        },
+        {
+          "year": "113",
+          "total_ohca": 507,
+          "transported": 507,
+          "r1_rosc": 55,
+          "r1_rate": 10.85,
+          "rosc": 82,
+          "rosc_rate": 16.17,
+          "drugs_count": 585,
+          "drugs_per_case": 1.15,
+          "dual_tp_rate": 17.95,
+          "endo_count": 129
+        },
+        {
+          "year": "114",
+          "total_ohca": 536,
+          "transported": 536,
+          "r1_rosc": 65,
+          "r1_rate": 12.13,
+          "rosc": 91,
+          "rosc_rate": 16.98,
+          "drugs_count": 554,
+          "drugs_per_case": 1.03,
+          "dual_tp_rate": 11.94,
+          "endo_count": 119
+        },
+        {
+          "year": "115",
+          "total_ohca": 335,
+          "transported": 335,
+          "r1_rosc": 52,
+          "r1_rate": 15.52,
+          "rosc": 68,
+          "rosc_rate": 20.3,
+          "drugs_count": 383,
+          "drugs_per_case": 1.14,
+          "dual_tp_rate": 11.04,
+          "endo_count": 74
+        }
+      ],
+      "ranked_stations": [
+        {
+          "station": "光明分隊",
+          "pre_gm_total": 113,
+          "pre_gm_rosc": 25,
+          "pre_gm_rate": 22.12,
+          "post_gm_total": 354,
+          "post_gm_rosc": 121,
+          "post_gm_rate": 34.18,
+          "growth": 12.06,
+          "total_ohca": 467,
+          "total_rosc": 146,
+          "overall_rate": 31.26,
+          "r1_rate": 24.63,
+          "matrix": {
+            "108": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "109": {
+              "rate": 25.6,
+              "rosc": 11,
+              "total": 43
+            },
+            "110": {
+              "rate": 15.7,
+              "rosc": 8,
+              "total": 51
+            },
+            "111": {
+              "rate": 38.6,
+              "rosc": 32,
+              "total": 83
+            },
+            "112": {
+              "rate": 31.0,
+              "rosc": 27,
+              "total": 87
+            },
+            "113": {
+              "rate": 31.0,
+              "rosc": 22,
+              "total": 71
+            },
+            "114": {
+              "rate": 33.8,
+              "rosc": 26,
+              "total": 77
+            },
+            "115": {
+              "rate": 38.8,
+              "rosc": 19,
+              "total": 49
+            }
+          },
+          "rank": 1
+        },
+        {
+          "station": "新工分隊",
+          "pre_gm_total": 77,
+          "pre_gm_rosc": 12,
+          "pre_gm_rate": 15.58,
+          "post_gm_total": 164,
+          "post_gm_rosc": 44,
+          "post_gm_rate": 26.83,
+          "growth": 11.25,
+          "total_ohca": 241,
+          "total_rosc": 56,
+          "overall_rate": 23.24,
+          "r1_rate": 12.45,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            },
+            "109": {
+              "rate": 21.6,
+              "rosc": 8,
+              "total": 37
+            },
+            "110": {
+              "rate": 13.3,
+              "rosc": 4,
+              "total": 30
+            },
+            "111": {
+              "rate": 26.9,
+              "rosc": 7,
+              "total": 26
+            },
+            "112": {
+              "rate": 33.3,
+              "rosc": 12,
+              "total": 36
+            },
+            "113": {
+              "rate": 25.0,
+              "rosc": 9,
+              "total": 36
+            },
+            "114": {
+              "rate": 22.7,
+              "rosc": 10,
+              "total": 44
+            },
+            "115": {
+              "rate": 27.3,
+              "rosc": 6,
+              "total": 22
+            }
+          },
+          "rank": 2
+        },
+        {
+          "station": "新埔分隊",
+          "pre_gm_total": 75,
+          "pre_gm_rosc": 14,
+          "pre_gm_rate": 18.67,
+          "post_gm_total": 160,
+          "post_gm_rosc": 34,
+          "post_gm_rate": 21.25,
+          "growth": 2.58,
+          "total_ohca": 235,
+          "total_rosc": 48,
+          "overall_rate": 20.43,
+          "r1_rate": 7.23,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 8
+            },
+            "109": {
+              "rate": 18.5,
+              "rosc": 5,
+              "total": 27
+            },
+            "110": {
+              "rate": 26.5,
+              "rosc": 9,
+              "total": 34
+            },
+            "111": {
+              "rate": 4.9,
+              "rosc": 2,
+              "total": 41
+            },
+            "112": {
+              "rate": 25.9,
+              "rosc": 7,
+              "total": 27
+            },
+            "113": {
+              "rate": 23.8,
+              "rosc": 10,
+              "total": 42
+            },
+            "114": {
+              "rate": 24.3,
+              "rosc": 9,
+              "total": 37
+            },
+            "115": {
+              "rate": 31.6,
+              "rosc": 6,
+              "total": 19
+            }
+          },
+          "rank": 3
+        },
+        {
+          "station": "竹東分隊",
+          "pre_gm_total": 153,
+          "pre_gm_rosc": 36,
+          "pre_gm_rate": 23.53,
+          "post_gm_total": 348,
+          "post_gm_rosc": 58,
+          "post_gm_rate": 16.67,
+          "growth": -6.86,
+          "total_ohca": 501,
+          "total_rosc": 94,
+          "overall_rate": 18.76,
+          "r1_rate": 12.97,
+          "matrix": {
+            "108": {
+              "rate": 25.0,
+              "rosc": 2,
+              "total": 8
+            },
+            "109": {
+              "rate": 24.6,
+              "rosc": 16,
+              "total": 65
+            },
+            "110": {
+              "rate": 22.6,
+              "rosc": 14,
+              "total": 62
+            },
+            "111": {
+              "rate": 11.0,
+              "rosc": 10,
+              "total": 91
+            },
+            "112": {
+              "rate": 18.3,
+              "rosc": 13,
+              "total": 71
+            },
+            "113": {
+              "rate": 15.3,
+              "rosc": 11,
+              "total": 72
+            },
+            "114": {
+              "rate": 19.7,
+              "rosc": 14,
+              "total": 71
+            },
+            "115": {
+              "rate": 23.0,
+              "rosc": 14,
+              "total": 61
+            }
+          },
+          "rank": 4
+        },
+        {
+          "station": "山崎分隊",
+          "pre_gm_total": 56,
+          "pre_gm_rosc": 9,
+          "pre_gm_rate": 16.07,
+          "post_gm_total": 161,
+          "post_gm_rosc": 29,
+          "post_gm_rate": 18.01,
+          "growth": 1.94,
+          "total_ohca": 217,
+          "total_rosc": 38,
+          "overall_rate": 17.51,
+          "r1_rate": 8.29,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "109": {
+              "rate": 25.0,
+              "rosc": 4,
+              "total": 16
+            },
+            "110": {
+              "rate": 17.2,
+              "rosc": 5,
+              "total": 29
+            },
+            "111": {
+              "rate": 9.1,
+              "rosc": 3,
+              "total": 33
+            },
+            "112": {
+              "rate": 17.9,
+              "rosc": 7,
+              "total": 39
+            },
+            "113": {
+              "rate": 20.0,
+              "rosc": 6,
+              "total": 30
+            },
+            "114": {
+              "rate": 18.9,
+              "rosc": 7,
+              "total": 37
+            },
+            "115": {
+              "rate": 23.1,
+              "rosc": 6,
+              "total": 26
+            }
+          },
+          "rank": 5
+        },
+        {
+          "station": "竹北分隊",
+          "pre_gm_total": 78,
+          "pre_gm_rosc": 14,
+          "pre_gm_rate": 17.95,
+          "post_gm_total": 74,
+          "post_gm_rosc": 12,
+          "post_gm_rate": 16.22,
+          "growth": -1.73,
+          "total_ohca": 152,
+          "total_rosc": 26,
+          "overall_rate": 17.11,
+          "r1_rate": 7.89,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "109": {
+              "rate": 8.8,
+              "rosc": 3,
+              "total": 34
+            },
+            "110": {
+              "rate": 29.4,
+              "rosc": 10,
+              "total": 34
+            },
+            "111": {
+              "rate": 4.0,
+              "rosc": 1,
+              "total": 25
+            },
+            "112": {
+              "rate": 21.1,
+              "rosc": 4,
+              "total": 19
+            },
+            "113": {
+              "rate": 31.6,
+              "rosc": 6,
+              "total": 19
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            },
+            "115": {
+              "rate": 33.3,
+              "rosc": 2,
+              "total": 6
+            }
+          },
+          "rank": 6
+        },
+        {
+          "station": "北埔分隊",
+          "pre_gm_total": 27,
+          "pre_gm_rosc": 5,
+          "pre_gm_rate": 18.52,
+          "post_gm_total": 52,
+          "post_gm_rosc": 7,
+          "post_gm_rate": 13.46,
+          "growth": -5.06,
+          "total_ohca": 79,
+          "total_rosc": 12,
+          "overall_rate": 15.19,
+          "r1_rate": 10.13,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "109": {
+              "rate": 20.0,
+              "rosc": 2,
+              "total": 10
+            },
+            "110": {
+              "rate": 23.1,
+              "rosc": 3,
+              "total": 13
+            },
+            "111": {
+              "rate": 18.2,
+              "rosc": 2,
+              "total": 11
+            },
+            "112": {
+              "rate": 16.7,
+              "rosc": 2,
+              "total": 12
+            },
+            "113": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            },
+            "114": {
+              "rate": 14.3,
+              "rosc": 2,
+              "total": 14
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            }
+          },
+          "rank": 7
+        },
+        {
+          "station": "關西分隊",
+          "pre_gm_total": 70,
+          "pre_gm_rosc": 12,
+          "pre_gm_rate": 17.14,
+          "post_gm_total": 126,
+          "post_gm_rosc": 15,
+          "post_gm_rate": 11.9,
+          "growth": -5.24,
+          "total_ohca": 196,
+          "total_rosc": 27,
+          "overall_rate": 13.78,
+          "r1_rate": 9.18,
+          "matrix": {
+            "108": {
+              "rate": 10.0,
+              "rosc": 1,
+              "total": 10
+            },
+            "109": {
+              "rate": 16.7,
+              "rosc": 6,
+              "total": 36
+            },
+            "110": {
+              "rate": 22.7,
+              "rosc": 5,
+              "total": 22
+            },
+            "111": {
+              "rate": 3.4,
+              "rosc": 1,
+              "total": 29
+            },
+            "112": {
+              "rate": 10.3,
+              "rosc": 3,
+              "total": 29
+            },
+            "113": {
+              "rate": 12.5,
+              "rosc": 3,
+              "total": 24
+            },
+            "114": {
+              "rate": 16.7,
+              "rosc": 5,
+              "total": 30
+            },
+            "115": {
+              "rate": 18.8,
+              "rosc": 3,
+              "total": 16
+            }
+          },
+          "rank": 8
+        },
+        {
+          "station": "峨眉分隊",
+          "pre_gm_total": 16,
+          "pre_gm_rosc": 3,
+          "pre_gm_rate": 18.75,
+          "post_gm_total": 38,
+          "post_gm_rosc": 4,
+          "post_gm_rate": 10.53,
+          "growth": -8.22,
+          "total_ohca": 54,
+          "total_rosc": 7,
+          "overall_rate": 12.96,
+          "r1_rate": 5.56,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 25.0,
+              "rosc": 3,
+              "total": 12
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            },
+            "112": {
+              "rate": 33.3,
+              "rosc": 2,
+              "total": 6
+            },
+            "113": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "114": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            }
+          },
+          "rank": 9
+        },
+        {
+          "station": "芎林分隊",
+          "pre_gm_total": 77,
+          "pre_gm_rosc": 13,
+          "pre_gm_rate": 16.88,
+          "post_gm_total": 132,
+          "post_gm_rosc": 14,
+          "post_gm_rate": 10.61,
+          "growth": -6.27,
+          "total_ohca": 209,
+          "total_rosc": 27,
+          "overall_rate": 12.92,
+          "r1_rate": 10.05,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 12
+            },
+            "109": {
+              "rate": 20.6,
+              "rosc": 7,
+              "total": 34
+            },
+            "110": {
+              "rate": 14.8,
+              "rosc": 4,
+              "total": 27
+            },
+            "111": {
+              "rate": 22.2,
+              "rosc": 6,
+              "total": 27
+            },
+            "112": {
+              "rate": 8.0,
+              "rosc": 2,
+              "total": 25
+            },
+            "113": {
+              "rate": 8.1,
+              "rosc": 3,
+              "total": 37
+            },
+            "114": {
+              "rate": 7.1,
+              "rosc": 2,
+              "total": 28
+            },
+            "115": {
+              "rate": 15.8,
+              "rosc": 3,
+              "total": 19
+            }
+          },
+          "rank": 10
+        },
+        {
+          "station": "橫山分隊",
+          "pre_gm_total": 33,
+          "pre_gm_rosc": 6,
+          "pre_gm_rate": 18.18,
+          "post_gm_total": 64,
+          "post_gm_rosc": 6,
+          "post_gm_rate": 9.38,
+          "growth": -8.8,
+          "total_ohca": 97,
+          "total_rosc": 12,
+          "overall_rate": 12.37,
+          "r1_rate": 7.22,
+          "matrix": {
+            "108": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            },
+            "109": {
+              "rate": 22.2,
+              "rosc": 4,
+              "total": 18
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "111": {
+              "rate": 8.3,
+              "rosc": 1,
+              "total": 12
+            },
+            "112": {
+              "rate": 4.5,
+              "rosc": 1,
+              "total": 22
+            },
+            "113": {
+              "rate": 12.5,
+              "rosc": 2,
+              "total": 16
+            },
+            "114": {
+              "rate": 30.0,
+              "rosc": 3,
+              "total": 10
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            }
+          },
+          "rank": 11
+        },
+        {
+          "station": "豐田分隊",
+          "pre_gm_total": 37,
+          "pre_gm_rosc": 7,
+          "pre_gm_rate": 18.92,
+          "post_gm_total": 93,
+          "post_gm_rosc": 7,
+          "post_gm_rate": 7.53,
+          "growth": -11.39,
+          "total_ohca": 130,
+          "total_rosc": 14,
+          "overall_rate": 10.77,
+          "r1_rate": 1.54,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 18.2,
+              "rosc": 2,
+              "total": 11
+            },
+            "110": {
+              "rate": 22.7,
+              "rosc": 5,
+              "total": 22
+            },
+            "111": {
+              "rate": 8.3,
+              "rosc": 2,
+              "total": 24
+            },
+            "112": {
+              "rate": 7.7,
+              "rosc": 1,
+              "total": 13
+            },
+            "113": {
+              "rate": 5.0,
+              "rosc": 1,
+              "total": 20
+            },
+            "114": {
+              "rate": 10.3,
+              "rosc": 3,
+              "total": 29
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 10
+            }
+          },
+          "rank": 12
+        },
+        {
+          "station": "二重分隊",
+          "pre_gm_total": 46,
+          "pre_gm_rosc": 5,
+          "pre_gm_rate": 10.87,
+          "post_gm_total": 87,
+          "post_gm_rosc": 9,
+          "post_gm_rate": 10.34,
+          "growth": -0.53,
+          "total_ohca": 133,
+          "total_rosc": 14,
+          "overall_rate": 10.53,
+          "r1_rate": 9.02,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "109": {
+              "rate": 13.0,
+              "rosc": 3,
+              "total": 23
+            },
+            "110": {
+              "rate": 13.3,
+              "rosc": 2,
+              "total": 15
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 23
+            },
+            "112": {
+              "rate": 10.0,
+              "rosc": 2,
+              "total": 20
+            },
+            "113": {
+              "rate": 15.8,
+              "rosc": 3,
+              "total": 19
+            },
+            "114": {
+              "rate": 10.5,
+              "rosc": 2,
+              "total": 19
+            },
+            "115": {
+              "rate": 22.2,
+              "rosc": 2,
+              "total": 9
+            }
+          },
+          "rank": 13
+        },
+        {
+          "station": "尖石分隊",
+          "pre_gm_total": 27,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 7.41,
+          "post_gm_total": 49,
+          "post_gm_rosc": 6,
+          "post_gm_rate": 12.24,
+          "growth": 4.83,
+          "total_ohca": 76,
+          "total_rosc": 8,
+          "overall_rate": 10.53,
+          "r1_rate": 9.21,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "110": {
+              "rate": 6.2,
+              "rosc": 1,
+              "total": 16
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 16
+            },
+            "112": {
+              "rate": 40.0,
+              "rosc": 2,
+              "total": 5
+            },
+            "113": {
+              "rate": 18.2,
+              "rosc": 2,
+              "total": 11
+            },
+            "114": {
+              "rate": 7.1,
+              "rosc": 1,
+              "total": 14
+            },
+            "115": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            }
+          },
+          "rank": 14
+        },
+        {
+          "station": "湖口分隊",
+          "pre_gm_total": 108,
+          "pre_gm_rosc": 19,
+          "pre_gm_rate": 17.59,
+          "post_gm_total": 223,
+          "post_gm_rosc": 12,
+          "post_gm_rate": 5.38,
+          "growth": -12.21,
+          "total_ohca": 331,
+          "total_rosc": 31,
+          "overall_rate": 9.37,
+          "r1_rate": 8.16,
+          "matrix": {
+            "108": {
+              "rate": 15.4,
+              "rosc": 2,
+              "total": 13
+            },
+            "109": {
+              "rate": 22.6,
+              "rosc": 12,
+              "total": 53
+            },
+            "110": {
+              "rate": 14.3,
+              "rosc": 5,
+              "total": 35
+            },
+            "111": {
+              "rate": 9.4,
+              "rosc": 5,
+              "total": 53
+            },
+            "112": {
+              "rate": 7.0,
+              "rosc": 3,
+              "total": 43
+            },
+            "113": {
+              "rate": 2.2,
+              "rosc": 1,
+              "total": 45
+            },
+            "114": {
+              "rate": 1.7,
+              "rosc": 1,
+              "total": 60
+            },
+            "115": {
+              "rate": 6.9,
+              "rosc": 2,
+              "total": 29
+            }
+          },
+          "rank": 15
+        },
+        {
+          "station": "寶山分隊",
+          "pre_gm_total": 38,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 60,
+          "post_gm_rosc": 6,
+          "post_gm_rate": 10.0,
+          "growth": 10.0,
+          "total_ohca": 98,
+          "total_rosc": 6,
+          "overall_rate": 6.12,
+          "r1_rate": 6.12,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 13
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 18
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 15
+            },
+            "112": {
+              "rate": 13.3,
+              "rosc": 2,
+              "total": 15
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 14
+            },
+            "114": {
+              "rate": 10.0,
+              "rosc": 1,
+              "total": 10
+            },
+            "115": {
+              "rate": 27.3,
+              "rosc": 3,
+              "total": 11
+            }
+          },
+          "rank": 16
+        },
+        {
+          "station": "新豐分隊",
+          "pre_gm_total": 59,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 1.69,
+          "post_gm_total": 111,
+          "post_gm_rosc": 9,
+          "post_gm_rate": 8.11,
+          "growth": 6.42,
+          "total_ohca": 170,
+          "total_rosc": 10,
+          "overall_rate": 5.88,
+          "r1_rate": 4.71,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 8
+            },
+            "109": {
+              "rate": 4.3,
+              "rosc": 1,
+              "total": 23
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 22
+            },
+            "111": {
+              "rate": 11.5,
+              "rosc": 3,
+              "total": 26
+            },
+            "112": {
+              "rate": 10.7,
+              "rosc": 3,
+              "total": 28
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 19
+            },
+            "114": {
+              "rate": 8.3,
+              "rosc": 2,
+              "total": 24
+            },
+            "115": {
+              "rate": 5.0,
+              "rosc": 1,
+              "total": 20
+            }
+          },
+          "rank": 17
+        },
+        {
+          "station": "五峰分隊",
+          "pre_gm_total": 11,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 15,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 26,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            }
+          },
+          "rank": 18
+        },
+        {
+          "station": "田埔分隊",
+          "pre_gm_total": 0,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 0,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 0,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 19
+        }
+      ],
+      "macro_kpis": {
+        "pre_r1_rate": 8.7,
+        "post_r1_rate": 12.0,
+        "pre_drugs_avg": 0.28,
+        "post_drugs_avg": 1.05,
+        "top_station": "光明分隊",
+        "top_station_rate": 31.26,
+        "gm_post_rate": 34.18,
+        "gm_growth": 12.06,
+        "zd_tot": 501,
+        "gm_tot": 467,
+        "top2_tot": 968,
+        "top2_pct": 27.8
+      }
     },
-    {
-      "name": "鄭睿旭",
-      "group": "資深EMT-P",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 121,
-      "deducted_emt2": 0,
-      "ohca_tp": 121,
-      "rosc_tp": 42,
-      "rate_tp": 34.710743801652896,
-      "drugs_tp": 282,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "劉名洲",
-      "group": "資深EMT-P",
-      "station": "竹東分隊 / 橫山分隊",
-      "total_cases_all": 182,
-      "deducted_emt2": 0,
-      "ohca_tp": 182,
-      "rosc_tp": 41,
-      "rate_tp": 22.52747252747253,
-      "drugs_tp": 398,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "許育誠",
-      "group": "同學組 (111.03起算)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 147,
-      "deducted_emt2": 21,
-      "ohca_tp": 126,
-      "rosc_tp": 39,
-      "rate_tp": 30.952380952380953,
-      "drugs_tp": 300,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "賴俊傑",
-      "group": "同學組 (111.03起算)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 108,
-      "deducted_emt2": 3,
-      "ohca_tp": 105,
-      "rosc_tp": 36,
-      "rate_tp": 34.285714285714285,
-      "drugs_tp": 265,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "李均祈",
-      "group": "資深EMT-P",
-      "station": "光明分隊 / 新埔分隊",
-      "total_cases_all": 98,
-      "deducted_emt2": 0,
-      "ohca_tp": 98,
-      "rosc_tp": 35,
-      "rate_tp": 35.714285714285715,
-      "drugs_tp": 245,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "黃皓賓",
-      "group": "同學組 (111.03起算)",
-      "station": "光明分隊",
-      "total_cases_all": 127,
-      "deducted_emt2": 35,
-      "ohca_tp": 92,
-      "rosc_tp": 33,
-      "rate_tp": 35.869565217391305,
-      "drugs_tp": 211,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "李正群",
-      "group": "資深EMT-P",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 98,
-      "deducted_emt2": 0,
-      "ohca_tp": 98,
-      "rosc_tp": 33,
-      "rate_tp": 33.6734693877551,
-      "drugs_tp": 227,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "呂育陞",
-      "group": "同學組 (111.03起算)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 94,
-      "deducted_emt2": 23,
-      "ohca_tp": 71,
-      "rosc_tp": 32,
-      "rate_tp": 45.07042253521127,
-      "drugs_tp": 170,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "張凡治",
-      "group": "同學組 (111.03起算)",
-      "station": "新工分隊 / 芎林分隊",
-      "total_cases_all": 78,
-      "deducted_emt2": 9,
-      "ohca_tp": 69,
-      "rosc_tp": 26,
-      "rate_tp": 37.68115942028986,
-      "drugs_tp": 127,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "林冠廷",
-      "group": "同學組 (111.03起算)",
-      "station": "竹東分隊 / 芎林分隊",
-      "total_cases_all": 123,
-      "deducted_emt2": 5,
-      "ohca_tp": 118,
-      "rosc_tp": 22,
-      "rate_tp": 18.64406779661017,
-      "drugs_tp": 279,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "黃盈豪",
-      "group": "同學組 (111.03起算)",
-      "station": "竹東分隊",
-      "total_cases_all": 118,
-      "deducted_emt2": 7,
-      "ohca_tp": 111,
-      "rosc_tp": 16,
-      "rate_tp": 14.414414414414415,
-      "drugs_tp": 264,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "黃玉喬",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "光明分隊 / 竹北分隊",
-      "total_cases_all": 84,
-      "deducted_emt2": 41,
-      "ohca_tp": 43,
-      "rosc_tp": 12,
-      "rate_tp": 27.906976744186046,
-      "drugs_tp": 112,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "李晉緯",
-      "group": "同學組 (111.03起算)",
-      "station": "芎林分隊 / 五峰分隊",
-      "total_cases_all": 67,
-      "deducted_emt2": 17,
-      "ohca_tp": 50,
-      "rosc_tp": 10,
-      "rate_tp": 20.0,
-      "drugs_tp": 111,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "吳志霖",
-      "group": "同學組 (111.03起算)",
-      "station": "關西分隊",
-      "total_cases_all": 74,
-      "deducted_emt2": 24,
-      "ohca_tp": 50,
-      "rosc_tp": 10,
-      "rate_tp": 20.0,
-      "drugs_tp": 96,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "蔡煥龍",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "新埔分隊",
-      "total_cases_all": 67,
-      "deducted_emt2": 41,
-      "ohca_tp": 26,
-      "rosc_tp": 9,
-      "rate_tp": 34.61538461538461,
-      "drugs_tp": 59,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "蕭惠元",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "山崎分隊 / 湖口分隊",
-      "total_cases_all": 61,
-      "deducted_emt2": 23,
-      "ohca_tp": 38,
-      "rosc_tp": 9,
-      "rate_tp": 23.684210526315788,
-      "drugs_tp": 95,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "黃韓林",
-      "group": "資深EMT-P",
-      "station": "竹東分隊 / 寶山分隊",
-      "total_cases_all": 57,
-      "deducted_emt2": 0,
-      "ohca_tp": 57,
-      "rosc_tp": 9,
-      "rate_tp": 15.789473684210526,
-      "drugs_tp": 96,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "許振堂",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "新工分隊 / 光明分隊",
-      "total_cases_all": 49,
-      "deducted_emt2": 19,
-      "ohca_tp": 30,
-      "rosc_tp": 6,
-      "rate_tp": 20.0,
-      "drugs_tp": 65,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "舒季軒",
-      "group": "資深EMT-P",
-      "station": "二重分隊",
-      "total_cases_all": 53,
-      "deducted_emt2": 0,
-      "ohca_tp": 53,
-      "rosc_tp": 6,
-      "rate_tp": 11.320754716981133,
-      "drugs_tp": 74,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "王英任",
-      "group": "資深EMT-P",
-      "station": "尖石分隊 / 橫山分隊",
-      "total_cases_all": 28,
-      "deducted_emt2": 0,
-      "ohca_tp": 28,
-      "rosc_tp": 5,
-      "rate_tp": 17.857142857142858,
-      "drugs_tp": 35,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "宋奇穎",
-      "group": "資深EMT-P",
-      "station": "新埔分隊 / 湖口分隊",
-      "total_cases_all": 41,
-      "deducted_emt2": 0,
-      "ohca_tp": 41,
-      "rosc_tp": 5,
-      "rate_tp": 12.195121951219512,
-      "drugs_tp": 51,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "許家瑋",
-      "group": "資深EMT-P",
-      "station": "新豐分隊 / 湖口分隊",
-      "total_cases_all": 57,
-      "deducted_emt2": 0,
-      "ohca_tp": 57,
-      "rosc_tp": 5,
-      "rate_tp": 8.771929824561402,
-      "drugs_tp": 69,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "王仁宏",
-      "group": "115年新進TP (扣除EMT2)",
-      "station": "山崎分隊 / 新豐分隊",
-      "total_cases_all": 55,
-      "deducted_emt2": 42,
-      "ohca_tp": 13,
-      "rosc_tp": 4,
-      "rate_tp": 30.76923076923077,
-      "drugs_tp": 29,
-      "start_date": "2026-01-01"
-    },
-    {
-      "name": "范揚浩",
-      "group": "資深EMT-P",
-      "station": "關西分隊",
-      "total_cases_all": 23,
-      "deducted_emt2": 0,
-      "ohca_tp": 23,
-      "rosc_tp": 4,
-      "rate_tp": 17.391304347826086,
-      "drugs_tp": 50,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "廖奕棋",
-      "group": "資深EMT-P",
-      "station": "竹北分隊 / 光明分隊",
-      "total_cases_all": 12,
-      "deducted_emt2": 0,
-      "ohca_tp": 12,
-      "rosc_tp": 3,
-      "rate_tp": 25.0,
-      "drugs_tp": 13,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "張淑惠",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "湖口分隊 / 光明分隊",
-      "total_cases_all": 71,
-      "deducted_emt2": 34,
-      "ohca_tp": 37,
-      "rosc_tp": 3,
-      "rate_tp": 8.108108108108109,
-      "drugs_tp": 65,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "李建暾",
-      "group": "資深EMT-P",
-      "station": "新埔分隊 / 湖口分隊",
-      "total_cases_all": 4,
-      "deducted_emt2": 0,
-      "ohca_tp": 4,
-      "rosc_tp": 2,
-      "rate_tp": 50.0,
-      "drugs_tp": 5,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "陳耀明",
-      "group": "資深EMT-P",
-      "station": "豐田分隊 / 竹北分隊",
-      "total_cases_all": 10,
-      "deducted_emt2": 0,
-      "ohca_tp": 10,
-      "rosc_tp": 2,
-      "rate_tp": 20.0,
-      "drugs_tp": 9,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "黃禹銘",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "豐田分隊",
-      "total_cases_all": 38,
-      "deducted_emt2": 18,
-      "ohca_tp": 20,
-      "rosc_tp": 2,
-      "rate_tp": 10.0,
-      "drugs_tp": 47,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "張晉榕",
-      "group": "資深EMT-P",
-      "station": "新工分隊",
-      "total_cases_all": 4,
-      "deducted_emt2": 0,
-      "ohca_tp": 4,
-      "rosc_tp": 1,
-      "rate_tp": 25.0,
-      "drugs_tp": 6,
-      "start_date": "2019-10-01"
-    },
-    {
-      "name": "李孟樵",
-      "group": "同學組 (111.03起算)",
-      "station": "寶山分隊",
-      "total_cases_all": 26,
-      "deducted_emt2": 6,
-      "ohca_tp": 20,
-      "rosc_tp": 1,
-      "rate_tp": 5.0,
-      "drugs_tp": 30,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "彭鈺淳",
-      "group": "同學組 (111.03起算)",
-      "station": "二重分隊 / 光明分隊",
-      "total_cases_all": 32,
-      "deducted_emt2": 6,
-      "ohca_tp": 26,
-      "rosc_tp": 1,
-      "rate_tp": 3.8461538461538463,
-      "drugs_tp": 65,
-      "start_date": "2022-03-01"
-    },
-    {
-      "name": "曾士維",
-      "group": "114年新進TP (扣除EMT2)",
-      "station": "峨眉分隊",
-      "total_cases_all": 18,
-      "deducted_emt2": 11,
-      "ohca_tp": 7,
-      "rosc_tp": 0,
-      "rate_tp": 0.0,
-      "drugs_tp": 17,
-      "start_date": "2025-01-01"
-    },
-    {
-      "name": "黃彥綸",
-      "group": "113年新進TP (扣除EMT2)",
-      "station": "橫山分隊",
-      "total_cases_all": 6,
-      "deducted_emt2": 0,
-      "ohca_tp": 6,
-      "rosc_tp": 0,
-      "rate_tp": 0.0,
-      "drugs_tp": 14,
-      "start_date": "2024-01-01"
-    },
-    {
-      "name": "黃耀樟",
-      "group": "資深EMT-P",
-      "station": "無",
-      "total_cases_all": 0,
-      "deducted_emt2": 0,
-      "ohca_tp": 0,
-      "rosc_tp": 0,
-      "rate_tp": 0.0,
-      "drugs_tp": 0,
-      "start_date": "2019-10-01"
+    "trauma": {
+      "label": "創傷 OHCA (外傷致死性)",
+      "desc": "車禍、墜落、穿刺傷等嚴重創傷造成之到院前心跳停止（外傷致死率極高，到院前 R1 僅 5.89%，共 560 案）",
+      "badge_count": "560 案",
+      "summary": {
+        "total_ohca": 560,
+        "total_rosc": 70,
+        "total_r1": 33,
+        "rosc_rate": 12.5,
+        "r1_rate": 5.89,
+        "total_months": 85,
+        "date_range": "108年10月 ～ 115年10月",
+        "gm_total_ems": 26843,
+        "gm_total_ohca": 76,
+        "gm_total_rosc": 19,
+        "gm_rosc_rate": 25.0,
+        "gm_r1_rosc_rate": 17.11,
+        "gm_post_ohca": 50,
+        "gm_post_rosc": 16,
+        "gm_post_rate": 32.0,
+        "total_drugs": 400,
+        "gm_total_drugs": 128
+      },
+      "career_firefighters": [
+        {
+          "name": "許嘉雄",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "110年資深頂尖TP",
+          "hero_name": "趙雲",
+          "hero_title": "常山龍膽・單騎截江",
+          "hero_image": "images/zhao_yun_ink.jpg",
+          "hero_quote": "披堅執銳一身是膽，銀槍所向處皆化死生！",
+          "desc": "【常山龍膽・一身是膽】如趙子龍之孤勇絕倫、臨陣不亂。許嘉雄早在 110 年初即奉命獨當一面，早於諸同袍先行受命取得 TP 資格。救護總量近 4,000 件，TP 執業期救回 36 人，急救成功率高達 34.62%（穩居全縣第 4 強）。其給藥 225 次、氣管插管 35 件，槍出如龍、處置乾淨俐落，是光明防線上最堅韌從容的常勝名將。",
+          "general_ems_calls": 3958,
+          "general_ems_pct": 14.74,
+          "ohca_calls": 11,
+          "ohca_rosc": 3,
+          "rosc_rate": 27.3,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": 9.3,
+          "odds_ratio": 1.52,
+          "drug_rate": 81.8,
+          "drug_avg": 2.45,
+          "endo_rate": 18.2,
+          "sga_rate": 63.6,
+          "iv_rate": 72.7,
+          "best_partners": [
+            {
+              "name": "黃超群",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "黃俊儒",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "李正群",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "許育誠",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "百戰高壓先鋒",
+          "hero_name": "陳友諒",
+          "hero_title": "江漢巨擘・鄱陽橫槊",
+          "hero_image": "images/chen_youliang_ink.jpg",
+          "hero_quote": "江漢滔滔水師連環，專向怒濤深處立中軍！",
+          "desc": "【江漢巨擘・鄱陽橫槊】陳友諒生平督率千艘巨艦，橫鎖江漢，所領之軍天下至強，專打天下最險、最難之逆浪硬仗。許育誠於光明分隊出勤 OHCA 高達 142 件（救護總量 3,936 件），母數冠絕全分隊！他所承接者，多為 80 歲以上超高齡、清晨非目擊、生機最形微弱之極度逆境。他不避凶險、不挑平川順境以圖亮眼數據，而是在滔天死線前親率巨艦強行搶灘，處置強度全開（給藥率 76.1%、插管率 44.4%），親手挽回 32 條生靈！雖大浪淘沙稀釋帳面成效，然深諳前線戰事者皆知：敢於在無人生機之死局中直面狂濤者，方為真正的硬派巨擘！",
+          "general_ems_calls": 3936,
+          "general_ems_pct": 14.66,
+          "ohca_calls": 15,
+          "ohca_rosc": 3,
+          "rosc_rate": 20.0,
+          "r1_rosc": 3,
+          "r1_rate": 20.0,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 66.7,
+          "drug_avg": 1.87,
+          "endo_rate": 0.0,
+          "sga_rate": 66.7,
+          "iv_rate": 40.0,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "黃皓賓",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "姜建成",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "施純泰",
+              "total": 3,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃皓賓",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "穩健攻堅主力",
+          "hero_name": "蒙恬",
+          "hero_title": "塞上長城・磐石之陣",
+          "hero_image": "images/meng_tian_ink.jpg",
+          "hero_quote": "築城禦難萬仞不移，巍巍砥柱守衛桑梓！",
+          "desc": "【塞上長城・穩健如山】蒙恬卻匈奴七百里、沉毅雄渾。黃皓賓救護量達 3,789 件、OHCA 出勤 125 件，TP 執業期勝率自舊制 17% 翻倍躍升至 36.05%！給藥與插管穩健紮實，長年守護竹北要衝，宛如不可踰越的鋼鐵防線。",
+          "general_ems_calls": 3789,
+          "general_ems_pct": 14.12,
+          "ohca_calls": 19,
+          "ohca_rosc": 5,
+          "rosc_rate": 26.3,
+          "r1_rosc": 4,
+          "r1_rate": 21.1,
+          "diff_broad": 1.1,
+          "odds_ratio": 1.05,
+          "drug_rate": 42.1,
+          "drug_avg": 1.16,
+          "endo_rate": 5.3,
+          "sga_rate": 78.9,
+          "iv_rate": 57.9,
+          "best_partners": [
+            {
+              "name": "許育誠",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "姜建成",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "連國延",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "黃玉喬",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            }
+          ]
+        },
+        {
+          "name": "鄭睿旭",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "重症插管大師",
+          "hero_name": "太史慈",
+          "hero_title": "神箭破敵・百步穿楊",
+          "hero_image": "images/taishi_ci_ink.jpg",
+          "hero_quote": "長弓在手弦無虛發，直取險隘百步穿楊！",
+          "desc": "【神箭太史・精準破障】太史慈猿臂善射、弦無虛發。鄭睿旭全縣累計救回 38 人（全縣第 3），在光明出勤 119 件 OHCA，氣管內插管率高達 67.2% 為全隊之最，給藥率 82.4%。無論患者呼吸道何等畸嶇狹窄，總能精確建立高階氣道，以卓越之雙手護衛生命。",
+          "general_ems_calls": 3466,
+          "general_ems_pct": 12.91,
+          "ohca_calls": 9,
+          "ohca_rosc": 2,
+          "rosc_rate": 22.2,
+          "r1_rosc": 1,
+          "r1_rate": 11.1,
+          "diff_broad": 5.2,
+          "odds_ratio": 1.27,
+          "drug_rate": 55.6,
+          "drug_avg": 1.67,
+          "endo_rate": 22.2,
+          "sga_rate": 77.8,
+          "iv_rate": 33.3,
+          "best_partners": [
+            {
+              "name": "黃玉喬",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "黃皓賓",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "張馨予",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃玉喬",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "新銳巾幗TP強將",
+          "hero_name": "穆桂英",
+          "hero_title": "巾幗破陣・氣貫長虹",
+          "hero_image": "images/mu_guiying_ink.jpg",
+          "hero_quote": "紅纓獵獵敢當先鋒，誰言巾幗遜於天下鬚眉！",
+          "desc": "【破陣先鋒・巾幗天驕】穆桂英掛帥出征、氣魄吞河。黃玉喬於 113 年受訓晉升 TP 後展現驚人戰力，現場給藥率高達 93.9%、氣管插管率 54.5%，TP 執業期成功率突破 30.30%（救回 10 人），全縣總排名挺進第 14 名！刀馬純熟、膽識過人，是新進 TP 陣容中最奪目的巾幗強將。",
+          "general_ems_calls": 3039,
+          "general_ems_pct": 11.32,
+          "ohca_calls": 13,
+          "ohca_rosc": 4,
+          "rosc_rate": 30.8,
+          "r1_rosc": 4,
+          "r1_rate": 30.8,
+          "diff_broad": -8.9,
+          "odds_ratio": 0.64,
+          "drug_rate": 61.5,
+          "drug_avg": 1.38,
+          "endo_rate": 7.7,
+          "sga_rate": 61.5,
+          "iv_rate": 46.2,
+          "best_partners": [
+            {
+              "name": "黃志樺",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "施純泰",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            }
+          ]
+        },
+        {
+          "name": "呂育陞",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "急救勝率天花板",
+          "hero_name": "霍去病",
+          "hero_title": "冠軍天驕・封狼居胥",
+          "hero_image": "images/huo_qubing_ink.jpg",
+          "hero_quote": "長驅萬里疾如奔雷，快馬輕騎斬將奪旗！",
+          "desc": "【冠軍天驕・快刀封喉】霍去病千里奔襲、攻無不克。呂育陞以 45.59% 的驚人急救成功率傲視全縣，在光明專責期亦維持 37.1% 的頂尖水準。其處置節奏極度迅捷精確，插管率突破 50%，與李正群、許育誠搭檔時屢破救治天花板，宛如冠軍侯長驅直入。",
+          "general_ems_calls": 2958,
+          "general_ems_pct": 11.02,
+          "ohca_calls": 8,
+          "ohca_rosc": 1,
+          "rosc_rate": 12.5,
+          "r1_rosc": 1,
+          "r1_rate": 12.5,
+          "diff_broad": 8.0,
+          "odds_ratio": 1.44,
+          "drug_rate": 50.0,
+          "drug_avg": 1.25,
+          "endo_rate": 12.5,
+          "sga_rate": 62.5,
+          "iv_rate": 50.0,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 3,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "蔣為理",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "全能戰術指揮",
+          "hero_name": "周瑜",
+          "hero_title": "江左周郎・儒將雄才",
+          "hero_image": "images/zhou_yu_ink.jpg",
+          "hero_quote": "羽扇綸巾談笑定策，風起赤壁賦能三軍！",
+          "desc": "【江左周郎・雅量雄圖】周公瑾雄姿英發、統御大局。蔣為理以 45 件救回數榮登全縣 EMT-P 總榜榜首，在光明專責期勝率達 38.8%（勝算比 OR 1.63）。其處置兼具侵入性極限（給藥 84.5%、插管 56.9%）與卓越的團隊協同領導力，搭檔勝率普遍飆破 50%~60%，談笑間平定危局，乃光明分隊首屈一指的戰術指揮中樞。",
+          "general_ems_calls": 2788,
+          "general_ems_pct": 10.39,
+          "ohca_calls": 15,
+          "ohca_rosc": 8,
+          "rosc_rate": 53.3,
+          "r1_rosc": 7,
+          "r1_rate": 46.7,
+          "diff_broad": 10.7,
+          "odds_ratio": 1.62,
+          "drug_rate": 80.0,
+          "drug_avg": 2.13,
+          "endo_rate": 6.7,
+          "sga_rate": 66.7,
+          "iv_rate": 46.7,
+          "best_partners": [
+            {
+              "name": "連國延",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "許育誠",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "李均祈",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "李正群",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            }
+          ]
+        },
+        {
+          "name": "賴俊傑",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高階氣道專家",
+          "hero_name": "宗澤",
+          "hero_title": "宗公持節・砥柱治軍",
+          "hero_image": "images/zong_ze_ink.jpg",
+          "hero_quote": "大節凜然治軍有度，雙重險隘穩如泰山！",
+          "desc": "【宗公持節・嚴整嚴謹】宗澤坐鎮汴梁、號令嚴謹。賴俊傑全縣救回 31 人，光明插管率達 63.7%、給藥率達 87.3%，急救成功率 35.3%。高級處置規範一絲不苟，技術沉穩無瑕，是同仁極度安心的後盾。",
+          "general_ems_calls": 2687,
+          "general_ems_pct": 10.01,
+          "ohca_calls": 9,
+          "ohca_rosc": 1,
+          "rosc_rate": 11.1,
+          "r1_rosc": 1,
+          "r1_rate": 11.1,
+          "diff_broad": 6.0,
+          "odds_ratio": 1.32,
+          "drug_rate": 77.8,
+          "drug_avg": 2.33,
+          "endo_rate": 11.1,
+          "sga_rate": 77.8,
+          "iv_rate": 44.4,
+          "best_partners": [
+            {
+              "name": "黃超群",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "施純泰",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 3,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "許育誠",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "紀俐瑀",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "李正群",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "現場復甦之星",
+          "hero_name": "扁鵲",
+          "hero_title": "望色知微・起死回生",
+          "hero_image": "images/bian_que_ink.jpg",
+          "hero_quote": "洞垣幽微洞悉死生，車行未抵春風已至！",
+          "desc": "【神醫扁鵲・妙手回陽】扁鵲過虢國起死回生。李正群在光明出勤到院前 ROSC 率高達 31.9%，高居全隊 TP 第一！全縣累計救回 28 人。其對心律辨識與灌流狀態極度敏銳，常在現場急救車上即成功逆轉心跳，神乎其技。",
+          "general_ems_calls": 2509,
+          "general_ems_pct": 9.35,
+          "ohca_calls": 11,
+          "ohca_rosc": 3,
+          "rosc_rate": 27.3,
+          "r1_rosc": 2,
+          "r1_rate": 18.2,
+          "diff_broad": 4.4,
+          "odds_ratio": 1.23,
+          "drug_rate": 81.8,
+          "drug_avg": 2.27,
+          "endo_rate": 18.2,
+          "sga_rate": 72.7,
+          "iv_rate": 9.1,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 4,
+              "rosc": 2,
+              "rate": 50.0
+            },
+            {
+              "name": "許嘉雄",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "李均祈",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            },
+            {
+              "name": "紀俐瑀",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "李均祈",
+          "role": "EMT-P (高級技術員)",
+          "is_tp": true,
+          "badge": "高給藥急救強者",
+          "hero_name": "辛棄疾",
+          "hero_title": "稼軒雄風・氣吞萬里",
+          "hero_image": "images/xin_qiji_ink.jpg",
+          "hero_quote": "金戈鐵馬豪情破陣，筆落風雷手掌乾坤！",
+          "desc": "【稼軒雄風・豪邁凌厲】辛稼軒五十騎闖營、氣吞萬里如虎。李均祈累計救回 32 人（全縣第 5），光明在隊給藥率高達 88.5% 冠絕全隊，勝率達 35.4%。現場處置果決剛烈、大開大闔，手中有雷霆手段，心中有菩薩心腸。",
+          "general_ems_calls": 2343,
+          "general_ems_pct": 8.73,
+          "ohca_calls": 11,
+          "ohca_rosc": 4,
+          "rosc_rate": 36.4,
+          "r1_rosc": 3,
+          "r1_rate": 27.3,
+          "diff_broad": 6.1,
+          "odds_ratio": 1.32,
+          "drug_rate": 100.0,
+          "drug_avg": 2.45,
+          "endo_rate": 9.1,
+          "sga_rate": 72.7,
+          "iv_rate": 45.5,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 3,
+              "rosc": 2,
+              "rate": 66.7
+            },
+            {
+              "name": "施純泰",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "黃玉喬",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "許育誠",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "李正群",
+              "total": 4,
+              "rosc": 1,
+              "rate": 25.0
+            }
+          ]
+        },
+        {
+          "name": "施純泰",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "光明出勤基石",
+          "hero_name": "郭子儀",
+          "hero_title": "汾陽砥柱・再造乾坤",
+          "hero_image": "images/guo_ziyi_ink.jpg",
+          "hero_quote": "單騎撫定四方危難，萬民身家皆繫老將一身！",
+          "desc": "【汾陽砥柱・再造社稷】唐代名將郭子儀單騎撫危、功蓋寰宇。施純泰出勤 4,185 件一般救護、分隊出勤佔比高達 15.6%，長年居全隊之首！OHCA 出勤 133 件、救回 41 人，歷經光明無數寒暑交替。他如老將坐鎮中軍，不論與何代 TP 搭檔皆能安定全場，是全體同仁最敬重、最不可或缺的救護基石。",
+          "general_ems_calls": 4185,
+          "general_ems_pct": 15.59,
+          "ohca_calls": 8,
+          "ohca_rosc": 3,
+          "rosc_rate": 37.5,
+          "r1_rosc": 3,
+          "r1_rate": 37.5,
+          "diff_broad": 0.6,
+          "odds_ratio": 1.03,
+          "drug_rate": 62.5,
+          "drug_avg": 1.62,
+          "endo_rate": 12.5,
+          "sga_rate": 62.5,
+          "iv_rate": 75.0,
+          "best_partners": [
+            {
+              "name": "李均祈",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "黃玉喬",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "賴俊傑",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "蔣為理",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "許育誠",
+              "total": 3,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "張馨予",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "全能救護中堅",
+          "hero_name": "平陽公主",
+          "hero_title": "娘子統御・威儀肅然",
+          "hero_image": "images/pingyang_princess_ink.jpg",
+          "hero_quote": "巾幗提攜千軍肅整，中軍調度莫敢不從！",
+          "desc": "【娘子帥印・中軍樞紐】唐平陽昭公主統御娘子軍、威加關中。張馨予出勤救護達 3,881 件（全隊第 4），OHCA 救回 23 人！身為中級警消主力，長年與各級 TP 默契無間，靜脈通路與團隊調度從容不迫，乃全隊運轉的中樞。",
+          "general_ems_calls": 3881,
+          "general_ems_pct": 14.46,
+          "ohca_calls": 9,
+          "ohca_rosc": 0,
+          "rosc_rate": 0.0,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -1.1,
+          "odds_ratio": 0.95,
+          "drug_rate": 44.4,
+          "drug_avg": 1.33,
+          "endo_rate": 0.0,
+          "sga_rate": 77.8,
+          "iv_rate": 55.6,
+          "best_partners": [
+            {
+              "name": "黃皓賓",
+              "total": 4,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "許育誠",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "鄭睿旭",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "連國延",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "靜脈通路神手",
+          "hero_name": "張良",
+          "hero_title": "留侯神謀・糧道通脈",
+          "hero_image": "images/zhang_liang_ink.jpg",
+          "hero_quote": "運籌指尖脈絡貫通，千軍所需一針即至！",
+          "desc": "【留侯運籌・兵馬未動】張子房籌謀帷幄、通達天下。連國延出勤 2,428 件救護，在隊靜脈輸液（IV）建立率高達 90.5%！為第一線 TP 提供穩定無比的給藥通路，有其在側，急救血脈暢通無阻。",
+          "general_ems_calls": 2428,
+          "general_ems_pct": 9.05,
+          "ohca_calls": 10,
+          "ohca_rosc": 3,
+          "rosc_rate": 30.0,
+          "r1_rosc": 2,
+          "r1_rate": 20.0,
+          "diff_broad": -2.1,
+          "odds_ratio": 0.91,
+          "drug_rate": 60.0,
+          "drug_avg": 1.5,
+          "endo_rate": 0.0,
+          "sga_rate": 80.0,
+          "iv_rate": 100.0,
+          "best_partners": [
+            {
+              "name": "蔣為理",
+              "total": 2,
+              "rosc": 2,
+              "rate": 100.0
+            },
+            {
+              "name": "黃皓賓",
+              "total": 5,
+              "rosc": 2,
+              "rate": 40.0
+            },
+            {
+              "name": "林昆穎",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "洪國胤",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率攻堅隊員",
+          "hero_name": "尉遲敬德",
+          "hero_title": "門神奪槊・勇烈忠純",
+          "hero_image": "images/yuchi_jingde_ink.jpg",
+          "hero_quote": "橫槊陷陣百死不回，危局之中立斬死關！",
+          "desc": "【勇烈奪槊・破局門神】尉遲敬德白刃陷陣、勇冠三軍。洪國胤出勤 2,129 件救護，OHCA 勝率達 34.0%（高出全隊 4%），到院前 ROSC 達 25.5%。每臨險局總能勇往直前，多次在極限關頭力挽狂瀾。",
+          "general_ems_calls": 2129,
+          "general_ems_pct": 7.93,
+          "ohca_calls": 5,
+          "ohca_rosc": 1,
+          "rosc_rate": 20.0,
+          "r1_rosc": 1,
+          "r1_rate": 20.0,
+          "diff_broad": 4.0,
+          "odds_ratio": 1.2,
+          "drug_rate": 40.0,
+          "drug_avg": 0.8,
+          "endo_rate": 20.0,
+          "sga_rate": 20.0,
+          "iv_rate": 60.0,
+          "best_partners": [
+            {
+              "name": "林昆穎",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "黃志樺",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃俊儒",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "忠誠勤勉前鋒",
+          "hero_name": "許褚",
+          "hero_title": "虎痴披甲・忠純不移",
+          "hero_image": "images/xu_chu_ink.jpg",
+          "hero_quote": "力敵萬夫忠勇不二，默默守護寸土不退！",
+          "desc": "【虎痴忠烈・堅毅守禦】許褚勇力絕人、恪忠職守。黃俊儒救護量 1,839 件、OHCA 47 件，常年堅守在各繁重時段，任勞任怨，為救護現場最厚實的執勤護衛。",
+          "general_ems_calls": 1839,
+          "general_ems_pct": 6.85,
+          "ohca_calls": 7,
+          "ohca_rosc": 2,
+          "rosc_rate": 28.6,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -17.0,
+          "odds_ratio": 0.37,
+          "drug_rate": 57.1,
+          "drug_avg": 1.71,
+          "endo_rate": 0.0,
+          "sga_rate": 85.7,
+          "iv_rate": 71.4,
+          "best_partners": [
+            {
+              "name": "許嘉雄",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "楊梓嫻",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "姜建成",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高給藥輔助專家",
+          "hero_name": "魯肅",
+          "hero_title": "長者弘道・調協周詳",
+          "hero_image": "images/lu_su_ink.jpg",
+          "hero_quote": "敦厚仁心兼濟同袍，深謀遠慮協和三軍！",
+          "desc": "【子敬弘道・協和群賢】魯子敬寬厚仁德、總攬協調。姜建成救護量 1,686 件，搭配出勤給藥率達 87.0%、插管率 55.6%。在現場迅速鋪陳裝備、精準輔佐，團隊協調功莫大焉。",
+          "general_ems_calls": 1686,
+          "general_ems_pct": 6.28,
+          "ohca_calls": 6,
+          "ohca_rosc": 2,
+          "rosc_rate": 33.3,
+          "r1_rosc": 2,
+          "r1_rate": 33.3,
+          "diff_broad": -0.8,
+          "odds_ratio": 0.96,
+          "drug_rate": 83.3,
+          "drug_avg": 2.17,
+          "endo_rate": 0.0,
+          "sga_rate": 66.7,
+          "iv_rate": 16.7,
+          "best_partners": [
+            {
+              "name": "黃皓賓",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "許育誠",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            }
+          ]
+        },
+        {
+          "name": "林昆穎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "基層堅實基石",
+          "hero_name": "徐晃",
+          "hero_title": "亞夫長驅・規行矩步",
+          "hero_image": "images/xu_huang_ink.jpg",
+          "hero_quote": "治軍嚴密有周亞夫之風，厚植基石寸功不失！",
+          "desc": "【長驅良將・沉穩扎實】徐晃治軍整飭、有周亞夫遺風。林昆穎出勤 1,481 件救護，嚴謹執行高品質胸外按壓與基礎復甦，為分隊築造牢不可破的執勤底座。",
+          "general_ems_calls": 1481,
+          "general_ems_pct": 5.52,
+          "ohca_calls": 8,
+          "ohca_rosc": 1,
+          "rosc_rate": 12.5,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -17.2,
+          "odds_ratio": 0.36,
+          "drug_rate": 50.0,
+          "drug_avg": 1.12,
+          "endo_rate": 0.0,
+          "sga_rate": 62.5,
+          "iv_rate": 50.0,
+          "best_partners": [
+            {
+              "name": "黃志樺",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "許育誠",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "洪國胤",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "黃玉喬",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "連國延",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃志樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "資深防線守護",
+          "hero_name": "黃忠",
+          "hero_title": "定軍老將・挽弓射石",
+          "hero_image": "images/huang_zhong_ink.jpg",
+          "hero_quote": "寶刀未老勇冠定軍，沉著應變長者之儀！",
+          "desc": "【定軍神威・老驥伏櫪】黃漢升挽弓開石、勇冠三軍。黃志樺救護量 1,358 件，沉著守候各項重大急救，輔助後輩有條不紊，長者風範深得敬重。",
+          "general_ems_calls": 1358,
+          "general_ems_pct": 5.06,
+          "ohca_calls": 8,
+          "ohca_rosc": 2,
+          "rosc_rate": 25.0,
+          "r1_rosc": 1,
+          "r1_rate": 12.5,
+          "diff_broad": -7.9,
+          "odds_ratio": 0.67,
+          "drug_rate": 50.0,
+          "drug_avg": 1.0,
+          "endo_rate": 12.5,
+          "sga_rate": 62.5,
+          "iv_rate": 87.5,
+          "best_partners": [
+            {
+              "name": "黃玉喬",
+              "total": 2,
+              "rosc": 1,
+              "rate": 50.0
+            },
+            {
+              "name": "林昆穎",
+              "total": 3,
+              "rosc": 1,
+              "rate": 33.3
+            },
+            {
+              "name": "洪國胤",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "李長安",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "氣道輔助精兵",
+          "hero_name": "馬岱",
+          "hero_title": "伏波精騎・靈動應機",
+          "hero_image": "images/ma_dai_ink.jpg",
+          "hero_quote": "隨行先鋒伺機破敵，策應得宜功不唐捐！",
+          "desc": "【伏波輕騎・隨陣策應】馬岱沉毅忠謹、斬將制勝。李長安出勤 1,093 件救護，給藥率 77.8%、插管率 52.8%，在各型氣道器械輔助上靈活敏捷。",
+          "general_ems_calls": 1093,
+          "general_ems_pct": 4.07,
+          "ohca_calls": 0,
+          "ohca_rosc": 0,
+          "rosc_rate": 0.0,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -8.7,
+          "odds_ratio": 0.64,
+          "drug_rate": 0.0,
+          "drug_avg": 0.0,
+          "endo_rate": 0.0,
+          "sga_rate": 0.0,
+          "iv_rate": 0.0,
+          "best_partners": []
+        },
+        {
+          "name": "紀俐瑀",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高處置侵入主力",
+          "hero_name": "樊梨花",
+          "hero_title": "移山倒海・烈火明珠",
+          "hero_image": "images/fan_lihua_ink.jpg",
+          "hero_quote": "奇鋒突現移山倒海，巾幗剛烈勇抗疾厄！",
+          "desc": "【移山倒海・英姿天成】樊梨花智勇雙全、破陣如破竹。紀俐瑀出勤 862 件救護，OHCA 給藥率達 81.5%、插管率達 55.6%，高難度侵入技術極為熟稔，為女力警消之先鋒強棒。",
+          "general_ems_calls": 862,
+          "general_ems_pct": 3.21,
+          "ohca_calls": 5,
+          "ohca_rosc": 1,
+          "rosc_rate": 20.0,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -12.5,
+          "odds_ratio": 0.51,
+          "drug_rate": 80.0,
+          "drug_avg": 2.4,
+          "endo_rate": 20.0,
+          "sga_rate": 80.0,
+          "iv_rate": 0.0,
+          "best_partners": [
+            {
+              "name": "賴俊傑",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "李正群",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            },
+            {
+              "name": "李均祈",
+              "total": 2,
+              "rosc": 0,
+              "rate": 0.0
+            }
+          ]
+        },
+        {
+          "name": "黃美樺",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "高勝率王牌女力",
+          "hero_name": "梁紅玉",
+          "hero_title": "擂鼓金山・氣蓋山河",
+          "hero_image": "images/liang_hongyu_ink.jpg",
+          "hero_quote": "金山戰鼓震天動地，纖手力挽狂瀾死生！",
+          "desc": "【擂鼓金山・戰神女力】梁紅玉金山擂鼓抗頑敵。黃美樺出勤 564 件救護，OHCA 成功率高達 43.5%（救回 10 人），給藥率達 91.3%！每次登場成效卓著，巾幗英風令人驚嘆。",
+          "general_ems_calls": 564,
+          "general_ems_pct": 2.1,
+          "ohca_calls": 2,
+          "ohca_rosc": 2,
+          "rosc_rate": 100.0,
+          "r1_rosc": 1,
+          "r1_rate": 50.0,
+          "diff_broad": 13.7,
+          "odds_ratio": 1.81,
+          "drug_rate": 100.0,
+          "drug_avg": 2.0,
+          "endo_rate": 0.0,
+          "sga_rate": 100.0,
+          "iv_rate": 50.0,
+          "best_partners": []
+        },
+        {
+          "name": "紀翔升",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "奇蹟逆轉戰神",
+          "hero_name": "甘寧",
+          "hero_title": "錦帆神勇・百騎破陣",
+          "hero_image": "images/gan_ning_ink.jpg",
+          "hero_quote": "銜枚突襲百騎劫營，出奇制勝逆轉乾坤！",
+          "desc": "【錦帆奇襲・逆轉神蹟】甘興霸百騎劫魏營、勇冠江東。紀翔升出勤 397 件救護、21 件 OHCA，廣義成功率高達 57.1%（救回 12 人），到院前 ROSC 率高達 47.6%！勝率冠絕非 TP，專克必死之局。",
+          "general_ems_calls": 397,
+          "general_ems_pct": 1.48,
+          "ohca_calls": 1,
+          "ohca_rosc": 1,
+          "rosc_rate": 100.0,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": 27.8,
+          "odds_ratio": 3.22,
+          "drug_rate": 100.0,
+          "drug_avg": 3.0,
+          "endo_rate": 0.0,
+          "sga_rate": 100.0,
+          "iv_rate": 100.0,
+          "best_partners": []
+        },
+        {
+          "name": "蔡億鼎",
+          "role": "EMT-2 (中級/隊員)",
+          "is_tp": false,
+          "badge": "巾幗守護先鋒",
+          "hero_name": "花木蘭",
+          "hero_title": "巾幗豪傑・萬里赴戎",
+          "hero_image": "images/hua_mulan_ink.jpg",
+          "hero_quote": "萬里赴戎關山度，將軍百戰護生靈！",
+          "desc": "【萬里赴戎・巾幗豪傑】花木蘭披甲歷關山、豪情貫長虹。蔡億鼎身為光明分隊堅毅女將，出勤 346 件救護，給藥率達 73.7%，與各級 TP 默契搭配、沉著篤定。不畏險阻、與同袍並肩迎戰各項急救任務，在急救第一線展現巾幗不讓鬚眉之守護風範！",
+          "general_ems_calls": 346,
+          "general_ems_pct": 1.29,
+          "ohca_calls": 2,
+          "ohca_rosc": 0,
+          "rosc_rate": 0.0,
+          "r1_rosc": 0,
+          "r1_rate": 0.0,
+          "diff_broad": -4.2,
+          "odds_ratio": 0.81,
+          "drug_rate": 100.0,
+          "drug_avg": 3.0,
+          "endo_rate": 50.0,
+          "sga_rate": 50.0,
+          "iv_rate": 100.0,
+          "best_partners": []
+        }
+      ],
+      "master_37_leaderboard": [
+        {
+          "name": "蔣為理",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 20,
+          "deducted_emt2": 4,
+          "ohca_tp": 16,
+          "rosc_tp": 8,
+          "rate_tp": 50.0,
+          "r1_tp": 7,
+          "rate_r1": 43.75,
+          "drugs_tp": 35,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 1
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊",
+          "total_cases_all": 20,
+          "deducted_emt2": 8,
+          "ohca_tp": 12,
+          "rosc_tp": 5,
+          "rate_tp": 41.67,
+          "r1_tp": 4,
+          "rate_r1": 33.33,
+          "drugs_tp": 24,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 2
+        },
+        {
+          "name": "李均祈",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 4,
+          "rate_tp": 36.36,
+          "r1_tp": 3,
+          "rate_r1": 27.27,
+          "drugs_tp": 27,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 3
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 15,
+          "deducted_emt2": 4,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 3,
+          "rate_r1": 27.27,
+          "drugs_tp": 28,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 4
+        },
+        {
+          "name": "李正群",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 2,
+          "rate_r1": 18.18,
+          "drugs_tp": 25,
+          "endo_tp": 2,
+          "start_date": "2019-10-01",
+          "rank": 5
+        },
+        {
+          "name": "許嘉雄",
+          "group": "110年資深TP (早於同學組)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 27,
+          "endo_tp": 2,
+          "start_date": "2021-01-01",
+          "rank": 6
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 21,
+          "deducted_emt2": 0,
+          "ohca_tp": 21,
+          "rosc_tp": 3,
+          "rate_tp": 14.29,
+          "r1_tp": 2,
+          "rate_r1": 9.52,
+          "drugs_tp": 53,
+          "endo_tp": 10,
+          "start_date": "2019-10-01",
+          "rank": 7
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 5,
+          "ohca_tp": 5,
+          "rosc_tp": 2,
+          "rate_tp": 40.0,
+          "r1_tp": 2,
+          "rate_r1": 40.0,
+          "drugs_tp": 11,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 14,
+          "deducted_emt2": 9,
+          "ohca_tp": 5,
+          "rosc_tp": 2,
+          "rate_tp": 40.0,
+          "r1_tp": 2,
+          "rate_r1": 40.0,
+          "drugs_tp": 8,
+          "endo_tp": 0,
+          "start_date": "2024-01-01",
+          "rank": 9
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深EMT-P",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 0,
+          "ohca_tp": 10,
+          "rosc_tp": 2,
+          "rate_tp": 20.0,
+          "r1_tp": 1,
+          "rate_r1": 10.0,
+          "drugs_tp": 18,
+          "endo_tp": 2,
+          "start_date": "2019-10-01",
+          "rank": 10
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 1,
+          "rate_tp": 33.33,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 11
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 2,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 5,
+          "endo_tp": 0,
+          "start_date": "2024-01-01",
+          "rank": 12
+        },
+        {
+          "name": "王英任",
+          "group": "資深EMT-P",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 1,
+          "rate_r1": 25.0,
+          "drugs_tp": 1,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 13
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 5,
+          "ohca_tp": 6,
+          "rosc_tp": 1,
+          "rate_tp": 16.67,
+          "r1_tp": 1,
+          "rate_r1": 16.67,
+          "drugs_tp": 10,
+          "endo_tp": 1,
+          "start_date": "2024-01-01",
+          "rank": 14
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (111.03起算)",
+          "station": "關西分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 3,
+          "ohca_tp": 7,
+          "rosc_tp": 1,
+          "rate_tp": 14.29,
+          "r1_tp": 1,
+          "rate_r1": 14.29,
+          "drugs_tp": 14,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深EMT-P",
+          "station": "二重分隊",
+          "total_cases_all": 7,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 1,
+          "rate_tp": 14.29,
+          "r1_tp": 1,
+          "rate_r1": 14.29,
+          "drugs_tp": 8,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 16
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (111.03起算)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 0,
+          "ohca_tp": 9,
+          "rosc_tp": 1,
+          "rate_tp": 11.11,
+          "r1_tp": 1,
+          "rate_r1": 11.11,
+          "drugs_tp": 21,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 17
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 1,
+          "ohca_tp": 9,
+          "rosc_tp": 1,
+          "rate_tp": 11.11,
+          "r1_tp": 1,
+          "rate_r1": 11.11,
+          "drugs_tp": 20,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 18
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (111.03起算)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 1,
+          "ohca_tp": 10,
+          "rosc_tp": 1,
+          "rate_tp": 10.0,
+          "r1_tp": 1,
+          "rate_r1": 10.0,
+          "drugs_tp": 21,
+          "endo_tp": 3,
+          "start_date": "2022-03-01",
+          "rank": 19
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深EMT-P",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 0,
+          "ohca_tp": 10,
+          "rosc_tp": 1,
+          "rate_tp": 10.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 7,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 20
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (111.03起算)",
+          "station": "竹東分隊",
+          "total_cases_all": 8,
+          "deducted_emt2": 0,
+          "ohca_tp": 8,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 24,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 21
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (111.03起算)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 2,
+          "ohca_tp": 7,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 18,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 22
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (111.03起算)",
+          "station": "寶山分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 3,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 4,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 23
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新埔分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 4,
+          "ohca_tp": 5,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 15,
+          "endo_tp": 0,
+          "start_date": "2024-01-01",
+          "rank": 24
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "豐田分隊",
+          "total_cases_all": 5,
+          "deducted_emt2": 0,
+          "ohca_tp": 5,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 12,
+          "endo_tp": 0,
+          "start_date": "2024-01-01",
+          "rank": 25
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深EMT-P",
+          "station": "關西分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 9,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 26
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2024-01-01",
+          "rank": 27
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深EMT-P",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 8,
+          "endo_tp": 1,
+          "start_date": "2019-10-01",
+          "rank": 28
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深EMT-P",
+          "station": "豐田分隊 / 竹北分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 2,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 29
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (111.03起算)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 1,
+          "ohca_tp": 2,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 30
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深EMT-P",
+          "station": "新工分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2019-10-01",
+          "rank": 31
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP (扣除EMT2)",
+          "station": "峨眉分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 2,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 3,
+          "endo_tp": 0,
+          "start_date": "2025-01-01",
+          "rank": 32
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深EMT-P",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 1,
+          "deducted_emt2": 0,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 2,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 33
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP (扣除EMT2)",
+          "station": "橫山分隊",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2024-01-01",
+          "rank": 34
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP (扣除EMT2)",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 5,
+          "deducted_emt2": 5,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2026-01-01",
+          "rank": 35
+        },
+        {
+          "name": "李建暾",
+          "group": "資深EMT-P",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深EMT-P",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2019-10-01",
+          "rank": 37
+        }
+      ],
+      "ranked_post_gm": [
+        {
+          "name": "蔣為理",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 16,
+          "deducted_emt2": 0,
+          "ohca_tp": 16,
+          "rosc_tp": 8,
+          "rate_tp": 50.0,
+          "r1_tp": 7,
+          "rate_r1": 43.75,
+          "drugs_tp": 35,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 1
+        },
+        {
+          "name": "黃皓賓",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊",
+          "total_cases_all": 12,
+          "deducted_emt2": 0,
+          "ohca_tp": 12,
+          "rosc_tp": 5,
+          "rate_tp": 41.67,
+          "r1_tp": 4,
+          "rate_r1": 33.33,
+          "drugs_tp": 24,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 2
+        },
+        {
+          "name": "李均祈",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新埔分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 0,
+          "ohca_tp": 9,
+          "rosc_tp": 3,
+          "rate_tp": 33.33,
+          "r1_tp": 2,
+          "rate_r1": 22.22,
+          "drugs_tp": 23,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 3
+        },
+        {
+          "name": "許嘉雄",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 0,
+          "ohca_tp": 9,
+          "rosc_tp": 3,
+          "rate_tp": 33.33,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 21,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 4
+        },
+        {
+          "name": "許育誠",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 3,
+          "rate_r1": 27.27,
+          "drugs_tp": 28,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 5
+        },
+        {
+          "name": "李正群",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 11,
+          "deducted_emt2": 0,
+          "ohca_tp": 11,
+          "rosc_tp": 3,
+          "rate_tp": 27.27,
+          "r1_tp": 2,
+          "rate_r1": 18.18,
+          "drugs_tp": 25,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 6
+        },
+        {
+          "name": "呂育陞",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 5,
+          "deducted_emt2": 0,
+          "ohca_tp": 5,
+          "rosc_tp": 2,
+          "rate_tp": 40.0,
+          "r1_tp": 2,
+          "rate_r1": 40.0,
+          "drugs_tp": 11,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 7
+        },
+        {
+          "name": "黃玉喬",
+          "group": "113年新進TP",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 2,
+          "rate_tp": 33.33,
+          "r1_tp": 2,
+          "rate_r1": 33.33,
+          "drugs_tp": 11,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 8
+        },
+        {
+          "name": "劉名洲",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 橫山分隊",
+          "total_cases_all": 16,
+          "deducted_emt2": 0,
+          "ohca_tp": 16,
+          "rosc_tp": 2,
+          "rate_tp": 12.5,
+          "r1_tp": 1,
+          "rate_r1": 6.25,
+          "drugs_tp": 38,
+          "endo_tp": 9,
+          "start_date": "2022-03-01",
+          "rank": 9
+        },
+        {
+          "name": "王仁宏",
+          "group": "115年新進TP",
+          "station": "山崎分隊 / 新豐分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 1,
+          "rate_tp": 50.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 10
+        },
+        {
+          "name": "宋奇穎",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 1,
+          "rate_tp": 50.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 11
+        },
+        {
+          "name": "王英任",
+          "group": "資深組 (截取專責期)",
+          "station": "尖石分隊 / 橫山分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 1,
+          "rate_tp": 50.0,
+          "r1_tp": 1,
+          "rate_r1": 50.0,
+          "drugs_tp": 1,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 12
+        },
+        {
+          "name": "蕭惠元",
+          "group": "113年新進TP",
+          "station": "山崎分隊 / 湖口分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 5,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 13
+        },
+        {
+          "name": "舒季軒",
+          "group": "資深組 (截取專責期)",
+          "station": "二重分隊",
+          "total_cases_all": 4,
+          "deducted_emt2": 0,
+          "ohca_tp": 4,
+          "rosc_tp": 1,
+          "rate_tp": 25.0,
+          "r1_tp": 1,
+          "rate_r1": 25.0,
+          "drugs_tp": 6,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 14
+        },
+        {
+          "name": "張淑惠",
+          "group": "113年新進TP",
+          "station": "湖口分隊 / 光明分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 1,
+          "rate_tp": 16.67,
+          "r1_tp": 1,
+          "rate_r1": 16.67,
+          "drugs_tp": 10,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 15
+        },
+        {
+          "name": "鄭睿旭",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 1,
+          "rate_tp": 16.67,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 12,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 16
+        },
+        {
+          "name": "吳志霖",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "關西分隊",
+          "total_cases_all": 7,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 1,
+          "rate_tp": 14.29,
+          "r1_tp": 1,
+          "rate_r1": 14.29,
+          "drugs_tp": 14,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 17
+        },
+        {
+          "name": "賴俊傑",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "光明分隊 / 竹北分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 0,
+          "ohca_tp": 9,
+          "rosc_tp": 1,
+          "rate_tp": 11.11,
+          "r1_tp": 1,
+          "rate_r1": 11.11,
+          "drugs_tp": 21,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 18
+        },
+        {
+          "name": "林冠廷",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊 / 芎林分隊",
+          "total_cases_all": 9,
+          "deducted_emt2": 0,
+          "ohca_tp": 9,
+          "rosc_tp": 1,
+          "rate_tp": 11.11,
+          "r1_tp": 1,
+          "rate_r1": 11.11,
+          "drugs_tp": 20,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 19
+        },
+        {
+          "name": "張凡治",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "新工分隊 / 芎林分隊",
+          "total_cases_all": 10,
+          "deducted_emt2": 0,
+          "ohca_tp": 10,
+          "rosc_tp": 1,
+          "rate_tp": 10.0,
+          "r1_tp": 1,
+          "rate_r1": 10.0,
+          "drugs_tp": 21,
+          "endo_tp": 3,
+          "start_date": "2022-03-01",
+          "rank": 20
+        },
+        {
+          "name": "黃盈豪",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "竹東分隊",
+          "total_cases_all": 8,
+          "deducted_emt2": 0,
+          "ohca_tp": 8,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 24,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 21
+        },
+        {
+          "name": "李晉緯",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "芎林分隊 / 五峰分隊",
+          "total_cases_all": 7,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 18,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 22
+        },
+        {
+          "name": "蔡煥龍",
+          "group": "113年新進TP",
+          "station": "新埔分隊",
+          "total_cases_all": 7,
+          "deducted_emt2": 0,
+          "ohca_tp": 7,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 18,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 23
+        },
+        {
+          "name": "李孟樵",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "寶山分隊",
+          "total_cases_all": 6,
+          "deducted_emt2": 0,
+          "ohca_tp": 6,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 4,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 24
+        },
+        {
+          "name": "黃禹銘",
+          "group": "113年新進TP",
+          "station": "豐田分隊",
+          "total_cases_all": 5,
+          "deducted_emt2": 0,
+          "ohca_tp": 5,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 12,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 25
+        },
+        {
+          "name": "許振堂",
+          "group": "113年新進TP",
+          "station": "新工分隊 / 光明分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 26
+        },
+        {
+          "name": "許家瑋",
+          "group": "資深組 (截取專責期)",
+          "station": "新豐分隊 / 湖口分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 3,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 27
+        },
+        {
+          "name": "黃韓林",
+          "group": "資深組 (截取專責期)",
+          "station": "竹東分隊 / 寶山分隊",
+          "total_cases_all": 3,
+          "deducted_emt2": 0,
+          "ohca_tp": 3,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 8,
+          "endo_tp": 1,
+          "start_date": "2022-03-01",
+          "rank": 28
+        },
+        {
+          "name": "彭鈺淳",
+          "group": "同學組 (光明成軍同梯)",
+          "station": "二重分隊 / 光明分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 29
+        },
+        {
+          "name": "張晉榕",
+          "group": "資深組 (截取專責期)",
+          "station": "新工分隊",
+          "total_cases_all": 2,
+          "deducted_emt2": 0,
+          "ohca_tp": 2,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 6,
+          "endo_tp": 2,
+          "start_date": "2022-03-01",
+          "rank": 30
+        },
+        {
+          "name": "曾士維",
+          "group": "114年新進TP",
+          "station": "峨眉分隊",
+          "total_cases_all": 1,
+          "deducted_emt2": 0,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 3,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 31
+        },
+        {
+          "name": "范揚浩",
+          "group": "資深組 (截取專責期)",
+          "station": "關西分隊",
+          "total_cases_all": 1,
+          "deducted_emt2": 0,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 3,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 32
+        },
+        {
+          "name": "陳耀明",
+          "group": "資深組 (截取專責期)",
+          "station": "竹北分隊 / 光明分隊",
+          "total_cases_all": 1,
+          "deducted_emt2": 0,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 2,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 33
+        },
+        {
+          "name": "廖奕棋",
+          "group": "資深組 (截取專責期)",
+          "station": "光明分隊 / 新豐分隊",
+          "total_cases_all": 1,
+          "deducted_emt2": 0,
+          "ohca_tp": 1,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 2,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 34
+        },
+        {
+          "name": "黃彥綸",
+          "group": "113年新進TP",
+          "station": "橫山分隊",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 35
+        },
+        {
+          "name": "李建暾",
+          "group": "資深組 (截取專責期)",
+          "station": "新埔分隊 / 湖口分隊",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 36
+        },
+        {
+          "name": "黃耀樟",
+          "group": "資深組 (截取專責期)",
+          "station": "無",
+          "total_cases_all": 0,
+          "deducted_emt2": 0,
+          "ohca_tp": 0,
+          "rosc_tp": 0,
+          "rate_tp": 0.0,
+          "r1_tp": 0,
+          "rate_r1": 0.0,
+          "drugs_tp": 0,
+          "endo_tp": 0,
+          "start_date": "2022-03-01",
+          "rank": 37
+        }
+      ],
+      "combinations": {
+        "pairs_top": [
+          {
+            "names": "蔣為理 + 連國延",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 6
+          },
+          {
+            "names": "廖宇揚 + 蔡聖文",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "吳有獻 + 廖宇揚",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 0
+          },
+          {
+            "names": "蔣為理 + 許育誠",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 7
+          },
+          {
+            "names": "李均祈 + 蔣為理",
+            "total": 3,
+            "rosc": 2,
+            "rate": 66.7,
+            "drugs": 5
+          },
+          {
+            "names": "許育誠 + 黃皓賓",
+            "total": 4,
+            "rosc": 2,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "宋億嘉 + 曾于庭",
+            "total": 4,
+            "rosc": 2,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "楊子毅 + 蔡聖文",
+            "total": 4,
+            "rosc": 2,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "李正群 + 蔣為理",
+            "total": 4,
+            "rosc": 2,
+            "rate": 50.0,
+            "drugs": 7
+          },
+          {
+            "names": "吳志文 + 戴世豐",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "戴世豐 + 莊士緯",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "黃志樺 + 黃玉喬",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 1
+          },
+          {
+            "names": "彭煜錩 + 彭雨凡",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "姜彥州 + 戴世豐",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "姜彥州 + 盧相國",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "戴世豐 + 盧相國",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "舒季軒 + 陳楷恩",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "王仁宏 + 陳柏良",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "周哲君 + 莊博勛",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "邱怡華 + 高傳恩",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 5
+          },
+          {
+            "names": "施純泰 + 李均祈",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "施純泰 + 黃玉喬",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "李均祈 + 黃玉喬",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "洪建鈞 + 鍾宜展",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "鍾宜展 + 黃素娟",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "蔡聖文 + 蔡雅竹",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "賴俊傑 + 黃超群",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "蔣為理 + 黃皓賓",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "施純泰 + 賴俊傑",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "許嘉雄 + 黃超群",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "施純泰 + 蔣為理",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "謝茗瑾 + 陳駿麒",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "許嘉雄 + 黃俊儒",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "李均祈 + 許育誠",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "范庭華 + 陳冠豪",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "施翔耀 + 陳明裕",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 2
+          },
+          {
+            "names": "呂育陞 + 蔣為理",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "劉名洲 + 林冠廷",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "李昀毅 + 鍾錦明",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "杜廣耘 + 鍾宜展",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "李正群 + 許嘉雄",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "姜建成 + 黃皓賓",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉語晴 + 宋億嘉",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "張凡治 + 王政雄",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "姜建成 + 蔣為理",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "余孟軒 + 張淑惠",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "紀俐瑀 + 鄭睿旭",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 3
+          },
+          {
+            "names": "余孟軒 + 蔡聖文",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "楊承錞 + 龔德軒",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉語晴 + 曾于庭",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          }
+        ],
+        "trios_top": [
+          {
+            "names": "廖宇揚 + 楊子毅 + 蔡聖文",
+            "total": 2,
+            "rosc": 2,
+            "rate": 100.0,
+            "drugs": 3
+          },
+          {
+            "names": "吳志文 + 戴世豐 + 莊士緯",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "廖宇揚 + 楊子毅 + 蔡雅竹",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 5
+          },
+          {
+            "names": "姜彥州 + 戴世豐 + 盧相國",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 0
+          },
+          {
+            "names": "劉名洲 + 邱怡華 + 高傳恩",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 5
+          },
+          {
+            "names": "楊子毅 + 蔡聖文 + 蔡雅竹",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 6
+          },
+          {
+            "names": "劉名洲 + 李昀毅 + 林冠廷",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "劉名洲 + 李昀毅 + 鍾錦明",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "劉名洲 + 林冠廷 + 鍾錦明",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "李昀毅 + 林冠廷 + 鍾錦明",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "李均祈 + 李正群 + 蔣為理",
+            "total": 2,
+            "rosc": 1,
+            "rate": 50.0,
+            "drugs": 4
+          },
+          {
+            "names": "張馨予 + 許育誠 + 黃皓賓",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 0
+          },
+          {
+            "names": "張嘉恆 + 李秉濂 + 高政平",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 0
+          },
+          {
+            "names": "李孟樵 + 林哲維 + 王為凱",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 0
+          },
+          {
+            "names": "李昱緯 + 涂為智 + 謝旻諺",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 0
+          },
+          {
+            "names": "李均祈 + 李正群 + 紀俐瑀",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 6
+          },
+          {
+            "names": "何孟謙 + 曾于庭 + 洪正剛",
+            "total": 2,
+            "rosc": 0,
+            "rate": 0.0,
+            "drugs": 3
+          }
+        ]
+      },
+      "yearly_stats": [
+        {
+          "year": "108",
+          "total_ohca": 6,
+          "transported": 6,
+          "r1_rosc": 1,
+          "r1_rate": 16.67,
+          "rosc": 2,
+          "rosc_rate": 33.33,
+          "drugs_count": 0,
+          "drugs_per_case": 0.0,
+          "dual_tp_rate": 0.0,
+          "endo_count": 0
+        },
+        {
+          "year": "109",
+          "total_ohca": 77,
+          "transported": 77,
+          "r1_rosc": 1,
+          "r1_rate": 1.3,
+          "rosc": 5,
+          "rosc_rate": 6.49,
+          "drugs_count": 9,
+          "drugs_per_case": 0.12,
+          "dual_tp_rate": 11.69,
+          "endo_count": 0
+        },
+        {
+          "year": "110",
+          "total_ohca": 91,
+          "transported": 91,
+          "r1_rosc": 3,
+          "r1_rate": 3.3,
+          "rosc": 11,
+          "rosc_rate": 12.09,
+          "drugs_count": 32,
+          "drugs_per_case": 0.35,
+          "dual_tp_rate": 5.49,
+          "endo_count": 2
+        },
+        {
+          "year": "111",
+          "total_ohca": 89,
+          "transported": 89,
+          "r1_rosc": 4,
+          "r1_rate": 4.49,
+          "rosc": 12,
+          "rosc_rate": 13.48,
+          "drugs_count": 72,
+          "drugs_per_case": 0.81,
+          "dual_tp_rate": 7.87,
+          "endo_count": 9
+        },
+        {
+          "year": "112",
+          "total_ohca": 85,
+          "transported": 85,
+          "r1_rosc": 5,
+          "r1_rate": 5.88,
+          "rosc": 10,
+          "rosc_rate": 11.76,
+          "drugs_count": 62,
+          "drugs_per_case": 0.73,
+          "dual_tp_rate": 9.41,
+          "endo_count": 8
+        },
+        {
+          "year": "113",
+          "total_ohca": 88,
+          "transported": 88,
+          "r1_rosc": 10,
+          "r1_rate": 11.36,
+          "rosc": 13,
+          "rosc_rate": 14.77,
+          "drugs_count": 113,
+          "drugs_per_case": 1.28,
+          "dual_tp_rate": 19.32,
+          "endo_count": 6
+        },
+        {
+          "year": "114",
+          "total_ohca": 72,
+          "transported": 72,
+          "r1_rosc": 5,
+          "r1_rate": 6.94,
+          "rosc": 10,
+          "rosc_rate": 13.89,
+          "drugs_count": 52,
+          "drugs_per_case": 0.72,
+          "dual_tp_rate": 4.17,
+          "endo_count": 1
+        },
+        {
+          "year": "115",
+          "total_ohca": 52,
+          "transported": 52,
+          "r1_rosc": 4,
+          "r1_rate": 7.69,
+          "rosc": 7,
+          "rosc_rate": 13.46,
+          "drugs_count": 60,
+          "drugs_per_case": 1.15,
+          "dual_tp_rate": 15.38,
+          "endo_count": 6
+        }
+      ],
+      "ranked_stations": [
+        {
+          "station": "光明分隊",
+          "pre_gm_total": 26,
+          "pre_gm_rosc": 3,
+          "pre_gm_rate": 11.54,
+          "post_gm_total": 50,
+          "post_gm_rosc": 16,
+          "post_gm_rate": 32.0,
+          "growth": 20.46,
+          "total_ohca": 76,
+          "total_rosc": 19,
+          "overall_rate": 25.0,
+          "r1_rate": 17.11,
+          "matrix": {
+            "108": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 14
+            },
+            "110": {
+              "rate": 22.2,
+              "rosc": 2,
+              "total": 9
+            },
+            "111": {
+              "rate": 36.4,
+              "rosc": 4,
+              "total": 11
+            },
+            "112": {
+              "rate": 41.7,
+              "rosc": 5,
+              "total": 12
+            },
+            "113": {
+              "rate": 16.7,
+              "rosc": 3,
+              "total": 18
+            },
+            "114": {
+              "rate": 66.7,
+              "rosc": 2,
+              "total": 3
+            },
+            "115": {
+              "rate": 28.6,
+              "rosc": 2,
+              "total": 7
+            }
+          },
+          "rank": 1
+        },
+        {
+          "station": "竹北分隊",
+          "pre_gm_total": 9,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 11.11,
+          "post_gm_total": 8,
+          "post_gm_rosc": 3,
+          "post_gm_rate": 37.5,
+          "growth": 26.39,
+          "total_ohca": 17,
+          "total_rosc": 4,
+          "overall_rate": 23.53,
+          "r1_rate": 5.88,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "110": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "111": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "113": {
+              "rate": 50.0,
+              "rosc": 2,
+              "total": 4
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 2
+        },
+        {
+          "station": "新埔分隊",
+          "pre_gm_total": 8,
+          "pre_gm_rosc": 3,
+          "pre_gm_rate": 37.5,
+          "post_gm_total": 26,
+          "post_gm_rosc": 3,
+          "post_gm_rate": 11.54,
+          "growth": -25.96,
+          "total_ohca": 34,
+          "total_rosc": 6,
+          "overall_rate": 17.65,
+          "r1_rate": 2.94,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "110": {
+              "rate": 42.9,
+              "rosc": 3,
+              "total": 7
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "112": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "113": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            },
+            "114": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            }
+          },
+          "rank": 3
+        },
+        {
+          "station": "北埔分隊",
+          "pre_gm_total": 5,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 40.0,
+          "post_gm_total": 7,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": -40.0,
+          "total_ohca": 12,
+          "total_rosc": 2,
+          "overall_rate": 16.67,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "110": {
+              "rate": 33.3,
+              "rosc": 1,
+              "total": 3
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            }
+          },
+          "rank": 4
+        },
+        {
+          "station": "山崎分隊",
+          "pre_gm_total": 16,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 6.25,
+          "post_gm_total": 15,
+          "post_gm_rosc": 4,
+          "post_gm_rate": 26.67,
+          "growth": 20.42,
+          "total_ohca": 31,
+          "total_rosc": 5,
+          "overall_rate": 16.13,
+          "r1_rate": 3.23,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "110": {
+              "rate": 8.3,
+              "rosc": 1,
+              "total": 12
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "112": {
+              "rate": 33.3,
+              "rosc": 1,
+              "total": 3
+            },
+            "113": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            },
+            "114": {
+              "rate": 50.0,
+              "rosc": 2,
+              "total": 4
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            }
+          },
+          "rank": 5
+        },
+        {
+          "station": "豐田分隊",
+          "pre_gm_total": 8,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 12.5,
+          "post_gm_total": 26,
+          "post_gm_rosc": 4,
+          "post_gm_rate": 15.38,
+          "growth": 2.88,
+          "total_ohca": 34,
+          "total_rosc": 5,
+          "overall_rate": 14.71,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "110": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "112": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "114": {
+              "rate": 22.2,
+              "rosc": 2,
+              "total": 9
+            },
+            "115": {
+              "rate": 25.0,
+              "rosc": 1,
+              "total": 4
+            }
+          },
+          "rank": 6
+        },
+        {
+          "station": "新工分隊",
+          "pre_gm_total": 6,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 16.67,
+          "post_gm_total": 23,
+          "post_gm_rosc": 3,
+          "post_gm_rate": 13.04,
+          "growth": -3.63,
+          "total_ohca": 29,
+          "total_rosc": 4,
+          "overall_rate": 13.79,
+          "r1_rate": 3.45,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 33.3,
+              "rosc": 1,
+              "total": 3
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "113": {
+              "rate": 33.3,
+              "rosc": 2,
+              "total": 6
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "115": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            }
+          },
+          "rank": 7
+        },
+        {
+          "station": "尖石分隊",
+          "pre_gm_total": 3,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 5,
+          "post_gm_rosc": 1,
+          "post_gm_rate": 20.0,
+          "growth": 20.0,
+          "total_ohca": 8,
+          "total_rosc": 1,
+          "overall_rate": 12.5,
+          "r1_rate": 12.5,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "114": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 8
+        },
+        {
+          "station": "湖口分隊",
+          "pre_gm_total": 25,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 8.0,
+          "post_gm_total": 33,
+          "post_gm_rosc": 5,
+          "post_gm_rate": 15.15,
+          "growth": 7.15,
+          "total_ohca": 58,
+          "total_rosc": 7,
+          "overall_rate": 12.07,
+          "r1_rate": 6.9,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 10.0,
+              "rosc": 1,
+              "total": 10
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 11
+            },
+            "111": {
+              "rate": 20.0,
+              "rosc": 2,
+              "total": 10
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "113": {
+              "rate": 30.0,
+              "rosc": 3,
+              "total": 10
+            },
+            "114": {
+              "rate": 9.1,
+              "rosc": 1,
+              "total": 11
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            }
+          },
+          "rank": 9
+        },
+        {
+          "station": "二重分隊",
+          "pre_gm_total": 7,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 14.29,
+          "post_gm_total": 15,
+          "post_gm_rosc": 1,
+          "post_gm_rate": 6.67,
+          "growth": -7.62,
+          "total_ohca": 22,
+          "total_rosc": 2,
+          "overall_rate": 9.09,
+          "r1_rate": 9.09,
+          "matrix": {
+            "108": {
+              "rate": 100.0,
+              "rosc": 1,
+              "total": 1
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "115": {
+              "rate": 25.0,
+              "rosc": 1,
+              "total": 4
+            }
+          },
+          "rank": 10
+        },
+        {
+          "station": "橫山分隊",
+          "pre_gm_total": 8,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 12.5,
+          "post_gm_total": 14,
+          "post_gm_rosc": 1,
+          "post_gm_rate": 7.14,
+          "growth": -5.36,
+          "total_ohca": 22,
+          "total_rosc": 2,
+          "overall_rate": 9.09,
+          "r1_rate": 4.55,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "111": {
+              "rate": 28.6,
+              "rosc": 2,
+              "total": 7
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            }
+          },
+          "rank": 11
+        },
+        {
+          "station": "芎林分隊",
+          "pre_gm_total": 10,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 20.0,
+          "post_gm_total": 25,
+          "post_gm_rosc": 1,
+          "post_gm_rate": 4.0,
+          "growth": -16.0,
+          "total_ohca": 35,
+          "total_rosc": 3,
+          "overall_rate": 8.57,
+          "r1_rate": 5.71,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "110": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            },
+            "111": {
+              "rate": 33.3,
+              "rosc": 1,
+              "total": 3
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 9
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "115": {
+              "rate": 25.0,
+              "rosc": 1,
+              "total": 4
+            }
+          },
+          "rank": 12
+        },
+        {
+          "station": "竹東分隊",
+          "pre_gm_total": 13,
+          "pre_gm_rosc": 2,
+          "pre_gm_rate": 15.38,
+          "post_gm_total": 35,
+          "post_gm_rosc": 2,
+          "post_gm_rate": 5.71,
+          "growth": -9.67,
+          "total_ohca": 48,
+          "total_rosc": 4,
+          "overall_rate": 8.33,
+          "r1_rate": 4.17,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "110": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            },
+            "111": {
+              "rate": 7.7,
+              "rosc": 1,
+              "total": 13
+            },
+            "112": {
+              "rate": 16.7,
+              "rosc": 1,
+              "total": 6
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            }
+          },
+          "rank": 13
+        },
+        {
+          "station": "新豐分隊",
+          "pre_gm_total": 17,
+          "pre_gm_rosc": 1,
+          "pre_gm_rate": 5.88,
+          "post_gm_total": 17,
+          "post_gm_rosc": 1,
+          "post_gm_rate": 5.88,
+          "growth": 0.0,
+          "total_ohca": 34,
+          "total_rosc": 2,
+          "overall_rate": 5.88,
+          "r1_rate": 2.94,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 12.5,
+              "rosc": 1,
+              "total": 8
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 9
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "115": {
+              "rate": 50.0,
+              "rosc": 1,
+              "total": 2
+            }
+          },
+          "rank": 14
+        },
+        {
+          "station": "寶山分隊",
+          "pre_gm_total": 12,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 23,
+          "post_gm_rosc": 2,
+          "post_gm_rate": 8.7,
+          "growth": 8.7,
+          "total_ohca": 35,
+          "total_rosc": 2,
+          "overall_rate": 5.71,
+          "r1_rate": 2.86,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "111": {
+              "rate": 8.3,
+              "rosc": 1,
+              "total": 12
+            },
+            "112": {
+              "rate": 20.0,
+              "rosc": 1,
+              "total": 5
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 15
+        },
+        {
+          "station": "關西分隊",
+          "pre_gm_total": 16,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 25,
+          "post_gm_rosc": 2,
+          "post_gm_rate": 8.0,
+          "growth": 8.0,
+          "total_ohca": 41,
+          "total_rosc": 2,
+          "overall_rate": 4.88,
+          "r1_rate": 4.88,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 6
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 7
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 5
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 8
+            },
+            "113": {
+              "rate": 33.3,
+              "rosc": 1,
+              "total": 3
+            },
+            "114": {
+              "rate": 14.3,
+              "rosc": 1,
+              "total": 7
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 4
+            }
+          },
+          "rank": 16
+        },
+        {
+          "station": "五峰分隊",
+          "pre_gm_total": 0,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 2,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 2,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            }
+          },
+          "rank": 17
+        },
+        {
+          "station": "峨眉分隊",
+          "pre_gm_total": 3,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 7,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 10,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 3
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 2
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 1
+            }
+          },
+          "rank": 18
+        },
+        {
+          "station": "田埔分隊",
+          "pre_gm_total": 0,
+          "pre_gm_rosc": 0,
+          "pre_gm_rate": 0.0,
+          "post_gm_total": 0,
+          "post_gm_rosc": 0,
+          "post_gm_rate": 0.0,
+          "growth": 0.0,
+          "total_ohca": 0,
+          "total_rosc": 0,
+          "overall_rate": 0.0,
+          "r1_rate": 0.0,
+          "matrix": {
+            "108": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "109": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "110": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "111": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "112": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "113": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "114": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            },
+            "115": {
+              "rate": 0.0,
+              "rosc": 0,
+              "total": 0
+            }
+          },
+          "rank": 19
+        }
+      ],
+      "macro_kpis": {
+        "pre_r1_rate": 3.1,
+        "post_r1_rate": 7.4,
+        "pre_drugs_avg": 0.28,
+        "post_drugs_avg": 0.94,
+        "top_station": "光明分隊",
+        "top_station_rate": 25.0,
+        "gm_post_rate": 32.0,
+        "gm_growth": 20.46,
+        "zd_tot": 48,
+        "gm_tot": 76,
+        "top2_tot": 124,
+        "top2_pct": 22.1
+      }
     }
-  ],
-  "combinations": {
-    "pairs_top": [
-      {
-        "names": "呂育陞 + 李正群",
-        "pair": [
-          "呂育陞",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 7,
-        "rate": 63.63636363636363,
-        "drugs": 26
-      },
-      {
-        "names": "李均祈 + 蔣為理",
-        "pair": [
-          "李均祈",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 9,
-        "rate": 60.0,
-        "drugs": 37
-      },
-      {
-        "names": "呂育陞 + 許育誠",
-        "pair": [
-          "呂育陞",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 7,
-        "rate": 58.333333333333336,
-        "drugs": 22
-      },
-      {
-        "names": "李均祈 + 許嘉雄",
-        "pair": [
-          "李均祈",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "施純泰 + 賴俊傑",
-        "pair": [
-          "施純泰",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 33
-      },
-      {
-        "names": "李均祈 + 李正群",
-        "pair": [
-          "李均祈",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "洪國胤 + 鄭睿旭",
-        "pair": [
-          "洪國胤",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 8,
-        "rate": 50.0,
-        "drugs": 37
-      },
-      {
-        "names": "呂育陞 + 李均祈",
-        "pair": [
-          "呂育陞",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 7,
-        "rate": 50.0,
-        "drugs": 31
-      },
-      {
-        "names": "李正群 + 賴俊傑",
-        "pair": [
-          "李正群",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 7,
-        "rate": 50.0,
-        "drugs": 35
-      },
-      {
-        "names": "李正群 + 許嘉雄",
-        "pair": [
-          "李正群",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 6,
-        "rate": 50.0,
-        "drugs": 29
-      },
-      {
-        "names": "張凡治 + 彭煜錩",
-        "pair": [
-          "張凡治",
-          "彭煜錩"
-        ],
-        "unit": "新工分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 13
-      },
-      {
-        "names": "李晉緯 + 翁嘉隆",
-        "pair": [
-          "李晉緯",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 15
-      },
-      {
-        "names": "賴俊傑 + 鄭睿旭",
-        "pair": [
-          "賴俊傑",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 30
-      },
-      {
-        "names": "蔣為理 + 許育誠",
-        "pair": [
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 23,
-        "rosc": 11,
-        "rate": 47.82608695652174,
-        "drugs": 66
-      },
-      {
-        "names": "呂育陞 + 蔣為理",
-        "pair": [
-          "呂育陞",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 10,
-        "rate": 47.61904761904761,
-        "drugs": 54
-      },
-      {
-        "names": "呂育陞 + 張馨予",
-        "pair": [
-          "呂育陞",
-          "張馨予"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 7,
-        "rate": 46.666666666666664,
-        "drugs": 38
-      },
-      {
-        "names": "呂育陞 + 賴俊傑",
-        "pair": [
-          "呂育陞",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 7,
-        "rate": 46.666666666666664,
-        "drugs": 39
-      },
-      {
-        "names": "蔣為理 + 賴俊傑",
-        "pair": [
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 25,
-        "rosc": 11,
-        "rate": 44.0,
-        "drugs": 65
-      },
-      {
-        "names": "呂育陞 + 鄭睿旭",
-        "pair": [
-          "呂育陞",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 7,
-        "rate": 43.75,
-        "drugs": 36
-      },
-      {
-        "names": "連國延 + 鄭睿旭",
-        "pair": [
-          "連國延",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 37
-      },
-      {
-        "names": "張馨予 + 李均祈",
-        "pair": [
-          "張馨予",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 30
-      },
-      {
-        "names": "張馨予 + 蔣為理",
-        "pair": [
-          "張馨予",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 38
-      },
-      {
-        "names": "吳志霖 + 陳明裕",
-        "pair": [
-          "吳志霖",
-          "陳明裕"
-        ],
-        "unit": "關西分隊",
-        "total": 12,
-        "rosc": 5,
-        "rate": 41.66666666666667,
-        "drugs": 17
-      },
-      {
-        "names": "張凡治 + 彭雨凡",
-        "pair": [
-          "張凡治",
-          "彭雨凡"
-        ],
-        "unit": "新工分隊",
-        "total": 17,
-        "rosc": 7,
-        "rate": 41.17647058823529,
-        "drugs": 15
-      },
-      {
-        "names": "施純泰 + 李均祈",
-        "pair": [
-          "施純泰",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 8,
-        "rate": 40.0,
-        "drugs": 48
-      },
-      {
-        "names": "施純泰 + 許嘉雄",
-        "pair": [
-          "施純泰",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 8,
-        "rate": 40.0,
-        "drugs": 53
-      },
-      {
-        "names": "吳志霖 + 謝杰穎",
-        "pair": [
-          "吳志霖",
-          "謝杰穎"
-        ],
-        "unit": "關西分隊",
-        "total": 15,
-        "rosc": 6,
-        "rate": 40.0,
-        "drugs": 19
-      },
-      {
-        "names": "李均祈 + 許育誠",
-        "pair": [
-          "李均祈",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 22,
-        "rosc": 8,
-        "rate": 36.36363636363637,
-        "drugs": 54
-      },
-      {
-        "names": "許嘉雄 + 賴俊傑",
-        "pair": [
-          "許嘉雄",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 5,
-        "rate": 35.714285714285715,
-        "drugs": 36
-      },
-      {
-        "names": "劉名洲 + 李堯軒",
-        "pair": [
-          "劉名洲",
-          "李堯軒"
-        ],
-        "unit": "竹東分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 27
-      },
-      {
-        "names": "呂育陞 + 黃皓賓",
-        "pair": [
-          "呂育陞",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 33
-      },
-      {
-        "names": "施純泰 + 蔣為理",
-        "pair": [
-          "施純泰",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 39
-      },
-      {
-        "names": "許育誠 + 黃皓賓",
-        "pair": [
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 30,
-        "rosc": 10,
-        "rate": 33.33333333333333,
-        "drugs": 66
-      },
-      {
-        "names": "施純泰 + 鄭睿旭",
-        "pair": [
-          "施純泰",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 7,
-        "rate": 33.33333333333333,
-        "drugs": 51
-      },
-      {
-        "names": "許嘉雄 + 黃皓賓",
-        "pair": [
-          "許嘉雄",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 7,
-        "rate": 33.33333333333333,
-        "drugs": 37
-      },
-      {
-        "names": "施純泰 + 李正群",
-        "pair": [
-          "施純泰",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 6,
-        "rate": 33.33333333333333,
-        "drugs": 33
-      },
-      {
-        "names": "許育誠 + 連國延",
-        "pair": [
-          "許育誠",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 23
-      },
-      {
-        "names": "張凡治 + 張惟智",
-        "pair": [
-          "張凡治",
-          "張惟智"
-        ],
-        "unit": "新工分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 18
-      },
-      {
-        "names": "張馨予 + 賴俊傑",
-        "pair": [
-          "張馨予",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 33
-      },
-      {
-        "names": "李正群 + 蔣為理",
-        "pair": [
-          "李正群",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 22,
-        "rosc": 7,
-        "rate": 31.818181818181817,
-        "drugs": 48
-      },
-      {
-        "names": "許嘉雄 + 鄭睿旭",
-        "pair": [
-          "許嘉雄",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 19,
-        "rosc": 6,
-        "rate": 31.57894736842105,
-        "drugs": 44
-      },
-      {
-        "names": "張馨予 + 許嘉雄",
-        "pair": [
-          "張馨予",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 33
-      },
-      {
-        "names": "蔣為理 + 鄭睿旭",
-        "pair": [
-          "蔣為理",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 36
-      },
-      {
-        "names": "謝侑翰 + 黃盈豪",
-        "pair": [
-          "謝侑翰",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 41
-      },
-      {
-        "names": "姜建成 + 許嘉雄",
-        "pair": [
-          "姜建成",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 4,
-        "rate": 30.76923076923077,
-        "drugs": 33
-      },
-      {
-        "names": "邱怡華 + 鍾明哲",
-        "pair": [
-          "邱怡華",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 6
-      },
-      {
-        "names": "林學政 + 石孟平",
-        "pair": [
-          "林學政",
-          "石孟平"
-        ],
-        "unit": "山崎分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 0
-      },
-      {
-        "names": "蔣為理 + 許嘉雄",
-        "pair": [
-          "蔣為理",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "李正群 + 鄭睿旭",
-        "pair": [
-          "李正群",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 25
-      },
-      {
-        "names": "李正群 + 許育誠",
-        "pair": [
-          "李正群",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "賴俊傑 + 黃皓賓",
-        "pair": [
-          "賴俊傑",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 30
-      },
-      {
-        "names": "張馨予 + 許育誠",
-        "pair": [
-          "張馨予",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 5,
-        "rate": 29.411764705882355,
-        "drugs": 35
-      },
-      {
-        "names": "曹詩敏 + 林冠廷",
-        "pair": [
-          "曹詩敏",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 21,
-        "rosc": 6,
-        "rate": 28.57142857142857,
-        "drugs": 50
-      },
-      {
-        "names": "許育誠 + 鄭睿旭",
-        "pair": [
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 5,
-        "rate": 27.77777777777778,
-        "drugs": 47
-      },
-      {
-        "names": "許嘉雄 + 許育誠",
-        "pair": [
-          "許嘉雄",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 5,
-        "rate": 27.77777777777778,
-        "drugs": 36
-      },
-      {
-        "names": "翁嘉隆 + 蘇建宏",
-        "pair": [
-          "翁嘉隆",
-          "蘇建宏"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 6
-      },
-      {
-        "names": "呂育陞 + 連國延",
-        "pair": [
-          "呂育陞",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 21
-      },
-      {
-        "names": "劉名洲 + 彭弘傑",
-        "pair": [
-          "劉名洲",
-          "彭弘傑"
-        ],
-        "unit": "竹東分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 18
-      },
-      {
-        "names": "楊子毅 + 蔡雅竹",
-        "pair": [
-          "楊子毅",
-          "蔡雅竹"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 8
-      },
-      {
-        "names": "吳志文 + 莊士緯",
-        "pair": [
-          "吳志文",
-          "莊士緯"
-        ],
-        "unit": "北埔分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 3
-      },
-      {
-        "names": "鄭睿旭 + 黃玉喬",
-        "pair": [
-          "鄭睿旭",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 20
-      },
-      {
-        "names": "李晉緯 + 范姜群傑",
-        "pair": [
-          "李晉緯",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 26
-      },
-      {
-        "names": "李均祈 + 黃皓賓",
-        "pair": [
-          "李均祈",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 30
-      },
-      {
-        "names": "許育誠 + 賴俊傑",
-        "pair": [
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 33
-      },
-      {
-        "names": "鄭睿旭 + 黃皓賓",
-        "pair": [
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 26,
-        "rosc": 7,
-        "rate": 26.923076923076923,
-        "drugs": 62
-      },
-      {
-        "names": "廖宇揚 + 楊子毅",
-        "pair": [
-          "廖宇揚",
-          "楊子毅"
-        ],
-        "unit": "湖口分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 17
-      },
-      {
-        "names": "李均祈 + 黃玉喬",
-        "pair": [
-          "李均祈",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 43
-      },
-      {
-        "names": "劉名洲 + 高傳恩",
-        "pair": [
-          "劉名洲",
-          "高傳恩"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 36
-      },
-      {
-        "names": "劉名洲 + 曹詩敏",
-        "pair": [
-          "劉名洲",
-          "曹詩敏"
-        ],
-        "unit": "竹東分隊",
-        "total": 23,
-        "rosc": 6,
-        "rate": 26.08695652173913,
-        "drugs": 53
-      },
-      {
-        "names": "劉名洲 + 林冠廷",
-        "pair": [
-          "劉名洲",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 43,
-        "rosc": 11,
-        "rate": 25.581395348837212,
-        "drugs": 102
-      },
-      {
-        "names": "施純泰 + 許育誠",
-        "pair": [
-          "施純泰",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 28,
-        "rosc": 7,
-        "rate": 25.0,
-        "drugs": 66
-      },
-      {
-        "names": "劉名洲 + 李昀毅",
-        "pair": [
-          "劉名洲",
-          "李昀毅"
-        ],
-        "unit": "竹東分隊",
-        "total": 20,
-        "rosc": 5,
-        "rate": 25.0,
-        "drugs": 45
-      },
-      {
-        "names": "李昀毅 + 林冠廷",
-        "pair": [
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 20,
-        "rosc": 5,
-        "rate": 25.0,
-        "drugs": 48
-      },
-      {
-        "names": "李堯軒 + 邱怡華",
-        "pair": [
-          "李堯軒",
-          "邱怡華"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 14
-      },
-      {
-        "names": "呂育陞 + 施純泰",
-        "pair": [
-          "呂育陞",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 27
-      },
-      {
-        "names": "張馨予 + 李正群",
-        "pair": [
-          "張馨予",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 33
-      },
-      {
-        "names": "施婷雯 + 黃盈豪",
-        "pair": [
-          "施婷雯",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 35
-      },
-      {
-        "names": "張馨予 + 施純泰",
-        "pair": [
-          "張馨予",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 5,
-        "rate": 23.809523809523807,
-        "drugs": 47
-      },
-      {
-        "names": "彭弘傑 + 黃盈豪",
-        "pair": [
-          "彭弘傑",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 17,
-        "rosc": 4,
-        "rate": 23.52941176470588,
-        "drugs": 28
-      },
-      {
-        "names": "連國延 + 黃皓賓",
-        "pair": [
-          "連國延",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 24
-      },
-      {
-        "names": "李堯軒 + 鍾錦明",
-        "pair": [
-          "李堯軒",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 20
-      },
-      {
-        "names": "施純泰 + 黃玉喬",
-        "pair": [
-          "施純泰",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 28
-      },
-      {
-        "names": "施純泰 + 黃皓賓",
-        "pair": [
-          "施純泰",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 29
-      },
-      {
-        "names": "劉立傑 + 張凱閔",
-        "pair": [
-          "劉立傑",
-          "張凱閔"
-        ],
-        "unit": "橫山分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 3
-      },
-      {
-        "names": "黃玉喬 + 黃皓賓",
-        "pair": [
-          "黃玉喬",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 25
-      },
-      {
-        "names": "張馨予 + 黃皓賓",
-        "pair": [
-          "張馨予",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 21
-      },
-      {
-        "names": "劉名洲 + 謝侑翰",
-        "pair": [
-          "劉名洲",
-          "謝侑翰"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 4,
-        "rate": 21.052631578947366,
-        "drugs": 47
-      },
-      {
-        "names": "林冠廷 + 鍾明哲",
-        "pair": [
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 4,
-        "rate": 21.052631578947366,
-        "drugs": 46
-      },
-      {
-        "names": "劉名洲 + 鍾錦明",
-        "pair": [
-          "劉名洲",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 30,
-        "rosc": 6,
-        "rate": 20.0,
-        "drugs": 59
-      },
-      {
-        "names": "李均祈 + 賴俊傑",
-        "pair": [
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 4,
-        "rate": 20.0,
-        "drugs": 54
-      },
-      {
-        "names": "劉名洲 + 邱怡華",
-        "pair": [
-          "劉名洲",
-          "邱怡華"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 3,
-        "rate": 20.0,
-        "drugs": 30
-      },
-      {
-        "names": "許嘉雄 + 連國延",
-        "pair": [
-          "許嘉雄",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 15
-      },
-      {
-        "names": "王柏文 + 胡邑瑞",
-        "pair": [
-          "王柏文",
-          "胡邑瑞"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 0
-      },
-      {
-        "names": "施純泰 + 黃志樺",
-        "pair": [
-          "施純泰",
-          "黃志樺"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 10
-      },
-      {
-        "names": "高傳恩 + 黃盈豪",
-        "pair": [
-          "高傳恩",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 28
-      },
-      {
-        "names": "姜建成 + 施純泰",
-        "pair": [
-          "姜建成",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 21
-      },
-      {
-        "names": "劉名洲 + 莊宗旺",
-        "pair": [
-          "劉名洲",
-          "莊宗旺"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 3,
-        "rate": 18.75,
-        "drugs": 41
-      },
-      {
-        "names": "劉名洲 + 黃盈豪",
-        "pair": [
-          "劉名洲",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 27,
-        "rosc": 5,
-        "rate": 18.51851851851852,
-        "drugs": 67
-      },
-      {
-        "names": "王柏文 + 買昱霖",
-        "pair": [
-          "王柏文",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 0
-      },
-      {
-        "names": "林昆穎 + 連國延",
-        "pair": [
-          "林昆穎",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 11
-      },
-      {
-        "names": "余孟軒 + 張淑惠",
-        "pair": [
-          "余孟軒",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 13
-      },
-      {
-        "names": "廖宇揚 + 蔡聖文",
-        "pair": [
-          "廖宇揚",
-          "蔡聖文"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 3
-      },
-      {
-        "names": "李晉緯 + 臧偉丞",
-        "pair": [
-          "李晉緯",
-          "臧偉丞"
-        ],
-        "unit": "芎林分隊",
-        "total": 17,
-        "rosc": 3,
-        "rate": 17.647058823529413,
-        "drugs": 34
-      },
-      {
-        "names": "吳漢仁 + 邱坤豪",
-        "pair": [
-          "吳漢仁",
-          "邱坤豪"
-        ],
-        "unit": "芎林分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 0
-      },
-      {
-        "names": "朱庭志 + 黃兆詮",
-        "pair": [
-          "朱庭志",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 0
-      },
-      {
-        "names": "吳志霖 + 高政平",
-        "pair": [
-          "吳志霖",
-          "高政平"
-        ],
-        "unit": "關西分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 14
-      },
-      {
-        "names": "張凱閔 + 胡玉霖",
-        "pair": [
-          "張凱閔",
-          "胡玉霖"
-        ],
-        "unit": "橫山分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 2
-      },
-      {
-        "names": "劉名洲 + 黃惟鈞",
-        "pair": [
-          "劉名洲",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 27
-      },
-      {
-        "names": "林冠廷 + 鍾錦明",
-        "pair": [
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 3,
-        "rate": 15.789473684210526,
-        "drugs": 50
-      },
-      {
-        "names": "姜建成 + 許育誠",
-        "pair": [
-          "姜建成",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 19,
-        "rosc": 3,
-        "rate": 15.789473684210526,
-        "drugs": 57
-      },
-      {
-        "names": "舒季軒 + 莊魏豪",
-        "pair": [
-          "舒季軒",
-          "莊魏豪"
-        ],
-        "unit": "二重分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 9
-      },
-      {
-        "names": "王仁宏 + 蕭惠元",
-        "pair": [
-          "王仁宏",
-          "蕭惠元"
-        ],
-        "unit": "山崎分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 15
-      },
-      {
-        "names": "曹詩敏 + 鍾明哲",
-        "pair": [
-          "曹詩敏",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 21
-      },
-      {
-        "names": "廖韋同 + 張凡治",
-        "pair": [
-          "廖韋同",
-          "張凡治"
-        ],
-        "unit": "新工分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 30
-      },
-      {
-        "names": "許嘉雄 + 黃俊儒",
-        "pair": [
-          "許嘉雄",
-          "黃俊儒"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 33
-      },
-      {
-        "names": "黃盈豪 + 黎斯同",
-        "pair": [
-          "黃盈豪",
-          "黎斯同"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 30
-      },
-      {
-        "names": "姜建成 + 黃皓賓",
-        "pair": [
-          "姜建成",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 36
-      },
-      {
-        "names": "李晉緯 + 黃兆詮",
-        "pair": [
-          "李晉緯",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 2,
-        "rate": 14.285714285714285,
-        "drugs": 18
-      },
-      {
-        "names": "利威融 + 翁嘉隆",
-        "pair": [
-          "利威融",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 2,
-        "rate": 14.285714285714285,
-        "drugs": 6
-      },
-      {
-        "names": "李昀毅 + 鍾錦明",
-        "pair": [
-          "李昀毅",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 2,
-        "rate": 13.333333333333334,
-        "drugs": 27
-      },
-      {
-        "names": "李堯軒 + 黃盈豪",
-        "pair": [
-          "李堯軒",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 2,
-        "rate": 12.5,
-        "drugs": 40
-      },
-      {
-        "names": "劉名洲 + 鍾明哲",
-        "pair": [
-          "劉名洲",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 25,
-        "rosc": 3,
-        "rate": 12.0,
-        "drugs": 58
-      },
-      {
-        "names": "莊宗旺 + 黃盈豪",
-        "pair": [
-          "莊宗旺",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 2,
-        "rate": 10.526315789473683,
-        "drugs": 53
-      },
-      {
-        "names": "周易翰 + 許家瑋",
-        "pair": [
-          "周易翰",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 13
-      },
-      {
-        "names": "莊士緯 + 陳吏庭",
-        "pair": [
-          "莊士緯",
-          "陳吏庭"
-        ],
-        "unit": "北埔分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 0
-      },
-      {
-        "names": "鍾明哲 + 黃盈豪",
-        "pair": [
-          "鍾明哲",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 27
-      },
-      {
-        "names": "蘇建宏 + 黃兆詮",
-        "pair": [
-          "蘇建宏",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 0
-      },
-      {
-        "names": "張淑惠 + 買昱霖",
-        "pair": [
-          "張淑惠",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 12
-      },
-      {
-        "names": "黃俊儒 + 黃玉喬",
-        "pair": [
-          "黃俊儒",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 15
-      },
-      {
-        "names": "宋億嘉 + 黃禹銘",
-        "pair": [
-          "宋億嘉",
-          "黃禹銘"
-        ],
-        "unit": "豐田分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 9
-      },
-      {
-        "names": "周哲君 + 蔡煥龍",
-        "pair": [
-          "周哲君",
-          "蔡煥龍"
-        ],
-        "unit": "新埔分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 5
-      },
-      {
-        "names": "林冠廷 + 黃惟鈞",
-        "pair": [
-          "林冠廷",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 21
-      },
-      {
-        "names": "李長安 + 黃玉喬",
-        "pair": [
-          "李長安",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 30
-      },
-      {
-        "names": "洪偉傑 + 蘇子哲",
-        "pair": [
-          "洪偉傑",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 0
-      },
-      {
-        "names": "張馨予 + 鄭睿旭",
-        "pair": [
-          "張馨予",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 24
-      },
-      {
-        "names": "吳漢仁 + 朱庭志",
-        "pair": [
-          "吳漢仁",
-          "朱庭志"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 0
-      },
-      {
-        "names": "楊子毅 + 蕭煒宸",
-        "pair": [
-          "楊子毅",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 15
-      },
-      {
-        "names": "李昀毅 + 高傳恩",
-        "pair": [
-          "李昀毅",
-          "高傳恩"
-        ],
-        "unit": "竹東分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 12
-      },
-      {
-        "names": "賀亞琛 + 黃禹銘",
-        "pair": [
-          "賀亞琛",
-          "黃禹銘"
-        ],
-        "unit": "豐田分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 10
-      },
-      {
-        "names": "蘇子哲 + 許家瑋",
-        "pair": [
-          "蘇子哲",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 14
-      },
-      {
-        "names": "舒季軒 + 陳楷恩",
-        "pair": [
-          "舒季軒",
-          "陳楷恩"
-        ],
-        "unit": "二重分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 16
-      },
-      {
-        "names": "余孟軒 + 蔡聖文",
-        "pair": [
-          "余孟軒",
-          "蔡聖文"
-        ],
-        "unit": "湖口分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 0
-      },
-      {
-        "names": "李秉濂 + 高政平",
-        "pair": [
-          "李秉濂",
-          "高政平"
-        ],
-        "unit": "關西分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 3
-      },
-      {
-        "names": "沈明達 + 洪偉傑",
-        "pair": [
-          "沈明達",
-          "洪偉傑"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 7
-      },
-      {
-        "names": "朱庭志 + 邱坤豪",
-        "pair": [
-          "朱庭志",
-          "邱坤豪"
-        ],
-        "unit": "芎林分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 0
-      },
-      {
-        "names": "李堯軒 + 鍾明哲",
-        "pair": [
-          "李堯軒",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 21
-      },
-      {
-        "names": "廖勝煌 + 蘇子哲",
-        "pair": [
-          "廖勝煌",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 3
-      },
-      {
-        "names": "林冠廷 + 黃盈豪",
-        "pair": [
-          "林冠廷",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 24
-      },
-      {
-        "names": "利威融 + 李晉緯",
-        "pair": [
-          "利威融",
-          "李晉緯"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 1,
-        "rate": 7.142857142857142,
-        "drugs": 27
-      },
-      {
-        "names": "周易翰 + 沈明達",
-        "pair": [
-          "周易翰",
-          "沈明達"
-        ],
-        "unit": "新豐分隊",
-        "total": 15,
-        "rosc": 1,
-        "rate": 6.666666666666667,
-        "drugs": 3
-      },
-      {
-        "names": "朱庭志 + 翁嘉隆",
-        "pair": [
-          "朱庭志",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 16,
-        "rosc": 1,
-        "rate": 6.25,
-        "drugs": 3
-      },
-      {
-        "names": "廖宇揚 + 蕭煒宸",
-        "pair": [
-          "廖宇揚",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 18,
-        "rosc": 1,
-        "rate": 5.555555555555555,
-        "drugs": 6
-      },
-      {
-        "names": "葉政廷 + 蘇子哲",
-        "pair": [
-          "葉政廷",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 14,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 2
-      },
-      {
-        "names": "莊宗旺 + 鍾明哲",
-        "pair": [
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 14,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 28
-      },
-      {
-        "names": "吳柏嘉 + 廖勝煌",
-        "pair": [
-          "吳柏嘉",
-          "廖勝煌"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "廖勝煌 + 葉政廷",
-        "pair": [
-          "廖勝煌",
-          "葉政廷"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "吳柏嘉 + 葉政廷",
-        "pair": [
-          "吳柏嘉",
-          "葉政廷"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "孫智偉 + 蘇建宏",
-        "pair": [
-          "孫智偉",
-          "蘇建宏"
-        ],
-        "unit": "芎林分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "吳易融 + 舒季軒",
-        "pair": [
-          "吳易融",
-          "舒季軒"
-        ],
-        "unit": "二重分隊",
-        "total": 12,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 19
-      },
-      {
-        "names": "張晏偉 + 胡邑瑞",
-        "pair": [
-          "張晏偉",
-          "胡邑瑞"
-        ],
-        "unit": "湖口分隊",
-        "total": 12,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "利威融 + 范姜群傑",
-        "pair": [
-          "利威融",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "張晏偉 + 謝元豪",
-        "pair": [
-          "張晏偉",
-          "謝元豪"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 5
-      },
-      {
-        "names": "沈明達 + 許家瑋",
-        "pair": [
-          "沈明達",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "廖宇揚 + 張淑惠",
-        "pair": [
-          "廖宇揚",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 6
-      },
-      {
-        "names": "洪建鈞 + 蔡煥龍",
-        "pair": [
-          "洪建鈞",
-          "蔡煥龍"
-        ],
-        "unit": "新埔分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 6
-      },
-      {
-        "names": "吳漢仁 + 翁嘉隆",
-        "pair": [
-          "吳漢仁",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "胡邑瑞 + 買昱霖",
-        "pair": [
-          "胡邑瑞",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 1
-      },
-      {
-        "names": "張淑惠 + 王柏文",
-        "pair": [
-          "張淑惠",
-          "王柏文"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "吳志霖 + 李東幸",
-        "pair": [
-          "吳志霖",
-          "李東幸"
-        ],
-        "unit": "關西分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "張晏偉 + 張淑惠",
-        "pair": [
-          "張晏偉",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 21
-      },
-      {
-        "names": "張晏偉 + 蕭煒宸",
-        "pair": [
-          "張晏偉",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 11
-      },
-      {
-        "names": "舒季軒 + 郭信廷",
-        "pair": [
-          "舒季軒",
-          "郭信廷"
-        ],
-        "unit": "二重分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 24
-      },
-      {
-        "names": "姜建成 + 鄭睿旭",
-        "pair": [
-          "姜建成",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 27
-      }
-    ],
-    "pairs_bot": [
-      {
-        "names": "葉政廷 + 蘇子哲",
-        "pair": [
-          "葉政廷",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 14,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 2
-      },
-      {
-        "names": "莊宗旺 + 鍾明哲",
-        "pair": [
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 14,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 28
-      },
-      {
-        "names": "吳柏嘉 + 廖勝煌",
-        "pair": [
-          "吳柏嘉",
-          "廖勝煌"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "廖勝煌 + 葉政廷",
-        "pair": [
-          "廖勝煌",
-          "葉政廷"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "吳柏嘉 + 葉政廷",
-        "pair": [
-          "吳柏嘉",
-          "葉政廷"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "孫智偉 + 蘇建宏",
-        "pair": [
-          "孫智偉",
-          "蘇建宏"
-        ],
-        "unit": "芎林分隊",
-        "total": 13,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "吳易融 + 舒季軒",
-        "pair": [
-          "吳易融",
-          "舒季軒"
-        ],
-        "unit": "二重分隊",
-        "total": 12,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 19
-      },
-      {
-        "names": "張晏偉 + 胡邑瑞",
-        "pair": [
-          "張晏偉",
-          "胡邑瑞"
-        ],
-        "unit": "湖口分隊",
-        "total": 12,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "利威融 + 范姜群傑",
-        "pair": [
-          "利威融",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 3
-      },
-      {
-        "names": "張晏偉 + 謝元豪",
-        "pair": [
-          "張晏偉",
-          "謝元豪"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 5
-      },
-      {
-        "names": "沈明達 + 許家瑋",
-        "pair": [
-          "沈明達",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "廖宇揚 + 張淑惠",
-        "pair": [
-          "廖宇揚",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 6
-      },
-      {
-        "names": "洪建鈞 + 蔡煥龍",
-        "pair": [
-          "洪建鈞",
-          "蔡煥龍"
-        ],
-        "unit": "新埔分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 6
-      },
-      {
-        "names": "吳漢仁 + 翁嘉隆",
-        "pair": [
-          "吳漢仁",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 0
-      },
-      {
-        "names": "胡邑瑞 + 買昱霖",
-        "pair": [
-          "胡邑瑞",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 1
-      },
-      {
-        "names": "張淑惠 + 王柏文",
-        "pair": [
-          "張淑惠",
-          "王柏文"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "吳志霖 + 李東幸",
-        "pair": [
-          "吳志霖",
-          "李東幸"
-        ],
-        "unit": "關西分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "張晏偉 + 張淑惠",
-        "pair": [
-          "張晏偉",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 21
-      },
-      {
-        "names": "張晏偉 + 蕭煒宸",
-        "pair": [
-          "張晏偉",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 11
-      },
-      {
-        "names": "舒季軒 + 郭信廷",
-        "pair": [
-          "舒季軒",
-          "郭信廷"
-        ],
-        "unit": "二重分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 24
-      },
-      {
-        "names": "姜建成 + 鄭睿旭",
-        "pair": [
-          "姜建成",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 27
-      },
-      {
-        "names": "廖宇揚 + 蕭煒宸",
-        "pair": [
-          "廖宇揚",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 18,
-        "rosc": 1,
-        "rate": 5.555555555555555,
-        "drugs": 6
-      },
-      {
-        "names": "朱庭志 + 翁嘉隆",
-        "pair": [
-          "朱庭志",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 16,
-        "rosc": 1,
-        "rate": 6.25,
-        "drugs": 3
-      },
-      {
-        "names": "周易翰 + 沈明達",
-        "pair": [
-          "周易翰",
-          "沈明達"
-        ],
-        "unit": "新豐分隊",
-        "total": 15,
-        "rosc": 1,
-        "rate": 6.666666666666667,
-        "drugs": 3
-      },
-      {
-        "names": "利威融 + 李晉緯",
-        "pair": [
-          "利威融",
-          "李晉緯"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 1,
-        "rate": 7.142857142857142,
-        "drugs": 27
-      },
-      {
-        "names": "李秉濂 + 高政平",
-        "pair": [
-          "李秉濂",
-          "高政平"
-        ],
-        "unit": "關西分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 3
-      },
-      {
-        "names": "沈明達 + 洪偉傑",
-        "pair": [
-          "沈明達",
-          "洪偉傑"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 7
-      },
-      {
-        "names": "朱庭志 + 邱坤豪",
-        "pair": [
-          "朱庭志",
-          "邱坤豪"
-        ],
-        "unit": "芎林分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 0
-      },
-      {
-        "names": "李堯軒 + 鍾明哲",
-        "pair": [
-          "李堯軒",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 21
-      },
-      {
-        "names": "廖勝煌 + 蘇子哲",
-        "pair": [
-          "廖勝煌",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 3
-      },
-      {
-        "names": "林冠廷 + 黃盈豪",
-        "pair": [
-          "林冠廷",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 24
-      },
-      {
-        "names": "蘇子哲 + 許家瑋",
-        "pair": [
-          "蘇子哲",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 14
-      },
-      {
-        "names": "舒季軒 + 陳楷恩",
-        "pair": [
-          "舒季軒",
-          "陳楷恩"
-        ],
-        "unit": "二重分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 16
-      },
-      {
-        "names": "余孟軒 + 蔡聖文",
-        "pair": [
-          "余孟軒",
-          "蔡聖文"
-        ],
-        "unit": "湖口分隊",
-        "total": 12,
-        "rosc": 1,
-        "rate": 8.333333333333332,
-        "drugs": 0
-      },
-      {
-        "names": "洪偉傑 + 蘇子哲",
-        "pair": [
-          "洪偉傑",
-          "蘇子哲"
-        ],
-        "unit": "新豐分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 0
-      },
-      {
-        "names": "張馨予 + 鄭睿旭",
-        "pair": [
-          "張馨予",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 24
-      },
-      {
-        "names": "吳漢仁 + 朱庭志",
-        "pair": [
-          "吳漢仁",
-          "朱庭志"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 0
-      },
-      {
-        "names": "楊子毅 + 蕭煒宸",
-        "pair": [
-          "楊子毅",
-          "蕭煒宸"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 15
-      },
-      {
-        "names": "李昀毅 + 高傳恩",
-        "pair": [
-          "李昀毅",
-          "高傳恩"
-        ],
-        "unit": "竹東分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 12
-      },
-      {
-        "names": "賀亞琛 + 黃禹銘",
-        "pair": [
-          "賀亞琛",
-          "黃禹銘"
-        ],
-        "unit": "豐田分隊",
-        "total": 11,
-        "rosc": 1,
-        "rate": 9.090909090909092,
-        "drugs": 10
-      },
-      {
-        "names": "周易翰 + 許家瑋",
-        "pair": [
-          "周易翰",
-          "許家瑋"
-        ],
-        "unit": "新豐分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 13
-      },
-      {
-        "names": "莊士緯 + 陳吏庭",
-        "pair": [
-          "莊士緯",
-          "陳吏庭"
-        ],
-        "unit": "北埔分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 0
-      },
-      {
-        "names": "鍾明哲 + 黃盈豪",
-        "pair": [
-          "鍾明哲",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 27
-      },
-      {
-        "names": "蘇建宏 + 黃兆詮",
-        "pair": [
-          "蘇建宏",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 0
-      },
-      {
-        "names": "張淑惠 + 買昱霖",
-        "pair": [
-          "張淑惠",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 12
-      },
-      {
-        "names": "黃俊儒 + 黃玉喬",
-        "pair": [
-          "黃俊儒",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 15
-      },
-      {
-        "names": "宋億嘉 + 黃禹銘",
-        "pair": [
-          "宋億嘉",
-          "黃禹銘"
-        ],
-        "unit": "豐田分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 9
-      },
-      {
-        "names": "周哲君 + 蔡煥龍",
-        "pair": [
-          "周哲君",
-          "蔡煥龍"
-        ],
-        "unit": "新埔分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 5
-      },
-      {
-        "names": "林冠廷 + 黃惟鈞",
-        "pair": [
-          "林冠廷",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 21
-      },
-      {
-        "names": "李長安 + 黃玉喬",
-        "pair": [
-          "李長安",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 1,
-        "rate": 10.0,
-        "drugs": 30
-      },
-      {
-        "names": "莊宗旺 + 黃盈豪",
-        "pair": [
-          "莊宗旺",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 2,
-        "rate": 10.526315789473683,
-        "drugs": 53
-      },
-      {
-        "names": "劉名洲 + 鍾明哲",
-        "pair": [
-          "劉名洲",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 25,
-        "rosc": 3,
-        "rate": 12.0,
-        "drugs": 58
-      },
-      {
-        "names": "李堯軒 + 黃盈豪",
-        "pair": [
-          "李堯軒",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 2,
-        "rate": 12.5,
-        "drugs": 40
-      },
-      {
-        "names": "李昀毅 + 鍾錦明",
-        "pair": [
-          "李昀毅",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 2,
-        "rate": 13.333333333333334,
-        "drugs": 27
-      },
-      {
-        "names": "李晉緯 + 黃兆詮",
-        "pair": [
-          "李晉緯",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 2,
-        "rate": 14.285714285714285,
-        "drugs": 18
-      },
-      {
-        "names": "利威融 + 翁嘉隆",
-        "pair": [
-          "利威融",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 14,
-        "rosc": 2,
-        "rate": 14.285714285714285,
-        "drugs": 6
-      },
-      {
-        "names": "舒季軒 + 莊魏豪",
-        "pair": [
-          "舒季軒",
-          "莊魏豪"
-        ],
-        "unit": "二重分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 9
-      },
-      {
-        "names": "王仁宏 + 蕭惠元",
-        "pair": [
-          "王仁宏",
-          "蕭惠元"
-        ],
-        "unit": "山崎分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 15
-      },
-      {
-        "names": "曹詩敏 + 鍾明哲",
-        "pair": [
-          "曹詩敏",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 21
-      },
-      {
-        "names": "廖韋同 + 張凡治",
-        "pair": [
-          "廖韋同",
-          "張凡治"
-        ],
-        "unit": "新工分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 30
-      },
-      {
-        "names": "許嘉雄 + 黃俊儒",
-        "pair": [
-          "許嘉雄",
-          "黃俊儒"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 33
-      },
-      {
-        "names": "黃盈豪 + 黎斯同",
-        "pair": [
-          "黃盈豪",
-          "黎斯同"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 30
-      },
-      {
-        "names": "姜建成 + 黃皓賓",
-        "pair": [
-          "姜建成",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 2,
-        "rate": 15.384615384615385,
-        "drugs": 36
-      },
-      {
-        "names": "林冠廷 + 鍾錦明",
-        "pair": [
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 3,
-        "rate": 15.789473684210526,
-        "drugs": 50
-      },
-      {
-        "names": "姜建成 + 許育誠",
-        "pair": [
-          "姜建成",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 19,
-        "rosc": 3,
-        "rate": 15.789473684210526,
-        "drugs": 57
-      },
-      {
-        "names": "吳漢仁 + 邱坤豪",
-        "pair": [
-          "吳漢仁",
-          "邱坤豪"
-        ],
-        "unit": "芎林分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 0
-      },
-      {
-        "names": "朱庭志 + 黃兆詮",
-        "pair": [
-          "朱庭志",
-          "黃兆詮"
-        ],
-        "unit": "芎林分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 0
-      },
-      {
-        "names": "吳志霖 + 高政平",
-        "pair": [
-          "吳志霖",
-          "高政平"
-        ],
-        "unit": "關西分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 14
-      },
-      {
-        "names": "張凱閔 + 胡玉霖",
-        "pair": [
-          "張凱閔",
-          "胡玉霖"
-        ],
-        "unit": "橫山分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 2
-      },
-      {
-        "names": "劉名洲 + 黃惟鈞",
-        "pair": [
-          "劉名洲",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 2,
-        "rate": 16.666666666666664,
-        "drugs": 27
-      },
-      {
-        "names": "李晉緯 + 臧偉丞",
-        "pair": [
-          "李晉緯",
-          "臧偉丞"
-        ],
-        "unit": "芎林分隊",
-        "total": 17,
-        "rosc": 3,
-        "rate": 17.647058823529413,
-        "drugs": 34
-      },
-      {
-        "names": "王柏文 + 買昱霖",
-        "pair": [
-          "王柏文",
-          "買昱霖"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 0
-      },
-      {
-        "names": "林昆穎 + 連國延",
-        "pair": [
-          "林昆穎",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 11
-      },
-      {
-        "names": "余孟軒 + 張淑惠",
-        "pair": [
-          "余孟軒",
-          "張淑惠"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 13
-      },
-      {
-        "names": "廖宇揚 + 蔡聖文",
-        "pair": [
-          "廖宇揚",
-          "蔡聖文"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 2,
-        "rate": 18.181818181818183,
-        "drugs": 3
-      },
-      {
-        "names": "劉名洲 + 黃盈豪",
-        "pair": [
-          "劉名洲",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 27,
-        "rosc": 5,
-        "rate": 18.51851851851852,
-        "drugs": 67
-      },
-      {
-        "names": "劉名洲 + 莊宗旺",
-        "pair": [
-          "劉名洲",
-          "莊宗旺"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 3,
-        "rate": 18.75,
-        "drugs": 41
-      },
-      {
-        "names": "劉名洲 + 鍾錦明",
-        "pair": [
-          "劉名洲",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 30,
-        "rosc": 6,
-        "rate": 20.0,
-        "drugs": 59
-      },
-      {
-        "names": "李均祈 + 賴俊傑",
-        "pair": [
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 4,
-        "rate": 20.0,
-        "drugs": 54
-      },
-      {
-        "names": "劉名洲 + 邱怡華",
-        "pair": [
-          "劉名洲",
-          "邱怡華"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 3,
-        "rate": 20.0,
-        "drugs": 30
-      },
-      {
-        "names": "許嘉雄 + 連國延",
-        "pair": [
-          "許嘉雄",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 15
-      },
-      {
-        "names": "王柏文 + 胡邑瑞",
-        "pair": [
-          "王柏文",
-          "胡邑瑞"
-        ],
-        "unit": "湖口分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 0
-      },
-      {
-        "names": "施純泰 + 黃志樺",
-        "pair": [
-          "施純泰",
-          "黃志樺"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 10
-      },
-      {
-        "names": "高傳恩 + 黃盈豪",
-        "pair": [
-          "高傳恩",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 28
-      },
-      {
-        "names": "姜建成 + 施純泰",
-        "pair": [
-          "姜建成",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 21
-      },
-      {
-        "names": "劉名洲 + 謝侑翰",
-        "pair": [
-          "劉名洲",
-          "謝侑翰"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 4,
-        "rate": 21.052631578947366,
-        "drugs": 47
-      },
-      {
-        "names": "林冠廷 + 鍾明哲",
-        "pair": [
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 19,
-        "rosc": 4,
-        "rate": 21.052631578947366,
-        "drugs": 46
-      },
-      {
-        "names": "劉立傑 + 張凱閔",
-        "pair": [
-          "劉立傑",
-          "張凱閔"
-        ],
-        "unit": "橫山分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 3
-      },
-      {
-        "names": "黃玉喬 + 黃皓賓",
-        "pair": [
-          "黃玉喬",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 25
-      },
-      {
-        "names": "張馨予 + 黃皓賓",
-        "pair": [
-          "張馨予",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 3,
-        "rate": 21.428571428571427,
-        "drugs": 21
-      },
-      {
-        "names": "連國延 + 黃皓賓",
-        "pair": [
-          "連國延",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 24
-      },
-      {
-        "names": "李堯軒 + 鍾錦明",
-        "pair": [
-          "李堯軒",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 20
-      },
-      {
-        "names": "施純泰 + 黃玉喬",
-        "pair": [
-          "施純泰",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 28
-      },
-      {
-        "names": "施純泰 + 黃皓賓",
-        "pair": [
-          "施純泰",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 3,
-        "rate": 23.076923076923077,
-        "drugs": 29
-      },
-      {
-        "names": "彭弘傑 + 黃盈豪",
-        "pair": [
-          "彭弘傑",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 17,
-        "rosc": 4,
-        "rate": 23.52941176470588,
-        "drugs": 28
-      },
-      {
-        "names": "張馨予 + 施純泰",
-        "pair": [
-          "張馨予",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 5,
-        "rate": 23.809523809523807,
-        "drugs": 47
-      },
-      {
-        "names": "施純泰 + 許育誠",
-        "pair": [
-          "施純泰",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 28,
-        "rosc": 7,
-        "rate": 25.0,
-        "drugs": 66
-      },
-      {
-        "names": "劉名洲 + 李昀毅",
-        "pair": [
-          "劉名洲",
-          "李昀毅"
-        ],
-        "unit": "竹東分隊",
-        "total": 20,
-        "rosc": 5,
-        "rate": 25.0,
-        "drugs": 45
-      },
-      {
-        "names": "李昀毅 + 林冠廷",
-        "pair": [
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 20,
-        "rosc": 5,
-        "rate": 25.0,
-        "drugs": 48
-      },
-      {
-        "names": "李堯軒 + 邱怡華",
-        "pair": [
-          "李堯軒",
-          "邱怡華"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 14
-      },
-      {
-        "names": "呂育陞 + 施純泰",
-        "pair": [
-          "呂育陞",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 27
-      },
-      {
-        "names": "張馨予 + 李正群",
-        "pair": [
-          "張馨予",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 33
-      },
-      {
-        "names": "施婷雯 + 黃盈豪",
-        "pair": [
-          "施婷雯",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 12,
-        "rosc": 3,
-        "rate": 25.0,
-        "drugs": 35
-      },
-      {
-        "names": "劉名洲 + 林冠廷",
-        "pair": [
-          "劉名洲",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 43,
-        "rosc": 11,
-        "rate": 25.581395348837212,
-        "drugs": 102
-      },
-      {
-        "names": "劉名洲 + 曹詩敏",
-        "pair": [
-          "劉名洲",
-          "曹詩敏"
-        ],
-        "unit": "竹東分隊",
-        "total": 23,
-        "rosc": 6,
-        "rate": 26.08695652173913,
-        "drugs": 53
-      },
-      {
-        "names": "廖宇揚 + 楊子毅",
-        "pair": [
-          "廖宇揚",
-          "楊子毅"
-        ],
-        "unit": "湖口分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 17
-      },
-      {
-        "names": "李均祈 + 黃玉喬",
-        "pair": [
-          "李均祈",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 43
-      },
-      {
-        "names": "劉名洲 + 高傳恩",
-        "pair": [
-          "劉名洲",
-          "高傳恩"
-        ],
-        "unit": "竹東分隊",
-        "total": 15,
-        "rosc": 4,
-        "rate": 26.666666666666668,
-        "drugs": 36
-      },
-      {
-        "names": "鄭睿旭 + 黃皓賓",
-        "pair": [
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 26,
-        "rosc": 7,
-        "rate": 26.923076923076923,
-        "drugs": 62
-      },
-      {
-        "names": "翁嘉隆 + 蘇建宏",
-        "pair": [
-          "翁嘉隆",
-          "蘇建宏"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 6
-      },
-      {
-        "names": "呂育陞 + 連國延",
-        "pair": [
-          "呂育陞",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 21
-      },
-      {
-        "names": "劉名洲 + 彭弘傑",
-        "pair": [
-          "劉名洲",
-          "彭弘傑"
-        ],
-        "unit": "竹東分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 18
-      },
-      {
-        "names": "楊子毅 + 蔡雅竹",
-        "pair": [
-          "楊子毅",
-          "蔡雅竹"
-        ],
-        "unit": "湖口分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 8
-      },
-      {
-        "names": "吳志文 + 莊士緯",
-        "pair": [
-          "吳志文",
-          "莊士緯"
-        ],
-        "unit": "北埔分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 3
-      },
-      {
-        "names": "鄭睿旭 + 黃玉喬",
-        "pair": [
-          "鄭睿旭",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 20
-      },
-      {
-        "names": "李晉緯 + 范姜群傑",
-        "pair": [
-          "李晉緯",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 26
-      },
-      {
-        "names": "李均祈 + 黃皓賓",
-        "pair": [
-          "李均祈",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 30
-      },
-      {
-        "names": "許育誠 + 賴俊傑",
-        "pair": [
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 33
-      },
-      {
-        "names": "許育誠 + 鄭睿旭",
-        "pair": [
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 5,
-        "rate": 27.77777777777778,
-        "drugs": 47
-      },
-      {
-        "names": "許嘉雄 + 許育誠",
-        "pair": [
-          "許嘉雄",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 5,
-        "rate": 27.77777777777778,
-        "drugs": 36
-      },
-      {
-        "names": "曹詩敏 + 林冠廷",
-        "pair": [
-          "曹詩敏",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 21,
-        "rosc": 6,
-        "rate": 28.57142857142857,
-        "drugs": 50
-      },
-      {
-        "names": "張馨予 + 許育誠",
-        "pair": [
-          "張馨予",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 5,
-        "rate": 29.411764705882355,
-        "drugs": 35
-      },
-      {
-        "names": "邱怡華 + 鍾明哲",
-        "pair": [
-          "邱怡華",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 6
-      },
-      {
-        "names": "林學政 + 石孟平",
-        "pair": [
-          "林學政",
-          "石孟平"
-        ],
-        "unit": "山崎分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 0
-      },
-      {
-        "names": "蔣為理 + 許嘉雄",
-        "pair": [
-          "蔣為理",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "李正群 + 鄭睿旭",
-        "pair": [
-          "李正群",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 25
-      },
-      {
-        "names": "李正群 + 許育誠",
-        "pair": [
-          "李正群",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "賴俊傑 + 黃皓賓",
-        "pair": [
-          "賴俊傑",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 30
-      },
-      {
-        "names": "姜建成 + 許嘉雄",
-        "pair": [
-          "姜建成",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 4,
-        "rate": 30.76923076923077,
-        "drugs": 33
-      },
-      {
-        "names": "張馨予 + 許嘉雄",
-        "pair": [
-          "張馨予",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 33
-      },
-      {
-        "names": "蔣為理 + 鄭睿旭",
-        "pair": [
-          "蔣為理",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 36
-      },
-      {
-        "names": "謝侑翰 + 黃盈豪",
-        "pair": [
-          "謝侑翰",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 41
-      },
-      {
-        "names": "許嘉雄 + 鄭睿旭",
-        "pair": [
-          "許嘉雄",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 19,
-        "rosc": 6,
-        "rate": 31.57894736842105,
-        "drugs": 44
-      },
-      {
-        "names": "李正群 + 蔣為理",
-        "pair": [
-          "李正群",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 22,
-        "rosc": 7,
-        "rate": 31.818181818181817,
-        "drugs": 48
-      },
-      {
-        "names": "許育誠 + 黃皓賓",
-        "pair": [
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 30,
-        "rosc": 10,
-        "rate": 33.33333333333333,
-        "drugs": 66
-      },
-      {
-        "names": "施純泰 + 鄭睿旭",
-        "pair": [
-          "施純泰",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 7,
-        "rate": 33.33333333333333,
-        "drugs": 51
-      },
-      {
-        "names": "許嘉雄 + 黃皓賓",
-        "pair": [
-          "許嘉雄",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 7,
-        "rate": 33.33333333333333,
-        "drugs": 37
-      },
-      {
-        "names": "施純泰 + 李正群",
-        "pair": [
-          "施純泰",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 6,
-        "rate": 33.33333333333333,
-        "drugs": 33
-      },
-      {
-        "names": "許育誠 + 連國延",
-        "pair": [
-          "許育誠",
-          "連國延"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 23
-      },
-      {
-        "names": "張凡治 + 張惟智",
-        "pair": [
-          "張凡治",
-          "張惟智"
-        ],
-        "unit": "新工分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 18
-      },
-      {
-        "names": "張馨予 + 賴俊傑",
-        "pair": [
-          "張馨予",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 4,
-        "rate": 33.33333333333333,
-        "drugs": 33
-      },
-      {
-        "names": "劉名洲 + 李堯軒",
-        "pair": [
-          "劉名洲",
-          "李堯軒"
-        ],
-        "unit": "竹東分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 27
-      },
-      {
-        "names": "呂育陞 + 黃皓賓",
-        "pair": [
-          "呂育陞",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 33
-      },
-      {
-        "names": "施純泰 + 蔣為理",
-        "pair": [
-          "施純泰",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 6,
-        "rate": 35.294117647058826,
-        "drugs": 39
-      },
-      {
-        "names": "許嘉雄 + 賴俊傑",
-        "pair": [
-          "許嘉雄",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 5,
-        "rate": 35.714285714285715,
-        "drugs": 36
-      },
-      {
-        "names": "李均祈 + 許育誠",
-        "pair": [
-          "李均祈",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 22,
-        "rosc": 8,
-        "rate": 36.36363636363637,
-        "drugs": 54
-      },
-      {
-        "names": "施純泰 + 李均祈",
-        "pair": [
-          "施純泰",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 8,
-        "rate": 40.0,
-        "drugs": 48
-      },
-      {
-        "names": "施純泰 + 許嘉雄",
-        "pair": [
-          "施純泰",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 8,
-        "rate": 40.0,
-        "drugs": 53
-      },
-      {
-        "names": "吳志霖 + 謝杰穎",
-        "pair": [
-          "吳志霖",
-          "謝杰穎"
-        ],
-        "unit": "關西分隊",
-        "total": 15,
-        "rosc": 6,
-        "rate": 40.0,
-        "drugs": 19
-      },
-      {
-        "names": "張凡治 + 彭雨凡",
-        "pair": [
-          "張凡治",
-          "彭雨凡"
-        ],
-        "unit": "新工分隊",
-        "total": 17,
-        "rosc": 7,
-        "rate": 41.17647058823529,
-        "drugs": 15
-      },
-      {
-        "names": "吳志霖 + 陳明裕",
-        "pair": [
-          "吳志霖",
-          "陳明裕"
-        ],
-        "unit": "關西分隊",
-        "total": 12,
-        "rosc": 5,
-        "rate": 41.66666666666667,
-        "drugs": 17
-      },
-      {
-        "names": "連國延 + 鄭睿旭",
-        "pair": [
-          "連國延",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 37
-      },
-      {
-        "names": "張馨予 + 李均祈",
-        "pair": [
-          "張馨予",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 30
-      },
-      {
-        "names": "張馨予 + 蔣為理",
-        "pair": [
-          "張馨予",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 6,
-        "rate": 42.857142857142854,
-        "drugs": 38
-      },
-      {
-        "names": "呂育陞 + 鄭睿旭",
-        "pair": [
-          "呂育陞",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 7,
-        "rate": 43.75,
-        "drugs": 36
-      },
-      {
-        "names": "蔣為理 + 賴俊傑",
-        "pair": [
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 25,
-        "rosc": 11,
-        "rate": 44.0,
-        "drugs": 65
-      },
-      {
-        "names": "呂育陞 + 張馨予",
-        "pair": [
-          "呂育陞",
-          "張馨予"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 7,
-        "rate": 46.666666666666664,
-        "drugs": 38
-      },
-      {
-        "names": "呂育陞 + 賴俊傑",
-        "pair": [
-          "呂育陞",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 7,
-        "rate": 46.666666666666664,
-        "drugs": 39
-      },
-      {
-        "names": "呂育陞 + 蔣為理",
-        "pair": [
-          "呂育陞",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 10,
-        "rate": 47.61904761904761,
-        "drugs": 54
-      },
-      {
-        "names": "蔣為理 + 許育誠",
-        "pair": [
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 23,
-        "rosc": 11,
-        "rate": 47.82608695652174,
-        "drugs": 66
-      },
-      {
-        "names": "洪國胤 + 鄭睿旭",
-        "pair": [
-          "洪國胤",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 8,
-        "rate": 50.0,
-        "drugs": 37
-      },
-      {
-        "names": "呂育陞 + 李均祈",
-        "pair": [
-          "呂育陞",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 7,
-        "rate": 50.0,
-        "drugs": 31
-      },
-      {
-        "names": "李正群 + 賴俊傑",
-        "pair": [
-          "李正群",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 7,
-        "rate": 50.0,
-        "drugs": 35
-      },
-      {
-        "names": "李正群 + 許嘉雄",
-        "pair": [
-          "李正群",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 6,
-        "rate": 50.0,
-        "drugs": 29
-      },
-      {
-        "names": "張凡治 + 彭煜錩",
-        "pair": [
-          "張凡治",
-          "彭煜錩"
-        ],
-        "unit": "新工分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 13
-      },
-      {
-        "names": "李晉緯 + 翁嘉隆",
-        "pair": [
-          "李晉緯",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 15
-      },
-      {
-        "names": "賴俊傑 + 鄭睿旭",
-        "pair": [
-          "賴俊傑",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 30
-      },
-      {
-        "names": "李均祈 + 許嘉雄",
-        "pair": [
-          "李均祈",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "施純泰 + 賴俊傑",
-        "pair": [
-          "施純泰",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 33
-      },
-      {
-        "names": "李均祈 + 李正群",
-        "pair": [
-          "李均祈",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "呂育陞 + 許育誠",
-        "pair": [
-          "呂育陞",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 7,
-        "rate": 58.333333333333336,
-        "drugs": 22
-      },
-      {
-        "names": "李均祈 + 蔣為理",
-        "pair": [
-          "李均祈",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 9,
-        "rate": 60.0,
-        "drugs": 37
-      },
-      {
-        "names": "呂育陞 + 李正群",
-        "pair": [
-          "呂育陞",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 7,
-        "rate": 63.63636363636363,
-        "drugs": 26
-      }
-    ],
-    "dual_tp": [
-      {
-        "names": "呂育陞 + 李正群",
-        "pair": [
-          "呂育陞",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 7,
-        "rate": 63.63636363636363,
-        "drugs": 26
-      },
-      {
-        "names": "蔣為理 + 黃皓賓",
-        "pair": [
-          "蔣為理",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 8,
-        "rosc": 5,
-        "rate": 62.5,
-        "drugs": 16
-      },
-      {
-        "names": "李均祈 + 蔣為理",
-        "pair": [
-          "李均祈",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 9,
-        "rate": 60.0,
-        "drugs": 37
-      },
-      {
-        "names": "呂育陞 + 鄭睿旭",
-        "pair": [
-          "呂育陞",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 6,
-        "rate": 60.0,
-        "drugs": 21
-      },
-      {
-        "names": "呂育陞 + 許育誠",
-        "pair": [
-          "呂育陞",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 7,
-        "rate": 58.333333333333336,
-        "drugs": 22
-      },
-      {
-        "names": "呂育陞 + 李均祈",
-        "pair": [
-          "呂育陞",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 13,
-        "rosc": 7,
-        "rate": 53.84615384615385,
-        "drugs": 31
-      },
-      {
-        "names": "李均祈 + 許嘉雄",
-        "pair": [
-          "李均祈",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "李均祈 + 李正群",
-        "pair": [
-          "李均祈",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 8,
-        "rate": 53.333333333333336,
-        "drugs": 36
-      },
-      {
-        "names": "李正群 + 賴俊傑",
-        "pair": [
-          "李正群",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 7,
-        "rate": 50.0,
-        "drugs": 35
-      },
-      {
-        "names": "李正群 + 許嘉雄",
-        "pair": [
-          "李正群",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 6,
-        "rate": 50.0,
-        "drugs": 29
-      },
-      {
-        "names": "賴俊傑 + 鄭睿旭",
-        "pair": [
-          "賴俊傑",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 5,
-        "rate": 50.0,
-        "drugs": 30
-      },
-      {
-        "names": "劉名洲 + 黃韓林",
-        "pair": [
-          "劉名洲",
-          "黃韓林"
-        ],
-        "unit": "竹東分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 14
-      },
-      {
-        "names": "呂育陞 + 許嘉雄",
-        "pair": [
-          "呂育陞",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 12
-      },
-      {
-        "names": "蔣為理 + 許育誠",
-        "pair": [
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 23,
-        "rosc": 11,
-        "rate": 47.82608695652174,
-        "drugs": 66
-      },
-      {
-        "names": "呂育陞 + 蔣為理",
-        "pair": [
-          "呂育陞",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 21,
-        "rosc": 10,
-        "rate": 47.61904761904761,
-        "drugs": 54
-      },
-      {
-        "names": "呂育陞 + 賴俊傑",
-        "pair": [
-          "呂育陞",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 15,
-        "rosc": 7,
-        "rate": 46.666666666666664,
-        "drugs": 39
-      },
-      {
-        "names": "蔣為理 + 賴俊傑",
-        "pair": [
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 25,
-        "rosc": 11,
-        "rate": 44.0,
-        "drugs": 65
-      },
-      {
-        "names": "許嘉雄 + 黃皓賓",
-        "pair": [
-          "許嘉雄",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 7,
-        "rate": 43.75,
-        "drugs": 28
-      },
-      {
-        "names": "許育誠 + 黃皓賓",
-        "pair": [
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 24,
-        "rosc": 10,
-        "rate": 41.66666666666667,
-        "drugs": 60
-      },
-      {
-        "names": "呂育陞 + 黃皓賓",
-        "pair": [
-          "呂育陞",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 12,
-        "rosc": 5,
-        "rate": 41.66666666666667,
-        "drugs": 26
-      },
-      {
-        "names": "李均祈 + 鄭睿旭",
-        "pair": [
-          "李均祈",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 14
-      },
-      {
-        "names": "許嘉雄 + 賴俊傑",
-        "pair": [
-          "許嘉雄",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 14,
-        "rosc": 5,
-        "rate": 35.714285714285715,
-        "drugs": 36
-      },
-      {
-        "names": "李均祈 + 許育誠",
-        "pair": [
-          "李均祈",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 7,
-        "rate": 35.0,
-        "drugs": 48
-      },
-      {
-        "names": "李均祈 + 黃皓賓",
-        "pair": [
-          "李均祈",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 9,
-        "rosc": 3,
-        "rate": 33.33333333333333,
-        "drugs": 24
-      },
-      {
-        "names": "李正群 + 蔣為理",
-        "pair": [
-          "李正群",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 22,
-        "rosc": 7,
-        "rate": 31.818181818181817,
-        "drugs": 48
-      },
-      {
-        "names": "許嘉雄 + 鄭睿旭",
-        "pair": [
-          "許嘉雄",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 19,
-        "rosc": 6,
-        "rate": 31.57894736842105,
-        "drugs": 44
-      },
-      {
-        "names": "許育誠 + 鄭睿旭",
-        "pair": [
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 42
-      },
-      {
-        "names": "蔣為理 + 鄭睿旭",
-        "pair": [
-          "蔣為理",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 16,
-        "rosc": 5,
-        "rate": 31.25,
-        "drugs": 36
-      },
-      {
-        "names": "蔣為理 + 許嘉雄",
-        "pair": [
-          "蔣為理",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "李正群 + 鄭睿旭",
-        "pair": [
-          "李正群",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 25
-      },
-      {
-        "names": "李正群 + 許育誠",
-        "pair": [
-          "李正群",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 22
-      },
-      {
-        "names": "賴俊傑 + 黃皓賓",
-        "pair": [
-          "賴俊傑",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 30
-      },
-      {
-        "names": "鄭睿旭 + 黃皓賓",
-        "pair": [
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 18,
-        "rosc": 5,
-        "rate": 27.77777777777778,
-        "drugs": 44
-      },
-      {
-        "names": "許育誠 + 賴俊傑",
-        "pair": [
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 11,
-        "rosc": 3,
-        "rate": 27.27272727272727,
-        "drugs": 33
-      },
-      {
-        "names": "劉名洲 + 林冠廷",
-        "pair": [
-          "劉名洲",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 43,
-        "rosc": 11,
-        "rate": 25.581395348837212,
-        "drugs": 102
-      },
-      {
-        "names": "許嘉雄 + 許育誠",
-        "pair": [
-          "許嘉雄",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 17,
-        "rosc": 4,
-        "rate": 23.52941176470588,
-        "drugs": 36
-      },
-      {
-        "names": "劉名洲 + 黃盈豪",
-        "pair": [
-          "劉名洲",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 25,
-        "rosc": 5,
-        "rate": 20.0,
-        "drugs": 61
-      },
-      {
-        "names": "李均祈 + 賴俊傑",
-        "pair": [
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 20,
-        "rosc": 4,
-        "rate": 20.0,
-        "drugs": 54
-      },
-      {
-        "names": "王仁宏 + 蕭惠元",
-        "pair": [
-          "王仁宏",
-          "蕭惠元"
-        ],
-        "unit": "山崎分隊",
-        "total": 6,
-        "rosc": 1,
-        "rate": 16.666666666666664,
-        "drugs": 15
-      },
-      {
-        "names": "李正群 + 黃皓賓",
-        "pair": [
-          "李正群",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 9,
-        "rosc": 1,
-        "rate": 11.11111111111111,
-        "drugs": 18
-      },
-      {
-        "names": "林冠廷 + 黃盈豪",
-        "pair": [
-          "林冠廷",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 13,
-        "rosc": 1,
-        "rate": 7.6923076923076925,
-        "drugs": 24
-      },
-      {
-        "names": "黃盈豪 + 黃韓林",
-        "pair": [
-          "黃盈豪",
-          "黃韓林"
-        ],
-        "unit": "竹東分隊",
-        "total": 6,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 14
-      }
-    ],
-    "trios_top": [
-      {
-        "names": "呂育陞 + 李均祈 + 蔣為理",
-        "trio": [
-          "呂育陞",
-          "李均祈",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 4,
-        "rate": 80.0,
-        "drugs": 13
-      },
-      {
-        "names": "呂育陞 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "呂育陞",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 9
-      },
-      {
-        "names": "洪國胤 + 連國延 + 鄭睿旭",
-        "trio": [
-          "洪國胤",
-          "連國延",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 8
-      },
-      {
-        "names": "李均祈 + 蔣為理 + 許育誠",
-        "trio": [
-          "李均祈",
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 10
-      },
-      {
-        "names": "李均祈 + 李正群 + 蔣為理",
-        "trio": [
-          "李均祈",
-          "李正群",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 8
-      },
-      {
-        "names": "張馨予 + 蔣為理 + 許育誠",
-        "trio": [
-          "張馨予",
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 4,
-        "rate": 66.66666666666666,
-        "drugs": 17
-      },
-      {
-        "names": "劉名洲 + 曹詩敏 + 林冠廷",
-        "trio": [
-          "劉名洲",
-          "曹詩敏",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 3,
-        "rate": 60.0,
-        "drugs": 10
-      },
-      {
-        "names": "呂育陞 + 洪國胤 + 鄭睿旭",
-        "trio": [
-          "呂育陞",
-          "洪國胤",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 14
-      },
-      {
-        "names": "劉名洲 + 李昀毅 + 林冠廷",
-        "trio": [
-          "劉名洲",
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 12
-      },
-      {
-        "names": "呂育陞 + 李均祈 + 賴俊傑",
-        "trio": [
-          "呂育陞",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 15
-      },
-      {
-        "names": "呂育陞 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "呂育陞",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 18
-      },
-      {
-        "names": "施純泰 + 許育誠 + 黃玉喬",
-        "trio": [
-          "施純泰",
-          "許育誠",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "李正群 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "李正群",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "許嘉雄 + 許育誠 + 黃皓賓",
-        "trio": [
-          "許嘉雄",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "曹詩敏 + 李昀毅 + 林冠廷",
-        "trio": [
-          "曹詩敏",
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "呂育陞 + 張馨予 + 李正群",
-        "trio": [
-          "呂育陞",
-          "張馨予",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 12
-      },
-      {
-        "names": "施純泰 + 李均祈 + 許育誠",
-        "trio": [
-          "施純泰",
-          "李均祈",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 7,
-        "rosc": 3,
-        "rate": 42.857142857142854,
-        "drugs": 18
-      },
-      {
-        "names": "張馨予 + 李均祈 + 賴俊傑",
-        "trio": [
-          "張馨予",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 12
-      },
-      {
-        "names": "劉名洲 + 莊宗旺 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "莊宗旺",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 14
-      },
-      {
-        "names": "呂育陞 + 張馨予 + 施純泰",
-        "trio": [
-          "呂育陞",
-          "張馨予",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 15
-      },
-      {
-        "names": "蔣為理 + 許育誠 + 賴俊傑",
-        "trio": [
-          "蔣為理",
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 15
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 鍾錦明",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 26
-      },
-      {
-        "names": "李昀毅 + 林冠廷 + 鍾錦明",
-        "trio": [
-          "李昀毅",
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 7,
-        "rosc": 2,
-        "rate": 28.57142857142857,
-        "drugs": 17
-      },
-      {
-        "names": "曹詩敏 + 林冠廷 + 鍾明哲",
-        "trio": [
-          "曹詩敏",
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 7,
-        "rosc": 2,
-        "rate": 28.57142857142857,
-        "drugs": 18
-      },
-      {
-        "names": "劉名洲 + 李昀毅 + 鍾錦明",
-        "trio": [
-          "劉名洲",
-          "李昀毅",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 8,
-        "rosc": 2,
-        "rate": 25.0,
-        "drugs": 19
-      },
-      {
-        "names": "張馨予 + 許育誠 + 黃皓賓",
-        "trio": [
-          "張馨予",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 3
-      },
-      {
-        "names": "劉立傑 + 張凱閔 + 胡玉霖",
-        "trio": [
-          "劉立傑",
-          "張凱閔",
-          "胡玉霖"
-        ],
-        "unit": "橫山分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "張馨予 + 施純泰 + 李均祈",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "許嘉雄 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "許嘉雄",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "姜彥州 + 戴世豐 + 盧相國",
-        "trio": [
-          "姜彥州",
-          "戴世豐",
-          "盧相國"
-        ],
-        "unit": "北埔分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "施純泰 + 許嘉雄 + 鄭睿旭",
-        "trio": [
-          "施純泰",
-          "許嘉雄",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "利威融 + 李晉緯 + 翁嘉隆",
-        "trio": [
-          "利威融",
-          "李晉緯",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 6
-      },
-      {
-        "names": "吳志文 + 潘賢安 + 黃羿泓",
-        "trio": [
-          "吳志文",
-          "潘賢安",
-          "黃羿泓"
-        ],
-        "unit": "北埔分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "劉名洲 + 謝侑翰 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "謝侑翰",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 10
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 鍾明哲",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 8
-      },
-      {
-        "names": "廖韋同 + 張凡治 + 彭雨凡",
-        "trio": [
-          "廖韋同",
-          "張凡治",
-          "彭雨凡"
-        ],
-        "unit": "新工分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "李均祈 + 許育誠 + 賴俊傑",
-        "trio": [
-          "李均祈",
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "姜建成 + 許嘉雄 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "許嘉雄",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "張馨予 + 施純泰 + 李正群",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "李均祈 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "李均祈",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "姜建成 + 許育誠 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 30
-      },
-      {
-        "names": "廖宇揚 + 蕭煒宸 + 陳俊夆",
-        "trio": [
-          "廖宇揚",
-          "蕭煒宸",
-          "陳俊夆"
-        ],
-        "unit": "湖口分隊",
-        "total": 5,
-        "rosc": 1,
-        "rate": 20.0,
-        "drugs": 0
-      },
-      {
-        "names": "許育誠 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "許育誠",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 1,
-        "rate": 16.666666666666664,
-        "drugs": 18
-      },
-      {
-        "names": "姜建成 + 許嘉雄 + 許育誠",
-        "trio": [
-          "姜建成",
-          "許嘉雄",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 7,
-        "rosc": 1,
-        "rate": 14.285714285714285,
-        "drugs": 21
-      },
-      {
-        "names": "姜建成 + 許育誠 + 鄭睿旭",
-        "trio": [
-          "姜建成",
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 18
-      },
-      {
-        "names": "劉名洲 + 莊宗旺 + 鍾明哲",
-        "trio": [
-          "劉名洲",
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 13
-      },
-      {
-        "names": "姜建成 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "施純泰 + 許育誠 + 黃皓賓",
-        "trio": [
-          "施純泰",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "張馨予 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "張馨予",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "劉名洲 + 李堯軒 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "李堯軒",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "張馨予 + 施純泰 + 許嘉雄",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "李堯軒 + 莊宗旺 + 鍾明哲",
-        "trio": [
-          "李堯軒",
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "施純泰 + 李均祈 + 賴俊傑",
-        "trio": [
-          "施純泰",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 11
-      },
-      {
-        "names": "利威融 + 李晉緯 + 臧偉丞",
-        "trio": [
-          "利威融",
-          "李晉緯",
-          "臧偉丞"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 鍾明哲 + 黎斯同",
-        "trio": [
-          "劉名洲",
-          "鍾明哲",
-          "黎斯同"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "許嘉雄 + 賴俊傑 + 黃俊儒",
-        "trio": [
-          "許嘉雄",
-          "賴俊傑",
-          "黃俊儒"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "李晉緯 + 臧偉丞 + 范姜群傑",
-        "trio": [
-          "李晉緯",
-          "臧偉丞",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "許嘉雄 + 許育誠 + 鄭睿旭",
-        "trio": [
-          "許嘉雄",
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 黃惟鈞",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 8
-      },
-      {
-        "names": "廖柏霖 + 温少翔 + 黃盈豪",
-        "trio": [
-          "廖柏霖",
-          "温少翔",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "廖柏霖 + 黃右瑾 + 黃盈豪",
-        "trio": [
-          "廖柏霖",
-          "黃右瑾",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      }
-    ],
-    "trios_bot": [
-      {
-        "names": "姜建成 + 許育誠 + 鄭睿旭",
-        "trio": [
-          "姜建成",
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 18
-      },
-      {
-        "names": "劉名洲 + 莊宗旺 + 鍾明哲",
-        "trio": [
-          "劉名洲",
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 13
-      },
-      {
-        "names": "姜建成 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "施純泰 + 許育誠 + 黃皓賓",
-        "trio": [
-          "施純泰",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "張馨予 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "張馨予",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "劉名洲 + 李堯軒 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "李堯軒",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "張馨予 + 施純泰 + 許嘉雄",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "許嘉雄"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "李堯軒 + 莊宗旺 + 鍾明哲",
-        "trio": [
-          "李堯軒",
-          "莊宗旺",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "施純泰 + 李均祈 + 賴俊傑",
-        "trio": [
-          "施純泰",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 11
-      },
-      {
-        "names": "利威融 + 李晉緯 + 臧偉丞",
-        "trio": [
-          "利威融",
-          "李晉緯",
-          "臧偉丞"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 鍾明哲 + 黎斯同",
-        "trio": [
-          "劉名洲",
-          "鍾明哲",
-          "黎斯同"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 10
-      },
-      {
-        "names": "許嘉雄 + 賴俊傑 + 黃俊儒",
-        "trio": [
-          "許嘉雄",
-          "賴俊傑",
-          "黃俊儒"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "李晉緯 + 臧偉丞 + 范姜群傑",
-        "trio": [
-          "李晉緯",
-          "臧偉丞",
-          "范姜群傑"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "許嘉雄 + 許育誠 + 鄭睿旭",
-        "trio": [
-          "許嘉雄",
-          "許育誠",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 9
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 黃惟鈞",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "黃惟鈞"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 8
-      },
-      {
-        "names": "廖柏霖 + 温少翔 + 黃盈豪",
-        "trio": [
-          "廖柏霖",
-          "温少翔",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "廖柏霖 + 黃右瑾 + 黃盈豪",
-        "trio": [
-          "廖柏霖",
-          "黃右瑾",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 0,
-        "rate": 0.0,
-        "drugs": 12
-      },
-      {
-        "names": "姜建成 + 許嘉雄 + 許育誠",
-        "trio": [
-          "姜建成",
-          "許嘉雄",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 7,
-        "rosc": 1,
-        "rate": 14.285714285714285,
-        "drugs": 21
-      },
-      {
-        "names": "許育誠 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "許育誠",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 1,
-        "rate": 16.666666666666664,
-        "drugs": 18
-      },
-      {
-        "names": "姜建成 + 許育誠 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 10,
-        "rosc": 2,
-        "rate": 20.0,
-        "drugs": 30
-      },
-      {
-        "names": "廖宇揚 + 蕭煒宸 + 陳俊夆",
-        "trio": [
-          "廖宇揚",
-          "蕭煒宸",
-          "陳俊夆"
-        ],
-        "unit": "湖口分隊",
-        "total": 5,
-        "rosc": 1,
-        "rate": 20.0,
-        "drugs": 0
-      },
-      {
-        "names": "劉名洲 + 李昀毅 + 鍾錦明",
-        "trio": [
-          "劉名洲",
-          "李昀毅",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 8,
-        "rosc": 2,
-        "rate": 25.0,
-        "drugs": 19
-      },
-      {
-        "names": "張馨予 + 許育誠 + 黃皓賓",
-        "trio": [
-          "張馨予",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 3
-      },
-      {
-        "names": "劉立傑 + 張凱閔 + 胡玉霖",
-        "trio": [
-          "劉立傑",
-          "張凱閔",
-          "胡玉霖"
-        ],
-        "unit": "橫山分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "張馨予 + 施純泰 + 李均祈",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "李均祈"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "許嘉雄 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "許嘉雄",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "姜彥州 + 戴世豐 + 盧相國",
-        "trio": [
-          "姜彥州",
-          "戴世豐",
-          "盧相國"
-        ],
-        "unit": "北埔分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "施純泰 + 許嘉雄 + 鄭睿旭",
-        "trio": [
-          "施純泰",
-          "許嘉雄",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "利威融 + 李晉緯 + 翁嘉隆",
-        "trio": [
-          "利威融",
-          "李晉緯",
-          "翁嘉隆"
-        ],
-        "unit": "芎林分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 6
-      },
-      {
-        "names": "吳志文 + 潘賢安 + 黃羿泓",
-        "trio": [
-          "吳志文",
-          "潘賢安",
-          "黃羿泓"
-        ],
-        "unit": "北埔分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 0
-      },
-      {
-        "names": "劉名洲 + 謝侑翰 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "謝侑翰",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 10
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 鍾明哲",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 8
-      },
-      {
-        "names": "廖韋同 + 張凡治 + 彭雨凡",
-        "trio": [
-          "廖韋同",
-          "張凡治",
-          "彭雨凡"
-        ],
-        "unit": "新工分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "李均祈 + 許育誠 + 賴俊傑",
-        "trio": [
-          "李均祈",
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "姜建成 + 許嘉雄 + 黃皓賓",
-        "trio": [
-          "姜建成",
-          "許嘉雄",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 9
-      },
-      {
-        "names": "張馨予 + 施純泰 + 李正群",
-        "trio": [
-          "張馨予",
-          "施純泰",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "李均祈 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "李均祈",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 1,
-        "rate": 25.0,
-        "drugs": 12
-      },
-      {
-        "names": "李昀毅 + 林冠廷 + 鍾錦明",
-        "trio": [
-          "李昀毅",
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 7,
-        "rosc": 2,
-        "rate": 28.57142857142857,
-        "drugs": 17
-      },
-      {
-        "names": "曹詩敏 + 林冠廷 + 鍾明哲",
-        "trio": [
-          "曹詩敏",
-          "林冠廷",
-          "鍾明哲"
-        ],
-        "unit": "竹東分隊",
-        "total": 7,
-        "rosc": 2,
-        "rate": 28.57142857142857,
-        "drugs": 18
-      },
-      {
-        "names": "劉名洲 + 林冠廷 + 鍾錦明",
-        "trio": [
-          "劉名洲",
-          "林冠廷",
-          "鍾錦明"
-        ],
-        "unit": "竹東分隊",
-        "total": 10,
-        "rosc": 3,
-        "rate": 30.0,
-        "drugs": 26
-      },
-      {
-        "names": "張馨予 + 李均祈 + 賴俊傑",
-        "trio": [
-          "張馨予",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 12
-      },
-      {
-        "names": "劉名洲 + 莊宗旺 + 黃盈豪",
-        "trio": [
-          "劉名洲",
-          "莊宗旺",
-          "黃盈豪"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 14
-      },
-      {
-        "names": "呂育陞 + 張馨予 + 施純泰",
-        "trio": [
-          "呂育陞",
-          "張馨予",
-          "施純泰"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 15
-      },
-      {
-        "names": "蔣為理 + 許育誠 + 賴俊傑",
-        "trio": [
-          "蔣為理",
-          "許育誠",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 2,
-        "rate": 40.0,
-        "drugs": 15
-      },
-      {
-        "names": "施純泰 + 李均祈 + 許育誠",
-        "trio": [
-          "施純泰",
-          "李均祈",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 7,
-        "rosc": 3,
-        "rate": 42.857142857142854,
-        "drugs": 18
-      },
-      {
-        "names": "呂育陞 + 洪國胤 + 鄭睿旭",
-        "trio": [
-          "呂育陞",
-          "洪國胤",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 14
-      },
-      {
-        "names": "劉名洲 + 李昀毅 + 林冠廷",
-        "trio": [
-          "劉名洲",
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 12
-      },
-      {
-        "names": "呂育陞 + 李均祈 + 賴俊傑",
-        "trio": [
-          "呂育陞",
-          "李均祈",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 15
-      },
-      {
-        "names": "呂育陞 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "呂育陞",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 3,
-        "rate": 50.0,
-        "drugs": 18
-      },
-      {
-        "names": "施純泰 + 許育誠 + 黃玉喬",
-        "trio": [
-          "施純泰",
-          "許育誠",
-          "黃玉喬"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "李正群 + 蔣為理 + 賴俊傑",
-        "trio": [
-          "李正群",
-          "蔣為理",
-          "賴俊傑"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "許嘉雄 + 許育誠 + 黃皓賓",
-        "trio": [
-          "許嘉雄",
-          "許育誠",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "曹詩敏 + 李昀毅 + 林冠廷",
-        "trio": [
-          "曹詩敏",
-          "李昀毅",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 9
-      },
-      {
-        "names": "呂育陞 + 張馨予 + 李正群",
-        "trio": [
-          "呂育陞",
-          "張馨予",
-          "李正群"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 2,
-        "rate": 50.0,
-        "drugs": 12
-      },
-      {
-        "names": "劉名洲 + 曹詩敏 + 林冠廷",
-        "trio": [
-          "劉名洲",
-          "曹詩敏",
-          "林冠廷"
-        ],
-        "unit": "竹東分隊",
-        "total": 5,
-        "rosc": 3,
-        "rate": 60.0,
-        "drugs": 10
-      },
-      {
-        "names": "張馨予 + 蔣為理 + 許育誠",
-        "trio": [
-          "張馨予",
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 6,
-        "rosc": 4,
-        "rate": 66.66666666666666,
-        "drugs": 17
-      },
-      {
-        "names": "呂育陞 + 鄭睿旭 + 黃皓賓",
-        "trio": [
-          "呂育陞",
-          "鄭睿旭",
-          "黃皓賓"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 9
-      },
-      {
-        "names": "洪國胤 + 連國延 + 鄭睿旭",
-        "trio": [
-          "洪國胤",
-          "連國延",
-          "鄭睿旭"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 8
-      },
-      {
-        "names": "李均祈 + 蔣為理 + 許育誠",
-        "trio": [
-          "李均祈",
-          "蔣為理",
-          "許育誠"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 10
-      },
-      {
-        "names": "李均祈 + 李正群 + 蔣為理",
-        "trio": [
-          "李均祈",
-          "李正群",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 4,
-        "rosc": 3,
-        "rate": 75.0,
-        "drugs": 8
-      },
-      {
-        "names": "呂育陞 + 李均祈 + 蔣為理",
-        "trio": [
-          "呂育陞",
-          "李均祈",
-          "蔣為理"
-        ],
-        "unit": "光明分隊",
-        "total": 5,
-        "rosc": 4,
-        "rate": 80.0,
-        "drugs": 13
-      }
-    ]
+  },
+  "summary": {
+    "total_ohca": 4037,
+    "total_rosc": 652,
+    "total_r1": 414,
+    "rosc_rate": 16.15,
+    "r1_rate": 10.26,
+    "total_months": 85,
+    "date_range": "108年10月 ～ 115年10月",
+    "gm_total_ems": 26843,
+    "gm_total_ohca": 543,
+    "gm_total_rosc": 165,
+    "gm_rosc_rate": 30.39,
+    "gm_r1_rosc_rate": 23.57,
+    "gm_post_ohca": 404,
+    "gm_post_rosc": 137,
+    "gm_post_rate": 33.91,
+    "total_drugs": 3197,
+    "gm_total_drugs": 1093
   },
   "career_firefighters": [
     {
@@ -7814,23 +13913,29 @@ window.DASHBOARD_DATA = {
       "desc": "【常山龍膽・一身是膽】如趙子龍之孤勇絕倫、臨陣不亂。許嘉雄早在 110 年初即奉命獨當一面，早於諸同袍先行受命取得 TP 資格。救護總量近 4,000 件，TP 執業期救回 36 人，急救成功率高達 34.62%（穩居全縣第 4 強）。其給藥 225 次、氣管插管 35 件，槍出如龍、處置乾淨俐落，是光明防線上最堅韌從容的常勝名將。",
       "general_ems_calls": 3958,
       "general_ems_pct": 14.74,
-      "ohca_calls": 114,
-      "ohca_rosc": 43,
-      "rosc_rate": 37.7,
-      "r1_rosc": 35,
-      "r1_rate": 30.7,
+      "ohca_calls": 103,
+      "ohca_rosc": 35,
+      "rosc_rate": 34.0,
+      "r1_rosc": 27,
+      "r1_rate": 26.2,
       "diff_broad": 9.3,
       "odds_ratio": 1.52,
-      "drug_rate": 73.7,
-      "drug_avg": 2.14,
-      "endo_rate": 35.1,
-      "sga_rate": 29.8,
-      "iv_rate": 48.2,
+      "drug_rate": 72.8,
+      "drug_avg": 2.13,
+      "endo_rate": 34.0,
+      "sga_rate": 30.1,
+      "iv_rate": 49.5,
       "best_partners": [
         {
           "name": "紀翔升",
           "total": 3,
           "rosc": 3,
+          "rate": 100.0
+        },
+        {
+          "name": "林惠玲",
+          "total": 2,
+          "rosc": 2,
           "rate": 100.0
         },
         {
@@ -7850,12 +13955,6 @@ window.DASHBOARD_DATA = {
           "total": 6,
           "rosc": 3,
           "rate": 50.0
-        },
-        {
-          "name": "施純泰",
-          "total": 20,
-          "rosc": 8,
-          "rate": 40.0
         }
       ]
     },
@@ -7871,18 +13970,18 @@ window.DASHBOARD_DATA = {
       "desc": "【江漢巨擘・鄱陽橫槊】陳友諒生平督率千艘巨艦，橫鎖江漢，所領之軍天下至強，專打天下最險、最難之逆浪硬仗。許育誠於光明分隊出勤 OHCA 高達 142 件（救護總量 3,936 件），母數冠絕全分隊！他所承接者，多為 80 歲以上超高齡、清晨非目擊、生機最形微弱之極度逆境。他不避凶險、不挑平川順境以圖亮眼數據，而是在滔天死線前親率巨艦強行搶灘，處置強度全開（給藥率 76.1%、插管率 44.4%），親手挽回 32 條生靈！雖大浪淘沙稀釋帳面成效，然深諳前線戰事者皆知：敢於在無人生機之死局中直面狂濤者，方為真正的硬派巨擘！",
       "general_ems_calls": 3936,
       "general_ems_pct": 14.66,
-      "ohca_calls": 142,
-      "ohca_rosc": 42,
-      "rosc_rate": 29.6,
-      "r1_rosc": 32,
-      "r1_rate": 22.5,
+      "ohca_calls": 123,
+      "ohca_rosc": 36,
+      "rosc_rate": 29.3,
+      "r1_rosc": 26,
+      "r1_rate": 21.1,
       "diff_broad": -1.1,
       "odds_ratio": 0.95,
-      "drug_rate": 76.1,
-      "drug_avg": 2.19,
-      "endo_rate": 44.4,
-      "sga_rate": 28.9,
-      "iv_rate": 34.5,
+      "drug_rate": 76.4,
+      "drug_avg": 2.21,
+      "endo_rate": 43.9,
+      "sga_rate": 30.1,
+      "iv_rate": 35.0,
       "best_partners": [
         {
           "name": "石俊傑",
@@ -7903,16 +14002,16 @@ window.DASHBOARD_DATA = {
           "rate": 58.3
         },
         {
+          "name": "林惠玲",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
+        },
+        {
           "name": "蔣為理",
           "total": 23,
           "rosc": 11,
           "rate": 47.8
-        },
-        {
-          "name": "李均祈",
-          "total": 22,
-          "rosc": 8,
-          "rate": 36.4
         }
       ]
     },
@@ -7928,18 +14027,18 @@ window.DASHBOARD_DATA = {
       "desc": "【塞上長城・穩健如山】蒙恬卻匈奴七百里、沉毅雄渾。黃皓賓救護量達 3,789 件、OHCA 出勤 125 件，TP 執業期勝率自舊制 17% 翻倍躍升至 36.05%！給藥與插管穩健紮實，長年守護竹北要衝，宛如不可踰越的鋼鐵防線。",
       "general_ems_calls": 3789,
       "general_ems_pct": 14.12,
-      "ohca_calls": 125,
-      "ohca_rosc": 39,
-      "rosc_rate": 31.2,
-      "r1_rosc": 29,
-      "r1_rate": 23.2,
+      "ohca_calls": 119,
+      "ohca_rosc": 37,
+      "rosc_rate": 31.1,
+      "r1_rosc": 27,
+      "r1_rate": 22.7,
       "diff_broad": 1.1,
       "odds_ratio": 1.05,
-      "drug_rate": 70.4,
-      "drug_avg": 2.01,
-      "endo_rate": 43.2,
-      "sga_rate": 36.8,
-      "iv_rate": 57.6,
+      "drug_rate": 68.9,
+      "drug_avg": 1.97,
+      "endo_rate": 40.3,
+      "sga_rate": 38.7,
+      "iv_rate": 58.8,
       "best_partners": [
         {
           "name": "洪國胤",
@@ -7960,16 +14059,16 @@ window.DASHBOARD_DATA = {
           "rate": 57.1
         },
         {
-          "name": "呂育陞",
-          "total": 16,
-          "rosc": 6,
-          "rate": 37.5
+          "name": "卓業?",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
         },
         {
-          "name": "許育誠",
-          "total": 30,
-          "rosc": 10,
-          "rate": 33.3
+          "name": "石俊傑",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
         }
       ]
     },
@@ -7985,19 +14084,25 @@ window.DASHBOARD_DATA = {
       "desc": "【神箭太史・精準破障】太史慈猿臂善射、弦無虛發。鄭睿旭全縣累計救回 38 人（全縣第 3），在光明出勤 119 件 OHCA，氣管內插管率高達 67.2% 為全隊之最，給藥率 82.4%。無論患者呼吸道何等畸嶇狹窄，總能精確建立高階氣道，以卓越之雙手護衛生命。",
       "general_ems_calls": 3466,
       "general_ems_pct": 12.91,
-      "ohca_calls": 119,
-      "ohca_rosc": 41,
-      "rosc_rate": 34.5,
-      "r1_rosc": 35,
-      "r1_rate": 29.4,
+      "ohca_calls": 111,
+      "ohca_rosc": 37,
+      "rosc_rate": 33.3,
+      "r1_rosc": 31,
+      "r1_rate": 27.9,
       "diff_broad": 5.2,
       "odds_ratio": 1.27,
-      "drug_rate": 82.4,
-      "drug_avg": 2.32,
-      "endo_rate": 67.2,
-      "sga_rate": 13.4,
-      "iv_rate": 52.9,
+      "drug_rate": 81.1,
+      "drug_avg": 2.28,
+      "endo_rate": 68.5,
+      "sga_rate": 12.6,
+      "iv_rate": 52.3,
       "best_partners": [
+        {
+          "name": "紀翔升",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
         {
           "name": "曾翊瑋",
           "total": 3,
@@ -8021,12 +14126,6 @@ window.DASHBOARD_DATA = {
           "total": 10,
           "rosc": 5,
           "rate": 50.0
-        },
-        {
-          "name": "連國延",
-          "total": 14,
-          "rosc": 6,
-          "rate": 42.9
         }
       ]
     },
@@ -8042,18 +14141,18 @@ window.DASHBOARD_DATA = {
       "desc": "【破陣先鋒・巾幗天驕】穆桂英掛帥出征、氣魄吞河。黃玉喬於 113 年受訓晉升 TP 後展現驚人戰力，現場給藥率高達 93.9%、氣管插管率 54.5%，TP 執業期成功率突破 30.30%（救回 10 人），全縣總排名挺進第 14 名！刀馬純熟、膽識過人，是新進 TP 陣容中最奪目的巾幗強將。",
       "general_ems_calls": 3039,
       "general_ems_pct": 11.32,
-      "ohca_calls": 79,
-      "ohca_rosc": 18,
-      "rosc_rate": 22.8,
-      "r1_rosc": 16,
-      "r1_rate": 20.3,
+      "ohca_calls": 68,
+      "ohca_rosc": 15,
+      "rosc_rate": 22.1,
+      "r1_rosc": 13,
+      "r1_rate": 19.1,
       "diff_broad": -8.9,
       "odds_ratio": 0.64,
-      "drug_rate": 74.7,
-      "drug_avg": 2.1,
-      "endo_rate": 39.2,
-      "sga_rate": 34.2,
-      "iv_rate": 41.8,
+      "drug_rate": 73.5,
+      "drug_avg": 2.07,
+      "endo_rate": 36.8,
+      "sga_rate": 36.8,
+      "iv_rate": 39.7,
       "best_partners": [
         {
           "name": "連國延",
@@ -8099,19 +14198,25 @@ window.DASHBOARD_DATA = {
       "desc": "【冠軍天驕・快刀封喉】霍去病千里奔襲、攻無不克。呂育陞以 45.59% 的驚人急救成功率傲視全縣，在光明專責期亦維持 37.1% 的頂尖水準。其處置節奏極度迅捷精確，插管率突破 50%，與李正群、許育誠搭檔時屢破救治天花板，宛如冠軍侯長驅直入。",
       "general_ems_calls": 2958,
       "general_ems_pct": 11.02,
-      "ohca_calls": 89,
-      "ohca_rosc": 33,
-      "rosc_rate": 37.1,
-      "r1_rosc": 25,
-      "r1_rate": 28.1,
+      "ohca_calls": 86,
+      "ohca_rosc": 32,
+      "rosc_rate": 37.2,
+      "r1_rosc": 24,
+      "r1_rate": 27.9,
       "diff_broad": 8.0,
       "odds_ratio": 1.44,
-      "drug_rate": 75.3,
-      "drug_avg": 2.1,
-      "endo_rate": 50.6,
-      "sga_rate": 25.8,
-      "iv_rate": 49.4,
+      "drug_rate": 74.4,
+      "drug_avg": 2.07,
+      "endo_rate": 48.8,
+      "sga_rate": 26.7,
+      "iv_rate": 48.8,
       "best_partners": [
+        {
+          "name": "李林營",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
         {
           "name": "李正群",
           "total": 11,
@@ -8135,12 +14240,6 @@ window.DASHBOARD_DATA = {
           "total": 14,
           "rosc": 7,
           "rate": 50.0
-        },
-        {
-          "name": "蔣為理",
-          "total": 21,
-          "rosc": 10,
-          "rate": 47.6
         }
       ]
     },
@@ -8156,19 +14255,25 @@ window.DASHBOARD_DATA = {
       "desc": "【江左周郎・雅量雄圖】周公瑾雄姿英發、統御大局。蔣為理以 45 件救回數榮登全縣 EMT-P 總榜榜首，在光明專責期勝率達 38.8%（勝算比 OR 1.63）。其處置兼具侵入性極限（給藥 84.5%、插管 56.9%）與卓越的團隊協同領導力，搭檔勝率普遍飆破 50%~60%，談笑間平定危局，乃光明分隊首屈一指的戰術指揮中樞。",
       "general_ems_calls": 2788,
       "general_ems_pct": 10.39,
-      "ohca_calls": 116,
-      "ohca_rosc": 45,
-      "rosc_rate": 38.8,
-      "r1_rosc": 36,
-      "r1_rate": 31.0,
+      "ohca_calls": 103,
+      "ohca_rosc": 39,
+      "rosc_rate": 37.9,
+      "r1_rosc": 30,
+      "r1_rate": 29.1,
       "diff_broad": 10.7,
       "odds_ratio": 1.62,
-      "drug_rate": 84.5,
-      "drug_avg": 2.36,
-      "endo_rate": 56.9,
-      "sga_rate": 19.8,
-      "iv_rate": 37.1,
+      "drug_rate": 83.5,
+      "drug_avg": 2.34,
+      "endo_rate": 54.4,
+      "sga_rate": 21.4,
+      "iv_rate": 35.9,
       "best_partners": [
+        {
+          "name": "李林營",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
         {
           "name": "黃皓賓",
           "total": 8,
@@ -8192,12 +14297,6 @@ window.DASHBOARD_DATA = {
           "total": 6,
           "rosc": 3,
           "rate": 50.0
-        },
-        {
-          "name": "許育誠",
-          "total": 23,
-          "rosc": 11,
-          "rate": 47.8
         }
       ]
     },
@@ -8213,18 +14312,18 @@ window.DASHBOARD_DATA = {
       "desc": "【宗公持節・嚴整嚴謹】宗澤坐鎮汴梁、號令嚴謹。賴俊傑全縣救回 31 人，光明插管率達 63.7%、給藥率達 87.3%，急救成功率 35.3%。高級處置規範一絲不苟，技術沉穩無瑕，是同仁極度安心的後盾。",
       "general_ems_calls": 2687,
       "general_ems_pct": 10.01,
-      "ohca_calls": 102,
-      "ohca_rosc": 36,
-      "rosc_rate": 35.3,
-      "r1_rosc": 29,
-      "r1_rate": 28.4,
+      "ohca_calls": 86,
+      "ohca_rosc": 31,
+      "rosc_rate": 36.0,
+      "r1_rosc": 25,
+      "r1_rate": 29.1,
       "diff_broad": 6.0,
       "odds_ratio": 1.32,
-      "drug_rate": 87.3,
+      "drug_rate": 87.2,
       "drug_avg": 2.51,
-      "endo_rate": 63.7,
-      "sga_rate": 20.6,
-      "iv_rate": 40.2,
+      "endo_rate": 64.0,
+      "sga_rate": 20.9,
+      "iv_rate": 40.7,
       "best_partners": [
         {
           "name": "洪國胤",
@@ -8270,18 +14369,18 @@ window.DASHBOARD_DATA = {
       "desc": "【神醫扁鵲・妙手回陽】扁鵲過虢國起死回生。李正群在光明出勤到院前 ROSC 率高達 31.9%，高居全隊 TP 第一！全縣累計救回 28 人。其對心律辨識與灌流狀態極度敏銳，常在現場急救車上即成功逆轉心跳，神乎其技。",
       "general_ems_calls": 2509,
       "general_ems_pct": 9.35,
-      "ohca_calls": 94,
-      "ohca_rosc": 32,
-      "rosc_rate": 34.0,
-      "r1_rosc": 30,
-      "r1_rate": 31.9,
+      "ohca_calls": 81,
+      "ohca_rosc": 27,
+      "rosc_rate": 33.3,
+      "r1_rosc": 25,
+      "r1_rate": 30.9,
       "diff_broad": 4.4,
       "odds_ratio": 1.23,
-      "drug_rate": 81.9,
-      "drug_avg": 2.29,
-      "endo_rate": 47.9,
-      "sga_rate": 22.3,
-      "iv_rate": 13.8,
+      "drug_rate": 81.5,
+      "drug_avg": 2.27,
+      "endo_rate": 46.9,
+      "sga_rate": 23.5,
+      "iv_rate": 11.1,
       "best_partners": [
         {
           "name": "黃美樺",
@@ -8327,18 +14426,18 @@ window.DASHBOARD_DATA = {
       "desc": "【稼軒雄風・豪邁凌厲】辛稼軒五十騎闖營、氣吞萬里如虎。李均祈累計救回 32 人（全縣第 5），光明在隊給藥率高達 88.5% 冠絕全隊，勝率達 35.4%。現場處置果決剛烈、大開大闔，手中有雷霆手段，心中有菩薩心腸。",
       "general_ems_calls": 2343,
       "general_ems_pct": 8.73,
-      "ohca_calls": 96,
-      "ohca_rosc": 34,
-      "rosc_rate": 35.4,
-      "r1_rosc": 22,
-      "r1_rate": 22.9,
+      "ohca_calls": 89,
+      "ohca_rosc": 31,
+      "rosc_rate": 34.8,
+      "r1_rosc": 20,
+      "r1_rate": 22.5,
       "diff_broad": 6.1,
       "odds_ratio": 1.32,
-      "drug_rate": 88.5,
-      "drug_avg": 2.49,
-      "endo_rate": 43.8,
-      "sga_rate": 36.5,
-      "iv_rate": 38.5,
+      "drug_rate": 87.6,
+      "drug_avg": 2.45,
+      "endo_rate": 41.6,
+      "sga_rate": 38.2,
+      "iv_rate": 40.4,
       "best_partners": [
         {
           "name": "蔣為理",
@@ -8384,19 +14483,25 @@ window.DASHBOARD_DATA = {
       "desc": "【汾陽砥柱・再造社稷】唐代名將郭子儀單騎撫危、功蓋寰宇。施純泰出勤 4,185 件一般救護、分隊出勤佔比高達 15.6%，長年居全隊之首！OHCA 出勤 133 件、救回 41 人，歷經光明無數寒暑交替。他如老將坐鎮中軍，不論與何代 TP 搭檔皆能安定全場，是全體同仁最敬重、最不可或缺的救護基石。",
       "general_ems_calls": 4185,
       "general_ems_pct": 15.59,
-      "ohca_calls": 133,
-      "ohca_rosc": 41,
-      "rosc_rate": 30.8,
-      "r1_rosc": 33,
-      "r1_rate": 24.8,
+      "ohca_calls": 119,
+      "ohca_rosc": 37,
+      "rosc_rate": 31.1,
+      "r1_rosc": 29,
+      "r1_rate": 24.4,
       "diff_broad": 0.6,
       "odds_ratio": 1.03,
-      "drug_rate": 73.7,
-      "drug_avg": 2.13,
-      "endo_rate": 45.1,
-      "sga_rate": 27.8,
-      "iv_rate": 45.1,
+      "drug_rate": 71.4,
+      "drug_avg": 2.06,
+      "endo_rate": 41.2,
+      "sga_rate": 31.1,
+      "iv_rate": 46.2,
       "best_partners": [
+        {
+          "name": "紀翔升",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
         {
           "name": "賴俊傑",
           "total": 15,
@@ -8404,28 +14509,22 @@ window.DASHBOARD_DATA = {
           "rate": 53.3
         },
         {
-          "name": "洪國胤",
-          "total": 7,
-          "rosc": 3,
-          "rate": 42.9
+          "name": "劉俞伶",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
         },
         {
-          "name": "李均祈",
-          "total": 20,
-          "rosc": 8,
-          "rate": 40.0
+          "name": "林惠玲",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
         },
         {
-          "name": "許嘉雄",
-          "total": 20,
-          "rosc": 8,
-          "rate": 40.0
-        },
-        {
-          "name": "連國延",
-          "total": 5,
-          "rosc": 2,
-          "rate": 40.0
+          "name": "高偉誠",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
         }
       ]
     },
@@ -8441,18 +14540,18 @@ window.DASHBOARD_DATA = {
       "desc": "【娘子帥印・中軍樞紐】唐平陽昭公主統御娘子軍、威加關中。張馨予出勤救護達 3,881 件（全隊第 4），OHCA 救回 23 人！身為中級警消主力，長年與各級 TP 默契無間，靜脈通路與團隊調度從容不迫，乃全隊運轉的中樞。",
       "general_ems_calls": 3881,
       "general_ems_pct": 14.46,
-      "ohca_calls": 78,
-      "ohca_rosc": 23,
-      "rosc_rate": 29.5,
-      "r1_rosc": 18,
-      "r1_rate": 23.1,
+      "ohca_calls": 75,
+      "ohca_rosc": 21,
+      "rosc_rate": 28.0,
+      "r1_rosc": 16,
+      "r1_rate": 21.3,
       "diff_broad": -1.1,
       "odds_ratio": 0.95,
-      "drug_rate": 69.2,
-      "drug_avg": 2.03,
-      "endo_rate": 43.6,
-      "sga_rate": 28.2,
-      "iv_rate": 46.2,
+      "drug_rate": 68.0,
+      "drug_avg": 2.01,
+      "endo_rate": 42.7,
+      "sga_rate": 29.3,
+      "iv_rate": 46.7,
       "best_partners": [
         {
           "name": "呂育陞",
@@ -8498,18 +14597,18 @@ window.DASHBOARD_DATA = {
       "desc": "【留侯運籌・兵馬未動】張子房籌謀帷幄、通達天下。連國延出勤 2,428 件救護，在隊靜脈輸液（IV）建立率高達 90.5%！為第一線 TP 提供穩定無比的給藥通路，有其在側，急救血脈暢通無阻。",
       "general_ems_calls": 2428,
       "general_ems_pct": 9.05,
-      "ohca_calls": 63,
-      "ohca_rosc": 18,
-      "rosc_rate": 28.6,
-      "r1_rosc": 14,
-      "r1_rate": 22.2,
+      "ohca_calls": 61,
+      "ohca_rosc": 17,
+      "rosc_rate": 27.9,
+      "r1_rosc": 13,
+      "r1_rate": 21.3,
       "diff_broad": -2.1,
       "odds_ratio": 0.91,
-      "drug_rate": 68.3,
+      "drug_rate": 67.2,
       "drug_avg": 1.87,
-      "endo_rate": 34.9,
-      "sga_rate": 46.0,
-      "iv_rate": 90.5,
+      "endo_rate": 34.4,
+      "sga_rate": 47.5,
+      "iv_rate": 90.2,
       "best_partners": [
         {
           "name": "洪國胤",
@@ -8524,6 +14623,12 @@ window.DASHBOARD_DATA = {
           "rate": 50.0
         },
         {
+          "name": "李林營",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
+        },
+        {
           "name": "蔣為理",
           "total": 9,
           "rosc": 4,
@@ -8534,12 +14639,6 @@ window.DASHBOARD_DATA = {
           "total": 14,
           "rosc": 6,
           "rate": 42.9
-        },
-        {
-          "name": "黃玉喬",
-          "total": 5,
-          "rosc": 2,
-          "rate": 40.0
         }
       ]
     },
@@ -8555,18 +14654,18 @@ window.DASHBOARD_DATA = {
       "desc": "【勇烈奪槊・破局門神】尉遲敬德白刃陷陣、勇冠三軍。洪國胤出勤 2,129 件救護，OHCA 勝率達 34.0%（高出全隊 4%），到院前 ROSC 達 25.5%。每臨險局總能勇往直前，多次在極限關頭力挽狂瀾。",
       "general_ems_calls": 2129,
       "general_ems_pct": 7.93,
-      "ohca_calls": 47,
-      "ohca_rosc": 16,
-      "rosc_rate": 34.0,
-      "r1_rosc": 12,
-      "r1_rate": 25.5,
+      "ohca_calls": 43,
+      "ohca_rosc": 14,
+      "rosc_rate": 32.6,
+      "r1_rosc": 10,
+      "r1_rate": 23.3,
       "diff_broad": 4.0,
       "odds_ratio": 1.2,
-      "drug_rate": 61.7,
-      "drug_avg": 1.66,
-      "endo_rate": 42.6,
-      "sga_rate": 38.3,
-      "iv_rate": 83.0,
+      "drug_rate": 58.1,
+      "drug_avg": 1.58,
+      "endo_rate": 39.5,
+      "sga_rate": 39.5,
+      "iv_rate": 81.4,
       "best_partners": [
         {
           "name": "賴俊傑",
@@ -8612,18 +14711,18 @@ window.DASHBOARD_DATA = {
       "desc": "【虎痴忠烈・堅毅守禦】許褚勇力絕人、恪忠職守。黃俊儒救護量 1,839 件、OHCA 47 件，常年堅守在各繁重時段，任勞任怨，為救護現場最厚實的執勤護衛。",
       "general_ems_calls": 1839,
       "general_ems_pct": 6.85,
-      "ohca_calls": 47,
+      "ohca_calls": 46,
       "ohca_rosc": 7,
-      "rosc_rate": 14.9,
+      "rosc_rate": 15.2,
       "r1_rosc": 3,
-      "r1_rate": 6.4,
+      "r1_rate": 6.5,
       "diff_broad": -17.0,
       "odds_ratio": 0.37,
-      "drug_rate": 63.8,
-      "drug_avg": 1.85,
-      "endo_rate": 40.4,
-      "sga_rate": 36.2,
-      "iv_rate": 68.1,
+      "drug_rate": 63.0,
+      "drug_avg": 1.83,
+      "endo_rate": 39.1,
+      "sga_rate": 37.0,
+      "iv_rate": 67.4,
       "best_partners": [
         {
           "name": "連國延",
@@ -8669,18 +14768,18 @@ window.DASHBOARD_DATA = {
       "desc": "【子敬弘道・協和群賢】魯子敬寬厚仁德、總攬協調。姜建成救護量 1,686 件，搭配出勤給藥率達 87.0%、插管率 55.6%。在現場迅速鋪陳裝備、精準輔佐，團隊協調功莫大焉。",
       "general_ems_calls": 1686,
       "general_ems_pct": 6.28,
-      "ohca_calls": 54,
-      "ohca_rosc": 16,
-      "rosc_rate": 29.6,
-      "r1_rosc": 13,
-      "r1_rate": 24.1,
+      "ohca_calls": 45,
+      "ohca_rosc": 12,
+      "rosc_rate": 26.7,
+      "r1_rosc": 10,
+      "r1_rate": 22.2,
       "diff_broad": -0.8,
       "odds_ratio": 0.96,
-      "drug_rate": 87.0,
-      "drug_avg": 2.48,
+      "drug_rate": 84.4,
+      "drug_avg": 2.42,
       "endo_rate": 55.6,
-      "sga_rate": 16.7,
-      "iv_rate": 7.4,
+      "sga_rate": 15.6,
+      "iv_rate": 6.7,
       "best_partners": [
         {
           "name": "李均祈",
@@ -8695,6 +14794,12 @@ window.DASHBOARD_DATA = {
           "rate": 50.0
         },
         {
+          "name": "賴俊傑",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
+        },
+        {
           "name": "許嘉雄",
           "total": 13,
           "rosc": 4,
@@ -8705,12 +14810,6 @@ window.DASHBOARD_DATA = {
           "total": 7,
           "rosc": 2,
           "rate": 28.6
-        },
-        {
-          "name": "施純泰",
-          "total": 10,
-          "rosc": 2,
-          "rate": 20.0
         }
       ]
     },
@@ -8740,6 +14839,12 @@ window.DASHBOARD_DATA = {
       "iv_rate": 71.4,
       "best_partners": [
         {
+          "name": "許嘉雄",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
+        },
+        {
           "name": "張馨予",
           "total": 3,
           "rosc": 1,
@@ -8762,12 +14867,6 @@ window.DASHBOARD_DATA = {
           "total": 11,
           "rosc": 2,
           "rate": 18.2
-        },
-        {
-          "name": "呂育陞",
-          "total": 6,
-          "rosc": 1,
-          "rate": 16.7
         }
       ]
     },
@@ -8783,18 +14882,18 @@ window.DASHBOARD_DATA = {
       "desc": "【定軍神威・老驥伏櫪】黃漢升挽弓開石、勇冠三軍。黃志樺救護量 1,358 件，沉著守候各項重大急救，輔助後輩有條不紊，長者風範深得敬重。",
       "general_ems_calls": 1358,
       "general_ems_pct": 5.06,
-      "ohca_calls": 39,
+      "ohca_calls": 38,
       "ohca_rosc": 9,
-      "rosc_rate": 23.1,
+      "rosc_rate": 23.7,
       "r1_rosc": 7,
-      "r1_rate": 17.9,
+      "r1_rate": 18.4,
       "diff_broad": -7.9,
       "odds_ratio": 0.67,
-      "drug_rate": 35.9,
-      "drug_avg": 0.97,
-      "endo_rate": 10.3,
-      "sga_rate": 64.1,
-      "iv_rate": 84.6,
+      "drug_rate": 34.2,
+      "drug_avg": 0.92,
+      "endo_rate": 10.5,
+      "sga_rate": 63.2,
+      "iv_rate": 84.2,
       "best_partners": [
         {
           "name": "黃皓賓",
@@ -8840,18 +14939,18 @@ window.DASHBOARD_DATA = {
       "desc": "【伏波輕騎・隨陣策應】馬岱沉毅忠謹、斬將制勝。李長安出勤 1,093 件救護，給藥率 77.8%、插管率 52.8%，在各型氣道器械輔助上靈活敏捷。",
       "general_ems_calls": 1093,
       "general_ems_pct": 4.07,
-      "ohca_calls": 36,
-      "ohca_rosc": 8,
-      "rosc_rate": 22.2,
-      "r1_rosc": 7,
-      "r1_rate": 19.4,
+      "ohca_calls": 29,
+      "ohca_rosc": 5,
+      "rosc_rate": 17.2,
+      "r1_rosc": 4,
+      "r1_rate": 13.8,
       "diff_broad": -8.7,
       "odds_ratio": 0.64,
-      "drug_rate": 77.8,
-      "drug_avg": 2.31,
-      "endo_rate": 52.8,
-      "sga_rate": 19.4,
-      "iv_rate": 5.6,
+      "drug_rate": 79.3,
+      "drug_avg": 2.34,
+      "endo_rate": 51.7,
+      "sga_rate": 20.7,
+      "iv_rate": 0.0,
       "best_partners": [
         {
           "name": "紀翔升",
@@ -8897,19 +14996,25 @@ window.DASHBOARD_DATA = {
       "desc": "【移山倒海・英姿天成】樊梨花智勇雙全、破陣如破竹。紀俐瑀出勤 862 件救護，OHCA 給藥率達 81.5%、插管率達 55.6%，高難度侵入技術極為熟稔，為女力警消之先鋒強棒。",
       "general_ems_calls": 862,
       "general_ems_pct": 3.21,
-      "ohca_calls": 27,
-      "ohca_rosc": 5,
-      "rosc_rate": 18.5,
-      "r1_rosc": 4,
-      "r1_rate": 14.8,
+      "ohca_calls": 21,
+      "ohca_rosc": 4,
+      "rosc_rate": 19.0,
+      "r1_rosc": 3,
+      "r1_rate": 14.3,
       "diff_broad": -12.5,
       "odds_ratio": 0.51,
-      "drug_rate": 81.5,
-      "drug_avg": 2.33,
-      "endo_rate": 55.6,
-      "sga_rate": 14.8,
-      "iv_rate": 3.7,
+      "drug_rate": 76.2,
+      "drug_avg": 2.14,
+      "endo_rate": 47.6,
+      "sga_rate": 19.0,
+      "iv_rate": 0.0,
       "best_partners": [
+        {
+          "name": "鄭睿旭",
+          "total": 2,
+          "rosc": 1,
+          "rate": 50.0
+        },
         {
           "name": "蔣為理",
           "total": 7,
@@ -8933,12 +15038,6 @@ window.DASHBOARD_DATA = {
           "total": 6,
           "rosc": 1,
           "rate": 16.7
-        },
-        {
-          "name": "許育誠",
-          "total": 5,
-          "rosc": 0,
-          "rate": 0.0
         }
       ]
     },
@@ -8954,18 +15053,18 @@ window.DASHBOARD_DATA = {
       "desc": "【擂鼓金山・戰神女力】梁紅玉金山擂鼓抗頑敵。黃美樺出勤 564 件救護，OHCA 成功率高達 43.5%（救回 10 人），給藥率達 91.3%！每次登場成效卓著，巾幗英風令人驚嘆。",
       "general_ems_calls": 564,
       "general_ems_pct": 2.1,
-      "ohca_calls": 23,
-      "ohca_rosc": 10,
-      "rosc_rate": 43.5,
-      "r1_rosc": 8,
-      "r1_rate": 34.8,
+      "ohca_calls": 14,
+      "ohca_rosc": 8,
+      "rosc_rate": 57.1,
+      "r1_rosc": 7,
+      "r1_rate": 50.0,
       "diff_broad": 13.7,
       "odds_ratio": 1.81,
-      "drug_rate": 91.3,
-      "drug_avg": 2.39,
-      "endo_rate": 47.8,
-      "sga_rate": 30.4,
-      "iv_rate": 13.0,
+      "drug_rate": 92.9,
+      "drug_avg": 2.21,
+      "endo_rate": 42.9,
+      "sga_rate": 35.7,
+      "iv_rate": 7.1,
       "best_partners": [
         {
           "name": "紀翔升",
@@ -9011,18 +15110,18 @@ window.DASHBOARD_DATA = {
       "desc": "【錦帆奇襲・逆轉神蹟】甘興霸百騎劫魏營、勇冠江東。紀翔升出勤 397 件救護、21 件 OHCA，廣義成功率高達 57.1%（救回 12 人），到院前 ROSC 率高達 47.6%！勝率冠絕非 TP，專克必死之局。",
       "general_ems_calls": 397,
       "general_ems_pct": 1.48,
-      "ohca_calls": 21,
-      "ohca_rosc": 12,
-      "rosc_rate": 57.1,
-      "r1_rosc": 10,
-      "r1_rate": 47.6,
+      "ohca_calls": 20,
+      "ohca_rosc": 11,
+      "rosc_rate": 55.0,
+      "r1_rosc": 9,
+      "r1_rate": 45.0,
       "diff_broad": 27.8,
       "odds_ratio": 3.22,
-      "drug_rate": 85.7,
-      "drug_avg": 2.48,
-      "endo_rate": 57.1,
-      "sga_rate": 33.3,
-      "iv_rate": 4.8,
+      "drug_rate": 90.0,
+      "drug_avg": 2.6,
+      "endo_rate": 60.0,
+      "sga_rate": 35.0,
+      "iv_rate": 5.0,
       "best_partners": [
         {
           "name": "黃美樺",
@@ -9037,22 +15136,22 @@ window.DASHBOARD_DATA = {
           "rate": 100.0
         },
         {
+          "name": "鄭睿旭",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
+        {
+          "name": "施純泰",
+          "total": 2,
+          "rosc": 2,
+          "rate": 100.0
+        },
+        {
           "name": "李長安",
           "total": 3,
           "rosc": 2,
           "rate": 66.7
-        },
-        {
-          "name": "賴俊傑",
-          "total": 7,
-          "rosc": 4,
-          "rate": 57.1
-        },
-        {
-          "name": "李正群",
-          "total": 7,
-          "rosc": 4,
-          "rate": 57.1
         }
       ]
     },
@@ -9114,90 +15213,696 @@ window.DASHBOARD_DATA = {
       ]
     }
   ],
+  "master_37_leaderboard": [
+    {
+      "name": "蔣為理",
+      "group": "同學組 (111.03起算)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 131,
+      "deducted_emt2": 12,
+      "ohca_tp": 119,
+      "rosc_tp": 45,
+      "rate_tp": 37.82,
+      "r1_tp": 30,
+      "rate_r1": 25.21,
+      "drugs_tp": 283,
+      "endo_tp": 56,
+      "start_date": "2022-03-01",
+      "rank": 1
+    },
+    {
+      "name": "許嘉雄",
+      "group": "110年資深TP (早於同學組)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 118,
+      "deducted_emt2": 1,
+      "ohca_tp": 117,
+      "rosc_tp": 44,
+      "rate_tp": 37.61,
+      "r1_tp": 28,
+      "rate_r1": 23.93,
+      "drugs_tp": 256,
+      "endo_tp": 35,
+      "start_date": "2021-01-01",
+      "rank": 2
+    },
+    {
+      "name": "鄭睿旭",
+      "group": "資深EMT-P",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 121,
+      "deducted_emt2": 0,
+      "ohca_tp": 121,
+      "rosc_tp": 42,
+      "rate_tp": 34.71,
+      "r1_tp": 31,
+      "rate_r1": 25.62,
+      "drugs_tp": 282,
+      "endo_tp": 76,
+      "start_date": "2019-10-01",
+      "rank": 3
+    },
+    {
+      "name": "劉名洲",
+      "group": "資深EMT-P",
+      "station": "竹東分隊 / 橫山分隊",
+      "total_cases_all": 182,
+      "deducted_emt2": 0,
+      "ohca_tp": 182,
+      "rosc_tp": 41,
+      "rate_tp": 22.53,
+      "r1_tp": 33,
+      "rate_r1": 18.13,
+      "drugs_tp": 398,
+      "endo_tp": 107,
+      "start_date": "2019-10-01",
+      "rank": 4
+    },
+    {
+      "name": "許育誠",
+      "group": "同學組 (111.03起算)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 147,
+      "deducted_emt2": 21,
+      "ohca_tp": 126,
+      "rosc_tp": 39,
+      "rate_tp": 30.95,
+      "r1_tp": 22,
+      "rate_r1": 17.46,
+      "drugs_tp": 300,
+      "endo_tp": 52,
+      "start_date": "2022-03-01",
+      "rank": 5
+    },
+    {
+      "name": "賴俊傑",
+      "group": "同學組 (111.03起算)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 108,
+      "deducted_emt2": 3,
+      "ohca_tp": 105,
+      "rosc_tp": 36,
+      "rate_tp": 34.29,
+      "r1_tp": 25,
+      "rate_r1": 23.81,
+      "drugs_tp": 265,
+      "endo_tp": 56,
+      "start_date": "2022-03-01",
+      "rank": 6
+    },
+    {
+      "name": "李均祈",
+      "group": "資深EMT-P",
+      "station": "光明分隊 / 新埔分隊",
+      "total_cases_all": 98,
+      "deducted_emt2": 0,
+      "ohca_tp": 98,
+      "rosc_tp": 35,
+      "rate_tp": 35.71,
+      "r1_tp": 21,
+      "rate_r1": 21.43,
+      "drugs_tp": 245,
+      "endo_tp": 37,
+      "start_date": "2019-10-01",
+      "rank": 7
+    },
+    {
+      "name": "黃皓賓",
+      "group": "同學組 (111.03起算)",
+      "station": "光明分隊",
+      "total_cases_all": 127,
+      "deducted_emt2": 35,
+      "ohca_tp": 92,
+      "rosc_tp": 33,
+      "rate_tp": 35.87,
+      "r1_tp": 23,
+      "rate_r1": 25.0,
+      "drugs_tp": 211,
+      "endo_tp": 39,
+      "start_date": "2022-03-01",
+      "rank": 8
+    },
+    {
+      "name": "李正群",
+      "group": "資深EMT-P",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 98,
+      "deducted_emt2": 0,
+      "ohca_tp": 98,
+      "rosc_tp": 33,
+      "rate_tp": 33.67,
+      "r1_tp": 25,
+      "rate_r1": 25.51,
+      "drugs_tp": 227,
+      "endo_tp": 40,
+      "start_date": "2019-10-01",
+      "rank": 9
+    },
+    {
+      "name": "呂育陞",
+      "group": "同學組 (111.03起算)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 94,
+      "deducted_emt2": 23,
+      "ohca_tp": 71,
+      "rosc_tp": 32,
+      "rate_tp": 45.07,
+      "r1_tp": 24,
+      "rate_r1": 33.8,
+      "drugs_tp": 170,
+      "endo_tp": 37,
+      "start_date": "2022-03-01",
+      "rank": 10
+    },
+    {
+      "name": "張凡治",
+      "group": "同學組 (111.03起算)",
+      "station": "新工分隊 / 芎林分隊",
+      "total_cases_all": 78,
+      "deducted_emt2": 9,
+      "ohca_tp": 69,
+      "rosc_tp": 26,
+      "rate_tp": 37.68,
+      "r1_tp": 18,
+      "rate_r1": 26.09,
+      "drugs_tp": 127,
+      "endo_tp": 25,
+      "start_date": "2022-03-01",
+      "rank": 11
+    },
+    {
+      "name": "林冠廷",
+      "group": "同學組 (111.03起算)",
+      "station": "竹東分隊 / 芎林分隊",
+      "total_cases_all": 123,
+      "deducted_emt2": 5,
+      "ohca_tp": 118,
+      "rosc_tp": 22,
+      "rate_tp": 18.64,
+      "r1_tp": 19,
+      "rate_r1": 16.1,
+      "drugs_tp": 279,
+      "endo_tp": 67,
+      "start_date": "2022-03-01",
+      "rank": 12
+    },
+    {
+      "name": "黃盈豪",
+      "group": "同學組 (111.03起算)",
+      "station": "竹東分隊",
+      "total_cases_all": 118,
+      "deducted_emt2": 7,
+      "ohca_tp": 111,
+      "rosc_tp": 16,
+      "rate_tp": 14.41,
+      "r1_tp": 14,
+      "rate_r1": 12.61,
+      "drugs_tp": 264,
+      "endo_tp": 67,
+      "start_date": "2022-03-01",
+      "rank": 13
+    },
+    {
+      "name": "黃玉喬",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "光明分隊 / 竹北分隊",
+      "total_cases_all": 84,
+      "deducted_emt2": 41,
+      "ohca_tp": 43,
+      "rosc_tp": 12,
+      "rate_tp": 27.91,
+      "r1_tp": 8,
+      "rate_r1": 18.6,
+      "drugs_tp": 112,
+      "endo_tp": 18,
+      "start_date": "2024-01-01",
+      "rank": 14
+    },
+    {
+      "name": "李晉緯",
+      "group": "同學組 (111.03起算)",
+      "station": "芎林分隊 / 五峰分隊",
+      "total_cases_all": 67,
+      "deducted_emt2": 17,
+      "ohca_tp": 50,
+      "rosc_tp": 10,
+      "rate_tp": 20.0,
+      "r1_tp": 10,
+      "rate_r1": 20.0,
+      "drugs_tp": 111,
+      "endo_tp": 19,
+      "start_date": "2022-03-01",
+      "rank": 15
+    },
+    {
+      "name": "吳志霖",
+      "group": "同學組 (111.03起算)",
+      "station": "關西分隊",
+      "total_cases_all": 74,
+      "deducted_emt2": 24,
+      "ohca_tp": 50,
+      "rosc_tp": 10,
+      "rate_tp": 20.0,
+      "r1_tp": 10,
+      "rate_r1": 20.0,
+      "drugs_tp": 96,
+      "endo_tp": 8,
+      "start_date": "2022-03-01",
+      "rank": 16
+    },
+    {
+      "name": "蔡煥龍",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "新埔分隊",
+      "total_cases_all": 67,
+      "deducted_emt2": 41,
+      "ohca_tp": 26,
+      "rosc_tp": 9,
+      "rate_tp": 34.62,
+      "r1_tp": 3,
+      "rate_r1": 11.54,
+      "drugs_tp": 59,
+      "endo_tp": 3,
+      "start_date": "2024-01-01",
+      "rank": 17
+    },
+    {
+      "name": "蕭惠元",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "山崎分隊 / 湖口分隊",
+      "total_cases_all": 61,
+      "deducted_emt2": 23,
+      "ohca_tp": 38,
+      "rosc_tp": 9,
+      "rate_tp": 23.68,
+      "r1_tp": 4,
+      "rate_r1": 10.53,
+      "drugs_tp": 95,
+      "endo_tp": 22,
+      "start_date": "2024-01-01",
+      "rank": 18
+    },
+    {
+      "name": "黃韓林",
+      "group": "資深EMT-P",
+      "station": "竹東分隊 / 寶山分隊",
+      "total_cases_all": 57,
+      "deducted_emt2": 0,
+      "ohca_tp": 57,
+      "rosc_tp": 9,
+      "rate_tp": 15.79,
+      "r1_tp": 5,
+      "rate_r1": 8.77,
+      "drugs_tp": 96,
+      "endo_tp": 5,
+      "start_date": "2019-10-01",
+      "rank": 19
+    },
+    {
+      "name": "許振堂",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "新工分隊 / 光明分隊",
+      "total_cases_all": 49,
+      "deducted_emt2": 19,
+      "ohca_tp": 30,
+      "rosc_tp": 6,
+      "rate_tp": 20.0,
+      "r1_tp": 1,
+      "rate_r1": 3.33,
+      "drugs_tp": 65,
+      "endo_tp": 14,
+      "start_date": "2024-01-01",
+      "rank": 20
+    },
+    {
+      "name": "舒季軒",
+      "group": "資深EMT-P",
+      "station": "二重分隊",
+      "total_cases_all": 53,
+      "deducted_emt2": 0,
+      "ohca_tp": 53,
+      "rosc_tp": 6,
+      "rate_tp": 11.32,
+      "r1_tp": 4,
+      "rate_r1": 7.55,
+      "drugs_tp": 74,
+      "endo_tp": 7,
+      "start_date": "2019-10-01",
+      "rank": 21
+    },
+    {
+      "name": "王英任",
+      "group": "資深EMT-P",
+      "station": "尖石分隊 / 橫山分隊",
+      "total_cases_all": 28,
+      "deducted_emt2": 0,
+      "ohca_tp": 28,
+      "rosc_tp": 5,
+      "rate_tp": 17.86,
+      "r1_tp": 4,
+      "rate_r1": 14.29,
+      "drugs_tp": 35,
+      "endo_tp": 6,
+      "start_date": "2019-10-01",
+      "rank": 22
+    },
+    {
+      "name": "宋奇穎",
+      "group": "資深EMT-P",
+      "station": "新埔分隊 / 湖口分隊",
+      "total_cases_all": 41,
+      "deducted_emt2": 0,
+      "ohca_tp": 41,
+      "rosc_tp": 5,
+      "rate_tp": 12.2,
+      "r1_tp": 1,
+      "rate_r1": 2.44,
+      "drugs_tp": 51,
+      "endo_tp": 6,
+      "start_date": "2019-10-01",
+      "rank": 23
+    },
+    {
+      "name": "許家瑋",
+      "group": "資深EMT-P",
+      "station": "新豐分隊 / 湖口分隊",
+      "total_cases_all": 57,
+      "deducted_emt2": 0,
+      "ohca_tp": 57,
+      "rosc_tp": 5,
+      "rate_tp": 8.77,
+      "r1_tp": 4,
+      "rate_r1": 7.02,
+      "drugs_tp": 69,
+      "endo_tp": 3,
+      "start_date": "2019-10-01",
+      "rank": 24
+    },
+    {
+      "name": "王仁宏",
+      "group": "115年新進TP (扣除EMT2)",
+      "station": "山崎分隊 / 新豐分隊",
+      "total_cases_all": 55,
+      "deducted_emt2": 42,
+      "ohca_tp": 13,
+      "rosc_tp": 4,
+      "rate_tp": 30.77,
+      "r1_tp": 2,
+      "rate_r1": 15.38,
+      "drugs_tp": 29,
+      "endo_tp": 6,
+      "start_date": "2026-01-01",
+      "rank": 25
+    },
+    {
+      "name": "范揚浩",
+      "group": "資深EMT-P",
+      "station": "關西分隊",
+      "total_cases_all": 23,
+      "deducted_emt2": 0,
+      "ohca_tp": 23,
+      "rosc_tp": 4,
+      "rate_tp": 17.39,
+      "r1_tp": 3,
+      "rate_r1": 13.04,
+      "drugs_tp": 50,
+      "endo_tp": 0,
+      "start_date": "2019-10-01",
+      "rank": 26
+    },
+    {
+      "name": "廖奕棋",
+      "group": "資深EMT-P",
+      "station": "竹北分隊 / 光明分隊",
+      "total_cases_all": 12,
+      "deducted_emt2": 0,
+      "ohca_tp": 12,
+      "rosc_tp": 3,
+      "rate_tp": 25.0,
+      "r1_tp": 2,
+      "rate_r1": 16.67,
+      "drugs_tp": 13,
+      "endo_tp": 1,
+      "start_date": "2019-10-01",
+      "rank": 27
+    },
+    {
+      "name": "張淑惠",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "湖口分隊 / 光明分隊",
+      "total_cases_all": 71,
+      "deducted_emt2": 34,
+      "ohca_tp": 37,
+      "rosc_tp": 3,
+      "rate_tp": 8.11,
+      "r1_tp": 3,
+      "rate_r1": 8.11,
+      "drugs_tp": 65,
+      "endo_tp": 13,
+      "start_date": "2024-01-01",
+      "rank": 28
+    },
+    {
+      "name": "李建暾",
+      "group": "資深EMT-P",
+      "station": "新埔分隊 / 湖口分隊",
+      "total_cases_all": 4,
+      "deducted_emt2": 0,
+      "ohca_tp": 4,
+      "rosc_tp": 2,
+      "rate_tp": 50.0,
+      "r1_tp": 1,
+      "rate_r1": 25.0,
+      "drugs_tp": 5,
+      "endo_tp": 1,
+      "start_date": "2019-10-01",
+      "rank": 29
+    },
+    {
+      "name": "陳耀明",
+      "group": "資深EMT-P",
+      "station": "豐田分隊 / 竹北分隊",
+      "total_cases_all": 10,
+      "deducted_emt2": 0,
+      "ohca_tp": 10,
+      "rosc_tp": 2,
+      "rate_tp": 20.0,
+      "r1_tp": 2,
+      "rate_r1": 20.0,
+      "drugs_tp": 9,
+      "endo_tp": 1,
+      "start_date": "2019-10-01",
+      "rank": 30
+    },
+    {
+      "name": "黃禹銘",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "豐田分隊",
+      "total_cases_all": 38,
+      "deducted_emt2": 18,
+      "ohca_tp": 20,
+      "rosc_tp": 2,
+      "rate_tp": 10.0,
+      "r1_tp": 1,
+      "rate_r1": 5.0,
+      "drugs_tp": 47,
+      "endo_tp": 9,
+      "start_date": "2024-01-01",
+      "rank": 31
+    },
+    {
+      "name": "張晉榕",
+      "group": "資深EMT-P",
+      "station": "新工分隊",
+      "total_cases_all": 4,
+      "deducted_emt2": 0,
+      "ohca_tp": 4,
+      "rosc_tp": 1,
+      "rate_tp": 25.0,
+      "r1_tp": 0,
+      "rate_r1": 0.0,
+      "drugs_tp": 6,
+      "endo_tp": 2,
+      "start_date": "2019-10-01",
+      "rank": 32
+    },
+    {
+      "name": "李孟樵",
+      "group": "同學組 (111.03起算)",
+      "station": "寶山分隊",
+      "total_cases_all": 26,
+      "deducted_emt2": 6,
+      "ohca_tp": 20,
+      "rosc_tp": 1,
+      "rate_tp": 5.0,
+      "r1_tp": 1,
+      "rate_r1": 5.0,
+      "drugs_tp": 30,
+      "endo_tp": 6,
+      "start_date": "2022-03-01",
+      "rank": 33
+    },
+    {
+      "name": "彭鈺淳",
+      "group": "同學組 (111.03起算)",
+      "station": "二重分隊 / 光明分隊",
+      "total_cases_all": 32,
+      "deducted_emt2": 6,
+      "ohca_tp": 26,
+      "rosc_tp": 1,
+      "rate_tp": 3.85,
+      "r1_tp": 1,
+      "rate_r1": 3.85,
+      "drugs_tp": 65,
+      "endo_tp": 11,
+      "start_date": "2022-03-01",
+      "rank": 34
+    },
+    {
+      "name": "曾士維",
+      "group": "114年新進TP (扣除EMT2)",
+      "station": "峨眉分隊",
+      "total_cases_all": 18,
+      "deducted_emt2": 11,
+      "ohca_tp": 7,
+      "rosc_tp": 0,
+      "rate_tp": 0.0,
+      "r1_tp": 0,
+      "rate_r1": 0.0,
+      "drugs_tp": 17,
+      "endo_tp": 0,
+      "start_date": "2025-01-01",
+      "rank": 35
+    },
+    {
+      "name": "黃彥綸",
+      "group": "113年新進TP (扣除EMT2)",
+      "station": "橫山分隊",
+      "total_cases_all": 6,
+      "deducted_emt2": 0,
+      "ohca_tp": 6,
+      "rosc_tp": 0,
+      "rate_tp": 0.0,
+      "r1_tp": 0,
+      "rate_r1": 0.0,
+      "drugs_tp": 14,
+      "endo_tp": 5,
+      "start_date": "2024-01-01",
+      "rank": 36
+    },
+    {
+      "name": "黃耀樟",
+      "group": "資深EMT-P",
+      "station": "無",
+      "total_cases_all": 0,
+      "deducted_emt2": 0,
+      "ohca_tp": 0,
+      "rosc_tp": 0,
+      "rate_tp": 0.0,
+      "r1_tp": 0,
+      "rate_r1": 0.0,
+      "drugs_tp": 0,
+      "endo_tp": 0,
+      "start_date": "2019-10-01",
+      "rank": 37
+    }
+  ],
   "ranked_post_gm": [
     {
       "name": "蔣為理",
       "group": "同學組 (光明成軍同梯)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 131,
-      "deducted_emt2": 12,
+      "deducted_emt2": 0,
       "ohca_tp": 119,
       "rosc_tp": 45,
-      "rate_tp": 37.81512605042017,
-      "drugs_tp": 283,
+      "rate_tp": 37.82,
       "r1_tp": 36,
-      "rate_r1": 30.252100840336134,
-      "start_date": "2022-03-01"
+      "rate_r1": 30.25,
+      "drugs_tp": 283,
+      "endo_tp": 56,
+      "start_date": "2022-03-01",
+      "rank": 1
     },
     {
       "name": "許嘉雄",
       "group": "資深組 (截取專責期)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 118,
-      "deducted_emt2": 22,
+      "deducted_emt2": 0,
       "ohca_tp": 96,
       "rosc_tp": 39,
-      "rate_tp": 40.625,
-      "drugs_tp": 214,
+      "rate_tp": 40.62,
       "r1_tp": 32,
-      "rate_r1": 33.33333333333333,
-      "start_date": "2022-03-01"
+      "rate_r1": 33.33,
+      "drugs_tp": 214,
+      "endo_tp": 29,
+      "start_date": "2022-03-01",
+      "rank": 2
     },
     {
       "name": "許育誠",
       "group": "同學組 (光明成軍同梯)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 147,
-      "deducted_emt2": 21,
+      "deducted_emt2": 0,
       "ohca_tp": 126,
       "rosc_tp": 39,
-      "rate_tp": 30.952380952380953,
-      "drugs_tp": 300,
+      "rate_tp": 30.95,
       "r1_tp": 29,
-      "rate_r1": 23.015873015873016,
-      "start_date": "2022-03-01"
+      "rate_r1": 23.02,
+      "drugs_tp": 300,
+      "endo_tp": 52,
+      "start_date": "2022-03-01",
+      "rank": 3
     },
     {
       "name": "賴俊傑",
       "group": "同學組 (光明成軍同梯)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 108,
-      "deducted_emt2": 3,
+      "deducted_emt2": 0,
       "ohca_tp": 105,
       "rosc_tp": 36,
-      "rate_tp": 34.285714285714285,
-      "drugs_tp": 265,
+      "rate_tp": 34.29,
       "r1_tp": 29,
-      "rate_r1": 27.61904761904762,
-      "start_date": "2022-03-01"
+      "rate_r1": 27.62,
+      "drugs_tp": 265,
+      "endo_tp": 56,
+      "start_date": "2022-03-01",
+      "rank": 4
     },
     {
       "name": "鄭睿旭",
       "group": "資深組 (截取專責期)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 121,
-      "deducted_emt2": 31,
+      "deducted_emt2": 0,
       "ohca_tp": 90,
       "rosc_tp": 33,
-      "rate_tp": 36.666666666666664,
-      "drugs_tp": 218,
+      "rate_tp": 36.67,
       "r1_tp": 29,
-      "rate_r1": 32.22222222222222,
-      "start_date": "2022-03-01"
+      "rate_r1": 32.22,
+      "drugs_tp": 218,
+      "endo_tp": 55,
+      "start_date": "2022-03-01",
+      "rank": 5
     },
     {
       "name": "黃皓賓",
       "group": "同學組 (光明成軍同梯)",
       "station": "光明分隊",
       "total_cases_all": 127,
-      "deducted_emt2": 35,
+      "deducted_emt2": 0,
       "ohca_tp": 92,
       "rosc_tp": 33,
-      "rate_tp": 35.869565217391305,
-      "drugs_tp": 211,
+      "rate_tp": 35.87,
       "r1_tp": 25,
-      "rate_r1": 27.173913043478258,
-      "start_date": "2022-03-01"
+      "rate_r1": 27.17,
+      "drugs_tp": 211,
+      "endo_tp": 39,
+      "start_date": "2022-03-01",
+      "rank": 6
     },
     {
       "name": "李正群",
@@ -9207,319 +15912,365 @@ window.DASHBOARD_DATA = {
       "deducted_emt2": 0,
       "ohca_tp": 98,
       "rosc_tp": 33,
-      "rate_tp": 33.6734693877551,
-      "drugs_tp": 227,
+      "rate_tp": 33.67,
       "r1_tp": 30,
-      "rate_r1": 30.612244897959183,
-      "start_date": "2022-03-01"
+      "rate_r1": 30.61,
+      "drugs_tp": 227,
+      "endo_tp": 40,
+      "start_date": "2022-03-01",
+      "rank": 7
     },
     {
       "name": "呂育陞",
       "group": "同學組 (光明成軍同梯)",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 94,
-      "deducted_emt2": 23,
+      "deducted_emt2": 0,
       "ohca_tp": 71,
       "rosc_tp": 32,
-      "rate_tp": 45.07042253521127,
-      "drugs_tp": 170,
+      "rate_tp": 45.07,
       "r1_tp": 25,
-      "rate_r1": 35.2112676056338,
-      "start_date": "2022-03-01"
+      "rate_r1": 35.21,
+      "drugs_tp": 170,
+      "endo_tp": 37,
+      "start_date": "2022-03-01",
+      "rank": 8
     },
     {
       "name": "李均祈",
       "group": "資深組 (截取專責期)",
       "station": "光明分隊 / 新埔分隊",
       "total_cases_all": 98,
-      "deducted_emt2": 14,
+      "deducted_emt2": 0,
       "ohca_tp": 84,
       "rosc_tp": 31,
-      "rate_tp": 36.904761904761905,
-      "drugs_tp": 214,
+      "rate_tp": 36.9,
       "r1_tp": 19,
-      "rate_r1": 22.61904761904762,
-      "start_date": "2022-03-01"
+      "rate_r1": 22.62,
+      "drugs_tp": 214,
+      "endo_tp": 36,
+      "start_date": "2022-03-01",
+      "rank": 9
     },
     {
       "name": "劉名洲",
       "group": "資深組 (截取專責期)",
       "station": "竹東分隊 / 橫山分隊",
       "total_cases_all": 182,
-      "deducted_emt2": 51,
+      "deducted_emt2": 0,
       "ohca_tp": 131,
       "rosc_tp": 30,
-      "rate_tp": 22.900763358778626,
-      "drugs_tp": 304,
+      "rate_tp": 22.9,
       "r1_tp": 27,
-      "rate_r1": 20.610687022900763,
-      "start_date": "2022-03-01"
+      "rate_r1": 20.61,
+      "drugs_tp": 304,
+      "endo_tp": 94,
+      "start_date": "2022-03-01",
+      "rank": 10
     },
     {
       "name": "張凡治",
       "group": "同學組 (光明成軍同梯)",
       "station": "新工分隊 / 芎林分隊",
       "total_cases_all": 78,
-      "deducted_emt2": 9,
+      "deducted_emt2": 0,
       "ohca_tp": 69,
       "rosc_tp": 26,
-      "rate_tp": 37.68115942028986,
-      "drugs_tp": 127,
+      "rate_tp": 37.68,
       "r1_tp": 18,
-      "rate_r1": 26.08695652173913,
-      "start_date": "2022-03-01"
+      "rate_r1": 26.09,
+      "drugs_tp": 127,
+      "endo_tp": 25,
+      "start_date": "2022-03-01",
+      "rank": 11
     },
     {
       "name": "林冠廷",
       "group": "同學組 (光明成軍同梯)",
       "station": "竹東分隊 / 芎林分隊",
       "total_cases_all": 123,
-      "deducted_emt2": 5,
+      "deducted_emt2": 0,
       "ohca_tp": 118,
       "rosc_tp": 22,
-      "rate_tp": 18.64406779661017,
-      "drugs_tp": 279,
+      "rate_tp": 18.64,
       "r1_tp": 19,
-      "rate_r1": 16.101694915254235,
-      "start_date": "2022-03-01"
+      "rate_r1": 16.1,
+      "drugs_tp": 279,
+      "endo_tp": 67,
+      "start_date": "2022-03-01",
+      "rank": 12
     },
     {
       "name": "黃盈豪",
       "group": "同學組 (光明成軍同梯)",
       "station": "竹東分隊",
       "total_cases_all": 118,
-      "deducted_emt2": 7,
+      "deducted_emt2": 0,
       "ohca_tp": 111,
       "rosc_tp": 16,
-      "rate_tp": 14.414414414414415,
-      "drugs_tp": 264,
+      "rate_tp": 14.41,
       "r1_tp": 14,
-      "rate_r1": 12.612612612612612,
-      "start_date": "2022-03-01"
+      "rate_r1": 12.61,
+      "drugs_tp": 264,
+      "endo_tp": 67,
+      "start_date": "2022-03-01",
+      "rank": 13
     },
     {
       "name": "黃玉喬",
       "group": "113年新進TP",
       "station": "光明分隊 / 竹北分隊",
       "total_cases_all": 84,
-      "deducted_emt2": 41,
+      "deducted_emt2": 0,
       "ohca_tp": 43,
       "rosc_tp": 12,
-      "rate_tp": 27.906976744186046,
-      "drugs_tp": 112,
+      "rate_tp": 27.91,
       "r1_tp": 10,
-      "rate_r1": 23.25581395348837,
-      "start_date": "2024-01-01"
+      "rate_r1": 23.26,
+      "drugs_tp": 112,
+      "endo_tp": 24,
+      "start_date": "2022-03-01",
+      "rank": 14
     },
     {
       "name": "李晉緯",
       "group": "同學組 (光明成軍同梯)",
       "station": "芎林分隊 / 五峰分隊",
       "total_cases_all": 67,
-      "deducted_emt2": 17,
+      "deducted_emt2": 0,
       "ohca_tp": 50,
       "rosc_tp": 10,
       "rate_tp": 20.0,
-      "drugs_tp": 111,
       "r1_tp": 10,
       "rate_r1": 20.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 111,
+      "endo_tp": 19,
+      "start_date": "2022-03-01",
+      "rank": 15
     },
     {
       "name": "吳志霖",
       "group": "同學組 (光明成軍同梯)",
       "station": "關西分隊",
       "total_cases_all": 74,
-      "deducted_emt2": 24,
+      "deducted_emt2": 0,
       "ohca_tp": 50,
       "rosc_tp": 10,
       "rate_tp": 20.0,
-      "drugs_tp": 96,
       "r1_tp": 10,
       "rate_r1": 20.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 96,
+      "endo_tp": 8,
+      "start_date": "2022-03-01",
+      "rank": 16
     },
     {
       "name": "蔡煥龍",
       "group": "113年新進TP",
       "station": "新埔分隊",
       "total_cases_all": 67,
-      "deducted_emt2": 41,
+      "deducted_emt2": 0,
       "ohca_tp": 26,
       "rosc_tp": 9,
-      "rate_tp": 34.61538461538461,
-      "drugs_tp": 59,
+      "rate_tp": 34.62,
       "r1_tp": 3,
-      "rate_r1": 11.538461538461538,
-      "start_date": "2024-01-01"
+      "rate_r1": 11.54,
+      "drugs_tp": 59,
+      "endo_tp": 4,
+      "start_date": "2022-03-01",
+      "rank": 17
     },
     {
       "name": "蕭惠元",
       "group": "113年新進TP",
       "station": "山崎分隊 / 湖口分隊",
       "total_cases_all": 61,
-      "deducted_emt2": 23,
+      "deducted_emt2": 0,
       "ohca_tp": 38,
       "rosc_tp": 9,
-      "rate_tp": 23.684210526315788,
-      "drugs_tp": 95,
+      "rate_tp": 23.68,
       "r1_tp": 4,
-      "rate_r1": 10.526315789473683,
-      "start_date": "2024-01-01"
+      "rate_r1": 10.53,
+      "drugs_tp": 95,
+      "endo_tp": 22,
+      "start_date": "2022-03-01",
+      "rank": 18
     },
     {
       "name": "許振堂",
       "group": "113年新進TP",
       "station": "新工分隊 / 光明分隊",
       "total_cases_all": 49,
-      "deducted_emt2": 19,
+      "deducted_emt2": 0,
       "ohca_tp": 30,
       "rosc_tp": 6,
       "rate_tp": 20.0,
-      "drugs_tp": 65,
       "r1_tp": 1,
-      "rate_r1": 3.3333333333333335,
-      "start_date": "2024-01-01"
+      "rate_r1": 3.33,
+      "drugs_tp": 65,
+      "endo_tp": 14,
+      "start_date": "2022-03-01",
+      "rank": 19
     },
     {
       "name": "王仁宏",
       "group": "115年新進TP",
       "station": "山崎分隊 / 新豐分隊",
       "total_cases_all": 55,
-      "deducted_emt2": 42,
+      "deducted_emt2": 0,
       "ohca_tp": 13,
       "rosc_tp": 4,
-      "rate_tp": 30.76923076923077,
-      "drugs_tp": 29,
+      "rate_tp": 30.77,
       "r1_tp": 2,
-      "rate_r1": 15.384615384615385,
-      "start_date": "2026-01-01"
+      "rate_r1": 15.38,
+      "drugs_tp": 29,
+      "endo_tp": 6,
+      "start_date": "2022-03-01",
+      "rank": 20
     },
     {
       "name": "王英任",
       "group": "資深組 (截取專責期)",
       "station": "尖石分隊 / 橫山分隊",
       "total_cases_all": 28,
-      "deducted_emt2": 11,
+      "deducted_emt2": 0,
       "ohca_tp": 17,
       "rosc_tp": 4,
-      "rate_tp": 23.52941176470588,
-      "drugs_tp": 29,
+      "rate_tp": 23.53,
       "r1_tp": 3,
-      "rate_r1": 17.647058823529413,
-      "start_date": "2022-03-01"
+      "rate_r1": 17.65,
+      "drugs_tp": 29,
+      "endo_tp": 5,
+      "start_date": "2022-03-01",
+      "rank": 21
     },
     {
       "name": "許家瑋",
       "group": "資深組 (截取專責期)",
       "station": "新豐分隊 / 湖口分隊",
       "total_cases_all": 57,
-      "deducted_emt2": 26,
+      "deducted_emt2": 0,
       "ohca_tp": 31,
       "rosc_tp": 4,
-      "rate_tp": 12.903225806451612,
-      "drugs_tp": 54,
+      "rate_tp": 12.9,
       "r1_tp": 4,
-      "rate_r1": 12.903225806451612,
-      "start_date": "2022-03-01"
+      "rate_r1": 12.9,
+      "drugs_tp": 54,
+      "endo_tp": 1,
+      "start_date": "2022-03-01",
+      "rank": 22
     },
     {
       "name": "舒季軒",
       "group": "資深組 (截取專責期)",
       "station": "二重分隊",
       "total_cases_all": 53,
-      "deducted_emt2": 16,
+      "deducted_emt2": 0,
       "ohca_tp": 37,
       "rosc_tp": 4,
-      "rate_tp": 10.81081081081081,
-      "drugs_tp": 71,
+      "rate_tp": 10.81,
       "r1_tp": 4,
-      "rate_r1": 10.81081081081081,
-      "start_date": "2022-03-01"
+      "rate_r1": 10.81,
+      "drugs_tp": 71,
+      "endo_tp": 7,
+      "start_date": "2022-03-01",
+      "rank": 23
     },
     {
       "name": "張淑惠",
       "group": "113年新進TP",
       "station": "湖口分隊 / 光明分隊",
       "total_cases_all": 71,
-      "deducted_emt2": 34,
+      "deducted_emt2": 0,
       "ohca_tp": 37,
       "rosc_tp": 3,
-      "rate_tp": 8.108108108108109,
-      "drugs_tp": 65,
+      "rate_tp": 8.11,
       "r1_tp": 3,
-      "rate_r1": 8.108108108108109,
-      "start_date": "2024-01-01"
+      "rate_r1": 8.11,
+      "drugs_tp": 65,
+      "endo_tp": 13,
+      "start_date": "2022-03-01",
+      "rank": 24
     },
     {
       "name": "陳耀明",
       "group": "資深組 (截取專責期)",
       "station": "竹北分隊 / 光明分隊",
       "total_cases_all": 10,
-      "deducted_emt2": 4,
+      "deducted_emt2": 0,
       "ohca_tp": 6,
       "rosc_tp": 2,
-      "rate_tp": 33.33333333333333,
-      "drugs_tp": 7,
+      "rate_tp": 33.33,
       "r1_tp": 2,
-      "rate_r1": 33.33333333333333,
-      "start_date": "2022-03-01"
+      "rate_r1": 33.33,
+      "drugs_tp": 7,
+      "endo_tp": 1,
+      "start_date": "2022-03-01",
+      "rank": 25
     },
     {
       "name": "黃禹銘",
       "group": "113年新進TP",
       "station": "豐田分隊",
       "total_cases_all": 38,
-      "deducted_emt2": 18,
+      "deducted_emt2": 0,
       "ohca_tp": 20,
       "rosc_tp": 2,
       "rate_tp": 10.0,
-      "drugs_tp": 47,
       "r1_tp": 1,
       "rate_r1": 5.0,
-      "start_date": "2024-01-01"
+      "drugs_tp": 47,
+      "endo_tp": 9,
+      "start_date": "2022-03-01",
+      "rank": 26
     },
     {
       "name": "宋奇穎",
       "group": "資深組 (截取專責期)",
       "station": "新埔分隊 / 湖口分隊",
       "total_cases_all": 41,
-      "deducted_emt2": 15,
+      "deducted_emt2": 0,
       "ohca_tp": 26,
       "rosc_tp": 2,
-      "rate_tp": 7.6923076923076925,
-      "drugs_tp": 41,
+      "rate_tp": 7.69,
       "r1_tp": 0,
       "rate_r1": 0.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 41,
+      "endo_tp": 6,
+      "start_date": "2022-03-01",
+      "rank": 27
     },
     {
       "name": "李建暾",
       "group": "資深組 (截取專責期)",
       "station": "新埔分隊 / 湖口分隊",
       "total_cases_all": 4,
-      "deducted_emt2": 1,
+      "deducted_emt2": 0,
       "ohca_tp": 3,
       "rosc_tp": 1,
-      "rate_tp": 33.33333333333333,
-      "drugs_tp": 5,
+      "rate_tp": 33.33,
       "r1_tp": 1,
-      "rate_r1": 33.33333333333333,
-      "start_date": "2022-03-01"
+      "rate_r1": 33.33,
+      "drugs_tp": 5,
+      "endo_tp": 1,
+      "start_date": "2022-03-01",
+      "rank": 28
     },
     {
       "name": "廖奕棋",
       "group": "資深組 (截取專責期)",
       "station": "光明分隊 / 新豐分隊",
       "total_cases_all": 12,
-      "deducted_emt2": 8,
+      "deducted_emt2": 0,
       "ohca_tp": 4,
       "rosc_tp": 1,
       "rate_tp": 25.0,
-      "drugs_tp": 11,
       "r1_tp": 1,
       "rate_r1": 25.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 11,
+      "endo_tp": 1,
+      "start_date": "2022-03-01",
+      "rank": 29
     },
     {
       "name": "張晉榕",
@@ -9530,80 +16281,92 @@ window.DASHBOARD_DATA = {
       "ohca_tp": 4,
       "rosc_tp": 1,
       "rate_tp": 25.0,
-      "drugs_tp": 6,
       "r1_tp": 0,
       "rate_r1": 0.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 6,
+      "endo_tp": 2,
+      "start_date": "2022-03-01",
+      "rank": 30
     },
     {
       "name": "范揚浩",
       "group": "資深組 (截取專責期)",
       "station": "關西分隊",
       "total_cases_all": 23,
-      "deducted_emt2": 16,
+      "deducted_emt2": 0,
       "ohca_tp": 7,
       "rosc_tp": 1,
-      "rate_tp": 14.285714285714285,
-      "drugs_tp": 17,
+      "rate_tp": 14.29,
       "r1_tp": 1,
-      "rate_r1": 14.285714285714285,
-      "start_date": "2022-03-01"
+      "rate_r1": 14.29,
+      "drugs_tp": 17,
+      "endo_tp": 0,
+      "start_date": "2022-03-01",
+      "rank": 31
     },
     {
       "name": "李孟樵",
       "group": "同學組 (光明成軍同梯)",
       "station": "寶山分隊",
       "total_cases_all": 26,
-      "deducted_emt2": 6,
+      "deducted_emt2": 0,
       "ohca_tp": 20,
       "rosc_tp": 1,
       "rate_tp": 5.0,
-      "drugs_tp": 30,
       "r1_tp": 1,
       "rate_r1": 5.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 30,
+      "endo_tp": 6,
+      "start_date": "2022-03-01",
+      "rank": 32
     },
     {
       "name": "黃韓林",
       "group": "資深組 (截取專責期)",
       "station": "竹東分隊 / 寶山分隊",
       "total_cases_all": 57,
-      "deducted_emt2": 36,
+      "deducted_emt2": 0,
       "ohca_tp": 21,
       "rosc_tp": 1,
-      "rate_tp": 4.761904761904762,
-      "drugs_tp": 53,
+      "rate_tp": 4.76,
       "r1_tp": 1,
-      "rate_r1": 4.761904761904762,
-      "start_date": "2022-03-01"
+      "rate_r1": 4.76,
+      "drugs_tp": 53,
+      "endo_tp": 5,
+      "start_date": "2022-03-01",
+      "rank": 33
     },
     {
       "name": "彭鈺淳",
       "group": "同學組 (光明成軍同梯)",
       "station": "二重分隊 / 光明分隊",
       "total_cases_all": 32,
-      "deducted_emt2": 6,
+      "deducted_emt2": 0,
       "ohca_tp": 26,
       "rosc_tp": 1,
-      "rate_tp": 3.8461538461538463,
-      "drugs_tp": 65,
+      "rate_tp": 3.85,
       "r1_tp": 1,
-      "rate_r1": 3.8461538461538463,
-      "start_date": "2022-03-01"
+      "rate_r1": 3.85,
+      "drugs_tp": 65,
+      "endo_tp": 11,
+      "start_date": "2022-03-01",
+      "rank": 34
     },
     {
       "name": "曾士維",
       "group": "114年新進TP",
       "station": "峨眉分隊",
       "total_cases_all": 18,
-      "deducted_emt2": 11,
+      "deducted_emt2": 0,
       "ohca_tp": 7,
       "rosc_tp": 0,
       "rate_tp": 0.0,
-      "drugs_tp": 17,
       "r1_tp": 0,
       "rate_r1": 0.0,
-      "start_date": "2025-01-01"
+      "drugs_tp": 17,
+      "endo_tp": 0,
+      "start_date": "2022-03-01",
+      "rank": 35
     },
     {
       "name": "黃彥綸",
@@ -9614,10 +16377,12 @@ window.DASHBOARD_DATA = {
       "ohca_tp": 6,
       "rosc_tp": 0,
       "rate_tp": 0.0,
-      "drugs_tp": 14,
       "r1_tp": 0,
       "rate_r1": 0.0,
-      "start_date": "2024-01-01"
+      "drugs_tp": 14,
+      "endo_tp": 5,
+      "start_date": "2022-03-01",
+      "rank": 36
     },
     {
       "name": "黃耀樟",
@@ -9628,1162 +16393,1909 @@ window.DASHBOARD_DATA = {
       "ohca_tp": 0,
       "rosc_tp": 0,
       "rate_tp": 0.0,
-      "drugs_tp": 0,
       "r1_tp": 0,
       "rate_r1": 0.0,
-      "start_date": "2022-03-01"
+      "drugs_tp": 0,
+      "endo_tp": 0,
+      "start_date": "2022-03-01",
+      "rank": 37
     }
   ],
+  "combinations": {
+    "pairs_top": [
+      {
+        "names": "紀翔升 + 黃美樺",
+        "total": 4,
+        "rosc": 4,
+        "rate": 100.0,
+        "drugs": 11
+      },
+      {
+        "names": "孫智偉 + 王柏文",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "張凡治 + 張承泰",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "張惟智 + 陳昆郁",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "劉奕宏 + 張凡治",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 9
+      },
+      {
+        "names": "紀翔升 + 許嘉雄",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 8
+      },
+      {
+        "names": "吳志霖 + 蔡佑維",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "林佑安 + 謝侑翰",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "李晉緯 + 賴致平",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "周哲君 + 黃素娟",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "呂育陞 + 李林營",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "李林營 + 蔣為理",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "劉大維 + 李偉廷",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "李偉廷 + 謝聿蓴",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "楊子俊 + 謝京龍",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "林惠玲 + 許嘉雄",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "楊永正 + 湯育澍",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "池昱霆 + 郭哲維",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "張凡治 + 胡鳳格",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "胡鳳格 + 范庭華",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "楊永正 + 莊佳潔",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "蔡煥龍 + 陳衛東",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "蔡煥龍 + 黃順安",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "劉名洲 + 羅能良",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 4
+      },
+      {
+        "names": "王政雄 + 胡鳳格",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "謝侑翰 + 謝啟盛",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "紀翔升 + 鄭睿旭",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "謝聿蓴 + 陳文雪",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "施純泰 + 紀翔升",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "楊承錞 + 楊翔宇",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "張凡治 + 張源祐",
+        "total": 5,
+        "rosc": 4,
+        "rate": 80.0,
+        "drugs": 4
+      },
+      {
+        "names": "張智強 + 李堯軒",
+        "total": 5,
+        "rosc": 4,
+        "rate": 80.0,
+        "drugs": 12
+      },
+      {
+        "names": "李正群 + 黃美樺",
+        "total": 5,
+        "rosc": 4,
+        "rate": 80.0,
+        "drugs": 11
+      },
+      {
+        "names": "彭弘傑 + 邱怡華",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 5
+      },
+      {
+        "names": "方清蔚 + 鍾明秀",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 2
+      },
+      {
+        "names": "施婷雯 + 鍾明哲",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 8
+      },
+      {
+        "names": "吳明星 + 潘賢安",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 0
+      },
+      {
+        "names": "彭素珍 + 翁嘉隆",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "何仰哲 + 何恭翕",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "吳菘庭 + 曾士維",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 0
+      },
+      {
+        "names": "張凡治 + 盧建良",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "石俊傑 + 許育誠",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "鄭育承 + 鍾錦明",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 2
+      },
+      {
+        "names": "李昀毅 + 謝侑翰",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 9
+      },
+      {
+        "names": "林佑安 + 鄭育承",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 0
+      },
+      {
+        "names": "賴姸宇 + 高傳恩",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "洪國胤 + 賴俊傑",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 9
+      },
+      {
+        "names": "張源祐 + 彭煜錩",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 1
+      },
+      {
+        "names": "曾翊瑋 + 鄭睿旭",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "劉和訓 + 許育誠",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 6
+      }
+    ],
+    "trios_top": [
+      {
+        "names": "施純泰 + 蔣為理 + 賴俊傑",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 9
+      },
+      {
+        "names": "洪國胤 + 鄭睿旭 + 黃皓賓",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "施純泰 + 李均祈 + 許嘉雄",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "劉名洲 + 彭弘傑 + 黃盈豪",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 7
+      },
+      {
+        "names": "呂育陞 + 李正群 + 蔣為理",
+        "total": 3,
+        "rosc": 3,
+        "rate": 100.0,
+        "drugs": 7
+      },
+      {
+        "names": "周奕君 + 宋億嘉 + 黃厚棠",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "劉名洲 + 謝侑翰 + 鄭育承",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "施純泰 + 李均祈 + 黃玉喬",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 4
+      },
+      {
+        "names": "何仰哲 + 何恭翕 + 王英任",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "施純泰 + 連國延 + 鄭睿旭",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "許育誠 + 連國延 + 黃皓賓",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "呂育陞 + 洪國胤 + 黃皓賓",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "洪國胤 + 蔣為理 + 黃皓賓",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "蔣為理 + 許嘉雄 + 黃皓賓",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 1
+      },
+      {
+        "names": "張凡治 + 張源祐 + 彭煜錩",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 1
+      },
+      {
+        "names": "廖宇揚 + 楊子毅 + 蔡聖文",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "呂育陞 + 蔣為理 + 許育誠",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "呂育陞 + 李林營 + 蔣為理",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "劉大維 + 李偉廷 + 謝聿蓴",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "呂育陞 + 李正群 + 許育誠",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 1
+      },
+      {
+        "names": "劉名洲 + 張智強 + 李堯軒",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 3
+      },
+      {
+        "names": "張智強 + 李堯軒 + 黃盈豪",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "施純泰 + 賴俊傑 + 鄭睿旭",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "呂育陞 + 李正群 + 賴俊傑",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "施婷雯 + 林冠廷 + 鍾明哲",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "吳志霖 + 施翔耀 + 陳明裕",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "劉奕宏 + 張凡治 + 張惟智",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "謝侑翰 + 謝啟盛 + 黃盈豪",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 2
+      },
+      {
+        "names": "廖韋同 + 温政富 + 王政雄",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 0
+      },
+      {
+        "names": "李正群 + 紀翔升 + 黃美樺",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "紀翔升 + 許嘉雄 + 賴俊傑",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "李均祈 + 許育誠 + 黃玉喬",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 6
+      },
+      {
+        "names": "紀翔升 + 賴俊傑 + 黃美樺",
+        "total": 2,
+        "rosc": 2,
+        "rate": 100.0,
+        "drugs": 5
+      },
+      {
+        "names": "呂育陞 + 李均祈 + 蔣為理",
+        "total": 5,
+        "rosc": 4,
+        "rate": 80.0,
+        "drugs": 13
+      },
+      {
+        "names": "呂育陞 + 鄭睿旭 + 黃皓賓",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 9
+      },
+      {
+        "names": "洪國胤 + 連國延 + 鄭睿旭",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 8
+      },
+      {
+        "names": "李均祈 + 蔣為理 + 許育誠",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 10
+      },
+      {
+        "names": "李均祈 + 李正群 + 蔣為理",
+        "total": 4,
+        "rosc": 3,
+        "rate": 75.0,
+        "drugs": 8
+      },
+      {
+        "names": "張馨予 + 蔣為理 + 許育誠",
+        "total": 6,
+        "rosc": 4,
+        "rate": 66.7,
+        "drugs": 17
+      },
+      {
+        "names": "劉名洲 + 李堯軒 + 鍾錦明",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "吳志文 + 戴世豐 + 莊士緯",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 0
+      },
+      {
+        "names": "張馨予 + 許嘉雄 + 黃皓賓",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 3
+      },
+      {
+        "names": "洪國胤 + 蔣為理 + 鄭睿旭",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 2
+      },
+      {
+        "names": "施純泰 + 許嘉雄 + 賴俊傑",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "呂育陞 + 張馨予 + 蔣為理",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "呂育陞 + 張馨予 + 許育誠",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "許嘉雄 + 賴俊傑 + 鄭睿旭",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 9
+      },
+      {
+        "names": "彭弘傑 + 謝侑翰 + 黃盈豪",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "李均祈 + 李正群 + 許嘉雄",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 8
+      },
+      {
+        "names": "呂育陞 + 李均祈 + 李正群",
+        "total": 3,
+        "rosc": 2,
+        "rate": 66.7,
+        "drugs": 7
+      }
+    ]
+  },
   "yearly_stats": [
     {
-      "roc_year": 108,
-      "total": 113,
+      "year": "108",
+      "total_ohca": 113,
+      "transported": 113,
+      "r1_rosc": 8,
+      "r1_rate": 7.08,
       "rosc": 10,
-      "rosc_rate": 8.849557522123893,
-      "r1": 8,
-      "r1_rate": 7.079646017699115,
-      "drugs_total": 3,
-      "drugs_per_case": 0.02654867256637168,
-      "note": ""
+      "rosc_rate": 8.85,
+      "drugs_count": 3,
+      "drugs_per_case": 0.03,
+      "dual_tp_rate": 0.0,
+      "endo_count": 1
     },
     {
-      "roc_year": 109,
-      "total": 552,
+      "year": "109",
+      "total_ohca": 552,
+      "transported": 552,
+      "r1_rosc": 46,
+      "r1_rate": 8.33,
       "rosc": 95,
-      "rosc_rate": 17.21014492753623,
-      "r1": 46,
-      "r1_rate": 8.333333333333332,
-      "drugs_total": 120,
-      "drugs_per_case": 0.21739130434782608,
-      "note": ""
+      "rosc_rate": 17.21,
+      "drugs_count": 120,
+      "drugs_per_case": 0.22,
+      "dual_tp_rate": 6.16,
+      "endo_count": 13
     },
     {
-      "roc_year": 110,
-      "total": 545,
+      "year": "110",
+      "total_ohca": 545,
+      "transported": 545,
+      "r1_rosc": 42,
+      "r1_rate": 7.71,
       "rosc": 86,
-      "rosc_rate": 15.77981651376147,
-      "r1": 42,
-      "r1_rate": 7.706422018348624,
-      "drugs_total": 177,
-      "drugs_per_case": 0.3247706422018349,
-      "note": ""
+      "rosc_rate": 15.78,
+      "drugs_count": 177,
+      "drugs_per_case": 0.32,
+      "dual_tp_rate": 7.16,
+      "endo_count": 18
     },
     {
-      "roc_year": 111,
-      "total": 643,
+      "year": "111",
+      "total_ohca": 643,
+      "transported": 643,
+      "r1_rosc": 54,
+      "r1_rate": 8.4,
       "rosc": 87,
-      "rosc_rate": 13.530326594090203,
-      "r1": 54,
-      "r1_rate": 8.398133748055987,
-      "drugs_total": 531,
-      "drugs_per_case": 0.8258164852255054,
-      "note": "光明高救隊成立 (111.03)"
+      "rosc_rate": 13.53,
+      "drugs_count": 531,
+      "drugs_per_case": 0.83,
+      "dual_tp_rate": 13.53,
+      "endo_count": 106
     },
     {
-      "roc_year": 112,
-      "total": 594,
+      "year": "112",
+      "total_ohca": 594,
+      "transported": 594,
+      "r1_rosc": 73,
+      "r1_rate": 12.29,
       "rosc": 103,
-      "rosc_rate": 17.34006734006734,
-      "r1": 73,
-      "r1_rate": 12.289562289562289,
-      "drugs_total": 619,
-      "drugs_per_case": 1.0420875420875422,
-      "note": ""
+      "rosc_rate": 17.34,
+      "drugs_count": 619,
+      "drugs_per_case": 1.04,
+      "dual_tp_rate": 15.99,
+      "endo_count": 141
     },
     {
-      "roc_year": 113,
-      "total": 595,
+      "year": "113",
+      "total_ohca": 595,
+      "transported": 595,
+      "r1_rosc": 65,
+      "r1_rate": 10.92,
       "rosc": 95,
-      "rosc_rate": 15.966386554621847,
-      "r1": 65,
-      "r1_rate": 10.92436974789916,
-      "drugs_total": 698,
-      "drugs_per_case": 1.173109243697479,
-      "note": ""
+      "rosc_rate": 15.97,
+      "drugs_count": 698,
+      "drugs_per_case": 1.17,
+      "dual_tp_rate": 18.15,
+      "endo_count": 135
     },
     {
-      "roc_year": 114,
-      "total": 608,
+      "year": "114",
+      "total_ohca": 608,
+      "transported": 608,
+      "r1_rosc": 70,
+      "r1_rate": 11.51,
       "rosc": 101,
-      "rosc_rate": 16.611842105263158,
-      "r1": 70,
-      "r1_rate": 11.513157894736842,
-      "drugs_total": 606,
-      "drugs_per_case": 0.9967105263157895,
-      "note": ""
+      "rosc_rate": 16.61,
+      "drugs_count": 606,
+      "drugs_per_case": 1.0,
+      "dual_tp_rate": 11.02,
+      "endo_count": 120
     },
     {
-      "roc_year": 115,
-      "total": 387,
+      "year": "115",
+      "total_ohca": 387,
+      "transported": 387,
+      "r1_rosc": 56,
+      "r1_rate": 14.47,
       "rosc": 75,
-      "rosc_rate": 19.379844961240313,
-      "r1": 56,
-      "r1_rate": 14.470284237726098,
-      "drugs_total": 443,
-      "drugs_per_case": 1.144702842377261,
-      "note": ""
+      "rosc_rate": 19.38,
+      "drugs_count": 443,
+      "drugs_per_case": 1.14,
+      "dual_tp_rate": 11.63,
+      "endo_count": 80
     }
   ],
   "ranked_stations": [
     {
       "station": "光明分隊",
-      "total": 543,
-      "rosc": 165,
-      "rate": 30.386740331491712,
-      "r1": 128,
-      "r1_rate": 23.572744014732965,
-      "pre_rate": 18.4,
-      "post_rate": 33.97129186602871,
-      "diff_gm_era": 15.571291866028709,
-      "yearly": {
+      "pre_gm_total": 139,
+      "pre_gm_rosc": 28,
+      "pre_gm_rate": 20.14,
+      "post_gm_total": 404,
+      "post_gm_rosc": 137,
+      "post_gm_rate": 33.91,
+      "growth": 13.77,
+      "total_ohca": 543,
+      "total_rosc": 165,
+      "overall_rate": 30.39,
+      "r1_rate": 23.57,
+      "matrix": {
         "108": {
-          "total": 8,
+          "rate": 25.0,
           "rosc": 2,
-          "rate": 25.0
+          "total": 8
         },
         "109": {
-          "total": 57,
+          "rate": 19.3,
           "rosc": 11,
-          "rate": 19.298245614035086
+          "total": 57
         },
         "110": {
-          "total": 60,
+          "rate": 16.7,
           "rosc": 10,
-          "rate": 16.666666666666664
+          "total": 60
         },
         "111": {
-          "total": 94,
+          "rate": 38.3,
           "rosc": 36,
-          "rate": 38.297872340425535
+          "total": 94
         },
         "112": {
-          "total": 99,
+          "rate": 32.3,
           "rosc": 32,
-          "rate": 32.323232323232325
+          "total": 99
         },
         "113": {
-          "total": 89,
+          "rate": 28.1,
           "rosc": 25,
-          "rate": 28.08988764044944
+          "total": 89
         },
         "114": {
-          "total": 80,
+          "rate": 35.0,
           "rosc": 28,
-          "rate": 35.0
+          "total": 80
         },
         "115": {
-          "total": 56,
+          "rate": 37.5,
           "rosc": 21,
-          "rate": 37.5
+          "total": 56
         }
-      }
+      },
+      "rank": 1
     },
     {
       "station": "新工分隊",
-      "total": 270,
-      "rosc": 60,
-      "rate": 22.22222222222222,
-      "r1": 31,
-      "r1_rate": 11.481481481481481,
-      "pre_rate": 16.049382716049383,
-      "post_rate": 24.867724867724867,
-      "diff_gm_era": 8.818342151675484,
-      "yearly": {
+      "pre_gm_total": 83,
+      "pre_gm_rosc": 13,
+      "pre_gm_rate": 15.66,
+      "post_gm_total": 187,
+      "post_gm_rosc": 47,
+      "post_gm_rate": 25.13,
+      "growth": 9.47,
+      "total_ohca": 270,
+      "total_rosc": 60,
+      "overall_rate": 22.22,
+      "r1_rate": 11.48,
+      "matrix": {
         "108": {
-          "total": 10,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 10
         },
         "109": {
-          "total": 40,
+          "rate": 22.5,
           "rosc": 9,
-          "rate": 22.5
+          "total": 40
         },
         "110": {
-          "total": 31,
+          "rate": 12.9,
           "rosc": 4,
-          "rate": 12.903225806451612
+          "total": 31
         },
         "111": {
-          "total": 29,
+          "rate": 24.1,
           "rosc": 7,
-          "rate": 24.137931034482758
+          "total": 29
         },
         "112": {
-          "total": 41,
+          "rate": 29.3,
           "rosc": 12,
-          "rate": 29.268292682926827
+          "total": 41
         },
         "113": {
-          "total": 42,
+          "rate": 26.2,
           "rosc": 11,
-          "rate": 26.190476190476193
+          "total": 42
         },
         "114": {
-          "total": 48,
+          "rate": 20.8,
           "rosc": 10,
-          "rate": 20.833333333333336
+          "total": 48
         },
         "115": {
-          "total": 29,
+          "rate": 24.1,
           "rosc": 7,
-          "rate": 24.137931034482758
+          "total": 29
         }
-      }
+      },
+      "rank": 2
     },
     {
       "station": "新埔分隊",
-      "total": 269,
-      "rosc": 54,
-      "rate": 20.074349442379184,
-      "r1": 18,
-      "r1_rate": 6.691449814126393,
-      "pre_rate": 22.07792207792208,
-      "post_rate": 19.270833333333336,
-      "diff_gm_era": -2.807088744588743,
-      "yearly": {
+      "pre_gm_total": 83,
+      "pre_gm_rosc": 17,
+      "pre_gm_rate": 20.48,
+      "post_gm_total": 186,
+      "post_gm_rosc": 37,
+      "post_gm_rate": 19.89,
+      "growth": -0.59,
+      "total_ohca": 269,
+      "total_rosc": 54,
+      "overall_rate": 20.07,
+      "r1_rate": 6.69,
+      "matrix": {
         "108": {
-          "total": 8,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 8
         },
         "109": {
-          "total": 28,
+          "rate": 17.9,
           "rosc": 5,
-          "rate": 17.857142857142858
+          "total": 28
         },
         "110": {
-          "total": 41,
+          "rate": 29.3,
           "rosc": 12,
-          "rate": 29.268292682926827
+          "total": 41
         },
         "111": {
-          "total": 46,
+          "rate": 4.3,
           "rosc": 2,
-          "rate": 4.3478260869565215
+          "total": 46
         },
         "112": {
-          "total": 35,
+          "rate": 22.9,
           "rosc": 8,
-          "rate": 22.857142857142858
+          "total": 35
         },
         "113": {
-          "total": 49,
+          "rate": 22.4,
           "rosc": 11,
-          "rate": 22.448979591836736
+          "total": 49
         },
         "114": {
-          "total": 39,
+          "rate": 25.6,
           "rosc": 10,
-          "rate": 25.64102564102564
+          "total": 39
         },
         "115": {
-          "total": 23,
+          "rate": 26.1,
           "rosc": 6,
-          "rate": 26.08695652173913
+          "total": 23
         }
-      }
+      },
+      "rank": 3
     },
     {
       "station": "竹東分隊",
-      "total": 549,
-      "rosc": 98,
-      "rate": 17.850637522768668,
-      "r1": 67,
-      "r1_rate": 12.2040072859745,
-      "pre_rate": 23.28767123287671,
-      "post_rate": 15.88089330024814,
-      "diff_gm_era": -7.406777932628572,
-      "yearly": {
+      "pre_gm_total": 166,
+      "pre_gm_rosc": 38,
+      "pre_gm_rate": 22.89,
+      "post_gm_total": 383,
+      "post_gm_rosc": 60,
+      "post_gm_rate": 15.67,
+      "growth": -7.22,
+      "total_ohca": 549,
+      "total_rosc": 98,
+      "overall_rate": 17.85,
+      "r1_rate": 12.2,
+      "matrix": {
         "108": {
-          "total": 8,
+          "rate": 25.0,
           "rosc": 2,
-          "rate": 25.0
+          "total": 8
         },
         "109": {
-          "total": 71,
+          "rate": 23.9,
           "rosc": 17,
-          "rate": 23.943661971830984
+          "total": 71
         },
         "110": {
-          "total": 67,
+          "rate": 22.4,
           "rosc": 15,
-          "rate": 22.388059701492537
+          "total": 67
         },
         "111": {
-          "total": 104,
+          "rate": 10.6,
           "rosc": 11,
-          "rate": 10.576923076923077
+          "total": 104
         },
         "112": {
-          "total": 77,
+          "rate": 18.2,
           "rosc": 14,
-          "rate": 18.181818181818183
+          "total": 77
         },
         "113": {
-          "total": 79,
+          "rate": 13.9,
           "rosc": 11,
-          "rate": 13.924050632911392
+          "total": 79
         },
         "114": {
-          "total": 76,
+          "rate": 18.4,
           "rosc": 14,
-          "rate": 18.421052631578945
+          "total": 76
         },
         "115": {
-          "total": 67,
+          "rate": 20.9,
           "rosc": 14,
-          "rate": 20.8955223880597
+          "total": 67
         }
-      }
+      },
+      "rank": 4
     },
     {
       "station": "竹北分隊",
-      "total": 169,
-      "rosc": 30,
-      "rate": 17.75147928994083,
-      "r1": 13,
-      "r1_rate": 7.6923076923076925,
-      "pre_rate": 17.28395061728395,
-      "post_rate": 18.181818181818183,
-      "diff_gm_era": 0.8978675645342342,
-      "yearly": {
+      "pre_gm_total": 87,
+      "pre_gm_rosc": 15,
+      "pre_gm_rate": 17.24,
+      "post_gm_total": 82,
+      "post_gm_rosc": 15,
+      "post_gm_rate": 18.29,
+      "growth": 1.05,
+      "total_ohca": 169,
+      "total_rosc": 30,
+      "overall_rate": 17.75,
+      "r1_rate": 7.69,
+      "matrix": {
         "108": {
-          "total": 5,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 5
         },
         "109": {
-          "total": 36,
+          "rate": 8.3,
           "rosc": 3,
-          "rate": 8.333333333333332
+          "total": 36
         },
         "110": {
-          "total": 40,
+          "rate": 27.5,
           "rosc": 11,
-          "rate": 27.500000000000004
+          "total": 40
         },
         "111": {
-          "total": 27,
+          "rate": 7.4,
           "rosc": 2,
-          "rate": 7.4074074074074066
+          "total": 27
         },
         "112": {
-          "total": 21,
+          "rate": 19.0,
           "rosc": 4,
-          "rate": 19.047619047619047
+          "total": 21
         },
         "113": {
-          "total": 23,
+          "rate": 34.8,
           "rosc": 8,
-          "rate": 34.78260869565217
+          "total": 23
         },
         "114": {
-          "total": 11,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 11
         },
         "115": {
-          "total": 6,
+          "rate": 33.3,
           "rosc": 2,
-          "rate": 33.33333333333333
+          "total": 6
         }
-      }
+      },
+      "rank": 5
     },
     {
       "station": "山崎分隊",
-      "total": 248,
-      "rosc": 43,
-      "rate": 17.338709677419356,
-      "r1": 19,
-      "r1_rate": 7.661290322580645,
-      "pre_rate": 14.705882352941178,
-      "post_rate": 18.333333333333332,
-      "diff_gm_era": 3.6274509803921546,
-      "yearly": {
+      "pre_gm_total": 72,
+      "pre_gm_rosc": 10,
+      "pre_gm_rate": 13.89,
+      "post_gm_total": 176,
+      "post_gm_rosc": 33,
+      "post_gm_rate": 18.75,
+      "growth": 4.86,
+      "total_ohca": 248,
+      "total_rosc": 43,
+      "overall_rate": 17.34,
+      "r1_rate": 7.66,
+      "matrix": {
         "108": {
-          "total": 7,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 7
         },
         "109": {
-          "total": 20,
+          "rate": 20.0,
           "rosc": 4,
-          "rate": 20.0
+          "total": 20
         },
         "110": {
-          "total": 41,
+          "rate": 14.6,
           "rosc": 6,
-          "rate": 14.634146341463413
+          "total": 41
         },
         "111": {
-          "total": 35,
+          "rate": 8.6,
           "rosc": 3,
-          "rate": 8.571428571428571
+          "total": 35
         },
         "112": {
-          "total": 42,
+          "rate": 19.0,
           "rosc": 8,
-          "rate": 19.047619047619047
+          "total": 42
         },
         "113": {
-          "total": 35,
+          "rate": 20.0,
           "rosc": 7,
-          "rate": 20.0
+          "total": 35
         },
         "114": {
-          "total": 41,
+          "rate": 22.0,
           "rosc": 9,
-          "rate": 21.951219512195124
+          "total": 41
         },
         "115": {
-          "total": 27,
+          "rate": 22.2,
           "rosc": 6,
-          "rate": 22.22222222222222
+          "total": 27
         }
-      }
+      },
+      "rank": 6
     },
     {
       "station": "北埔分隊",
-      "total": 91,
-      "rosc": 14,
-      "rate": 15.384615384615385,
-      "r1": 8,
-      "r1_rate": 8.791208791208792,
-      "pre_rate": 23.333333333333332,
-      "post_rate": 11.475409836065573,
-      "diff_gm_era": -11.857923497267759,
-      "yearly": {
+      "pre_gm_total": 32,
+      "pre_gm_rosc": 7,
+      "pre_gm_rate": 21.88,
+      "post_gm_total": 59,
+      "post_gm_rosc": 7,
+      "post_gm_rate": 11.86,
+      "growth": -10.02,
+      "total_ohca": 91,
+      "total_rosc": 14,
+      "overall_rate": 15.38,
+      "r1_rate": 8.79,
+      "matrix": {
         "108": {
-          "total": 2,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 2
         },
         "109": {
-          "total": 12,
+          "rate": 25.0,
           "rosc": 3,
-          "rate": 25.0
+          "total": 12
         },
         "110": {
-          "total": 16,
+          "rate": 25.0,
           "rosc": 4,
-          "rate": 25.0
+          "total": 16
         },
         "111": {
-          "total": 11,
+          "rate": 18.2,
           "rosc": 2,
-          "rate": 18.181818181818183
+          "total": 11
         },
         "112": {
-          "total": 15,
+          "rate": 13.3,
           "rosc": 2,
-          "rate": 13.333333333333334
+          "total": 15
         },
         "113": {
-          "total": 8,
+          "rate": 12.5,
           "rosc": 1,
-          "rate": 12.5
+          "total": 8
         },
         "114": {
-          "total": 16,
+          "rate": 12.5,
           "rosc": 2,
-          "rate": 12.5
+          "total": 16
         },
         "115": {
-          "total": 11,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 11
         }
-      }
+      },
+      "rank": 7
     },
     {
       "station": "芎林分隊",
-      "total": 244,
-      "rosc": 30,
-      "rate": 12.295081967213115,
-      "r1": 23,
-      "r1_rate": 9.426229508196721,
-      "pre_rate": 14.634146341463413,
-      "post_rate": 11.11111111111111,
-      "diff_gm_era": -3.5230352303523027,
-      "yearly": {
+      "pre_gm_total": 87,
+      "pre_gm_rosc": 15,
+      "pre_gm_rate": 17.24,
+      "post_gm_total": 157,
+      "post_gm_rosc": 15,
+      "post_gm_rate": 9.55,
+      "growth": -7.69,
+      "total_ohca": 244,
+      "total_rosc": 30,
+      "overall_rate": 12.3,
+      "r1_rate": 9.43,
+      "matrix": {
         "108": {
-          "total": 12,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 12
         },
         "109": {
-          "total": 38,
+          "rate": 18.4,
           "rosc": 7,
-          "rate": 18.421052631578945
+          "total": 38
         },
         "110": {
-          "total": 32,
+          "rate": 15.6,
           "rosc": 5,
-          "rate": 15.625
+          "total": 32
         },
         "111": {
-          "total": 30,
+          "rate": 23.3,
           "rosc": 7,
-          "rate": 23.333333333333332
+          "total": 30
         },
         "112": {
-          "total": 34,
+          "rate": 5.9,
           "rosc": 2,
-          "rate": 5.88235294117647
+          "total": 34
         },
         "113": {
-          "total": 43,
+          "rate": 7.0,
           "rosc": 3,
-          "rate": 6.976744186046512
+          "total": 43
         },
         "114": {
-          "total": 32,
+          "rate": 6.2,
           "rosc": 2,
-          "rate": 6.25
+          "total": 32
         },
         "115": {
-          "total": 23,
+          "rate": 17.4,
           "rosc": 4,
-          "rate": 17.391304347826086
+          "total": 23
         }
-      }
+      },
+      "rank": 8
     },
     {
       "station": "關西分隊",
-      "total": 237,
-      "rosc": 29,
-      "rate": 12.236286919831224,
-      "r1": 20,
-      "r1_rate": 8.438818565400844,
-      "pre_rate": 14.634146341463413,
-      "post_rate": 10.967741935483872,
-      "diff_gm_era": -3.6664044059795415,
-      "yearly": {
+      "pre_gm_total": 86,
+      "pre_gm_rosc": 12,
+      "pre_gm_rate": 13.95,
+      "post_gm_total": 151,
+      "post_gm_rosc": 17,
+      "post_gm_rate": 11.26,
+      "growth": -2.69,
+      "total_ohca": 237,
+      "total_rosc": 29,
+      "overall_rate": 12.24,
+      "r1_rate": 8.44,
+      "matrix": {
         "108": {
-          "total": 11,
+          "rate": 9.1,
           "rosc": 1,
-          "rate": 9.090909090909092
+          "total": 11
         },
         "109": {
-          "total": 42,
+          "rate": 14.3,
           "rosc": 6,
-          "rate": 14.285714285714285
+          "total": 42
         },
         "110": {
-          "total": 29,
+          "rate": 17.2,
           "rosc": 5,
-          "rate": 17.24137931034483
+          "total": 29
         },
         "111": {
-          "total": 34,
+          "rate": 2.9,
           "rosc": 1,
-          "rate": 2.941176470588235
+          "total": 34
         },
         "112": {
-          "total": 37,
+          "rate": 8.1,
           "rosc": 3,
-          "rate": 8.108108108108109
+          "total": 37
         },
         "113": {
-          "total": 27,
+          "rate": 14.8,
           "rosc": 4,
-          "rate": 14.814814814814813
+          "total": 27
         },
         "114": {
-          "total": 37,
+          "rate": 16.2,
           "rosc": 6,
-          "rate": 16.216216216216218
+          "total": 37
         },
         "115": {
-          "total": 20,
+          "rate": 15.0,
           "rosc": 3,
-          "rate": 15.0
+          "total": 20
         }
-      }
+      },
+      "rank": 9
     },
     {
       "station": "橫山分隊",
-      "total": 119,
-      "rosc": 14,
-      "rate": 11.76470588235294,
-      "r1": 8,
-      "r1_rate": 6.722689075630252,
-      "pre_rate": 13.513513513513514,
-      "post_rate": 10.975609756097562,
-      "diff_gm_era": -2.537903757415952,
-      "yearly": {
+      "pre_gm_total": 41,
+      "pre_gm_rosc": 7,
+      "pre_gm_rate": 17.07,
+      "post_gm_total": 78,
+      "post_gm_rosc": 7,
+      "post_gm_rate": 8.97,
+      "growth": -8.1,
+      "total_ohca": 119,
+      "total_rosc": 14,
+      "overall_rate": 11.76,
+      "r1_rate": 6.72,
+      "matrix": {
         "108": {
-          "total": 7,
+          "rate": 14.3,
           "rosc": 1,
-          "rate": 14.285714285714285
+          "total": 7
         },
         "109": {
-          "total": 20,
+          "rate": 20.0,
           "rosc": 4,
-          "rate": 20.0
+          "total": 20
         },
         "110": {
-          "total": 10,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 10
         },
         "111": {
-          "total": 19,
+          "rate": 15.8,
           "rosc": 3,
-          "rate": 15.789473684210526
+          "total": 19
         },
         "112": {
-          "total": 24,
+          "rate": 4.2,
           "rosc": 1,
-          "rate": 4.166666666666666
+          "total": 24
         },
         "113": {
-          "total": 18,
+          "rate": 11.1,
           "rosc": 2,
-          "rate": 11.11111111111111
+          "total": 18
         },
         "114": {
-          "total": 14,
+          "rate": 21.4,
           "rosc": 3,
-          "rate": 21.428571428571427
+          "total": 14
         },
         "115": {
-          "total": 7,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 7
         }
-      }
+      },
+      "rank": 10
     },
     {
       "station": "豐田分隊",
-      "total": 164,
-      "rosc": 19,
-      "rate": 11.585365853658537,
-      "r1": 2,
-      "r1_rate": 1.2195121951219512,
-      "pre_rate": 19.047619047619047,
-      "post_rate": 9.01639344262295,
-      "diff_gm_era": -10.031225604996097,
-      "yearly": {
+      "pre_gm_total": 45,
+      "pre_gm_rosc": 8,
+      "pre_gm_rate": 17.78,
+      "post_gm_total": 119,
+      "post_gm_rosc": 11,
+      "post_gm_rate": 9.24,
+      "growth": -8.54,
+      "total_ohca": 164,
+      "total_rosc": 19,
+      "overall_rate": 11.59,
+      "r1_rate": 1.22,
+      "matrix": {
         "108": {
-          "total": 2,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 2
         },
         "109": {
-          "total": 16,
+          "rate": 12.5,
           "rosc": 2,
-          "rate": 12.5
+          "total": 16
         },
         "110": {
-          "total": 24,
+          "rate": 25.0,
           "rosc": 6,
-          "rate": 25.0
+          "total": 24
         },
         "111": {
-          "total": 26,
+          "rate": 7.7,
           "rosc": 2,
-          "rate": 7.6923076923076925
+          "total": 26
         },
         "112": {
-          "total": 19,
+          "rate": 10.5,
           "rosc": 2,
-          "rate": 10.526315789473683
+          "total": 19
         },
         "113": {
-          "total": 25,
+          "rate": 4.0,
           "rosc": 1,
-          "rate": 4.0
+          "total": 25
         },
         "114": {
-          "total": 38,
+          "rate": 13.2,
           "rosc": 5,
-          "rate": 13.157894736842104
+          "total": 38
         },
         "115": {
-          "total": 14,
+          "rate": 7.1,
           "rosc": 1,
-          "rate": 7.142857142857142
+          "total": 14
         }
-      }
-    },
-    {
-      "station": "其他/跨區",
-      "total": 36,
-      "rosc": 4,
-      "rate": 11.11111111111111,
-      "r1": 3,
-      "r1_rate": 8.333333333333332,
-      "pre_rate": 66.66666666666666,
-      "post_rate": 6.0606060606060606,
-      "diff_gm_era": -60.606060606060595,
-      "yearly": {
-        "108": {
-          "total": 1,
-          "rosc": 1,
-          "rate": 100.0
-        },
-        "109": {
-          "total": 2,
-          "rosc": 1,
-          "rate": 50.0
-        },
-        "110": {
-          "total": 0,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "111": {
-          "total": 0,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "112": {
-          "total": 0,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "113": {
-          "total": 12,
-          "rosc": 1,
-          "rate": 8.333333333333332
-        },
-        "114": {
-          "total": 12,
-          "rosc": 1,
-          "rate": 8.333333333333332
-        },
-        "115": {
-          "total": 9,
-          "rosc": 0,
-          "rate": 0.0
-        }
-      }
+      },
+      "rank": 11
     },
     {
       "station": "峨眉分隊",
-      "total": 64,
-      "rosc": 7,
-      "rate": 10.9375,
-      "r1": 3,
-      "r1_rate": 4.6875,
-      "pre_rate": 16.666666666666664,
-      "post_rate": 8.695652173913043,
-      "diff_gm_era": -7.971014492753621,
-      "yearly": {
+      "pre_gm_total": 19,
+      "pre_gm_rosc": 3,
+      "pre_gm_rate": 15.79,
+      "post_gm_total": 45,
+      "post_gm_rosc": 4,
+      "post_gm_rate": 8.89,
+      "growth": -6.9,
+      "total_ohca": 64,
+      "total_rosc": 7,
+      "overall_rate": 10.94,
+      "r1_rate": 4.69,
+      "matrix": {
         "108": {
-          "total": 0,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 0
         },
         "109": {
-          "total": 12,
+          "rate": 25.0,
           "rosc": 3,
-          "rate": 25.0
+          "total": 12
         },
         "110": {
-          "total": 6,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 6
         },
         "111": {
-          "total": 13,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 13
         },
         "112": {
-          "total": 8,
+          "rate": 25.0,
           "rosc": 2,
-          "rate": 25.0
+          "total": 8
         },
         "113": {
-          "total": 9,
+          "rate": 11.1,
           "rosc": 1,
-          "rate": 11.11111111111111
+          "total": 9
         },
         "114": {
-          "total": 9,
+          "rate": 11.1,
           "rosc": 1,
-          "rate": 11.11111111111111
+          "total": 9
         },
         "115": {
-          "total": 7,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 7
         }
-      }
+      },
+      "rank": 12
     },
     {
       "station": "尖石分隊",
-      "total": 84,
-      "rosc": 9,
-      "rate": 10.714285714285714,
-      "r1": 8,
-      "r1_rate": 9.523809523809524,
-      "pre_rate": 7.142857142857142,
-      "post_rate": 12.5,
-      "diff_gm_era": 5.357142857142858,
-      "yearly": {
+      "pre_gm_total": 30,
+      "pre_gm_rosc": 2,
+      "pre_gm_rate": 6.67,
+      "post_gm_total": 54,
+      "post_gm_rosc": 7,
+      "post_gm_rate": 12.96,
+      "growth": 6.29,
+      "total_ohca": 84,
+      "total_rosc": 9,
+      "overall_rate": 10.71,
+      "r1_rate": 9.52,
+      "matrix": {
         "108": {
-          "total": 1,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 1
         },
         "109": {
-          "total": 10,
+          "rate": 10.0,
           "rosc": 1,
-          "rate": 10.0
+          "total": 10
         },
         "110": {
-          "total": 17,
+          "rate": 5.9,
           "rosc": 1,
-          "rate": 5.88235294117647
+          "total": 17
         },
         "111": {
-          "total": 17,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 17
         },
         "112": {
-          "total": 7,
+          "rate": 28.6,
           "rosc": 2,
-          "rate": 28.57142857142857
+          "total": 7
         },
         "113": {
-          "total": 11,
+          "rate": 18.2,
           "rosc": 2,
-          "rate": 18.181818181818183
+          "total": 11
         },
         "114": {
-          "total": 16,
+          "rate": 12.5,
           "rosc": 2,
-          "rate": 12.5
+          "total": 16
         },
         "115": {
-          "total": 5,
+          "rate": 20.0,
           "rosc": 1,
-          "rate": 20.0
+          "total": 5
         }
-      }
+      },
+      "rank": 13
     },
     {
       "station": "二重分隊",
-      "total": 155,
-      "rosc": 16,
-      "rate": 10.32258064516129,
-      "r1": 14,
-      "r1_rate": 9.032258064516128,
-      "pre_rate": 12.5,
-      "post_rate": 9.345794392523365,
-      "diff_gm_era": -3.1542056074766354,
-      "yearly": {
+      "pre_gm_total": 53,
+      "pre_gm_rosc": 6,
+      "pre_gm_rate": 11.32,
+      "post_gm_total": 102,
+      "post_gm_rosc": 10,
+      "post_gm_rate": 9.8,
+      "growth": -1.52,
+      "total_ohca": 155,
+      "total_rosc": 16,
+      "overall_rate": 10.32,
+      "r1_rate": 9.03,
+      "matrix": {
         "108": {
-          "total": 6,
+          "rate": 16.7,
           "rosc": 1,
-          "rate": 16.666666666666664
+          "total": 6
         },
         "109": {
-          "total": 25,
+          "rate": 12.0,
           "rosc": 3,
-          "rate": 12.0
+          "total": 25
         },
         "110": {
-          "total": 17,
+          "rate": 11.8,
           "rosc": 2,
-          "rate": 11.76470588235294
+          "total": 17
         },
         "111": {
-          "total": 27,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 27
         },
         "112": {
-          "total": 23,
+          "rate": 8.7,
           "rosc": 2,
-          "rate": 8.695652173913043
+          "total": 23
         },
         "113": {
-          "total": 21,
+          "rate": 14.3,
           "rosc": 3,
-          "rate": 14.285714285714285
+          "total": 21
         },
         "114": {
-          "total": 23,
+          "rate": 8.7,
           "rosc": 2,
-          "rate": 8.695652173913043
+          "total": 23
         },
         "115": {
-          "total": 13,
+          "rate": 23.1,
           "rosc": 3,
-          "rate": 23.076923076923077
+          "total": 13
         }
-      }
+      },
+      "rank": 14
     },
     {
       "station": "湖口分隊",
-      "total": 389,
-      "rosc": 38,
-      "rate": 9.768637532133676,
-      "r1": 31,
-      "r1_rate": 7.969151670951156,
-      "pre_rate": 16.39344262295082,
-      "post_rate": 6.741573033707865,
-      "diff_gm_era": -9.651869589242953,
-      "yearly": {
+      "pre_gm_total": 133,
+      "pre_gm_rosc": 21,
+      "pre_gm_rate": 15.79,
+      "post_gm_total": 256,
+      "post_gm_rosc": 17,
+      "post_gm_rate": 6.64,
+      "growth": -9.15,
+      "total_ohca": 389,
+      "total_rosc": 38,
+      "overall_rate": 9.77,
+      "r1_rate": 7.97,
+      "matrix": {
         "108": {
-          "total": 13,
+          "rate": 15.4,
           "rosc": 2,
-          "rate": 15.384615384615385
+          "total": 13
         },
         "109": {
-          "total": 63,
+          "rate": 20.6,
           "rosc": 13,
-          "rate": 20.634920634920633
+          "total": 63
         },
         "110": {
-          "total": 46,
+          "rate": 10.9,
           "rosc": 5,
-          "rate": 10.869565217391305
+          "total": 46
         },
         "111": {
-          "total": 63,
+          "rate": 11.1,
           "rosc": 7,
-          "rate": 11.11111111111111
+          "total": 63
         },
         "112": {
-          "total": 46,
+          "rate": 6.5,
           "rosc": 3,
-          "rate": 6.521739130434782
+          "total": 46
         },
         "113": {
-          "total": 55,
+          "rate": 7.3,
           "rosc": 4,
-          "rate": 7.2727272727272725
+          "total": 55
         },
         "114": {
-          "total": 71,
+          "rate": 2.8,
           "rosc": 2,
-          "rate": 2.8169014084507045
+          "total": 71
         },
         "115": {
-          "total": 32,
+          "rate": 6.2,
           "rosc": 2,
-          "rate": 6.25
+          "total": 32
         }
-      }
-    },
-    {
-      "station": "田埔小隊",
-      "total": 26,
-      "rosc": 2,
-      "rate": 7.6923076923076925,
-      "r1": 2,
-      "r1_rate": 7.6923076923076925,
-      "pre_rate": 9.090909090909092,
-      "post_rate": 6.666666666666667,
-      "diff_gm_era": -2.4242424242424248,
-      "yearly": {
-        "108": {
-          "total": 1,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "109": {
-          "total": 3,
-          "rosc": 1,
-          "rate": 33.33333333333333
-        },
-        "110": {
-          "total": 7,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "111": {
-          "total": 4,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "112": {
-          "total": 5,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "113": {
-          "total": 3,
-          "rosc": 0,
-          "rate": 0.0
-        },
-        "114": {
-          "total": 3,
-          "rosc": 1,
-          "rate": 33.33333333333333
-        },
-        "115": {
-          "total": 0,
-          "rosc": 0,
-          "rate": 0.0
-        }
-      }
+      },
+      "rank": 15
     },
     {
       "station": "寶山分隊",
-      "total": 133,
-      "rosc": 8,
-      "rate": 6.015037593984962,
-      "r1": 7,
-      "r1_rate": 5.263157894736842,
-      "pre_rate": 0.0,
-      "post_rate": 8.88888888888889,
-      "diff_gm_era": 8.88888888888889,
-      "yearly": {
+      "pre_gm_total": 50,
+      "pre_gm_rosc": 0,
+      "pre_gm_rate": 0.0,
+      "post_gm_total": 83,
+      "post_gm_rosc": 8,
+      "post_gm_rate": 9.64,
+      "growth": 9.64,
+      "total_ohca": 133,
+      "total_rosc": 8,
+      "overall_rate": 6.02,
+      "r1_rate": 5.26,
+      "matrix": {
         "108": {
-          "total": 3,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 3
         },
         "109": {
-          "total": 18,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 18
         },
         "110": {
-          "total": 22,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 22
         },
         "111": {
-          "total": 27,
+          "rate": 3.7,
           "rosc": 1,
-          "rate": 3.7037037037037033
+          "total": 27
         },
         "112": {
-          "total": 20,
+          "rate": 15.0,
           "rosc": 3,
-          "rate": 15.0
+          "total": 20
         },
         "113": {
-          "total": 18,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 18
         },
         "114": {
-          "total": 14,
+          "rate": 7.1,
           "rosc": 1,
-          "rate": 7.142857142857142
+          "total": 14
         },
         "115": {
-          "total": 11,
+          "rate": 27.3,
           "rosc": 3,
-          "rate": 27.27272727272727
+          "total": 11
         }
-      }
+      },
+      "rank": 16
     },
     {
       "station": "新豐分隊",
-      "total": 204,
-      "rosc": 12,
-      "rate": 5.88235294117647,
-      "r1": 9,
-      "r1_rate": 4.411764705882353,
-      "pre_rate": 2.857142857142857,
-      "post_rate": 7.462686567164178,
-      "diff_gm_era": 4.605543710021321,
-      "yearly": {
+      "pre_gm_total": 76,
+      "pre_gm_rosc": 2,
+      "pre_gm_rate": 2.63,
+      "post_gm_total": 128,
+      "post_gm_rosc": 10,
+      "post_gm_rate": 7.81,
+      "growth": 5.18,
+      "total_ohca": 204,
+      "total_rosc": 12,
+      "overall_rate": 5.88,
+      "r1_rate": 4.41,
+      "matrix": {
         "108": {
-          "total": 8,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 8
         },
         "109": {
-          "total": 31,
+          "rate": 6.5,
           "rosc": 2,
-          "rate": 6.451612903225806
+          "total": 31
         },
         "110": {
-          "total": 31,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 31
         },
         "111": {
-          "total": 32,
+          "rate": 9.4,
           "rosc": 3,
-          "rate": 9.375
+          "total": 32
         },
         "112": {
-          "total": 32,
+          "rate": 9.4,
           "rosc": 3,
-          "rate": 9.375
+          "total": 32
         },
         "113": {
-          "total": 23,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 23
         },
         "114": {
-          "total": 25,
+          "rate": 8.0,
           "rosc": 2,
-          "rate": 8.0
+          "total": 25
         },
         "115": {
-          "total": 22,
+          "rate": 9.1,
           "rosc": 2,
-          "rate": 9.090909090909092
+          "total": 22
         }
-      }
+      },
+      "rank": 17
     },
     {
       "station": "五峰分隊",
-      "total": 28,
-      "rosc": 0,
-      "rate": 0.0,
-      "r1": 0,
+      "pre_gm_total": 11,
+      "pre_gm_rosc": 0,
+      "pre_gm_rate": 0.0,
+      "post_gm_total": 17,
+      "post_gm_rosc": 0,
+      "post_gm_rate": 0.0,
+      "growth": 0.0,
+      "total_ohca": 28,
+      "total_rosc": 0,
+      "overall_rate": 0.0,
       "r1_rate": 0.0,
-      "pre_rate": 0.0,
-      "post_rate": 0.0,
-      "diff_gm_era": 0.0,
-      "yearly": {
+      "matrix": {
         "108": {
-          "total": 0,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 0
         },
         "109": {
-          "total": 7,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 7
         },
         "110": {
-          "total": 4,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 4
         },
         "111": {
-          "total": 2,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 2
         },
         "112": {
-          "total": 7,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 7
         },
         "113": {
-          "total": 2,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 2
         },
         "114": {
-          "total": 2,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 2
         },
         "115": {
-          "total": 4,
+          "rate": 0.0,
           "rosc": 0,
-          "rate": 0.0
+          "total": 4
         }
-      }
+      },
+      "rank": 18
+    },
+    {
+      "station": "田埔分隊",
+      "pre_gm_total": 0,
+      "pre_gm_rosc": 0,
+      "pre_gm_rate": 0.0,
+      "post_gm_total": 0,
+      "post_gm_rosc": 0,
+      "post_gm_rate": 0.0,
+      "growth": 0.0,
+      "total_ohca": 0,
+      "total_rosc": 0,
+      "overall_rate": 0.0,
+      "r1_rate": 0.0,
+      "matrix": {
+        "108": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "109": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "110": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "111": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "112": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "113": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "114": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        },
+        "115": {
+          "rate": 0.0,
+          "rosc": 0,
+          "total": 0
+        }
+      },
+      "rank": 19
     }
   ]
 };
