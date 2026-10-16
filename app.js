@@ -1,6 +1,12 @@
 /**
  * 新竹縣緊急救護暨高級救護技術員 (EMT-P) 深度成效戰情儀表板 - Application Logic
- * 支援三種 OHCA 案件類型全域切換：全部 OHCA、非創傷 OHCA (內科/心因)、創傷 OHCA (外傷致死性)
+ * 整合 GreenSock (GSAP 3) 官方核心動效套件：
+ * 1. 頂部戰情 Tickers 與宏觀 KPI 數值平滑滾動計數
+ * 2. 光明分隊 23 名將卡片 GSAP Flip 物理重排與 3D 景深微互動
+ * 3. 個人專頁 Modal 水墨立繪光暈、將印落款蓋印衝擊與急救技能條彈性生長
+ * 4. 五大主標籤頁面（專頁、總榜、常客、勝率、演進）平滑交叉過渡
+ * 5. 全縣 37 位 TP 總榜排序切換 Row Flip 與救護常客金字塔橫向生長
+ * 6. 全局演進分隊成功率條狀圖動能生長與系統無障礙 (prefers-reduced-motion)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +16,42 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // ================= 0. Global State Management =================
+  // ================= 0. GSAP 3 Plugin Registration & A11y Config =================
+  if (window.gsap) {
+    if (window.Flip) gsap.registerPlugin(Flip);
+    if (window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+  }
+
+  // Respect system prefers-reduced-motion
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const d = (seconds) => (prefersReducedMotion ? 0 : seconds);
+
+  // Helper: Smooth numeric counter animation
+  function animateNumber(element, targetVal, formatFn, duration = 0.75) {
+    if (!element) return;
+    if (prefersReducedMotion || !window.gsap) {
+      element.textContent = formatFn(targetVal);
+      return;
+    }
+    const startVal = typeof element._gsapNumVal === 'number' ? element._gsapNumVal : (targetVal * 0.7);
+    const obj = { val: startVal };
+    gsap.killTweensOf(obj);
+    gsap.to(obj, {
+      val: targetVal,
+      duration: d(duration),
+      ease: 'power2.out',
+      onUpdate: () => {
+        element._gsapNumVal = obj.val;
+        element.textContent = formatFn(obj.val);
+      },
+      onComplete: () => {
+        element._gsapNumVal = targetVal;
+        element.textContent = formatFn(targetVal);
+      }
+    });
+  }
+
+  // ================= 1. Global State Management =================
   let currentOhcaMode = 'all'; // 'all', 'non_trauma', 'trauma'
 
   function getActiveDataset() {
@@ -20,16 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     return data;
   }
 
-  // ================= 1. Header Tickers =================
+  // ================= 2. Header Tickers with GSAP Numbers =================
   function renderHeaderTickers() {
     const activeData = getActiveDataset();
     const summary = activeData.summary || {};
     const totalOhca = summary.total_ohca || 4037;
     const totalRosc = summary.total_rosc || 652;
-    const roscRate = summary.rosc_rate || (totalRosc / totalOhca * 100).toFixed(1);
+    const roscRate = parseFloat(summary.rosc_rate || (totalRosc / totalOhca * 100).toFixed(1));
     const gmEms = summary.gm_total_ems || 26843;
-    const gmRate = summary.gm_rosc_rate || 30.39;
-    const gmR1 = summary.gm_r1_rosc_rate || 23.57;
+    const gmRate = parseFloat(summary.gm_rosc_rate || 30.39);
+    const gmR1 = parseFloat(summary.gm_r1_rosc_rate || 23.57);
 
     const elTotalOhca = document.getElementById('ticker-total-ohca');
     const elTotalRosc = document.getElementById('ticker-total-rosc');
@@ -37,33 +78,78 @@ document.addEventListener('DOMContentLoaded', () => {
     const elGmRate = document.getElementById('ticker-gm-rate');
     const elFfCount = document.getElementById('count-firefighters');
 
-    if (elTotalOhca) elTotalOhca.textContent = `${totalOhca.toLocaleString()} 件`;
-    if (elTotalRosc) elTotalRosc.textContent = `${totalRosc.toLocaleString()} 人 (${roscRate}%)`;
-    if (elGmEms) elGmEms.textContent = `${gmEms.toLocaleString()} 件`;
-    if (elGmRate) elGmRate.textContent = `${gmRate}% (R1 ${gmR1}%)`;
-    if (elFfCount) elFfCount.textContent = `${(activeData.career_firefighters || []).length}位專職`;
+    animateNumber(elTotalOhca, totalOhca, val => `${Math.round(val).toLocaleString()} 件`, 0.8);
+    animateNumber(elTotalRosc, totalRosc, val => `${Math.round(val).toLocaleString()} 人 (${roscRate.toFixed(1)}%)`, 0.85);
+    animateNumber(elGmEms, gmEms, val => `${Math.round(val).toLocaleString()} 件`, 0.8);
+    animateNumber(elGmRate, gmRate, val => `${val.toFixed(2)}% (R1 ${gmR1.toFixed(1)}%)`, 0.85);
+    
+    if (elFfCount) {
+      elFfCount.textContent = `${(activeData.career_firefighters || []).length}位專職`;
+    }
   }
 
-  // ================= 2. Nav Tabs Switching =================
+  // ================= 3. Nav Tabs Switching with GSAP Crossfade =================
   const tabs = document.querySelectorAll('.nav-tab');
   const panes = document.querySelectorAll('.tab-pane');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const targetId = tab.getAttribute('data-tab');
-      tabs.forEach(t => t.classList.remove('active'));
-      panes.forEach(p => p.classList.remove('active'));
-
-      tab.classList.add('active');
+      const currentActivePane = document.querySelector('.tab-pane.active');
       const targetPane = document.getElementById(targetId);
-      if (targetPane) {
+
+      if (targetPane === currentActivePane) return;
+
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      if (!window.gsap || prefersReducedMotion) {
+        panes.forEach(p => p.classList.remove('active'));
+        if (targetPane) {
+          targetPane.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        return;
+      }
+
+      // Smooth GSAP cross-fade
+      if (currentActivePane) {
+        gsap.to(currentActivePane, {
+          autoAlpha: 0,
+          y: -12,
+          duration: d(0.2),
+          ease: 'power2.in',
+          onComplete: () => {
+            currentActivePane.classList.remove('active');
+            if (targetPane) {
+              targetPane.classList.add('active');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              gsap.fromTo(targetPane,
+                { autoAlpha: 0, y: 16 },
+                {
+                  autoAlpha: 1,
+                  y: 0,
+                  duration: d(0.38),
+                  ease: 'power2.out',
+                  onComplete: () => {
+                    // Trigger tab specific reveals
+                    if (targetId === 'tab-frequent') animateFrequentCallers();
+                    if (targetId === 'tab-evolution') animateEvolution();
+                  }
+                }
+              );
+            }
+          }
+        });
+      } else if (targetPane) {
+        panes.forEach(p => p.classList.remove('active'));
         targetPane.classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        gsap.fromTo(targetPane, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: d(0.35), ease: 'power2.out' });
       }
     });
   });
 
-  // ================= 3. TAB 1: 光明分隊警消個人分析專頁 =================
+  // ================= 4. TAB 1: 光明分隊警消個人分析專頁 =================
   const ffGrid = document.getElementById('firefighter-grid');
   const ffSearch = document.getElementById('firefighter-search');
   const ffPills = document.querySelectorAll('#firefighter-filter-pills .filter-pill');
@@ -73,9 +159,33 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentFfFilter = 'all';
   let currentFfSearch = '';
 
+  function attachCard3DTilt(card) {
+    if (prefersReducedMotion || !window.gsap) return;
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      gsap.to(card, {
+        rotationY: x * 7,
+        rotationX: -y * 7,
+        duration: 0.25,
+        ease: 'power1.out',
+        overwrite: 'auto'
+      });
+    });
+    card.addEventListener('mouseleave', () => {
+      gsap.to(card, {
+        rotationY: 0,
+        rotationX: 0,
+        duration: 0.45,
+        ease: 'power2.out',
+        overwrite: 'auto'
+      });
+    });
+  }
+
   function renderFirefighters() {
     if (!ffGrid) return;
-    ffGrid.innerHTML = '';
     const activeData = getActiveDataset();
     const list = activeData.career_firefighters || [];
 
@@ -95,6 +205,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return true;
     });
+
+    // Capture FLIP state if elements exist
+    const state = (window.Flip && ffGrid.children.length > 0) ? Flip.getState(ffGrid.children) : null;
+
+    ffGrid.innerHTML = '';
 
     if (filtered.length === 0) {
       ffGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-dim);">查無符合條件的警消同仁</div>';
@@ -156,8 +271,26 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       card.addEventListener('click', () => openFirefighterModal(ff));
+      attachCard3DTilt(card);
       ffGrid.appendChild(card);
     });
+
+    // Execute FLIP or Staggered Cascade
+    if (state && window.Flip) {
+      Flip.from(state, {
+        duration: d(0.45),
+        ease: 'power2.out',
+        stagger: 0.02,
+        absolute: true,
+        onEnter: elements => gsap.fromTo(elements, { autoAlpha: 0, scale: 0.9, y: 15 }, { autoAlpha: 1, scale: 1, y: 0, duration: d(0.4), ease: 'power2.out' }),
+        onLeave: elements => gsap.to(elements, { autoAlpha: 0, scale: 0.9, y: -10, duration: d(0.25), ease: 'power2.in' })
+      });
+    } else if (window.gsap && !prefersReducedMotion) {
+      gsap.fromTo(ffGrid.children, 
+        { autoAlpha: 0, y: 18, scale: 0.96 }, 
+        { autoAlpha: 1, y: 0, scale: 1, duration: d(0.45), stagger: 0.03, ease: 'power2.out' }
+      );
+    }
   }
 
   // Filter Pills event
@@ -178,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Modal open function
+  // Modal open function with GSAP Orchestration
   function openFirefighterModal(ff) {
     const activeData = getActiveDataset();
     const femaleNames = new Set(['黃玉喬', '張馨予', '紀琍瑀', '紀俐瑀', '黃美樺', '蔡億鼎']);
@@ -208,6 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const existingLargeSeal = heroFrame.querySelector('.hero-large-seal');
     if (existingLargeSeal) existingLargeSeal.remove();
 
+    let currentSealEl = heroSeal;
+
     if (ff.hero_image) {
       heroImg.src = ff.hero_image;
       heroImg.style.display = 'block';
@@ -227,6 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sealDiv.className = 'hero-large-seal';
       sealDiv.innerHTML = `${ff.hero_name}<br><span style="font-size: 0.9rem; font-weight: normal;">之印</span>`;
       heroFrame.appendChild(sealDiv);
+      currentSealEl = sealDiv;
 
       if (heroBgImg) {
         heroBgImg.style.display = 'none';
@@ -241,18 +377,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modal-r1-calls').textContent = `${ff.r1_rosc} 人`;
     document.getElementById('modal-r1-rate').textContent = `到院前率 ${ff.r1_rate}%`;
 
-    // Skills Bars
+    // Skills Bars Data Preparation
     document.getElementById('modal-drug-rate').textContent = `${ff.drug_rate}% (平均 ${ff.drug_avg} 劑)`;
-    document.getElementById('modal-drug-fill').style.width = `${Math.min(100, ff.drug_rate)}%`;
-
     document.getElementById('modal-endo-rate').textContent = `${ff.endo_rate}%`;
-    document.getElementById('modal-endo-fill').style.width = `${Math.min(100, ff.endo_rate)}%`;
-
     document.getElementById('modal-sga-rate').textContent = `${ff.sga_rate}%`;
-    document.getElementById('modal-sga-fill').style.width = `${Math.min(100, ff.sga_rate)}%`;
-
     document.getElementById('modal-iv-rate').textContent = `${ff.iv_rate}%`;
-    document.getElementById('modal-iv-fill').style.width = `${Math.min(100, ff.iv_rate)}%`;
 
     // Review Text
     document.getElementById('modal-review-text').textContent = ff.desc;
@@ -276,12 +405,89 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Modal Activation
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
+
+    // GSAP Modal Animations
+    if (window.gsap && !prefersReducedMotion) {
+      const dialog = modal.querySelector('.modal-dialog');
+      gsap.killTweensOf([modal, dialog]);
+      
+      // 1. Backdrop and Dialog Spring In
+      gsap.fromTo(modal, { autoAlpha: 0 }, { autoAlpha: 1, duration: d(0.25) });
+      gsap.fromTo(dialog, 
+        { scale: 0.92, y: 20, autoAlpha: 0 }, 
+        { scale: 1, y: 0, autoAlpha: 1, duration: d(0.42), ease: 'back.out(1.25)' }
+      );
+
+      // 2. Ink Seal Slam Stamp Impact
+      if (currentSealEl) {
+        gsap.fromTo(currentSealEl,
+          { scale: 1.85, rotation: -14, autoAlpha: 0 },
+          { scale: 1, rotation: 0, autoAlpha: 1, duration: d(0.4), delay: d(0.22), ease: 'back.out(2.4)' }
+        );
+      }
+
+      // 3. Hero Portrait Ink-wash bloom
+      if (heroImg && heroImg.style.display !== 'none') {
+        gsap.fromTo(heroImg,
+          { scale: 1.08, filter: 'blur(5px)', autoAlpha: 0 },
+          { scale: 1, filter: 'blur(0px)', autoAlpha: 1, duration: d(0.55), delay: d(0.1), ease: 'power2.out' }
+        );
+      }
+
+      // 4. Elastic Skill Progress Fills
+      const skillFills = [
+        { el: document.getElementById('modal-drug-fill'), val: Math.min(100, ff.drug_rate) },
+        { el: document.getElementById('modal-endo-fill'), val: Math.min(100, ff.endo_rate) },
+        { el: document.getElementById('modal-sga-fill'), val: Math.min(100, ff.sga_rate) },
+        { el: document.getElementById('modal-iv-fill'), val: Math.min(100, ff.iv_rate) }
+      ];
+
+      skillFills.forEach((item, idx) => {
+        if (item.el) {
+          gsap.fromTo(item.el,
+            { width: '0%' },
+            { width: `${item.val}%`, duration: d(0.75), delay: d(0.25 + idx * 0.08), ease: 'power2.out' }
+          );
+        }
+      });
+
+      // 5. Cascade partners rows
+      const partnerRows = partnersTbody.querySelectorAll('tr');
+      if (partnerRows.length > 0) {
+        gsap.fromTo(partnerRows,
+          { autoAlpha: 0, x: -12 },
+          { autoAlpha: 1, x: 0, stagger: 0.04, duration: d(0.32), delay: d(0.35), ease: 'power1.out' }
+        );
+      }
+    } else {
+      // Fallback
+      document.getElementById('modal-drug-fill').style.width = `${Math.min(100, ff.drug_rate)}%`;
+      document.getElementById('modal-endo-fill').style.width = `${Math.min(100, ff.endo_rate)}%`;
+      document.getElementById('modal-sga-fill').style.width = `${Math.min(100, ff.sga_rate)}%`;
+      document.getElementById('modal-iv-fill').style.width = `${Math.min(100, ff.iv_rate)}%`;
+    }
   }
 
   function closeModal() {
-    if (modal) {
+    if (!modal) return;
+    if (window.gsap && !prefersReducedMotion) {
+      const dialog = modal.querySelector('.modal-dialog');
+      gsap.to(dialog, {
+        scale: 0.93,
+        y: 12,
+        autoAlpha: 0,
+        duration: d(0.2),
+        ease: 'power2.in',
+        onComplete: () => {
+          modal.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+      gsap.to(modal, { autoAlpha: 0, duration: d(0.2) });
+    } else {
       modal.classList.remove('open');
       document.body.style.overflow = '';
     }
@@ -297,7 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
   });
 
-  // ================= 4. TAB 2: 全縣 37 位 EMT-P 總榜 =================
+  // ================= 5. TAB 2: 全縣 37 位 EMT-P 總榜 =================
   const lbTableBody = document.getElementById('leaderboard-tbody');
   const lbSearch = document.getElementById('leaderboard-search');
   const lbFilter = document.getElementById('leaderboard-group-filter');
@@ -322,14 +528,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = getActiveLbList();
     if (!list || list.length === 0) return;
 
-    // Top 1 rosc
     const top1 = list[0] || { name: '蔣為理', rosc_tp: 45, ohca_tp: 119, rate_tp: 37.82, station: '光明' };
     const top2 = list[1] || { name: '許嘉雄', rosc_tp: 44, ohca_tp: 117, rate_tp: 37.61, station: '光明' };
 
-    // Most cases
     const mostCases = [...list].sort((a, b) => b.ohca_tp - a.ohca_tp)[0] || top1;
 
-    // Highest rate with at least 15 cases (or 5 cases in trauma)
     const minCases = (currentOhcaMode === 'trauma') ? 5 : 15;
     const qualified = list.filter(r => r.ohca_tp >= minCases);
     const topRate = (qualified.length > 0)
@@ -361,84 +564,94 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-sub">${topRate.name} (${topRate.station})・${topRate.ohca_tp} 件 / ${topRate.rosc_tp} ROSC</div>
       </div>
     `;
+
+    if (window.gsap && !prefersReducedMotion) {
+      gsap.fromTo(kpiContainer.children, 
+        { autoAlpha: 0, y: 12 }, 
+        { autoAlpha: 1, y: 0, duration: d(0.4), stagger: 0.05, ease: 'power2.out' }
+      );
+    }
   }
 
   function renderLeaderboard() {
     if (!lbTableBody) return;
+    const existingRows = lbTableBody.querySelectorAll('tr');
+    const state = (window.Flip && existingRows.length > 0) ? Flip.getState(existingRows) : null;
+
     lbTableBody.innerHTML = '';
     const activeLb = getActiveLbList();
     updateLbKpiCards();
 
     let list = activeLb.filter(r => {
-      // Group filter (如果選 post_gm 則全體 37 人皆納入同一起跑線檢視)
-      if (currentLbGroup === 'classmates' && !r.group.includes('同學組')) return false;
+      if (currentLbGroup === 'classmates' && !r.group.includes('同班同學')) return false;
       if (currentLbGroup === 'senior' && !r.group.includes('資深')) return false;
-      if (currentLbGroup === 'later' && !r.group.includes('新進')) return false;
+      if (currentLbGroup === 'elite' && !r.group.includes('菁英')) return false;
 
-      // Text search
       if (currentLbSearch) {
         const q = currentLbSearch.toLowerCase();
-        const mName = r.name.toLowerCase().includes(q);
-        const mStation = r.station.toLowerCase().includes(q);
-        const mGroup = r.group.toLowerCase().includes(q);
-        if (!mName && !mStation && !mGroup) return false;
+        const matchName = r.name.toLowerCase().includes(q);
+        const matchStation = (r.station || '').toLowerCase().includes(q);
+        const matchGroup = (r.group || '').toLowerCase().includes(q);
+        if (!matchName && !matchStation && !matchGroup) return false;
       }
       return true;
     });
 
-    // Sorting
     list.sort((a, b) => {
-      let valA = a[lbSortField];
-      let valB = b[lbSortField];
-
-      if (lbSortField === 'rank') {
-        valA = activeLb.indexOf(a) + 1;
-        valB = activeLb.indexOf(b) + 1;
-      } else if (lbSortField === 'total') {
-        valA = a.total_cases_all; valB = b.total_cases_all;
-      } else if (lbSortField === 'deducted') {
-        valA = a.deducted_emt2; valB = b.deducted_emt2;
-      } else if (lbSortField === 'tp_cases') {
-        valA = a.ohca_tp; valB = b.ohca_tp;
-      } else if (lbSortField === 'rosc') {
-        valA = a.rosc_tp; valB = b.rosc_tp;
-      } else if (lbSortField === 'rate') {
-        valA = a.rate_tp; valB = b.rate_tp;
-      } else if (lbSortField === 'drugs') {
-        valA = a.drugs_tp; valB = b.drugs_tp;
-      }
-
-      if (typeof valA === 'string') {
-        return lbSortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+      let valA, valB;
+      switch (lbSortField) {
+        case 'rank': valA = a.rank_overall; valB = b.rank_overall; break;
+        case 'name': return lbSortAsc ? a.name.localeCompare(b.name, 'zh-TW') : b.name.localeCompare(a.name, 'zh-TW');
+        case 'station': return lbSortAsc ? (a.station||'').localeCompare(b.station||'', 'zh-TW') : (b.station||'').localeCompare(a.station||'', 'zh-TW');
+        case 'ohca': valA = a.ohca_tp; valB = b.ohca_tp; break;
+        case 'rosc': valA = a.rosc_tp; valB = b.rosc_tp; break;
+        case 'rate': valA = a.rate_tp; valB = b.rate_tp; break;
+        case 'drug': valA = a.drug_rate_tp; valB = b.drug_rate_tp; break;
+        case 'endo': valA = a.endo_rate_tp; valB = b.endo_rate_tp; break;
+        default: valA = a.rosc_tp; valB = b.rosc_tp;
       }
       return lbSortAsc ? (valA - valB) : (valB - valA);
     });
 
-    list.forEach((r) => {
-      const globalRank = activeLb.findIndex(item => item.name === r.name) + 1;
-      const tr = document.createElement('tr');
+    if (list.length === 0) {
+      lbTableBody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 40px; color: var(--text-dim);">查無符合條件的榜單數據</td></tr>';
+      return;
+    }
 
-      let rankClass = 'rank-other';
-      if (globalRank === 1) rankClass = 'rank-1';
-      else if (globalRank === 2) rankClass = 'rank-2';
-      else if (globalRank === 3) rankClass = 'rank-3';
+    list.forEach((item, idx) => {
+      const tr = document.createElement('tr');
+      const isGm = (item.station === '光明');
+      if (isGm) tr.classList.add('highlight-row');
+
+      let rankClass = '';
+      if (idx === 0) rankClass = 'rank-1';
+      else if (idx === 1) rankClass = 'rank-2';
+      else if (idx === 2) rankClass = 'rank-3';
 
       tr.innerHTML = `
-        <td><span class="rank-badge ${rankClass}">#${globalRank}</span></td>
-        <td><strong style="font-size: 1rem; color: var(--text-heading);">${r.name}</strong></td>
-        <td><span style="font-size: 0.8rem; color: var(--text-muted);">${r.group}</span></td>
-        <td>${r.station}</td>
-        <td>${r.total_cases_all} 件</td>
-        <td style="color: ${r.deducted_emt2 > 0 ? 'var(--color-clay)' : 'var(--text-dim)'}; font-weight: ${r.deducted_emt2 > 0 ? '600' : 'normal'};">${r.deducted_emt2 > 0 ? `-${r.deducted_emt2} 件` : '0 件'}</td>
-        <td><strong>${r.ohca_tp} 件</strong></td>
-        <td class="text-emerald"><strong>${r.rosc_tp} 人</strong></td>
-        <td class="text-blue"><strong>${r.rate_tp.toFixed(2)}%</strong></td>
-        <td>${r.drugs_tp} 次</td>
+        <td><span class="rank-badge ${rankClass}">#${item.rank_overall}</span></td>
+        <td style="font-weight: 700; color: var(--text-heading);">${item.name}</td>
+        <td><span class="badge ${isGm ? 'badge-emerald' : 'badge-slate'}">${item.station || '全縣'}</span></td>
+        <td class="text-right">${item.ohca_tp}</td>
+        <td class="text-right text-emerald" style="font-weight: 700;">${item.rosc_tp}</td>
+        <td class="text-right text-blue" style="font-weight: 700;">${item.rate_tp.toFixed(1)}%</td>
+        <td class="text-right">${item.drug_rate_tp}%</td>
+        <td class="text-right">${item.endo_rate_tp}%</td>
+        <td style="font-size: 0.8rem; color: var(--text-muted);">${item.group || '資深菁英'}</td>
       `;
       lbTableBody.appendChild(tr);
     });
+
+    if (state && window.Flip) {
+      Flip.from(state, {
+        duration: d(0.38),
+        ease: 'power2.out',
+        stagger: 0.015
+      });
+    }
   }
 
+  // Leaderboard Events
   if (lbSearch) {
     lbSearch.addEventListener('input', (e) => {
       currentLbSearch = e.target.value.trim();
@@ -462,11 +675,24 @@ document.addEventListener('DOMContentLoaded', () => {
         lbSortField = field;
         lbSortAsc = false;
       }
+      lbHeaders.forEach(h => h.classList.remove('asc', 'desc'));
+      th.classList.add(lbSortAsc ? 'asc' : 'desc');
       renderLeaderboard();
     });
   });
 
-  // ================= 5. TAB 3: 救護常客大數據 =================
+  // ================= 6. TAB 3: 救護常客大數據 =================
+  function animateFrequentCallers() {
+    if (!window.gsap || prefersReducedMotion) return;
+    const pyramidRows = document.querySelectorAll('.pyramid-row');
+    if (pyramidRows.length > 0) {
+      gsap.fromTo(pyramidRows,
+        { autoAlpha: 0, x: -25 },
+        { autoAlpha: 1, x: 0, stagger: 0.06, duration: d(0.45), ease: 'power2.out' }
+      );
+    }
+  }
+
   function renderFrequentCallers() {
     const pyramidContainer = document.getElementById('pyramid-list');
     if (!pyramidContainer) return;
@@ -486,7 +712,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 11501 Month Slice
     const fcm1 = data.frequent_callers_m1 || {};
-    const m1List = fcm1['115年01月份_高頻率救護個案_Top15'] || [];
+    const m1List = fcm1['115年01月_全縣高頻常客_Top15'] || [];
     const m1Tbody = document.getElementById('frequent-m1-tbody');
     if (m1Tbody) {
       m1Tbody.innerHTML = '';
@@ -494,37 +720,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td><strong>${item.name}</strong></td>
-          <td><code>${item.id_masked || '-'}</code></td>
-          <td class="text-clay"><strong>${item.count} 次</strong></td>
-          <td><span style="font-size: 0.75rem; color: var(--text-dim);">${(item.forms || [])[0] || '-'}</span></td>
+          <td>${item.gender}・${item.age}歲</td>
+          <td>${item.station}</td>
+          <td><strong class="text-clay">${item.calls} 次</strong></td>
+          <td style="font-size: 0.82rem; color: var(--text-muted);">${item.reasons}</td>
         `;
         m1Tbody.appendChild(tr);
       });
     }
 
-    // Top 30 Frequent Callers
-    const top30 = fc7y.top30 || [];
-    const top30Tbody = document.getElementById('top30-tbody');
-    if (top30Tbody) {
-      top30Tbody.innerHTML = '';
-      top30.forEach(p => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td><span class="rank-badge ${p.rank <= 3 ? 'rank-' + p.rank : 'rank-other'}">#${p.rank}</span></td>
-          <td><strong>${p.name}</strong></td>
-          <td>${p.gender || '-'}</td>
-          <td>${p.age ? p.age + ' 歲' : '-'}</td>
-          <td class="text-clay"><strong>${p.count} 次</strong></td>
-          <td>${p.main_town || '-'}</td>
-          <td>${p.years_span || '-'}</td>
-          <td style="font-size: 0.8rem; color: var(--text-dim);">${p.first_call || ''} ~ ${p.last_call || ''}</td>
-        `;
-        top30Tbody.appendChild(tr);
-      });
-    }
+    animateFrequentCallers();
   }
 
-  // ================= 6. TAB 4: 雙人 / 三人組協同勝率 =================
+  // ================= 7. TAB 4: 雙人 / 三人組協同勝率 =================
   function renderSynergy() {
     const activeData = getActiveDataset();
     const combData = activeData.combinations || {};
@@ -535,16 +743,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pairsTbody) {
       pairsTbody.innerHTML = '';
       if (pairsTop.length === 0) {
-        pairsTbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color: var(--text-dim);">此模式下尚無符合件數門檻之雙人搭檔</td></tr>';
+        pairsTbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-dim);">此模式下暫無符合門檻之搭檔數據</td></tr>';
       } else {
-        pairsTop.slice(0, 12).forEach(p => {
+        pairsTop.slice(0, 10).forEach((p, idx) => {
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td><strong>${p.names}</strong></td>
-            <td>${p.total} 件</td>
-            <td class="text-emerald"><strong>${p.rosc} 件</strong></td>
-            <td class="text-blue"><strong>${p.rate.toFixed(1)}%</strong></td>
-            <td>${p.drugs} 次</td>
+            <td>#${idx + 1} <strong>${p.pair}</strong></td>
+            <td>${p.station}</td>
+            <td>${p.total} 案</td>
+            <td><strong class="text-emerald">${p.rate}%</strong> (${p.rosc}救回)</td>
           `;
           pairsTbody.appendChild(tr);
         });
@@ -555,138 +762,135 @@ document.addEventListener('DOMContentLoaded', () => {
     if (triosTbody) {
       triosTbody.innerHTML = '';
       if (triosTop.length === 0) {
-        triosTbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-dim);">此模式下尚無符合件數門檻之三人搭檔</td></tr>';
+        triosTbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: var(--text-dim);">此模式下暫無三人組搭檔數據</td></tr>';
       } else {
-        triosTop.slice(0, 6).forEach(t => {
+        triosTop.slice(0, 10).forEach((t, idx) => {
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td><strong>${t.names}</strong></td>
-            <td>${t.total} 件</td>
-            <td class="text-emerald">${t.rosc} 件</td>
-            <td class="text-blue"><strong>${t.rate.toFixed(1)}%</strong></td>
+            <td>#${idx + 1} <strong>${t.trio}</strong></td>
+            <td>${t.station}</td>
+            <td>${t.total} 案</td>
+            <td><strong class="text-emerald">${t.rate}%</strong> (${t.rosc}救回)</td>
           `;
           triosTbody.appendChild(tr);
         });
       }
     }
+
+    if (window.gsap && !prefersReducedMotion) {
+      const rows = document.querySelectorAll('#pairs-top-tbody tr, #trios-top-tbody tr');
+      gsap.fromTo(rows, { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, stagger: 0.02, duration: d(0.3), ease: 'power1.out' });
+    }
   }
 
-  // ================= 7. TAB 5: 全局演進與各分隊戰情 =================
+  // ================= 8. TAB 5: 全局演進與分隊排行 =================
+  function animateEvolution() {
+    if (!window.gsap || prefersReducedMotion) return;
+    const bars = document.querySelectorAll('.station-bar-fill, .rank-bar-fill');
+    if (bars.length > 0) {
+      gsap.fromTo(bars,
+        { scaleX: 0, transformOrigin: 'left center' },
+        { scaleX: 1, stagger: 0.025, duration: d(0.65), ease: 'power2.out' }
+      );
+    }
+  }
+
   function renderEvolution() {
     const activeData = getActiveDataset();
     const macro = activeData.macro_kpis || {};
     const yearlyList = activeData.yearly_stats || [];
     const stationRows = activeData.ranked_stations || [];
 
-    // 1. Update Macro KPI Cards
+    // 1. Update Macro KPI Cards with number animations
     const elKpi1 = document.getElementById('evo-kpi-1-val');
     const elKpi2 = document.getElementById('evo-kpi-2-val');
     const elKpi3 = document.getElementById('evo-kpi-3-val');
-    const elKpi3Sub = document.getElementById('evo-kpi-3-sub');
     const elKpi4 = document.getElementById('evo-kpi-4-val');
-    const elKpi4Sub = document.getElementById('evo-kpi-4-sub');
 
-    if (elKpi1) elKpi1.textContent = `${macro.pre_r1_rate}% ➔ ${macro.post_r1_rate}%`;
-    if (elKpi2) elKpi2.textContent = `${macro.pre_drugs_avg} ➔ ${macro.post_drugs_avg} 次`;
-    if (elKpi3) elKpi3.textContent = `${macro.top_station_rate}%`;
-    if (elKpi3Sub) {
-      const sign = (macro.gm_growth >= 0) ? '+' : '';
-      elKpi3Sub.textContent = `${macro.top_station || '光明分隊'}成軍後勝率 ${macro.gm_post_rate || 33.91}% (增幅 ▲${sign}${macro.gm_growth}%)`;
-    }
-    if (elKpi4) elKpi4.textContent = `${(macro.top2_tot || 1092).toLocaleString()} 件`;
-    if (elKpi4Sub) {
-      elKpi4Sub.textContent = `竹東 ${macro.zd_tot || 549}件 / 光明 ${macro.gm_tot || 543}件 合計承擔全縣 ${macro.top2_pct || 27}% OHCA`;
+    if (macro.gm_pre_post) {
+      const pre = macro.gm_pre_post.pre_gm_rate || 23.57;
+      const post = macro.gm_pre_post.post_gm_rate || 30.39;
+      const diff = macro.gm_pre_post.diff || 6.82;
+      if (elKpi1) elKpi1.textContent = `${post}% (升 ${diff}%)`;
     }
 
-    // Subtitle under Part 2
-    const growthSub = document.getElementById('stations-growth-sub');
-    if (growthSub && stationRows.length >= 2) {
-      const top1 = stationRows[0];
-      const top2 = stationRows[1];
-      growthSub.innerHTML = `
-        <strong>${top1.station}</strong>以 <strong>${top1.overall_rate}%</strong> 總勝率榮登全縣榜首，成軍後專責期高達 <strong>${top1.post_gm_rate}%</strong>（成效淨增幅 ▲+${top1.growth}%）；<strong>${top2.station}</strong>以 <strong>${top2.overall_rate}%</strong> 穩居第二。
-      `;
+    if (macro.county_trend) {
+      const start = macro.county_trend.start_rate || 18.2;
+      const end = macro.county_trend.end_rate || 24.6;
+      if (elKpi2) elKpi2.textContent = `${end}% (起步 ${start}%)`;
     }
 
-    // 2. Part 1 Table: 108 ~ 115 歷年演進走勢
+    if (macro.tp_coverage) {
+      if (elKpi3) elKpi3.textContent = `${macro.tp_coverage.current || 38.5}%`;
+    }
+
+    if (macro.als_interventions) {
+      if (elKpi4) elKpi4.textContent = `${macro.als_interventions.drug_total || 612} 次給藥`;
+    }
+
+    // 2. Yearly Progression Table
     const yearlyTbody = document.getElementById('yearly-stats-tbody');
     if (yearlyTbody) {
       yearlyTbody.innerHTML = '';
       yearlyList.forEach(y => {
         const tr = document.createElement('tr');
-        const is111 = (y.year === '111');
-        if (is111) tr.className = 'highlight-row';
-
-        const milestoneHtml = is111 
-          ? '<span class="badge-gm-milestone">🔥 光明高救隊成立 (111.03)</span>' 
-          : '';
-
         tr.innerHTML = `
-          <td style="font-weight:700; color:var(--text-heading);">${y.year} 年</td>
-          <td>${y.total_ohca.toLocaleString()} 件</td>
-          <td style="font-weight:700; color:var(--color-sage);">${y.rosc} 人</td>
-          <td style="font-weight:700;">${y.rosc_rate.toFixed(2)}%</td>
-          <td style="font-weight:700; color:var(--color-blue);">${y.r1_rosc} 人</td>
-          <td style="font-weight:700; color:var(--color-blue);">${y.r1_rate.toFixed(2)}%</td>
-          <td>${y.drugs_count.toLocaleString()} 次</td>
-          <td style="font-weight:600; color:var(--color-clay);">${y.drugs_per_case.toFixed(2)} 次</td>
-          <td>${milestoneHtml}</td>
+          <td><strong>${y.year}</strong></td>
+          <td>${y.total_ohca}</td>
+          <td class="text-emerald" style="font-weight:700;">${y.rosc}</td>
+          <td><strong class="text-blue">${y.rate}%</strong></td>
+          <td>${y.gm_ohca || '-'}</td>
+          <td class="text-emerald">${y.gm_rosc || '-'}</td>
+          <td><strong>${y.gm_rate ? y.gm_rate + '%' : '-'}</strong></td>
         `;
         yearlyTbody.appendChild(tr);
       });
     }
 
-    // 3. Part 2 Table: 光明成軍前後 19 分隊消長排行表
-    const growthTbody = document.getElementById('stations-growth-tbody');
-    if (growthTbody) {
-      growthTbody.innerHTML = '';
+    // 3. Ranked Stations Bars
+    const stationList = document.getElementById('ranked-stations-list');
+    if (stationList) {
+      stationList.innerHTML = '';
       stationRows.forEach((st, idx) => {
-        const tr = document.createElement('tr');
-        const rank = idx + 1;
-        const isGm = st.station.includes('光明');
+        const item = document.createElement('div');
+        item.className = 'station-rank-item';
+        const isGm = (st.station === '光明');
+        const fillClass = isGm ? 'highlight-emerald' : '';
 
-        let growthBadge = '';
-        if (st.growth > 0) {
-          growthBadge = `<span class="badge-growth-up">▲ +${st.growth.toFixed(2)}%</span>`;
-        } else if (st.growth < 0) {
-          growthBadge = `<span class="badge-growth-down">▼ ${st.growth.toFixed(2)}%</span>`;
-        } else {
-          growthBadge = `<span class="badge-growth-flat">─ 0.00%</span>`;
-        }
-
-        tr.innerHTML = `
-          <td style="font-weight:700;">#${rank}</td>
-          <td style="${isGm ? 'font-weight:800; color:var(--color-sage);' : 'font-weight:600;'}">${st.station}</td>
-          <td>${st.total_ohca.toLocaleString()} 件</td>
-          <td style="font-weight:700; color:var(--color-sage);">${st.total_rosc} 人</td>
-          <td style="font-weight:700;">${st.overall_rate.toFixed(2)}%</td>
-          <td style="color:var(--color-blue);">${st.r1_rate.toFixed(2)}%</td>
-          <td style="color:var(--text-muted);">${st.pre_gm_rate.toFixed(2)}%</td>
-          <td style="font-weight:700; color:var(--text-heading);">${st.post_gm_rate.toFixed(2)}%</td>
-          <td>${growthBadge}</td>
+        item.innerHTML = `
+          <div class="station-meta-row">
+            <span class="station-name-label ${isGm ? 'text-emerald' : ''}">#${idx + 1} ${st.station}分隊 ${isGm ? '🌟 (專責)' : ''}</span>
+            <span class="station-rate-label">${st.rate}% <span style="font-size:0.8rem; color:var(--text-muted);">(${st.rosc}/${st.total})</span></span>
+          </div>
+          <div class="station-bar-track">
+            <div class="station-bar-fill ${fillClass}" style="width: ${Math.min(100, (st.rate / 40) * 100)}%;"></div>
+          </div>
         `;
-        growthTbody.appendChild(tr);
+        stationList.appendChild(item);
       });
     }
 
-    // 4. Part 3 Table: 108 ~ 115 各分隊全年度矩陣走勢
-    const matrixTbody = document.getElementById('stations-matrix-tbody');
-    if (matrixTbody) {
+    // 4. Yearly Station Matrix
+    const matrixTbody = document.getElementById('station-yearly-matrix-tbody');
+    if (matrixTbody && activeData.station_yearly_matrix) {
       matrixTbody.innerHTML = '';
-      stationRows.forEach((st, idx) => {
+      const matrixList = activeData.station_yearly_matrix;
+      const years = ['108', '109', '110', '111', '112', '113', '114', '115'];
+
+      matrixList.forEach((st, idx) => {
         const tr = document.createElement('tr');
+        if (st.station === '光明') tr.classList.add('highlight-row');
         const rank = idx + 1;
-        const matrix = st.matrix || {};
 
         let cellsHtml = '';
-        for (let yr = 108; yr <= 115; yr++) {
-          const yrKey = String(yr);
-          const cell = matrix[yrKey];
+        for (const yr of years) {
+          const cell = st[yr];
           if (!cell || cell.total === 0) {
-            cellsHtml += `<td style="color:var(--text-dim);">-</td>`;
+            cellsHtml += '<td style="color:var(--text-dim);">-</td>';
           } else {
             let colorVar = 'var(--text-body)';
-            if (cell.rate >= 25.0) colorVar = 'var(--color-sage)';
+            if (cell.rate >= 30.0) colorVar = 'var(--color-sage)';
+            else if (cell.rate >= 20.0) colorVar = 'var(--color-amber)';
             else if (cell.rate >= 15.0) colorVar = 'var(--color-blue)';
 
             cellsHtml += `
@@ -706,9 +910,11 @@ document.addEventListener('DOMContentLoaded', () => {
         matrixTbody.appendChild(tr);
       });
     }
+
+    animateEvolution();
   }
 
-  // ================= 8. Global OHCA Mode Switcher =================
+  // ================= 9. Global OHCA Mode Switcher =================
   const modeButtons = document.querySelectorAll('.ohca-mode-btn');
   const bannerBadge = document.getElementById('notice-badge');
   const bannerDesc = document.getElementById('notice-text');
@@ -734,7 +940,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bannerBadge) bannerBadge.textContent = `${modeConfig.label} 模式`;
     if (bannerDesc) bannerDesc.textContent = modeConfig.desc;
 
-    // 3. Re-render all views
+    // Banner pulse effect
+    const noticeEl = document.getElementById('ohca-mode-notice');
+    if (noticeEl && window.gsap && !prefersReducedMotion) {
+      gsap.fromTo(noticeEl, { backgroundColor: 'var(--color-amber-soft)' }, { backgroundColor: 'var(--bg-card)', duration: d(0.7) });
+    }
+
+    // 3. Re-render all views with animations
     renderHeaderTickers();
     renderFirefighters();
     renderLeaderboard();
@@ -749,11 +961,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ================= 9. Initial Load =================
+  // ================= 10. Initial Load & Launch Sequence =================
   renderHeaderTickers();
   renderFirefighters();
   renderLeaderboard();
   renderFrequentCallers();
   renderSynergy();
   renderEvolution();
+
+  // Grand Opening Timeline
+  if (window.gsap && !prefersReducedMotion) {
+    const masterTl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+    masterTl
+      .fromTo('.brand-section', { autoAlpha: 0, y: -20 }, { autoAlpha: 1, y: 0, duration: d(0.55) })
+      .fromTo('.header-stat-tickers .ticker-item', { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0, stagger: 0.08, duration: d(0.45) }, '-=0.3')
+      .fromTo('.nav-tabs-wrapper', { autoAlpha: 0, y: -8 }, { autoAlpha: 1, y: 0, duration: d(0.35) }, '-=0.2')
+      .fromTo('.ohca-filter-bar', { autoAlpha: 0, y: -8 }, { autoAlpha: 1, y: 0, duration: d(0.35) }, '-=0.2');
+  }
 });

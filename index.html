@@ -639,6 +639,17 @@
   </footer>
 
   <!-- Scripts -->
+    <!-- GSAP 3 Core & Official Plugins (Local Vendor with CDN Fallback) -->
+  <script src="vendor/gsap/gsap.min.js"></script>
+  <script src="vendor/gsap/Flip.min.js"></script>
+  <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+  <script>
+    if (!window.gsap) {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"><\/script>');
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"><\/script>');
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"><\/script>');
+    }
+  </script>
   <script src="dashboard_data.js"></script>
   <script src="app.js"></script>
 </body>

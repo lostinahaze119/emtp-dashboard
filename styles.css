@@ -1924,3 +1924,72 @@ img, svg, canvas {
     font-size: 0.7rem;
   }
 }
+
+
+/* ==========================================================================
+   GSAP 3 Enhanced Interactions & 60fps GPU Compositing
+   ========================================================================== */
+
+/* Tabular numbers for smoother rolling animations without horizontal jitter */
+.ticker-val,
+.ff-kpi-val,
+.kpi-number,
+.pyramid-val {
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+/* 3D Perspective Stage for Firefighter Cards */
+.firefighter-grid {
+  perspective: 1200px;
+}
+
+.firefighter-card {
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  transform-origin: center center;
+}
+
+.firefighter-card:hover .ff-thumb-img {
+  transform: scale(1.05);
+}
+
+.ff-thumb-img {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Modal Staging & Ink Seal */
+.modal-dialog {
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.modal-hero-seal,
+.hero-large-seal {
+  transform-origin: center center;
+  will-change: transform, opacity;
+  display: inline-block;
+}
+
+/* Skill Progress Fills */
+.skill-fill {
+  transform-origin: left center;
+  will-change: width;
+}
+
+/* Smooth Tab Panes */
+.tab-pane {
+  will-change: transform, opacity;
+}
+
+/* Table Row Flip animations */
+#leaderboard-tbody tr {
+  will-change: transform;
+}
+
+/* Frequent Callers & Station Ranking Bars */
+.pyramid-row {
+  will-change: transform, opacity;
+}
