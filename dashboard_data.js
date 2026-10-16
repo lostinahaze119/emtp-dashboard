@@ -15,7 +15,7 @@ window.DASHBOARD_DATA = {
     },
     "top30": [
       {
-        "name": "朱明輝",
+        "name": "朱O輝",
         "id_masked": "J12***759",
         "gender": "男",
         "age": "65",
@@ -32,7 +32,7 @@ window.DASHBOARD_DATA = {
         "rank": 1
       },
       {
-        "name": "張益文",
+        "name": "張O文",
         "id_masked": "J12***626",
         "gender": "男",
         "age": "45",
@@ -49,7 +49,7 @@ window.DASHBOARD_DATA = {
         "rank": 2
       },
       {
-        "name": "李進發",
+        "name": "李O發",
         "id_masked": "U12***315",
         "gender": "男",
         "age": "57",
@@ -66,7 +66,7 @@ window.DASHBOARD_DATA = {
         "rank": 3
       },
       {
-        "name": "周宗儉",
+        "name": "周O儉",
         "id_masked": "J12***375",
         "gender": "男",
         "age": "57",
@@ -83,7 +83,7 @@ window.DASHBOARD_DATA = {
         "rank": 4
       },
       {
-        "name": "羅士彬",
+        "name": "羅O彬",
         "id_masked": "J12***111",
         "gender": "男",
         "age": "29",
@@ -100,7 +100,7 @@ window.DASHBOARD_DATA = {
         "rank": 5
       },
       {
-        "name": "李偉智",
+        "name": "李O智",
         "id_masked": "J12***880",
         "gender": "男",
         "age": "35",
@@ -117,7 +117,7 @@ window.DASHBOARD_DATA = {
         "rank": 6
       },
       {
-        "name": "鄭仁峰",
+        "name": "鄭O峰",
         "id_masked": "J12***708",
         "gender": "男",
         "age": "47",
@@ -134,7 +134,7 @@ window.DASHBOARD_DATA = {
         "rank": 7
       },
       {
-        "name": "范進明",
+        "name": "范O明",
         "id_masked": "J12***994",
         "gender": "男",
         "age": "29",
@@ -151,7 +151,7 @@ window.DASHBOARD_DATA = {
         "rank": 8
       },
       {
-        "name": "宋國志",
+        "name": "宋O志",
         "id_masked": "O10***283",
         "gender": "男",
         "age": "40",
@@ -168,7 +168,7 @@ window.DASHBOARD_DATA = {
         "rank": 9
       },
       {
-        "name": "傅可達",
+        "name": "傅O達",
         "id_masked": "J12***263",
         "gender": "男",
         "age": "37",
@@ -185,7 +185,7 @@ window.DASHBOARD_DATA = {
         "rank": 10
       },
       {
-        "name": "張紀偉",
+        "name": "張O偉",
         "id_masked": "J12***221",
         "gender": "男",
         "age": "43",
@@ -202,7 +202,7 @@ window.DASHBOARD_DATA = {
         "rank": 11
       },
       {
-        "name": "林秀蓮",
+        "name": "林O蓮",
         "id_masked": "J22***058",
         "gender": "女",
         "age": "63",
@@ -219,7 +219,7 @@ window.DASHBOARD_DATA = {
         "rank": 12
       },
       {
-        "name": "戴瑞琪",
+        "name": "戴O琪",
         "id_masked": "J22***935",
         "gender": "女",
         "age": "42",
@@ -236,7 +236,7 @@ window.DASHBOARD_DATA = {
         "rank": 13
       },
       {
-        "name": "賴鏡澄",
+        "name": "賴O澄",
         "id_masked": "J12***011",
         "gender": "男",
         "age": "61",
@@ -253,7 +253,7 @@ window.DASHBOARD_DATA = {
         "rank": 14
       },
       {
-        "name": "徐水房",
+        "name": "徐O房",
         "id_masked": "J10***054",
         "gender": "男",
         "age": "78",
@@ -270,7 +270,7 @@ window.DASHBOARD_DATA = {
         "rank": 15
       },
       {
-        "name": "夏正強",
+        "name": "夏O強",
         "id_masked": "J12***113",
         "gender": "男",
         "age": "40",
@@ -287,7 +287,7 @@ window.DASHBOARD_DATA = {
         "rank": 16
       },
       {
-        "name": "阿本尤希",
+        "name": "阿OO希",
         "id_masked": "J12***283",
         "gender": "男",
         "age": "58",
@@ -304,7 +304,7 @@ window.DASHBOARD_DATA = {
         "rank": 17
       },
       {
-        "name": "張健明",
+        "name": "張O明",
         "id_masked": "S12***198",
         "gender": "男",
         "age": "45",
@@ -321,7 +321,7 @@ window.DASHBOARD_DATA = {
         "rank": 18
       },
       {
-        "name": "陳虹君",
+        "name": "陳O君",
         "id_masked": "L22***929",
         "gender": "女",
         "age": "51",
@@ -338,7 +338,7 @@ window.DASHBOARD_DATA = {
         "rank": 19
       },
       {
-        "name": "王詩惠",
+        "name": "王O惠",
         "id_masked": "O20***262",
         "gender": "女",
         "age": "28",
@@ -355,7 +355,7 @@ window.DASHBOARD_DATA = {
         "rank": 20
       },
       {
-        "name": "劉秀琴",
+        "name": "劉O琴",
         "id_masked": "J22***334",
         "gender": "女",
         "age": "58",
@@ -372,7 +372,7 @@ window.DASHBOARD_DATA = {
         "rank": 21
       },
       {
-        "name": "范惠玲",
+        "name": "范O玲",
         "id_masked": "J22***281",
         "gender": "女",
         "age": "50",
@@ -389,7 +389,7 @@ window.DASHBOARD_DATA = {
         "rank": 22
       },
       {
-        "name": "陳緯翔",
+        "name": "陳O翔",
         "id_masked": "O10***105",
         "gender": "男",
         "age": "37",
@@ -406,7 +406,7 @@ window.DASHBOARD_DATA = {
         "rank": 23
       },
       {
-        "name": "羅時英",
+        "name": "羅O英",
         "id_masked": "A12***121",
         "gender": "男",
         "age": "46",
@@ -423,7 +423,7 @@ window.DASHBOARD_DATA = {
         "rank": 24
       },
       {
-        "name": "黃美貞",
+        "name": "黃O貞",
         "id_masked": "J22***916",
         "gender": "女",
         "age": "62",
@@ -440,7 +440,7 @@ window.DASHBOARD_DATA = {
         "rank": 25
       },
       {
-        "name": "謝仁欽",
+        "name": "謝O欽",
         "id_masked": "J12***470",
         "gender": "男",
         "age": "61",
@@ -457,7 +457,7 @@ window.DASHBOARD_DATA = {
         "rank": 26
       },
       {
-        "name": "曾范文正",
+        "name": "曾OO正",
         "id_masked": "J12***730",
         "gender": "男",
         "age": "62",
@@ -474,7 +474,7 @@ window.DASHBOARD_DATA = {
         "rank": 27
       },
       {
-        "name": "胡福田",
+        "name": "胡O田",
         "id_masked": "V12***053",
         "gender": "男",
         "age": "70",
@@ -491,7 +491,7 @@ window.DASHBOARD_DATA = {
         "rank": 28
       },
       {
-        "name": "吳聽奚",
+        "name": "吳O奚",
         "id_masked": "J12***731",
         "gender": "男",
         "age": "50",
@@ -508,7 +508,7 @@ window.DASHBOARD_DATA = {
         "rank": 29
       },
       {
-        "name": "鍾財利",
+        "name": "鍾O利",
         "id_masked": "V10***953",
         "gender": "男",
         "age": "70",
@@ -529,7 +529,7 @@ window.DASHBOARD_DATA = {
   "frequent_callers_m1": {
     "115年01月份_高頻率救護個案_Top15": [
       {
-        "name": "張益文",
+        "name": "張O文",
         "id_masked": "J12***626",
         "count": 6,
         "forms": [
@@ -542,7 +542,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "宋國志",
+        "name": "宋O志",
         "id_masked": "O10***283",
         "count": 5,
         "forms": [
@@ -554,7 +554,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "許達偉",
+        "name": "許O偉",
         "id_masked": "J12***619",
         "count": 4,
         "forms": [
@@ -565,7 +565,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "邱鎮宇",
+        "name": "邱O宇",
         "id_masked": "J12***550",
         "count": 3,
         "forms": [
@@ -575,7 +575,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "陳春秀",
+        "name": "陳O秀",
         "id_masked": "J22***024",
         "count": 3,
         "forms": [
@@ -585,7 +585,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "傅佩琪",
+        "name": "傅O琪",
         "id_masked": "J22***576",
         "count": 3,
         "forms": [
@@ -595,7 +595,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "游美玉",
+        "name": "游O玉",
         "id_masked": "F20***535",
         "count": 3,
         "forms": [
@@ -605,7 +605,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "張衣淇",
+        "name": "張O淇",
         "id_masked": "F22***630",
         "count": 3,
         "forms": [
@@ -615,7 +615,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "呂漢堂",
+        "name": "呂O堂",
         "id_masked": "Q12***019",
         "count": 3,
         "forms": [
@@ -625,7 +625,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "朱俊龍",
+        "name": "朱O龍",
         "id_masked": "J12***010",
         "count": 3,
         "forms": [
@@ -635,7 +635,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "陳文龍",
+        "name": "陳O龍",
         "id_masked": "H12***726",
         "count": 3,
         "forms": [
@@ -645,7 +645,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "陳伯彥",
+        "name": "陳O彥",
         "id_masked": "J12***720",
         "count": 3,
         "forms": [
@@ -655,7 +655,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "梁勝淇",
+        "name": "梁O淇",
         "id_masked": "J12***843",
         "count": 2,
         "forms": [
@@ -664,7 +664,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "黃宏翔",
+        "name": "黃O翔",
         "id_masked": "J12***112",
         "count": 2,
         "forms": [
@@ -673,7 +673,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "莊文彬",
+        "name": "莊O彬",
         "id_masked": "J12***806",
         "count": 2,
         "forms": [
@@ -684,7 +684,7 @@ window.DASHBOARD_DATA = {
     ],
     "115年第3季(7至9月全縣)_高頻率救護個案_Top15": [
       {
-        "name": "馮菲德",
+        "name": "馮O德",
         "count": 8,
         "units": [
           "新埔分隊",
@@ -711,7 +711,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "宋國志",
+        "name": "宋O志",
         "count": 7,
         "units": [
           "芎林分隊",
@@ -737,7 +737,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "傅可達",
+        "name": "傅O達",
         "count": 7,
         "units": [
           "關西分隊"
@@ -762,7 +762,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "韓泓宸",
+        "name": "韓O宸",
         "count": 6,
         "units": [
           "竹東分隊"
@@ -787,7 +787,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "吳嘉證",
+        "name": "吳O證",
         "count": 6,
         "units": [
           "竹東分隊"
@@ -811,7 +811,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "莫智全",
+        "name": "莫O全",
         "count": 6,
         "units": [
           "北埔分隊",
@@ -836,7 +836,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "曾忠銘",
+        "name": "曾O銘",
         "count": 5,
         "units": [
           "光明分隊"
@@ -861,7 +861,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "羅文灯",
+        "name": "羅O灯",
         "count": 5,
         "units": [
           "新豐分隊",
@@ -887,7 +887,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "陳志賢",
+        "name": "陳O賢",
         "count": 5,
         "units": [
           "光明分隊",
@@ -913,7 +913,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "陳玟怡",
+        "name": "陳O怡",
         "count": 5,
         "units": [
           "寶山分隊",
@@ -940,7 +940,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "曾振宗",
+        "name": "曾O宗",
         "count": 5,
         "units": [
           "峨眉分隊",
@@ -967,7 +967,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "范進明",
+        "name": "范O明",
         "count": 5,
         "units": [
           "芎林分隊",
@@ -993,7 +993,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "杜宋杏妹",
+        "name": "杜OO妹",
         "count": 5,
         "units": [
           "關西分隊"
@@ -1017,7 +1017,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "蔡火旺",
+        "name": "蔡O旺",
         "count": 4,
         "units": [
           "竹東分隊"
@@ -1039,7 +1039,7 @@ window.DASHBOARD_DATA = {
         ]
       },
       {
-        "name": "黃秀蘭",
+        "name": "黃O蘭",
         "count": 4,
         "units": [
           "新工分隊",

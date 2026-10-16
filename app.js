@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
       partners.forEach(p => {
         const row = document.createElement('tr');
         row.innerHTML = `
-          <td><strong>${p.name}</strong></td>
+          <td><strong>${maskPatientName(p.name)}</strong></td>
           <td>${p.total} 件</td>
           <td class="text-emerald">${p.rosc} 件</td>
           <td><strong class="text-blue">${p.rate}%</strong></td>
@@ -660,7 +660,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ================= 6. TAB 3: 救護常客大數據 (100% 原始結構完整呈現) =================
+    // Patient Name Anonymization (e.g., 陳O文, 杜OO妹)
+  function maskPatientName(name) {
+    if (!name || typeof name !== 'string') return '-';
+    const len = name.length;
+    if (len <= 1) return name;
+    if (len === 2) return name[0] + 'O';
+    if (len === 3) return name[0] + 'O' + name[2];
+    return name[0] + 'O'.repeat(len - 2) + name[len - 1];
+  }
+
+// ================= 6. TAB 3: 救護常客大數據 (100% 原始結構完整呈現) =================
   function renderFrequentCallers() {
     const pyramidContainer = document.getElementById('pyramid-list');
     if (!pyramidContainer) return;
@@ -687,7 +697,7 @@ document.addEventListener('DOMContentLoaded', () => {
       m1List.slice(0, 10).forEach(item => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-          <td><strong>${item.name}</strong></td>
+          <td><strong>${maskPatientName(item.name)}</strong></td>
           <td><code>${item.id_masked || '-'}</code></td>
           <td class="text-clay"><strong>${item.count} 次</strong></td>
           <td><span style="font-size: 0.75rem; color: var(--text-dim);">${(item.forms || [])[0] || '-'}</span></td>
@@ -705,7 +715,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
           <td><span class="rank-badge ${p.rank <= 3 ? 'rank-' + p.rank : 'rank-other'}">#${p.rank}</span></td>
-          <td><strong>${p.name}</strong></td>
+          <td><strong>${maskPatientName(p.name)}</strong></td>
           <td>${p.gender || '-'}</td>
           <td>${p.age ? p.age + ' 歲' : '-'}</td>
           <td class="text-clay"><strong>${p.count} 次</strong></td>
