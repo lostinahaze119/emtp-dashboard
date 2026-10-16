@@ -1,42 +1,42 @@
-# 戰情室專案自動存檔腳本 (Checkpoint Backup Tool)
+﻿# Checkpoint Backup Tool
 param(
-    [string]$Note = "日常存檔"
+    [string]$Note = "snapshot"
 )
 
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-$safeNote = $Note -replace '[\/:\*\?"<>\|\s]', '_'
-$backupDirName = "checkpoint_${timestamp}_${safeNote}"
+$safeNote = $Note -replace '[^a-zA-Z0-9_\-]', '_'
+$backupDirName = "checkpoint_" + $timestamp + "_" + $safeNote
 $backupRoot = "D:\project\emtp-dashboard-backups"
 $destPath = Join-Path $backupRoot $backupDirName
 
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  新竹縣 EMT-P 戰情室 - 專案存檔系統" -ForegroundColor Cyan
+Write-Host "  EMT-P Dashboard - Checkpoint System" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 
-if (!(Test-Path $backupRoot)) {
+if (-not (Test-Path $backupRoot)) {
     New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
 }
 
-Write-Host "[1/3] 正在建立實體快照目錄：$backupDirName ..." -ForegroundColor Yellow
+Write-Host "[1/3] Creating physical snapshot: $backupDirName ..." -ForegroundColor Yellow
 New-Item -ItemType Directory -Path $destPath -Force | Out-Null
 Copy-Item -Path "D:\project\emtp-dashboard\*" -Destination $destPath -Recurse -Force -Exclude ".git"
-Write-Host "      實體快照備份完成！" -ForegroundColor Green
+Write-Host "      Physical snapshot created successfully!" -ForegroundColor Green
 
-Write-Host "[2/3] 正在建立 Git 版本存檔 ..." -ForegroundColor Yellow
+Write-Host "[2/3] Creating Git commit & tag..." -ForegroundColor Yellow
 git -C "D:\project\emtp-dashboard" add -A
 $status = git -C "D:\project\emtp-dashboard" status --porcelain
 if ($status) {
-    git -C "D:\project\emtp-dashboard" commit -m "checkpoint: ${Note} ($timestamp)"
+    git -C "D:\project\emtp-dashboard" commit -m ("checkpoint: " + $Note + " (" + $timestamp + ")")
 } else {
-    Write-Host "      工作目錄無未提交變更，直接建立標籤。" -ForegroundColor DarkGray
+    Write-Host "      Working tree clean, tagging directly." -ForegroundColor DarkGray
 }
 
-$tagName = "cp-${timestamp}"
-git -C "D:\project\emtp-dashboard" tag -a $tagName -m "存檔點: ${Note}"
-Write-Host "      Git 標籤存檔完成：$tagName" -ForegroundColor Green
+$tagName = "cp-" + $timestamp
+git -C "D:\project\emtp-dashboard" tag -a $tagName -m ("Checkpoint: " + $Note)
+Write-Host ("      Git Tag created: " + $tagName) -ForegroundColor Green
 
-Write-Host "[3/3] 存檔完成確認：" -ForegroundColor Green
-Write-Host "      - 標記說明：$Note"
-Write-Host "      - 實體路徑：$destPath"
-Write-Host "      - Git Tag ：$tagName"
+Write-Host "[3/3] Checkpoint Summary:" -ForegroundColor Green
+Write-Host ("      - Note: " + $Note)
+Write-Host ("      - Path: " + $destPath)
+Write-Host ("      - Tag : " + $tagName)
 Write-Host "========================================" -ForegroundColor Cyan
